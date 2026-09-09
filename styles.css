@@ -171,10 +171,14 @@ h1, h2, h3, h4 {
   gap: 1.5rem;
 }
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 800;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
 }
+.logo-mark { width: 26px; height: 26px; flex-shrink: 0; }
 .nav-links {
   display: none;
   gap: 2.2rem;
@@ -639,7 +643,7 @@ h1, h2, h3, h4 {
   gap: 1.5rem;
 }
 .footer-brand { display: flex; flex-direction: column; gap: 0.2rem; }
-.footer-logo { font-weight: 800; }
+.footer-logo { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 800; }
 .footer-location { color: var(--mute); font-size: 0.85rem; }
 .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 .footer-links a { color: var(--mute); font-size: 0.88rem; }
