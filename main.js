@@ -131,20 +131,6 @@
     }, 6000);
   }
 
-  /* ---- FAQ accordion ---- */
-  function initFaqRows() {
-    var toggles = $$("[data-faq-toggle]");
-    toggles.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var expanded = btn.getAttribute("aria-expanded") === "true";
-        toggles.forEach(function (other) {
-          if (other !== btn) other.setAttribute("aria-expanded", "false");
-        });
-        btn.setAttribute("aria-expanded", expanded ? "false" : "true");
-      });
-    });
-  }
-
   /* ---- Count-up numbers ---- */
   function initCountUp() {
     var els = $$("[data-count-to]");
@@ -228,7 +214,6 @@
     safe(initMobileMenu, "initMobileMenu");
     safe(initSmoothAnchors, "initSmoothAnchors");
     safe(initReveals, "initReveals");
-    safe(initFaqRows, "initFaqRows");
     safe(initCountUp, "initCountUp");
     safe(initContactForm, "initContactForm");
     safe(initFooterYear, "initFooterYear");

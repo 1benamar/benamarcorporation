@@ -573,41 +573,6 @@ h1, h2, h3, h4 {
 .portfolio-body p { color: var(--mute); font-size: 0.92rem; margin-bottom: 0.9rem; }
 
 /* =============================================================
-   10.5 FAQ
-   ============================================================= */
-.faq { padding-block: 6rem; padding-inline: 1.5rem; max-width: 820px; margin-inline: auto; border-top: 1px solid transparent; border-image: var(--divider) 1; }
-.faq-list { border-top: 1px solid var(--line); margin-top: 3rem; }
-.faq-row { border-bottom: 1px solid var(--line); }
-.faq-row-head {
-  width: 100%;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  padding: 1.5rem 1rem;
-  margin-inline: -1rem;
-  border-radius: var(--radius-sm);
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.05rem;
-  transition: background-color .3s var(--ease-out);
-}
-.faq-row-head:hover { background-color: var(--bg-soft); }
-.faq-chevron {
-  flex-shrink: 0;
-  font-size: 1.3rem;
-  color: var(--mute);
-  transition: transform .4s var(--ease-soft), color .3s var(--ease-out);
-}
-.faq-row-head:hover .faq-chevron { color: var(--ink); }
-.faq-row-head[aria-expanded="true"] .faq-chevron { transform: rotate(45deg); }
-.faq-body {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows .5s var(--ease-soft);
-}
-.faq-body > p { overflow: hidden; color: var(--mute); max-width: 60ch; }
-.faq-row-head[aria-expanded="true"] + .faq-body { grid-template-rows: 1fr; }
-.faq-row-head[aria-expanded="true"] + .faq-body > p { padding-bottom: 1.5rem; }
-
-/* =============================================================
    10.6 CTA band
    ============================================================= */
 .cta-band {
