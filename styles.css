@@ -25,6 +25,15 @@
 
   --nav-h: 64px;
   --container: 1180px;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(6,8,10,0.24), 0 1px 1px rgba(6,8,10,0.14);
+  --shadow-md: 0 10px 28px rgba(6,8,10,0.24), 0 2px 8px rgba(6,8,10,0.16);
+  --shadow-lg: 0 24px 56px rgba(6,8,10,0.32), 0 6px 18px rgba(6,8,10,0.2);
+  --shadow-ring: 0 0 0 1px var(--line-2);
 }
 
 /* =============================================================
@@ -62,6 +71,7 @@ h1, h2, h3, h4 {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
+  transition: outline-offset .2s var(--ease-out);
 }
 
 /* =============================================================
@@ -75,14 +85,23 @@ h1, h2, h3, h4 {
 .skip-link:focus { top: 1rem; }
 
 .kicker {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 1.1rem;
 }
-.contact .kicker { font-size: 1.2rem; }
+.kicker::before {
+  content: "";
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.contact .kicker { font-size: 0.95rem; }
 
 [data-reveal] {
   opacity: 0; transform: translateY(24px);
@@ -106,23 +125,26 @@ h1, h2, h3, h4 {
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.98rem;
-  transition: transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), background .3s var(--ease-out), color .3s var(--ease-out);
+  transition: opacity .8s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), background .3s var(--ease-out), color .3s var(--ease-out), border-color .3s var(--ease-out);
   white-space: nowrap;
 }
 .btn-sm { padding: .6rem 1.3rem; font-size: 0.9rem; }
 .btn-primary {
   background: var(--accent); color: var(--accent-ink);
-  box-shadow: 0 4px 16px rgba(10,12,14,0.28);
+  box-shadow: var(--shadow-sm);
 }
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 34px rgba(10,12,14,0.38);
+  box-shadow: var(--shadow-lg);
 }
+.btn-primary:active { transform: translateY(-1px) scale(0.98); box-shadow: var(--shadow-md); }
 .btn-ghost {
   border: 1px solid var(--line-2);
   color: var(--ink);
+  background: transparent;
 }
-.btn-ghost:hover { border-color: var(--ink); }
+.btn-ghost:hover { border-color: var(--ink); background: var(--accent-soft); }
+.btn-ghost:active { transform: scale(0.98); }
 .btn-text {
   padding: .95rem .2rem;
   color: var(--ink);
@@ -163,6 +185,7 @@ h1, h2, h3, h4 {
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
   border-color: var(--line);
+  box-shadow: 0 1px 0 var(--line), 0 12px 32px rgba(6,8,10,0.18);
 }
 .nav-inner {
   max-width: var(--container);
@@ -349,21 +372,39 @@ h1, h2, h3, h4 {
 .benefits-grid {
   margin-top: 3.5rem;
   display: grid;
-  gap: 2.5rem;
+  gap: 1.25rem;
   text-align: left;
+}
+.benefit {
+  padding: 1.8rem 1.6rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: opacity .8s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), border-color .3s var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .benefit:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--line-2);
+  }
 }
 .benefit-num {
   display: block;
   font-family: var(--sans);
   font-weight: 700;
   font-size: 0.85rem;
-  color: var(--mute);
-  margin-bottom: 0.6rem;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
 }
 .benefit h3 { font-size: 1.2rem; }
 .benefit p { margin-top: 0.5rem; color: var(--mute); font-size: 0.95rem; }
 @media (min-width: 720px) {
   .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+  .benefits-grid .benefit:nth-child(1) { transition-delay: 0s; }
+  .benefits-grid .benefit:nth-child(2) { transition-delay: .08s; }
+  .benefits-grid .benefit:nth-child(3) { transition-delay: .16s; }
 }
 
 /* =============================================================
@@ -380,7 +421,7 @@ h1, h2, h3, h4 {
   color: #fff;
   background-size: cover;
   background-position: center;
-  transition: background-size 1.4s var(--ease-soft), background-position 1.4s var(--ease-soft);
+  transition: opacity .9s var(--ease-soft), transform .9s var(--ease-soft), background-size 1.4s var(--ease-soft), background-position 1.4s var(--ease-soft);
 }
 @media (hover: hover) and (pointer: fine) {
   .service-tile:hover { background-size: 114%; }
@@ -451,9 +492,20 @@ h1, h2, h3, h4 {
   margin-inline: auto;
   padding-inline: 1.5rem;
   display: grid;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
-.stat { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; }
+.stat {
+  display: flex; flex-direction: column; gap: 0.5rem; align-items: center;
+  padding: 1.8rem 1.2rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: opacity .8s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), border-color .3s var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .stat:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--line-2); }
+}
 .stat-value {
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   font-weight: 800;
@@ -487,12 +539,13 @@ h1, h2, h3, h4 {
 .portfolio-card {
   display: block;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--bg-soft);
-  transition: border-color .3s var(--ease-out), transform .3s var(--ease-out);
+  box-shadow: var(--shadow-sm);
+  transition: opacity .9s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), border-color .3s var(--ease-out);
 }
-.portfolio-card:hover { border-color: var(--line-2); transform: translateY(-2px); }
+.portfolio-card:hover { border-color: var(--line-2); transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .portfolio-thumb { aspect-ratio: 16/10; overflow: hidden; position: relative; background: var(--bg); }
 .portfolio-thumb iframe {
   position: absolute; top: 0; left: 0;
@@ -513,11 +566,15 @@ h1, h2, h3, h4 {
 .faq-row-head {
   width: 100%;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  padding-block: 1.5rem;
+  padding: 1.5rem 1rem;
+  margin-inline: -1rem;
+  border-radius: var(--radius-sm);
   text-align: left;
   font-weight: 600;
   font-size: 1.05rem;
+  transition: background-color .3s var(--ease-out);
 }
+.faq-row-head:hover { background-color: var(--bg-soft); }
 .faq-chevron {
   flex-shrink: 0;
   font-size: 1.3rem;
@@ -614,11 +671,14 @@ h1, h2, h3, h4 {
 .field { position: relative; }
 .field input, .field textarea, .field select {
   width: 100%; padding: 1.3rem 1rem 0.55rem; border: 1px solid var(--line-2);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   background: var(--bg-soft); color: var(--ink);
   font-family: var(--sans); font-size: 1rem;
-  transition: border-color .3s var(--ease-out);
+  transition: border-color .3s var(--ease-out), box-shadow .3s var(--ease-out);
   appearance: none; -webkit-appearance: none;
+}
+.field input:focus, .field textarea:focus, .field select:focus {
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 .field select {
   cursor: pointer;
@@ -716,7 +776,9 @@ h1, h2, h3, h4 {
 .credits-list li {
   padding: 1.2rem 1.4rem;
   background: var(--bg-soft);
-  border-radius: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   font-size: 0.92rem;
   color: var(--mute);
 }
@@ -766,6 +828,11 @@ h1, h2, h3, h4 {
   .nav-cta { display: inline-flex; }
   .nav-burger { display: none; }
   .stats-grid { grid-template-columns: repeat(4, 1fr); }
+  .stats-grid .stat:nth-child(1) { transition-delay: 0s; }
+  .stats-grid .stat:nth-child(2) { transition-delay: .06s; }
+  .stats-grid .stat:nth-child(3) { transition-delay: .12s; }
+  .stats-grid .stat:nth-child(4) { transition-delay: .18s; }
+  .portfolio-grid .portfolio-card:nth-child(2) { transition-delay: .1s; }
   .cta-form { grid-template-columns: 1fr 1fr; }
   .field-textarea, .field-consent, .cta-submit { grid-column: 1 / -1; }
 }
