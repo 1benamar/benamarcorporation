@@ -65,6 +65,17 @@
     "foreign_landing_url": "https://stocksnap.io/photo/woman-massage-VH22RVC5UT",
     "source": "stocksnap"
   },
+  "plantilla-restaurante": {
+    "src": "assets/img/plantilla-restaurante.jpg",
+    "title": "Cafe Whitney",
+    "creator": "sarahstierch",
+    "creator_url": "https://www.flickr.com/photos/7633518@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/7633518@N08/51734586078",
+    "source": "flickr"
+  },
   "hero-agency": {
     "src": "assets/img/hero-agency.jpg",
     "title": "Woman Working",
