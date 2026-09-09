@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexora — Sample template by BENAMAR</title>
+  <meta name="description" content="Sample SaaS product website template, created by BENAMAR to show the kind of work we do.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #17191c;
+      --mute: #6b7076;
+      --line: #e6e7ea;
+      --soft: #f5f5f7;
+      --accent: #5b56f0;
+      --accent-ink: #ffffff;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --serif: "Instrument Serif", Georgia, serif;
+      --shadow: 0 25px 70px -12px rgba(20,20,30,0.14), 0 0 0 1px rgba(20,20,30,0.05);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .demo-bar {
+      background: var(--accent); color: #fff;
+      text-align: center; font-size: 0.85rem; font-weight: 600;
+      padding: 0.6rem 1rem;
+    }
+    .demo-bar a { text-decoration: underline; text-underline-offset: 2px; }
+
+    nav.site-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1160px; margin-inline: auto;
+      padding: 1.4rem 1.5rem;
+    }
+    .logo { font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; }
+    .nav-links { display: none; gap: 2.2rem; font-size: 0.92rem; color: var(--mute); }
+    @media (min-width: 760px) { .nav-links { display: flex; } }
+    .nav-links a:hover { color: var(--ink); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.75rem 1.5rem; border-radius: 999px; font-weight: 600; font-size: 0.9rem;
+      transition: transform .3s, box-shadow .3s, background .3s, border-color .3s;
+    }
+    .btn-primary { background: var(--ink); color: #fff; box-shadow: 0 6px 16px rgba(20,20,30,0.18); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 26px rgba(20,20,30,0.24); }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-ghost { border: 1px solid var(--line); color: var(--ink); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    .hero { text-align: center; padding: 2.5rem 1.5rem 0; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 0.5rem 1rem; font-size: 0.85rem; color: var(--mute);
+      margin-bottom: 1.6rem;
+    }
+    .hero h1 {
+      font-family: var(--sans); font-weight: 700;
+      font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.05; letter-spacing: -0.02em;
+      max-width: 18ch; margin: 0 auto 1.2rem;
+    }
+    .hero h1 em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--accent); }
+    .hero .sub { color: var(--mute); max-width: 46ch; margin: 0 auto 1.8rem; font-size: 1.05rem; }
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 0.9rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
+
+    .dashboard-wrap { max-width: 920px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+    .dashboard {
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 1.2rem;
+      text-align: left;
+    }
+    .dash-topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem;
+      font-size: 0.8rem; color: var(--mute);
+    }
+    .dash-topbar .brand { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--ink); }
+    .dash-dot { width: 20px; height: 20px; border-radius: 6px; background: var(--accent); display: inline-block; }
+    .dash-grid { display: grid; gap: 1rem; }
+    @media (min-width: 640px) { .dash-grid { grid-template-columns: 1.3fr 1fr; } }
+    .dash-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.2rem; }
+    .dash-card h4 { margin: 0; font-size: 0.85rem; color: var(--mute); font-weight: 600; }
+    .dash-value { font-size: 1.9rem; font-weight: 700; margin-top: 0.3rem; }
+    .dash-pill { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 999px; background: #e9fbf0; color: #1a8a4a; margin-left: 0.5rem; }
+    .dash-chart { margin-top: 0.9rem; }
+    .dash-rows { display: grid; gap: 0.7rem; margin-top: 0.9rem; }
+    .dash-row { display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem; padding-bottom: 0.7rem; border-bottom: 1px solid var(--line); }
+    .dash-row:last-child { border-bottom: 0; padding-bottom: 0; }
+    .dash-row span:last-child { font-weight: 600; }
+
+    section.features { padding: 1rem 1.5rem 5rem; max-width: 920px; margin-inline: auto; }
+    .features-grid { display: grid; gap: 1rem; }
+    @media (min-width: 720px) { .features-grid { grid-template-columns: repeat(3, 1fr); } }
+    .feature { padding: 1.5rem; border: 1px solid var(--line); border-radius: 16px; background: var(--soft); }
+    .feature h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
+    .feature p { margin: 0; color: var(--mute); font-size: 0.9rem; }
+
+    footer { border-top: 1px solid var(--line); padding: 2.5rem 1.5rem; text-align: center; color: var(--mute); font-size: 0.82rem; }
+    footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .badge { animation: fadeUp .6s ease both; }
+    .hero h1 { animation: fadeUp .6s .1s ease both; }
+    .hero .sub { animation: fadeUp .6s .2s ease both; }
+    .hero-actions { animation: fadeUp .6s .3s ease both; }
+    .dashboard-wrap { animation: fadeUp .8s .4s ease both; }
+    @media (prefers-reduced-motion: reduce) {
+      .badge, .hero h1, .hero .sub, .hero-actions, .dashboard-wrap { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-bar">This is a sample template created by BENAMAR — <a href="../index.html">view the agency →</a></div>
+
+  <nav class="site-nav">
+    <span class="logo">✦ Nexora</span>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+      <a href="#contacto">Contact</a>
+    </div>
+    <a class="btn btn-primary" href="#contacto">Request demo</a>
+  </nav>
+
+  <section class="hero">
+    <span class="badge">✨ Now with GPT-5 support</span>
+    <h1>The future of <em>smarter</em> automation</h1>
+    <p class="sub">Automate repetitive work with agents that learn, adapt and execute — so your team can focus on what matters.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contacto">Request demo</a>
+      <a class="btn btn-ghost" href="#funciones">How it works</a>
+    </div>
+
+    <div class="dashboard-wrap">
+      <div class="dashboard">
+        <div class="dash-topbar">
+          <span class="brand"><span class="dash-dot"></span> Nexora</span>
+          <span>⌘K to search</span>
+        </div>
+        <div class="dash-grid">
+          <div class="dash-card">
+            <h4>Recurring revenue<span class="dash-pill">↑ 24%</span></h4>
+            <div class="dash-value">€42,850</div>
+            <div class="dash-chart">
+              <svg viewBox="0 0 300 80" width="100%" height="80">
+                <defs>
+                  <linearGradient id="nx-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#5b56f0" stop-opacity="0.18"></stop>
+                    <stop offset="100%" stop-color="#5b56f0" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M0 60 C 30 55, 45 65, 70 50 C 95 35, 110 45, 140 38 C 170 30, 190 42, 220 28 C 250 15, 270 25, 300 10 L 300 80 L 0 80 Z" fill="url(#nx-grad)"></path>
+                <path d="M0 60 C 30 55, 45 65, 70 50 C 95 35, 110 45, 140 38 C 170 30, 190 42, 220 28 C 250 15, 270 25, 300 10" fill="none" stroke="#5b56f0" stroke-width="2"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="dash-card">
+            <h4>Active automations</h4>
+            <div class="dash-rows">
+              <div class="dash-row"><span>Billing</span><span>128</span></div>
+              <div class="dash-row"><span>Customer support</span><span>76</span></div>
+              <div class="dash-row"><span>Onboarding</span><span>34</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="funciones">
+    <div class="features-grid">
+      <div class="feature">
+        <h3>Agents that learn</h3>
+        <p>They adapt to your real processes instead of forcing you to adapt to them.</p>
+      </div>
+      <div class="feature">
+        <h3>Fast integration</h3>
+        <p>Connect your current tools without rewriting anything from scratch.</p>
+      </div>
+      <div class="feature">
+        <h3>Full control</h3>
+        <p>Review, approve and adjust every automation whenever you need to.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    Nexora is a sample website designed by <a href="../index.html">BENAMAR</a> to showcase our work — it is not a real product.
+  </footer>
+</body>
+</html>

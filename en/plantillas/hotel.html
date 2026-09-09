@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Auria — Sample template by BENAMAR</title>
+  <meta name="description" content="Sample hotel website template, created by BENAMAR to show the kind of work we do.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+  <style>
+    :root {
+      --bg: #1c1815;
+      --bg-soft: #262019;
+      --ink: #f5f1ea;
+      --mute: #bfb3a3;
+      --line: rgba(245,241,234,0.14);
+      --accent: #c9a25e;
+      --accent-ink: #1c1815;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --serif: "Fraunces", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1080px; margin-inline: auto; padding-inline: 1.5rem; }
+
+    .demo-bar {
+      background: var(--accent); color: var(--accent-ink);
+      text-align: center; font-size: 0.85rem; font-weight: 600;
+      padding: 0.6rem 1rem;
+    }
+    .demo-bar a { text-decoration: underline; text-underline-offset: 2px; }
+
+    header.nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.6rem 1.5rem; max-width: 1080px; margin-inline: auto;
+    }
+    .logo { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; letter-spacing: 0.01em; }
+    .nav-links { display: none; gap: 2rem; font-size: 0.9rem; color: var(--mute); }
+    @media (min-width: 720px) { .nav-links { display: flex; } }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.8rem 1.6rem; border-radius: 999px; font-weight: 600; font-size: 0.9rem;
+      border: 1px solid var(--accent); transition: opacity .3s;
+    }
+    .btn-primary { background: var(--accent); color: var(--accent-ink); }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-ghost { color: var(--ink); border-color: var(--line); }
+
+    .hero {
+      position: relative; min-height: 78vh; display: flex; align-items: flex-end;
+      background-image: linear-gradient(to top, rgba(10,8,6,0.85), rgba(10,8,6,0.25) 55%), url("../../assets/img/plantilla-hotel.jpg");
+      background-size: cover; background-position: center;
+    }
+    .hero-inner { padding: 3.5rem 1.5rem 4rem; max-width: 1080px; margin-inline: auto; width: 100%; }
+    .kicker { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+    .hero h1 {
+      font-family: var(--serif); font-weight: 600; margin: 0.8rem 0 1rem;
+      font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; max-width: 16ch;
+    }
+    .hero p { color: var(--mute); max-width: 46ch; font-size: 1.05rem; margin: 0 0 1.8rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    section { padding: 5rem 1.5rem; max-width: 1080px; margin-inline: auto; }
+    .section-head { text-align: center; max-width: 46ch; margin-inline: auto; margin-bottom: 3rem; }
+    .section-head h2 { font-family: var(--serif); font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0.6rem 0 0.8rem; }
+    .section-head p { color: var(--mute); margin: 0; }
+
+    .rooms-grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 720px) { .rooms-grid { grid-template-columns: repeat(3, 1fr); } }
+    .room-card { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 14px; padding: 2rem 1.6rem; }
+    .room-card .num { font-family: var(--serif); color: var(--accent); font-size: 1.6rem; }
+    .room-card h3 { margin: 0.8rem 0 0.5rem; font-size: 1.15rem; }
+    .room-card p { margin: 0; color: var(--mute); font-size: 0.92rem; }
+
+    .cta-band {
+      background: var(--accent); color: var(--accent-ink); border-radius: 20px;
+      text-align: center; padding: 3.5rem 1.5rem; margin: 0 1.5rem 5rem; max-width: 1080px; margin-inline: auto;
+    }
+    .cta-band h2 { font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 0.8rem; }
+    .cta-band p { margin: 0 0 1.6rem; opacity: 0.85; }
+    .cta-band .btn-primary { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); }
+
+    footer { border-top: 1px solid var(--line); padding: 2.5rem 1.5rem; text-align: center; color: var(--mute); font-size: 0.82rem; }
+    footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .hero-inner .kicker { animation: fadeUp .8s ease both; }
+    .hero-inner h1 { animation: fadeUp .8s .1s ease both; }
+    .hero-inner p { animation: fadeUp .8s .2s ease both; }
+    .hero-inner .hero-actions { animation: fadeUp .8s .3s ease both; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-inner .kicker, .hero-inner h1, .hero-inner p, .hero-inner .hero-actions { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-bar">This is a sample template created by BENAMAR — <a href="../index.html">view the agency →</a></div>
+
+  <header class="nav">
+    <span class="logo">Hotel Auria</span>
+    <nav class="nav-links">
+      <a href="#habitaciones">Rooms</a>
+      <a href="#servicios">Services</a>
+      <a href="#contacto">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="#contacto">Book now</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="kicker">Hotel Auria · Seafront</p>
+      <h1>Where every detail feels cared for.</h1>
+      <p>A boutique hotel built for disconnecting: bright rooms, personal service and the best views along the coast.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contacto">Book now</a>
+        <a class="btn btn-ghost" href="#habitaciones">See rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="habitaciones">
+    <div class="section-head">
+      <p class="kicker">Rooms</p>
+      <h2>Three ways to feel at home.</h2>
+      <p>Every room is designed for rest, with natural light and warm materials.</p>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <span class="num">01</span>
+        <h3>Classic Room</h3>
+        <p>King-size bed, desk and views over the inner garden. Ideal for short stays.</p>
+      </div>
+      <div class="room-card">
+        <span class="num">02</span>
+        <h3>Junior Suite</h3>
+        <p>Separate lounge area, minibar and private balcony with partial sea views.</p>
+      </div>
+      <div class="room-card">
+        <span class="num">03</span>
+        <h3>Auria Suite</h3>
+        <p>Our best room: panoramic terrace, freestanding bathtub and butler service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="section-head">
+      <p class="kicker">Services</p>
+      <h2>Everything you need, without leaving the hotel.</h2>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <span class="num">—</span>
+        <h3>Restaurant</h3>
+        <p>Market cuisine and breakfast included every day from 7:00 to 11:00.</p>
+      </div>
+      <div class="room-card">
+        <span class="num">—</span>
+        <h3>Spa &amp; Wellness</h3>
+        <p>Heated indoor pool, sauna and treatments by appointment.</p>
+      </div>
+      <div class="room-card">
+        <span class="num">—</span>
+        <h3>Private events</h3>
+        <p>Spaces for celebrations and meetings for up to 60 people.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <h2>Shall we book your stay?</h2>
+    <p>Write to us and we'll confirm availability in under 24h.</p>
+    <a class="btn btn-primary" href="mailto:reservas@hotelauria.example">Contact reservations</a>
+  </div>
+
+  <footer>
+    Hotel Auria is a sample website designed by <a href="../index.html">BENAMAR</a> to showcase our work — it is not a real business.<br>
+    Photo: "8th floor hotel room" by sarahstierch, licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.
+  </footer>
+</body>
+</html>
