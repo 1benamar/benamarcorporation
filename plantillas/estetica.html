@@ -86,6 +86,17 @@
 
     footer { border-top: 1px solid var(--line); padding: 2.5rem 1.5rem; text-align: center; color: var(--mute); font-size: 0.82rem; }
     footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeScale { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
+    .hero-photo { animation: fadeScale .9s ease both; }
+    .hero-text .kicker { animation: fadeUp .8s .1s ease both; }
+    .hero-text h1 { animation: fadeUp .8s .2s ease both; }
+    .hero-text p { animation: fadeUp .8s .3s ease both; }
+    .hero-text .hero-actions { animation: fadeUp .8s .4s ease both; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-photo, .hero-text .kicker, .hero-text h1, .hero-text p, .hero-text .hero-actions { animation: none; }
+    }
   </style>
 </head>
 <body>
@@ -105,7 +116,7 @@
     <div class="hero-photo">
       <img src="../assets/img/plantilla-estetica.jpg" alt="Tratamiento de masaje relajante en Calma Estética">
     </div>
-    <div>
+    <div class="hero-text">
       <p class="kicker">Calma Estética &amp; Spa</p>
       <h1>Un momento solo para ti.</h1>
       <p>Tratamientos faciales, corporales y de bienestar en un espacio pensado para desconectar del ritmo diario.</p>

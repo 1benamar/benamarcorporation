@@ -87,6 +87,15 @@
 
     footer { border-top: 1px solid var(--line); padding: 2.5rem 1.5rem; text-align: center; color: var(--mute); font-size: 0.82rem; }
     footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .hero-inner .kicker { animation: fadeUp .8s ease both; }
+    .hero-inner h1 { animation: fadeUp .8s .1s ease both; }
+    .hero-inner p { animation: fadeUp .8s .2s ease both; }
+    .hero-inner .hero-actions { animation: fadeUp .8s .3s ease both; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-inner .kicker, .hero-inner h1, .hero-inner p, .hero-inner .hero-actions { animation: none; }
+    }
   </style>
 </head>
 <body>
