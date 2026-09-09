@@ -81,6 +81,7 @@ h1, h2, h3, h4 {
   color: var(--accent);
   margin-bottom: 1.1rem;
 }
+.contact .kicker { font-size: 1.05rem; }
 
 [data-reveal] {
   opacity: 0; transform: translateY(24px);
