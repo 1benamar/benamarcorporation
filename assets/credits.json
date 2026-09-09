@@ -1,0 +1,57 @@
+{
+  "landing-pages": {
+    "src": "assets/img/landing-pages.jpg",
+    "title": "Seo Ppc",
+    "creator": "Serpstat",
+    "creator_url": "https://serpstat.com/ru",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/seo-ppc-9699Y6WKLD",
+    "source": "stocksnap"
+  },
+  "web-corporativa": {
+    "src": "assets/img/web-corporativa.jpg",
+    "title": "Writing Papers",
+    "creator": "Helloquence",
+    "creator_url": "https://helloquence.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/writing-papers-Y01VDYAX63",
+    "source": "stocksnap"
+  },
+  "seo-google": {
+    "src": "assets/img/seo-google.jpg",
+    "title": "Computer Laptop",
+    "creator": "Design by Matt",
+    "creator_url": "https://mattbango.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/computer-laptop-FBXB2DA8O7",
+    "source": "stocksnap"
+  },
+  "redes-sociales": {
+    "src": "assets/img/redes-sociales.jpg",
+    "title": "Aerial view of woman using computer laptop and a smartphone on wooden table",
+    "creator": "Rawpixel Ltd",
+    "creator_url": "https://www.flickr.com/photos/147875007@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/147875007@N03/40640189245",
+    "source": "flickr"
+  },
+  "hero-agency": {
+    "src": "assets/img/hero-agency.jpg",
+    "title": "Woman Working",
+    "creator": "Helena Lopes",
+    "creator_url": "https://instagram.com/helena_wlt",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/woman-working-8LHTBAZW32",
+    "source": "stocksnap"
+  }
+}
