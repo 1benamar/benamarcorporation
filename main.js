@@ -222,23 +222,6 @@
     if (el) el.textContent = new Date().getFullYear();
   }
 
-  /* ---- Portfolio live iframe previews (scaled to fit their thumbnail) ---- */
-  function initPortfolioPreviews() {
-    var boxes = $$("[data-iframe-preview]");
-    if (!boxes.length) return;
-    var NATIVE_W = 1440;
-    function scaleAll() {
-      boxes.forEach(function (box) {
-        var iframe = box.querySelector("iframe");
-        if (!iframe) return;
-        var scale = box.clientWidth / NATIVE_W;
-        iframe.style.transform = "scale(" + scale + ")";
-      });
-    }
-    scaleAll();
-    window.addEventListener("resize", scaleAll);
-  }
-
   function boot() {
     safe(initHeroParallax, "initHeroParallax");
     safe(initNav, "initNav");
@@ -249,7 +232,6 @@
     safe(initCountUp, "initCountUp");
     safe(initContactForm, "initContactForm");
     safe(initFooterYear, "initFooterYear");
-    safe(initPortfolioPreviews, "initPortfolioPreviews");
 
     if (window.gsap && window.ScrollTrigger) {
       try { gsap.registerPlugin(ScrollTrigger); } catch (e) {}
