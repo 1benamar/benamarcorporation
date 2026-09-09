@@ -699,6 +699,17 @@ h1, h2, h3, h4 {
 .footer-credits-link { color: var(--mute); text-decoration: underline; text-underline-offset: 2px; }
 .footer-credits-link:hover { color: var(--accent); }
 
+.lang-switch {
+  display: flex; align-items: center; gap: 0.4rem;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+  color: var(--mute); flex-shrink: 0;
+}
+.lang-switch a { color: var(--mute); }
+.lang-switch a:hover { color: var(--accent); }
+.lang-switch .lang-current { color: var(--ink); }
+.lang-switch-sep { color: var(--line-2); }
+.footer-lang { margin-top: 1.2rem; }
+
 /* =============================================================
    13. Responsive
    ============================================================= */

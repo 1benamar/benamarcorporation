@@ -4,6 +4,28 @@
   var data = window.__BRAND__ || {};
   var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---- i18n: language folders live one level below root ---- */
+  var BASE = /\/(en|fr)\//.test(location.pathname) ? "../" : "";
+  var LANG = document.documentElement.lang || "es";
+  var MSG = {
+    es: {
+      success: "Hemos recibido tu solicitud. Te escribimos en menos de 24h con una propuesta.",
+      successNamed: function (name) { return name + ", hemos recibido tu solicitud. Te escribimos en menos de 24h con una propuesta."; },
+      error: "No hemos podido enviar tu solicitud. Escríbenos directamente a benamarcorporation@gmail.com."
+    },
+    en: {
+      success: "We've received your request. We'll get back to you within 24h with a real proposal.",
+      successNamed: function (name) { return name + ", we've received your request. We'll get back to you within 24h with a real proposal."; },
+      error: "We couldn't send your request. Please email us directly at benamarcorporation@gmail.com."
+    },
+    fr: {
+      success: "Nous avons bien reçu votre demande. Nous vous répondons sous 24h avec une proposition réelle.",
+      successNamed: function (name) { return name + ", nous avons bien reçu votre demande. Nous vous répondons sous 24h avec une proposition réelle."; },
+      error: "Nous n'avons pas pu envoyer votre demande. Écrivez-nous directement à benamarcorporation@gmail.com."
+    }
+  };
+  var T = MSG[LANG] || MSG.es;
+
   var $ = function (sel, scope) { return (scope || document).querySelector(sel); };
   var $$ = function (sel, scope) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); };
 
@@ -168,7 +190,7 @@
 
       var firstName = (form.elements.name.value.trim().split(/\s+/)[0]) || "";
 
-      fetch("contact.php", {
+      fetch(BASE + "contact.php", {
         method: "POST",
         body: new FormData(form)
       })
@@ -178,18 +200,18 @@
           submitBtn.disabled = false;
 
           if (data && data.success) {
-            if (msg) msg.textContent = (firstName ? firstName + ", hemos" : "Hemos") + " recibido tu solicitud. Te escribimos en menos de 48h con una propuesta.";
+            if (msg) msg.textContent = firstName ? T.successNamed(firstName) : T.success;
             form.classList.add("is-sent");
             success.setAttribute("aria-hidden", "false");
             success.classList.add("is-visible");
           } else {
-            alert("No hemos podido enviar tu solicitud. Escríbenos directamente a benamarcorporation@gmail.com.");
+            alert(T.error);
           }
         })
         .catch(function () {
           form.classList.remove("is-sending");
           submitBtn.disabled = false;
-          alert("No hemos podido enviar tu solicitud. Escríbenos directamente a benamarcorporation@gmail.com.");
+          alert(T.error);
         });
     });
   }
