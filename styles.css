@@ -524,7 +524,9 @@ h1, h2, h3, h4 {
 .contact-sub { margin-top: 1.2rem; color: var(--mute); }
 
 .contact-email {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 2.4rem;
   font-size: clamp(1.3rem, 3vw, 1.8rem);
   font-weight: 700;
@@ -555,6 +557,7 @@ h1, h2, h3, h4 {
 .contact-links .btn.contact-btn { color: var(--ink); }
 .contact-links .btn.contact-btn:hover { color: var(--ink); border-color: var(--ink); }
 .contact-icon { width: 16px; height: 16px; flex-shrink: 0; }
+.contact-email-icon { width: 0.75em; height: 0.75em; flex-shrink: 0; }
 
 .cta-form {
   margin-top: 3.2rem;
