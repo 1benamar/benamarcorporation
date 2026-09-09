@@ -556,18 +556,20 @@ h1, h2, h3, h4 {
 }
 .portfolio-card:hover { border-color: var(--line-2); transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .portfolio-thumb {
-  height: 150px;
-  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
 }
-.portfolio-thumb-word { font-size: 1.6rem; letter-spacing: -0.01em; }
+.portfolio-thumb iframe {
+  position: absolute; top: 0; left: 0;
+  width: 1440px; height: 900px;
+  border: 0; pointer-events: none;
+  transform-origin: top left;
+}
 .portfolio-thumb--hotel { background: #1c1815; }
-.portfolio-thumb--hotel .portfolio-thumb-word { font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 600; color: #c9a25e; }
 .portfolio-thumb--estetica { background: #faf5f1; }
-.portfolio-thumb--estetica .portfolio-thumb-word { font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 600; color: #c07f63; }
 .portfolio-thumb--lume { background: #14110d; }
-.portfolio-thumb--lume .portfolio-thumb-word { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-weight: 600; color: #c1592f; }
 .portfolio-thumb--nexora { background: #ffffff; }
-.portfolio-thumb--nexora .portfolio-thumb-word { font-family: var(--sans); font-weight: 700; color: #5b56f0; }
 .portfolio-body { padding: 1.4rem 1.5rem 1.6rem; }
 .portfolio-body h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
 .portfolio-body p { color: var(--mute); font-size: 0.92rem; margin-bottom: 0.9rem; }
