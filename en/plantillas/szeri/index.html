@@ -47,20 +47,78 @@
   </div>
 
   <section class="hero-re" id="top">
-    <svg class="hero-re-skyline" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <g fill="none" stroke="#f3f1ec" stroke-width="1.2" opacity="0.35">
-        <rect x="120" y="360" width="90" height="340"></rect>
-        <rect x="230" y="260" width="70" height="440"></rect>
-        <rect x="320" y="420" width="60" height="280"></rect>
-        <rect x="400" y="180" width="100" height="520"></rect>
-        <rect x="520" y="300" width="80" height="400"></rect>
-        <rect x="900" y="320" width="70" height="380"></rect>
-        <rect x="990" y="220" width="90" height="480"></rect>
-        <rect x="1100" y="380" width="60" height="320"></rect>
-        <rect x="1180" y="260" width="100" height="440"></rect>
-        <rect x="1300" y="340" width="70" height="360"></rect>
-        <path d="M0 700 Q 720 640 1440 700" stroke-width="1.6" opacity="0.6"></path>
-        <path d="M0 660 Q 720 600 1440 660" stroke-width="1" opacity="0.4"></path>
+    <svg class="hero-re-skyline" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="szSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0a1c26"/>
+          <stop offset="52%" stop-color="#163a4c"/>
+          <stop offset="78%" stop-color="#3f6f78"/>
+          <stop offset="100%" stop-color="#e3ab7c"/>
+        </linearGradient>
+        <radialGradient id="szSun" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffdca3" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#ffdca3" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="szSea" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#2e6270"/>
+          <stop offset="100%" stop-color="#102c38"/>
+        </linearGradient>
+        <pattern id="szWin" width="20" height="26" patternUnits="userSpaceOnUse">
+          <rect x="3" y="3" width="12" height="16" fill="#18404f"/>
+        </pattern>
+      </defs>
+      <rect width="1440" height="800" fill="url(#szSky)"/>
+      <circle cx="1140" cy="560" r="230" fill="url(#szSun)"/>
+      <g fill="#0a1c26" opacity="0.4">
+        <rect x="40" y="560" width="46" height="90"></rect>
+        <rect x="100" y="520" width="38" height="130"></rect>
+        <rect x="150" y="580" width="30" height="70"></rect>
+        <rect x="1270" y="540" width="42" height="110"></rect>
+        <rect x="1330" y="500" width="50" height="150"></rect>
+      </g>
+      <rect x="0" y="640" width="1440" height="160" fill="url(#szSea)"/>
+      <g stroke="#efe4cd" stroke-width="2" opacity="0.22" fill="none">
+        <path d="M0 668 Q 360 656 720 668 T 1440 664"></path>
+        <path d="M0 706 Q 360 694 720 706 T 1440 702"></path>
+        <path d="M0 744 Q 360 734 720 746 T 1440 742"></path>
+      </g>
+      <g aria-hidden="true">
+        <rect x="420" y="360" width="130" height="290" fill="#0d2530"></rect>
+        <rect x="420" y="360" width="130" height="290" fill="url(#szWin)"></rect>
+        <rect x="600" y="150" width="200" height="500" fill="#0a1f28"></rect>
+        <rect x="640" y="118" width="120" height="34" fill="#0a1f28"></rect>
+        <rect x="600" y="150" width="200" height="500" fill="url(#szWin)"></rect>
+        <rect x="840" y="330" width="115" height="320" fill="#0d2530"></rect>
+        <rect x="840" y="330" width="115" height="320" fill="url(#szWin)"></rect>
+        <g fill="#ffd9a0" opacity="0.9">
+          <rect x="443" y="392" width="12" height="16"></rect>
+          <rect x="483" y="418" width="12" height="16"></rect>
+          <rect x="463" y="470" width="12" height="16"></rect>
+          <rect x="503" y="522" width="12" height="16"></rect>
+          <rect x="443" y="548" width="12" height="16"></rect>
+          <rect x="643" y="196" width="12" height="16"></rect>
+          <rect x="683" y="222" width="12" height="16"></rect>
+          <rect x="723" y="196" width="12" height="16"></rect>
+          <rect x="663" y="274" width="12" height="16"></rect>
+          <rect x="723" y="326" width="12" height="16"></rect>
+          <rect x="643" y="378" width="12" height="16"></rect>
+          <rect x="763" y="430" width="12" height="16"></rect>
+          <rect x="683" y="482" width="12" height="16"></rect>
+          <rect x="723" y="560" width="12" height="16"></rect>
+          <rect x="643" y="612" width="12" height="16"></rect>
+          <rect x="863" y="366" width="12" height="16"></rect>
+          <rect x="903" y="392" width="12" height="16"></rect>
+          <rect x="883" y="470" width="12" height="16"></rect>
+          <rect x="863" y="548" width="12" height="16"></rect>
+        </g>
+      </g>
+      <g fill="#08161c">
+        <path d="M70 800 L70 690 Q40 660 20 690 Q55 680 70 690" opacity="0.9"></path>
+        <path d="M70 800 L70 690 Q100 660 120 690 Q85 680 70 690" opacity="0.9"></path>
+        <rect x="66" y="690" width="8" height="110" opacity="0.9"></rect>
+        <path d="M200 800 L200 720 Q175 695 158 720 Q188 710 200 720" opacity="0.85"></path>
+        <path d="M200 800 L200 720 Q225 695 242 720 Q212 710 200 720" opacity="0.85"></path>
+        <rect x="197" y="720" width="6" height="80" opacity="0.85"></rect>
       </g>
     </svg>
     <div class="hero-re-inner">
@@ -78,13 +136,74 @@
   </section>
 
   <section id="resumen">
-    <div class="section-head">
-      <p class="kicker">Overview</p>
-      <h2>Széri Design</h2>
+    <div class="split">
+      <div>
+        <div class="section-head">
+          <p class="kicker">Overview</p>
+          <h2>Széri Design</h2>
+        </div>
+        <p class="sub" style="max-width:70ch; margin-top:-1rem; margin-bottom:1.6rem;">Széri Design is one of the most recognised architecture studios in Catalonia, having delivered more than 80 projects since 2013. Born as a residential design studio, Széri has now taken the step into developing its own projects, applying the same design-led criteria that has defined every commission: spaces built for how people actually live, not for a catalogue photo.</p>
+        <p class="sub" style="max-width:70ch; margin-top:0;">For the investor looking for something different, Széri represents an alternative to generic development: projects located in privileged spots along the Barcelona coast, built around an "integrated community" philosophy — residential towers and villas, private green areas and local retail, all designed as a single coherent whole. With a small team and full involvement at every stage, every investment is backed by the very studio that signs off on the project — no middlemen.</p>
+        <a class="btn btn-ghost" href="#contacto">Talk to an advisor</a>
+      </div>
+      <div class="split-media">
+        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vela del Mar residential complex by day">
+          <defs>
+            <linearGradient id="szDaySky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#bfe0e6"></stop>
+              <stop offset="100%" stop-color="#eaf3ec"></stop>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="320" fill="url(#szDaySky)"></rect>
+          <circle cx="340" cy="50" r="26" fill="#ffe4a8"></circle>
+          <rect x="0" y="230" width="400" height="90" fill="#1d6f8f"></rect>
+          <rect x="0" y="230" width="400" height="10" fill="#3fb6a8"></rect>
+          <rect x="60" y="90" width="90" height="150" fill="#12222c"></rect>
+          <rect x="160" y="40" width="110" height="200" fill="#0d2530"></rect>
+          <rect x="195" y="18" width="42" height="24" fill="#0d2530"></rect>
+          <rect x="280" y="120" width="70" height="120" fill="#12222c"></rect>
+          <g fill="#1d6f8f" opacity="0.6">
+            <rect x="72" y="102" width="16" height="20"></rect>
+            <rect x="98" y="102" width="16" height="20"></rect>
+            <rect x="124" y="102" width="16" height="20"></rect>
+            <rect x="72" y="140" width="16" height="20"></rect>
+            <rect x="98" y="140" width="16" height="20"></rect>
+            <rect x="124" y="140" width="16" height="20"></rect>
+            <rect x="72" y="178" width="16" height="20"></rect>
+            <rect x="98" y="178" width="16" height="20"></rect>
+            <rect x="124" y="178" width="16" height="20"></rect>
+          </g>
+          <g fill="#3fb6a8" opacity="0.75">
+            <rect x="172" y="56" width="18" height="22"></rect>
+            <rect x="200" y="56" width="18" height="22"></rect>
+            <rect x="228" y="56" width="18" height="22"></rect>
+            <rect x="172" y="96" width="18" height="22"></rect>
+            <rect x="200" y="96" width="18" height="22"></rect>
+            <rect x="228" y="96" width="18" height="22"></rect>
+            <rect x="172" y="136" width="18" height="22"></rect>
+            <rect x="200" y="136" width="18" height="22"></rect>
+            <rect x="228" y="136" width="18" height="22"></rect>
+            <rect x="172" y="176" width="18" height="22"></rect>
+            <rect x="200" y="176" width="18" height="22"></rect>
+            <rect x="228" y="176" width="18" height="22"></rect>
+          </g>
+          <g fill="#1d6f8f" opacity="0.55">
+            <rect x="292" y="132" width="14" height="18"></rect>
+            <rect x="314" y="132" width="14" height="18"></rect>
+            <rect x="292" y="164" width="14" height="18"></rect>
+            <rect x="314" y="164" width="14" height="18"></rect>
+            <rect x="292" y="196" width="14" height="18"></rect>
+            <rect x="314" y="196" width="14" height="18"></rect>
+          </g>
+          <g fill="#6f9a5a">
+            <ellipse cx="30" cy="238" rx="24" ry="14"></ellipse>
+            <rect x="26" y="238" width="8" height="60" fill="#4a3f2e"></rect>
+            <ellipse cx="380" cy="250" rx="20" ry="12"></ellipse>
+            <rect x="376" y="250" width="6" height="50" fill="#4a3f2e"></rect>
+          </g>
+        </svg>
+      </div>
     </div>
-    <p class="sub" style="max-width:70ch; margin-top:-1rem; margin-bottom:1.6rem;">Széri Design is one of the most recognised architecture studios in Catalonia, having delivered more than 80 projects since 2013. Born as a residential design studio, Széri has now taken the step into developing its own projects, applying the same design-led criteria that has defined every commission: spaces built for how people actually live, not for a catalogue photo.</p>
-    <p class="sub" style="max-width:70ch; margin-top:0;">For the investor looking for something different, Széri represents an alternative to generic development: projects located in privileged spots along the Barcelona coast, built around an "integrated community" philosophy — residential towers and villas, private green areas and local retail, all designed as a single coherent whole. With a small team and full involvement at every stage, every investment is backed by the very studio that signs off on the project — no middlemen.</p>
-    <a class="btn btn-ghost" href="#contacto">Talk to an advisor</a>
     <div class="stats-bar">
       <div><div class="stat-value">€390,000</div><div class="stat-label">Starting price</div></div>
       <div><div class="stat-value">2013</div><div class="stat-label">Studio founded in</div></div>
@@ -99,19 +218,147 @@
     </div>
     <div class="gallery-grid">
       <div class="gallery-tile">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><rect x="15" y="10" width="70" height="80"></rect><path d="M15 30h70M15 50h70M15 70h70M35 10v80M65 10v80"></path></svg>
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vela del Mar master plan">
+          <rect width="400" height="400" fill="#e8e0cd"></rect>
+          <rect x="0" y="0" width="400" height="400" fill="#dcd2b8"></rect>
+          <path d="M0 130 H400 M0 260 H400 M150 0 V400" stroke="#c9bd9c" stroke-width="10"></path>
+          <rect x="20" y="20" width="110" height="90" rx="4" fill="#12222c"></rect>
+          <rect x="170" y="20" width="90" height="90" rx="4" fill="#0d2530"></rect>
+          <rect x="20" y="150" width="110" height="90" rx="4" fill="#12222c"></rect>
+          <circle cx="230" cy="195" r="42" fill="#2a9d8f"></circle>
+          <circle cx="230" cy="195" r="30" fill="#3fb6a8"></circle>
+          <rect x="20" y="280" width="240" height="100" rx="4" fill="#c8dcb8"></rect>
+          <g fill="#6f9a5a">
+            <circle cx="50" cy="300" r="9"></circle>
+            <circle cx="80" cy="320" r="9"></circle>
+            <circle cx="110" cy="300" r="9"></circle>
+            <circle cx="200" cy="310" r="9"></circle>
+            <circle cx="230" cy="330" r="9"></circle>
+          </g>
+          <g fill="#1d6f8f" opacity="0.85">
+            <circle cx="330" cy="60" r="6"></circle>
+            <circle cx="350" cy="150" r="6"></circle>
+            <circle cx="60" cy="230" r="6"></circle>
+          </g>
+          <g stroke="#12222c" stroke-width="1.5" fill="none" opacity="0.6">
+            <circle cx="350" cy="350" r="26"></circle>
+            <path d="M350 328v10M350 362v10M328 350h10M362 350h10"></path>
+          </g>
+        </svg>
       </div>
       <div class="gallery-tile">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><circle cx="50" cy="50" r="35"></circle><circle cx="50" cy="50" r="20"></circle></svg>
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vela del Mar building facade">
+          <rect width="300" height="400" fill="#a9c7cf"></rect>
+          <rect width="300" height="120" fill="#cfe1e3"></rect>
+          <rect x="0" y="0" width="300" height="400" fill="#e9e0cb"></rect>
+          <g>
+            <rect x="0" y="0" width="60" height="400" fill="#ddd0b0"></rect>
+            <rect x="120" y="0" width="60" height="400" fill="#ddd0b0"></rect>
+            <rect x="240" y="0" width="60" height="400" fill="#ddd0b0"></rect>
+          </g>
+          <g fill="#12222c">
+            <rect x="65" y="20" width="50" height="60"></rect>
+            <rect x="185" y="20" width="50" height="60"></rect>
+            <rect x="65" y="110" width="50" height="60"></rect>
+            <rect x="185" y="110" width="50" height="60"></rect>
+            <rect x="65" y="200" width="50" height="60"></rect>
+            <rect x="185" y="200" width="50" height="60"></rect>
+            <rect x="65" y="290" width="50" height="60"></rect>
+            <rect x="185" y="290" width="50" height="60"></rect>
+          </g>
+          <g fill="#1d6f8f" opacity="0.55">
+            <rect x="65" y="20" width="50" height="60"></rect>
+            <rect x="185" y="110" width="50" height="60"></rect>
+            <rect x="65" y="200" width="50" height="60"></rect>
+          </g>
+          <g fill="none" stroke="#f5f1e6" stroke-width="3">
+            <rect x="60" y="85" width="60" height="18"></rect>
+            <rect x="180" y="175" width="60" height="18"></rect>
+            <rect x="60" y="355" width="60" height="18"></rect>
+          </g>
+          <g fill="#6f9a5a">
+            <circle cx="70" cy="90" r="6"></circle>
+            <circle cx="200" cy="180" r="6"></circle>
+          </g>
+        </svg>
       </div>
       <div class="gallery-tile">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M10 80 L35 30 L55 60 L70 20 L90 80Z"></path></svg>
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Living room with sea views">
+          <rect width="300" height="400" fill="#f0ead9"></rect>
+          <rect x="140" y="30" width="150" height="190" fill="#bcd9d6"></rect>
+          <rect x="140" y="30" width="150" height="190" fill="none" stroke="#e9e0cb" stroke-width="8"></rect>
+          <path d="M140 150 L290 130" stroke="#8fb9b2" stroke-width="2" opacity="0.7"></path>
+          <rect x="0" y="250" width="300" height="150" fill="#e2d8c0"></rect>
+          <rect x="30" y="240" width="150" height="70" rx="12" fill="#1d6f8f"></rect>
+          <rect x="30" y="240" width="150" height="24" rx="12" fill="#2a9d8f"></rect>
+          <rect x="45" y="320" width="110" height="14" rx="4" fill="#c9bd9c"></rect>
+          <circle cx="230" cy="340" r="28" fill="#e3ab7c"></circle>
+          <rect x="222" y="368" width="16" height="32" fill="#c9bd9c"></rect>
+          <rect x="20" y="60" width="8" height="140" fill="#8a7f63"></rect>
+          <circle cx="24" cy="55" r="20" fill="#6f9a5a"></circle>
+          <circle cx="10" cy="70" r="16" fill="#7fae68"></circle>
+          <circle cx="38" cy="72" r="16" fill="#7fae68"></circle>
+        </svg>
       </div>
       <div class="gallery-tile">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M10 90 Q50 20 90 90"></path><path d="M25 90 Q50 45 75 90"></path></svg>
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bright open-plan kitchen">
+          <rect width="300" height="400" fill="#efe6d3"></rect>
+          <rect x="0" y="0" width="300" height="60" fill="#12222c"></rect>
+          <g fill="#f5f1e6">
+            <rect x="18" y="10" width="60" height="40"></rect>
+            <rect x="88" y="10" width="60" height="40"></rect>
+            <rect x="158" y="10" width="60" height="40"></rect>
+            <rect x="228" y="10" width="55" height="40"></rect>
+          </g>
+          <rect x="0" y="160" width="300" height="90" fill="#dcd2b8"></rect>
+          <rect x="0" y="160" width="300" height="90" fill="none" stroke="#c9bd9c" stroke-width="2"></rect>
+          <rect x="60" y="250" width="180" height="70" rx="6" fill="#1d6f8f"></rect>
+          <rect x="60" y="250" width="180" height="14" fill="#0d2530"></rect>
+          <rect x="80" y="325" width="10" height="40" fill="#8a7f63"></rect>
+          <rect x="140" y="325" width="10" height="40" fill="#8a7f63"></rect>
+          <rect x="200" y="325" width="10" height="40" fill="#8a7f63"></rect>
+          <g stroke="#e3ab7c" stroke-width="3">
+            <line x1="90" y1="70" x2="90" y2="140"></line>
+            <line x1="150" y1="60" x2="150" y2="140"></line>
+            <line x1="210" y1="70" x2="210" y2="140"></line>
+          </g>
+          <g fill="#e3ab7c">
+            <circle cx="90" cy="145" r="10"></circle>
+            <circle cx="150" cy="145" r="10"></circle>
+            <circle cx="210" cy="145" r="10"></circle>
+          </g>
+        </svg>
       </div>
       <div class="gallery-tile">
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><rect x="20" y="20" width="60" height="60" rx="4"></rect><path d="M20 50h60M50 20v60"></path></svg>
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Infinity pool with sea views">
+          <rect width="300" height="400" fill="#e6a06b"></rect>
+          <rect width="300" height="140" fill="#f2c294"></rect>
+          <rect x="0" y="0" width="300" height="400" fill="none"></rect>
+          <g fill="#0d2530" opacity="0.55">
+            <rect x="20" y="60" width="40" height="90"></rect>
+            <rect x="70" y="30" width="35" height="120"></rect>
+            <rect x="220" y="50" width="38" height="100"></rect>
+          </g>
+          <rect x="0" y="150" width="300" height="130" fill="#dcd2b8"></rect>
+          <rect x="0" y="230" width="300" height="170" fill="#1d6f8f"></rect>
+          <rect x="0" y="230" width="300" height="18" fill="#3fb6a8"></rect>
+          <g stroke="#bfe3dc" stroke-width="2" opacity="0.6" fill="none">
+            <path d="M20 270 Q40 264 60 270 T 100 270"></path>
+            <path d="M140 300 Q160 294 180 300 T 220 300"></path>
+          </g>
+          <rect x="20" y="180" width="70" height="14" rx="6" fill="#f5f1e6"></rect>
+          <rect x="20" y="196" width="70" height="30" rx="4" fill="#e3ab7c"></rect>
+          <rect x="120" y="180" width="70" height="14" rx="6" fill="#f5f1e6"></rect>
+          <rect x="120" y="196" width="70" height="30" rx="4" fill="#e3ab7c"></rect>
+          <g fill="#4a3f2e">
+            <rect x="250" y="60" width="8" height="120"></rect>
+          </g>
+          <g fill="#6f9a5a">
+            <ellipse cx="254" cy="55" rx="26" ry="14"></ellipse>
+            <ellipse cx="230" cy="65" rx="22" ry="12"></ellipse>
+            <ellipse cx="278" cy="65" rx="22" ry="12"></ellipse>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
@@ -211,18 +458,74 @@
     </div>
     <div class="grid grid-3">
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One-bedroom loft">
+            <rect width="300" height="225" fill="#efe6d3"></rect>
+            <rect x="170" y="20" width="110" height="120" fill="#bcd9d6"></rect>
+            <rect x="170" y="20" width="110" height="120" fill="none" stroke="#e9e0cb" stroke-width="6"></rect>
+            <rect x="0" y="150" width="300" height="75" fill="#dcd2b8"></rect>
+            <rect x="20" y="140" width="110" height="45" rx="8" fill="#1d6f8f"></rect>
+            <rect x="20" y="140" width="110" height="14" rx="8" fill="#2a9d8f"></rect>
+            <rect x="15" y="60" width="8" height="90" fill="#8a7f63"></rect>
+            <circle cx="19" cy="55" r="18" fill="#6f9a5a"></circle>
+          </svg>
+        </div>
         <h3>Loft · 1 bedroom</h3>
         <p>750+ sq. ft.</p>
         <a class="card-link" href="#contacto">View unit type →</a>
         <p style="margin-top:1rem; font-weight:700;">Starting from €390,000</p>
       </div>
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-bedroom penthouse with terrace">
+            <defs>
+              <linearGradient id="szAticoSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bfe0e6"></stop>
+                <stop offset="100%" stop-color="#e9e0cb"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="225" fill="url(#szAticoSky)"></rect>
+            <g fill="#12222c" opacity="0.5">
+              <rect x="20" y="60" width="30" height="90"></rect>
+              <rect x="250" y="40" width="34" height="110"></rect>
+            </g>
+            <rect x="0" y="150" width="300" height="75" fill="#d8cdb0"></rect>
+            <rect x="30" y="120" width="60" height="14" rx="6" fill="#f5f1e6"></rect>
+            <rect x="30" y="136" width="60" height="26" rx="4" fill="#e3ab7c"></rect>
+            <rect x="120" y="120" width="60" height="14" rx="6" fill="#f5f1e6"></rect>
+            <rect x="120" y="136" width="60" height="26" rx="4" fill="#e3ab7c"></rect>
+            <rect x="210" y="170" width="8" height="55" fill="#4a3f2e"></rect>
+            <circle cx="214" cy="165" r="22" fill="#6f9a5a"></circle>
+          </svg>
+        </div>
         <h3>Penthouse · 2 bedrooms</h3>
         <p>1,020+ sq. ft.</p>
         <a class="card-link" href="#contacto">View unit type →</a>
         <p style="margin-top:1rem; font-weight:700;">Starting from €610,000</p>
       </div>
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-bedroom villa with pool">
+            <defs>
+              <linearGradient id="szVillaSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bfe0e6"></stop>
+                <stop offset="100%" stop-color="#eaf3ec"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="225" fill="url(#szVillaSky)"></rect>
+            <rect x="0" y="150" width="300" height="75" fill="#c8dcb8"></rect>
+            <rect x="30" y="90" width="150" height="70" fill="#f5f1e6"></rect>
+            <rect x="30" y="80" width="150" height="14" fill="#12222c"></rect>
+            <rect x="45" y="105" width="40" height="35" fill="#1d6f8f" opacity="0.65"></rect>
+            <rect x="110" y="105" width="55" height="35" fill="#1d6f8f" opacity="0.65"></rect>
+            <rect x="195" y="150" width="80" height="50" rx="4" fill="#3fb6a8"></rect>
+            <rect x="195" y="150" width="80" height="8" fill="#bfe3dc"></rect>
+            <g fill="#6f9a5a">
+              <ellipse cx="20" cy="165" rx="18" ry="11"></ellipse>
+              <rect x="17" y="165" width="6" height="45" fill="#4a3f2e"></rect>
+            </g>
+          </svg>
+        </div>
         <h3>Villa · 3 bedrooms</h3>
         <p>1,560+ sq. ft.</p>
         <a class="card-link" href="#contacto">View unit type →</a>
@@ -467,6 +770,7 @@
   </footer>
 
   <script src="nav.js" defer></script>
+  <script src="interactions.js" defer></script>
   <script>
     (function () {
       document.querySelectorAll(".faq-q").forEach(function (btn) {
