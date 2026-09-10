@@ -280,7 +280,7 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
 }
 .hero-re::after {
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(180deg, rgba(8,20,28,0.1) 0%, rgba(8,20,28,0.35) 50%, rgba(8,20,28,0.94) 100%);
+  background: radial-gradient(ellipse 68% 62% at 50% 52%, rgba(6,16,22,0.74) 0%, rgba(6,16,22,0.42) 45%, rgba(6,16,22,0.08) 74%, transparent 86%);
 }
 .hero-re-inner {
   position: relative; z-index: 2; max-width: var(--container); margin-inline: auto;
@@ -299,7 +299,7 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
 @keyframes szDotPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @media (prefers-reduced-motion: reduce) { .badge .dot { animation: none; } }
 .hero-re h1 { font-size: clamp(3rem, 9vw, 6.4rem); color: #fff; max-width: 16ch; }
-.hero-re .sub { margin-top: 1.4rem; color: rgba(243,241,236,0.78); font-size: 1.15rem; max-width: 50ch; margin-inline: auto; }
+.hero-re .sub { margin-top: 1.4rem; color: #fff; font-size: 1.15rem; max-width: 50ch; margin-inline: auto; }
 .hero-re-actions { margin-top: 2.2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 .hero-re .btn-ghost { border-color: rgba(243,241,236,0.4); color: #f3f1ec; }
 .hero-re .btn-ghost:hover { border-color: #fff; }
