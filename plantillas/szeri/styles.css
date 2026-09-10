@@ -35,17 +35,20 @@ h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.0
   padding: 1.6rem 1.5rem;
 }
 .logo { font-family: var(--display); font-weight: 900; font-size: 1.4rem; letter-spacing: -0.03em; }
-.nav-links { display: none; gap: 2rem; font-size: 0.9rem; font-weight: 600; }
-@media (min-width: 860px) { .nav-links { display: flex; } }
+.nav-links { display: none; gap: 1.5rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; }
+@media (min-width: 1180px) { .nav-links { display: flex; } }
 .nav-links a { color: var(--mute); transition: color .2s; }
 .nav-links a:hover, .nav-links a.is-active { color: var(--ink); }
 
-.nav-right { display: flex; align-items: center; gap: 1rem; }
+.nav-right { display: flex; align-items: center; gap: 0.7rem; }
+.nav-right .btn.nav-cta { display: none; }
+@media (min-width: 640px) { .nav-right .btn.nav-cta { display: inline-flex; } }
+@media (min-width: 640px) and (max-width: 1179px) { .nav-right .btn.nav-cta.btn-ghost { display: none; } }
 .nav-burger {
   display: flex; width: 38px; height: 38px; align-items: center; justify-content: center;
   position: relative; z-index: 60; flex-shrink: 0;
 }
-@media (min-width: 860px) { .nav-burger { display: none; } }
+@media (min-width: 1180px) { .nav-burger { display: none; } }
 .nav-burger span {
   position: absolute; width: 20px; height: 2px; background: var(--ink);
   transition: transform .3s, opacity .3s;
@@ -65,7 +68,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.0
 }
 .nav-mobile.is-open { clip-path: inset(0); }
 .nav-mobile a { font-family: var(--display); font-weight: 800; font-size: 1.8rem; color: var(--ink); }
-@media (min-width: 860px) { .nav-mobile { display: none; } }
+@media (min-width: 1180px) { .nav-mobile { display: none; } }
 
 /* ---- Buttons ---- */
 .btn {
@@ -212,3 +215,115 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
 @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 [data-fade] { animation: fadeUp .7s ease both; }
 @media (prefers-reduced-motion: reduce) { [data-fade] { animation: none; } }
+
+/* ---- Hero (real-estate, full-bleed) ---- */
+.hero-re {
+  position: relative; min-height: 88vh; display: flex; align-items: flex-end;
+  overflow: hidden; color: #f3f1ec;
+  background:
+    linear-gradient(180deg, rgba(20,18,16,0.25) 0%, rgba(20,18,16,0.55) 55%, rgba(20,18,16,0.92) 100%),
+    radial-gradient(ellipse 80% 60% at 75% 20%, rgba(179,67,47,0.35), transparent 60%),
+    linear-gradient(140deg, #23211d 0%, #1a1917 55%, #12110f 100%);
+}
+.hero-re-skyline {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;
+}
+.hero-re-inner { position: relative; z-index: 2; max-width: var(--container); margin-inline: auto; padding: 7rem 1.5rem 4rem; width: 100%; }
+.badge-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+.badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.45rem 0.9rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700;
+  background: rgba(243,241,236,0.1); border: 1px solid rgba(243,241,236,0.25); color: #f3f1ec;
+}
+.badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #7fb885; display: inline-block; }
+.hero-re h1 { font-size: clamp(3rem, 9vw, 6.4rem); color: #fff; max-width: 16ch; }
+.hero-re .sub { margin-top: 1.4rem; color: rgba(243,241,236,0.78); font-size: 1.15rem; max-width: 50ch; }
+.hero-re-actions { margin-top: 2.2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-re .btn-ghost { border-color: rgba(243,241,236,0.4); color: #f3f1ec; }
+.hero-re .btn-ghost:hover { border-color: #fff; }
+
+/* ---- Stats bar ---- */
+.stats-bar {
+  display: grid; gap: 1.5rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 2.2rem 0; margin-top: 2.5rem;
+}
+@media (min-width: 720px) { .stats-bar { grid-template-columns: repeat(3, 1fr); } }
+.stats-bar .stat-label { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; }
+
+/* ---- Line-art gallery (no photos) ---- */
+.gallery-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 720px) { .gallery-grid { grid-template-columns: repeat(4, 1fr); } }
+.gallery-tile {
+  aspect-ratio: 3/4; border-radius: var(--radius); background: var(--ink);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.gallery-tile:first-child { grid-column: span 2; grid-row: span 2; aspect-ratio: 1; }
+.gallery-tile svg { width: 70%; height: 70%; color: rgba(243,241,236,0.5); }
+
+/* ---- Brochure band ---- */
+.brochure-band {
+  background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+  padding: 3rem 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;
+}
+.brochure-band h3 { font-size: 1.5rem; max-width: 26ch; }
+.brochure-band p { color: var(--mute); margin-top: 0.6rem; max-width: 40ch; }
+.brochure-meta { font-size: 0.8rem; color: var(--mute); margin-top: 0.6rem; }
+
+/* ---- Payment plan circles ---- */
+.plan-grid { display: grid; gap: 2rem; text-align: center; }
+@media (min-width: 720px) { .plan-grid { grid-template-columns: repeat(3, 1fr); } }
+.plan-circle {
+  width: 132px; height: 132px; border-radius: 50%; margin: 0 auto 1.2rem;
+  display: flex; align-items: center; justify-content: center; flex-direction: column;
+  border: 1.5px solid var(--line-2); background: var(--bg-soft);
+}
+.plan-circle .pct { font-family: var(--display); font-weight: 900; font-size: 1.9rem; color: var(--accent); line-height: 1; }
+.plan-item h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.plan-item p { color: var(--mute); font-size: 0.92rem; margin: 0; }
+
+/* ---- Chips (location) ---- */
+.chip-list { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.chip {
+  padding: 0.6rem 1.1rem; border-radius: 999px; border: 1.5px solid var(--line-2);
+  font-size: 0.88rem; font-weight: 600; color: var(--ink);
+}
+
+/* ---- Trust band ---- */
+.trust-band {
+  display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: center;
+  text-align: center; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px;
+  padding: 2.5rem 1.5rem;
+}
+.trust-item { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; max-width: 220px; }
+.trust-item svg { width: 30px; height: 30px; color: var(--accent); }
+.trust-item p { margin: 0; font-size: 0.85rem; color: var(--mute); }
+
+/* ---- Mini inline form (brochure) ---- */
+.form-inline { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.form-inline input {
+  flex: 1; min-width: 180px; padding: 0.85rem 1rem; border: 1.5px solid var(--line-2); border-radius: var(--radius);
+  background: #fff; font-family: var(--sans); font-size: 0.95rem;
+}
+.form-inline input:focus { outline: none; border-color: var(--accent); }
+
+/* ---- WhatsApp floating button ---- */
+.whatsapp-float {
+  position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 40;
+  width: 58px; height: 58px; border-radius: 50%; background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25); transition: transform .25s;
+}
+.whatsapp-float:hover { transform: scale(1.07); }
+.whatsapp-float svg { width: 28px; height: 28px; }
+
+/* ---- FAQ accordion ---- */
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-q {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.4rem 0; background: none; border: none; text-align: left;
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--ink); cursor: pointer;
+}
+.faq-q .plus { flex-shrink: 0; font-size: 1.3rem; color: var(--accent); transition: transform .25s; }
+.faq-item[data-open="true"] .plus { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; color: var(--mute); }
+.faq-item[data-open="true"] .faq-a { max-height: 200px; padding-bottom: 1.4rem; }
