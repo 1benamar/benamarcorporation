@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Széri Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-bar">This is a sample template created by BENAMAR — <a href="../../index.html">view the agency →</a></div>
+
+  <header>
+    <nav class="site-nav">
+      <a href="index.html" class="logo">Széri</a>
+      <div class="nav-links">
+        <a href="proyectos.html">Projects</a>
+        <a href="estudio.html">Studio</a>
+        <a href="servicios.html">Services</a>
+        <a href="proceso.html">Process</a>
+      </div>
+      <div class="nav-right">
+        <a class="btn btn-primary" href="contacto.html">Request a consultation</a>
+        <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false" aria-controls="szeri-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-mobile" id="szeri-mobile" data-nav-mobile aria-hidden="true">
+    <a href="proyectos.html">Projects</a>
+    <a href="estudio.html">Studio</a>
+    <a href="servicios.html">Services</a>
+    <a href="proceso.html">Process</a>
+    <a href="contacto.html">Contact</a>
+  </div>
+
+  <div class="page-header">
+    <p class="kicker">Contact</p>
+    <h1>Your project starts with a conversation.</h1>
+    <p class="sub">Tell us what you have in mind. We'll get back to you within 48h with the next steps.</p>
+  </div>
+
+  <section style="padding-top: 0;">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:hola@szeridesign.example">hola@szeridesign.example</a>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <a href="tel:+34931234567">+34 931 234 567</a>
+        </div>
+        <div>
+          <div class="label">Studio</div>
+          <span>Barcelona, Spain</span>
+        </div>
+      </div>
+
+      <div>
+        <form id="szeri-form" novalidate>
+          <div class="field">
+            <label for="s-name">Name</label>
+            <input type="text" id="s-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="s-email">Email</label>
+            <input type="email" id="s-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="s-phone">Phone</label>
+            <input type="tel" id="s-phone" name="phone">
+          </div>
+          <div class="field">
+            <label for="s-type">Project type</label>
+            <select id="s-type" name="service" required>
+              <option value="" disabled selected>Select an option</option>
+              <option>New housing</option>
+              <option>Renovation</option>
+              <option>Interior design</option>
+              <option>Commercial</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="s-location">Location</label>
+            <input type="text" id="s-location" name="location">
+          </div>
+          <div class="field">
+            <label for="s-message">Tell us about your project</label>
+            <textarea id="s-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send request</button>
+        </form>
+        <div class="contact-success" id="szeri-success">
+          <strong>Received.</strong> We'll write to you within 48h.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav class="footer-links">
+      <a href="proyectos.html">Projects</a>
+      <a href="estudio.html">Studio</a>
+      <a href="servicios.html">Services</a>
+      <a href="proceso.html">Process</a>
+      <a href="contacto.html">Contact</a>
+    </nav>
+    Széri Design is a sample website designed by <a href="../../index.html">BENAMAR</a> to showcase our work — it is not a real business.
+  </footer>
+
+  <script src="nav.js" defer></script>
+  <script>
+    (function () {
+      var form = document.getElementById("szeri-form");
+      var success = document.getElementById("szeri-success");
+      if (!form) return;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!form.reportValidity()) return;
+        var btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        fetch("../../../contact.php", { method: "POST", body: new FormData(form) })
+          .then(function (res) { return res.json(); })
+          .catch(function () { return { success: false }; })
+          .then(function () {
+            btn.disabled = false;
+            form.style.display = "none";
+            success.classList.add("is-visible");
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
