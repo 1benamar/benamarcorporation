@@ -524,57 +524,6 @@ h1, h2, h3, h4 {
 .stat-label { color: var(--mute); font-size: 0.9rem; max-width: 22ch; }
 
 /* =============================================================
-   10.4 Portfolio
-   ============================================================= */
-.portfolio {
-  padding-block: 6rem;
-  padding-inline: 1.5rem;
-  max-width: 1080px;
-  margin-inline: auto;
-  text-align: center;
-  border-top: 1px solid transparent;
-  border-image: var(--divider) 1;
-}
-.portfolio-sub { margin-top: 1rem; color: var(--mute); max-width: 52ch; margin-inline: auto; }
-.portfolio-grid {
-  margin-top: 3.5rem;
-  display: grid;
-  gap: 1.25rem;
-  text-align: left;
-}
-@media (min-width: 640px) {
-  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-}
-.portfolio-card {
-  display: block;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--bg-soft);
-  box-shadow: var(--shadow-sm);
-  transition: opacity .9s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), border-color .3s var(--ease-out);
-}
-.portfolio-card:hover { border-color: var(--line-2); transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.portfolio-thumb {
-  position: relative;
-  aspect-ratio: 16/10;
-  overflow: hidden;
-}
-.portfolio-thumb iframe {
-  position: absolute; top: 0; left: 0;
-  width: 1440px; height: 900px;
-  border: 0; pointer-events: none;
-  transform-origin: top left;
-}
-.portfolio-thumb--hotel { background: #1c1815; }
-.portfolio-thumb--estetica { background: #faf5f1; }
-.portfolio-thumb--lume { background: #14110d; }
-.portfolio-thumb--szeri { background: #0d2530; }
-.portfolio-body { padding: 1.4rem 1.5rem 1.6rem; }
-.portfolio-body h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
-.portfolio-body p { color: var(--mute); font-size: 0.92rem; margin-bottom: 0.9rem; }
-
-/* =============================================================
    10.6 CTA band
    ============================================================= */
 .cta-band {
