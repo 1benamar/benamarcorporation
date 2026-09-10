@@ -118,8 +118,8 @@ header.is-scrolled { box-shadow: 0 4px 24px rgba(18,34,44,0.1); }
 .page-header .sub { margin-top: 1.2rem; color: var(--mute); font-size: 1.1rem; max-width: 52ch; }
 
 /* ---- Sections ---- */
-section { padding: 5rem 1.5rem; max-width: var(--container); margin-inline: auto; }
-.section-head { max-width: 640px; margin-bottom: 3rem; }
+section { padding: 3.75rem 1.5rem; max-width: var(--container); margin-inline: auto; }
+.section-head { max-width: 640px; margin-bottom: 2.25rem; }
 .section-head h2 {
   font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 600; letter-spacing: 0;
   font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.15;
