@@ -1,11 +1,12 @@
 :root {
-  --bg: #f3f1ec;
-  --bg-soft: #e8e3d8;
-  --ink: #1c1c1a;
-  --mute: #6e6a62;
-  --line: rgba(28,28,26,0.14);
-  --line-2: rgba(28,28,26,0.22);
-  --accent: #b3432f;
+  --bg: #f5f1e6;
+  --bg-soft: #e8e0cd;
+  --ink: #12222c;
+  --mute: #5b6b74;
+  --line: rgba(18,34,44,0.14);
+  --line-2: rgba(18,34,44,0.22);
+  --accent: #1d6f8f;
+  --accent-2: #2a9d8f;
   --accent-ink: #ffffff;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --display: "Archivo", -apple-system, sans-serif;
@@ -76,8 +77,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.0
   padding: 0.9rem 1.7rem; border-radius: 999px; font-weight: 700; font-size: 0.9rem;
   transition: transform .3s, box-shadow .3s, background .3s, border-color .3s;
 }
-.btn-primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 8px 20px rgba(179,67,47,0.25); }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(179,67,47,0.32); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 8px 20px rgba(29,111,143,0.25); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(29,111,143,0.32); }
 .btn-primary:active { transform: scale(0.97); }
 .btn-ghost { border: 1.5px solid var(--line-2); color: var(--ink); }
 .btn-ghost:hover { border-color: var(--ink); }
@@ -221,9 +222,9 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
   position: relative; min-height: 88vh; display: flex; align-items: flex-end;
   overflow: hidden; color: #f3f1ec;
   background:
-    linear-gradient(180deg, rgba(20,18,16,0.25) 0%, rgba(20,18,16,0.55) 55%, rgba(20,18,16,0.92) 100%),
-    radial-gradient(ellipse 80% 60% at 75% 20%, rgba(179,67,47,0.35), transparent 60%),
-    linear-gradient(140deg, #23211d 0%, #1a1917 55%, #12110f 100%);
+    linear-gradient(180deg, rgba(8,20,28,0.25) 0%, rgba(8,20,28,0.55) 55%, rgba(8,20,28,0.92) 100%),
+    radial-gradient(ellipse 80% 60% at 75% 20%, rgba(42,157,143,0.35), transparent 60%),
+    linear-gradient(140deg, #123244 0%, #0d2530 55%, #071820 100%);
 }
 .hero-re-skyline {
   position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;

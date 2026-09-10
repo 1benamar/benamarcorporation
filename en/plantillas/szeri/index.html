@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Széri Design — Sample template by BENAMAR</title>
-  <meta name="description" content="Sample website for an architecture studio, created by BENAMAR to show the kind of work we do.">
+  <title>Széri Design — Vela del Mar · Sample template by BENAMAR</title>
+  <meta name="description" content="Sample real-estate investment landing page, created by BENAMAR to show the kind of work we do.">
   <meta name="robots" content="noindex">
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +17,18 @@
 
   <header>
     <nav class="site-nav">
-      <a href="index.html" class="logo">Széri</a>
+      <a href="#top" class="logo">Széri</a>
       <div class="nav-links">
-        <a href="proyectos.html">Projects</a>
-        <a href="estudio.html">Studio</a>
-        <a href="servicios.html">Services</a>
-        <a href="proceso.html">Process</a>
+        <a href="#resumen">Overview</a>
+        <a href="#caracteristicas">Features</a>
+        <a href="#plan-pagos">Payment plan</a>
+        <a href="#tipologias">Unit types</a>
+        <a href="#ubicacion">Location</a>
+        <a href="#contacto">Contact</a>
       </div>
       <div class="nav-right">
-        <a class="btn btn-primary" href="contacto.html">Request a consultation</a>
+        <a class="btn btn-ghost nav-cta" href="#brochure" style="padding:0.7rem 1.2rem; font-size:0.82rem;">Download brochure</a>
+        <a class="btn btn-primary nav-cta" href="#contacto" style="padding:0.7rem 1.2rem; font-size:0.82rem;">Fast consultation</a>
         <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false" aria-controls="szeri-mobile">
           <span></span><span></span><span></span>
         </button>
@@ -34,158 +37,478 @@
   </header>
 
   <div class="nav-mobile" id="szeri-mobile" data-nav-mobile aria-hidden="true">
-    <a href="proyectos.html">Projects</a>
-    <a href="estudio.html">Studio</a>
-    <a href="servicios.html">Services</a>
-    <a href="proceso.html">Process</a>
-    <a href="contacto.html">Contact</a>
+    <a href="#resumen">Overview</a>
+    <a href="#caracteristicas">Features</a>
+    <a href="#plan-pagos">Payment plan</a>
+    <a href="#tipologias">Unit types</a>
+    <a href="#ubicacion">Location</a>
+    <a href="#contacto">Contact</a>
+    <a class="btn btn-primary" href="#brochure" style="font-size:0.95rem;">Download brochure</a>
   </div>
 
-  <section class="hero">
-    <div class="hero-mark" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <p class="kicker" data-fade>Széri Design · Architecture &amp; Interior Design</p>
-      <h1 data-fade>Architecture that <span class="accent">transforms</span> how you live.</h1>
-      <p class="sub" data-fade>We design residential and commercial spaces with an honest approach: every project responds to how the people who live there actually live — not to a catalogue aesthetic.</p>
-      <div class="hero-actions" data-fade>
-        <a class="btn btn-primary" href="contacto.html">Tell us about your project</a>
-        <a class="btn btn-ghost" href="#proyectos">See projects ↓</a>
+  <section class="hero-re" id="top">
+    <svg class="hero-re-skyline" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="#f3f1ec" stroke-width="1.2" opacity="0.35">
+        <rect x="120" y="360" width="90" height="340"></rect>
+        <rect x="230" y="260" width="70" height="440"></rect>
+        <rect x="320" y="420" width="60" height="280"></rect>
+        <rect x="400" y="180" width="100" height="520"></rect>
+        <rect x="520" y="300" width="80" height="400"></rect>
+        <rect x="900" y="320" width="70" height="380"></rect>
+        <rect x="990" y="220" width="90" height="480"></rect>
+        <rect x="1100" y="380" width="60" height="320"></rect>
+        <rect x="1180" y="260" width="100" height="440"></rect>
+        <rect x="1300" y="340" width="70" height="360"></rect>
+        <path d="M0 700 Q 720 640 1440 700" stroke-width="1.6" opacity="0.6"></path>
+        <path d="M0 660 Q 720 600 1440 660" stroke-width="1" opacity="0.4"></path>
+      </g>
+    </svg>
+    <div class="hero-re-inner">
+      <div class="badge-row" data-fade>
+        <span class="badge">Széri Design</span>
+        <span class="badge"><span class="dot"></span>Now selling</span>
+      </div>
+      <h1 data-fade>Vela del Mar</h1>
+      <p class="sub" data-fade>Invest in the studio redefining residential architecture on the Barcelona coast — design-led communities, built to appreciate.</p>
+      <div class="hero-re-actions" data-fade>
+        <a class="btn btn-primary" href="#brochure">Download brochure ⬇</a>
+        <a class="btn btn-ghost" href="#contacto">Fast consultation ➤</a>
       </div>
     </div>
   </section>
 
-  <section id="proyectos">
+  <section id="resumen">
     <div class="section-head">
-      <p class="kicker">Projects</p>
-      <h2>A selection of our work.</h2>
+      <p class="kicker">Overview</p>
+      <h2>Széri Design</h2>
     </div>
-    <div class="project-list">
-      <a class="project-row" href="proyectos.html">
-        <div class="project-row-main">
-          <span class="num">01</span>
-          <h3>Casa Matorral</h3>
-        </div>
-        <span class="tags">Single-family home · Sant Cugat</span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="project-row" href="proyectos.html">
-        <div class="project-row-main">
-          <span class="num">02</span>
-          <h3>Local Ombra</h3>
-        </div>
-        <span class="tags">Commercial renovation · Barcelona</span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="project-row" href="proyectos.html">
-        <div class="project-row-main">
-          <span class="num">03</span>
-          <h3>Ático Consell</h3>
-        </div>
-        <span class="tags">Full renovation · Barcelona</span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="project-row" href="proyectos.html">
-        <div class="project-row-main">
-          <span class="num">04</span>
-          <h3>Casa Pins</h3>
-        </div>
-        <span class="tags">New build · Sitges</span>
-        <span class="arrow">→</span>
-      </a>
+    <p class="sub" style="max-width:70ch; margin-top:-1rem; margin-bottom:1.6rem;">Széri Design is one of the most recognised architecture studios in Catalonia, having delivered more than 80 projects since 2013. Born as a residential design studio, Széri has now taken the step into developing its own projects, applying the same design-led criteria that has defined every commission: spaces built for how people actually live, not for a catalogue photo.</p>
+    <p class="sub" style="max-width:70ch; margin-top:0;">For the investor looking for something different, Széri represents an alternative to generic development: projects located in privileged spots along the Barcelona coast, built around an "integrated community" philosophy — residential towers and villas, private green areas and local retail, all designed as a single coherent whole. With a small team and full involvement at every stage, every investment is backed by the very studio that signs off on the project — no middlemen.</p>
+    <a class="btn btn-ghost" href="#contacto">Talk to an advisor</a>
+    <div class="stats-bar">
+      <div><div class="stat-value">€390,000</div><div class="stat-label">Starting price</div></div>
+      <div><div class="stat-value">2013</div><div class="stat-label">Studio founded in</div></div>
+      <div><div class="stat-value">80+</div><div class="stat-label">Projects delivered</div></div>
     </div>
   </section>
 
   <section>
     <div class="section-head">
-      <p class="kicker">Why Széri</p>
-      <h2>Architecture as a tool, not as ego.</h2>
-      <p class="sub">We don't design to win awards or fill a portfolio. We design so the space works for your everyday life — the light that comes in every morning, the walk from the kitchen to the living room, the spot where you'll actually sit down to read. The aesthetics come after, as a result of getting the important things right.</p>
+      <p class="kicker">Gallery</p>
+      <h2>Vela del Mar, in line.</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-tile">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><rect x="15" y="10" width="70" height="80"></rect><path d="M15 30h70M15 50h70M15 70h70M35 10v80M65 10v80"></path></svg>
+      </div>
+      <div class="gallery-tile">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><circle cx="50" cy="50" r="35"></circle><circle cx="50" cy="50" r="20"></circle></svg>
+      </div>
+      <div class="gallery-tile">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M10 80 L35 30 L55 60 L70 20 L90 80Z"></path></svg>
+      </div>
+      <div class="gallery-tile">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><path d="M10 90 Q50 20 90 90"></path><path d="M25 90 Q50 45 75 90"></path></svg>
+      </div>
+      <div class="gallery-tile">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1"><rect x="20" y="20" width="60" height="60" rx="4"></rect><path d="M20 50h60M50 20v60"></path></svg>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="section-head">
-      <p class="kicker">Services</p>
-      <h2>We're with you at every stage of the project.</h2>
+  <section id="brochure" style="padding-top:0;">
+    <div class="brochure-band">
+      <div>
+        <h3>Download the project brochure</h3>
+        <p>Everything you need to know about Vela del Mar in one document. Leave your details to receive it.</p>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <form class="form-inline" id="szeri-brochure-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn btn-primary">Download brochure</button>
+        </form>
+        <p class="brochure-meta">Get the brochure in less than 10 seconds · PDF — 6.2 MB</p>
+      </div>
     </div>
-    <div class="grid grid-4">
+  </section>
+
+  <section id="caracteristicas">
+    <div class="section-head">
+      <p class="kicker">Features</p>
+      <h2>What sets Széri Design apart.</h2>
+    </div>
+    <div class="grid grid-3">
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"></path></svg>
-        <h3>Architectural design</h3>
-        <p>From the first sketch to the final construction project.</p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 9l10 4 10-4-10-7z"></path><path d="M2 9v9l10 4 10-4V9"></path></svg>
+        <h3>Studio prestige</h3>
+        <p>Investing with Széri Design means investing in a firm recognised for its design-led approach, with strong resale liquidity.</p>
       </div>
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"></rect><path d="M3 9h18M9 9v11"></path></svg>
-        <h3>Interior design</h3>
-        <p>Spaces with their own character, built to last.</p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="1"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <h3>Integrated communities</h3>
+        <p>Every project is a complete community, with green areas, coworking and local retail just steps away.</p>
       </div>
       <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2 6 12h5l-1 10 8-12h-5l1-8z"></path></svg>
-        <h3>Full renovation</h3>
-        <p>One single point of contact, from day one to the last.</p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"></path><path d="M17 7h4v4"></path></svg>
+        <h3>High capital appreciation</h3>
+        <p>Early phases of Széri Design have shown value increases of up to 35% in prime areas.</p>
       </div>
       <div class="card">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-        <h3>Site supervision</h3>
-        <p>Making sure what gets built matches what was designed.</p>
+        <h3>Proven delivery record</h3>
+        <p>Over 80 projects delivered on schedule across Catalonia, with in-house site supervision on 100% of them.</p>
       </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"></path><circle cx="12" cy="12" r="9"></circle></svg>
+        <h3>Superior returns</h3>
+        <p>Széri Design communities maintain an average occupancy of 95% across already-delivered assets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan-pagos" class="divider">
+    <div class="section-head">
+      <p class="kicker">Payment plan</p>
+      <h2>Invest with a flexible plan.</h2>
+      <p class="sub">Széri Design offers a milestone-linked payment plan, designed to spread your commitment across the whole construction period.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="plan-item">
+        <div class="plan-circle"><span class="pct">20%</span></div>
+        <h3>Reservation</h3>
+        <p>Upon signing the purchase agreement.</p>
+      </div>
+      <div class="plan-item">
+        <div class="plan-circle"><span class="pct">50%</span></div>
+        <h3>During construction</h3>
+        <p>Spread across payments linked to construction milestones.</p>
+      </div>
+      <div class="plan-item">
+        <div class="plan-circle"><span class="pct">30%</span></div>
+        <h3>Upon handover</h3>
+        <p>Final payment at key handover or mortgage application.</p>
+      </div>
+    </div>
+    <div style="display:flex; gap:1rem; justify-content:center; margin-top:2.5rem; flex-wrap:wrap;">
+      <a class="btn btn-ghost" href="#brochure">Download brochure</a>
+      <a class="btn btn-primary" href="#contacto">Request information</a>
     </div>
   </section>
 
   <section>
     <div class="section-head">
-      <p class="kicker">How we work</p>
-      <h2>From idea to keys, with no surprises.</h2>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <span class="num">01</span>
-        <div><h3>Initial consultation</h3><p>We listen to what you need and visit the space.</p></div>
-      </div>
-      <div class="step">
-        <span class="num">02</span>
-        <div><h3>Preliminary design</h3><p>First design proposal and a ballpark budget.</p></div>
-      </div>
-      <div class="step">
-        <span class="num">03</span>
-        <div><h3>Executive project and permits</h3><p>Complete technical documentation and permit management.</p></div>
-      </div>
-      <div class="step">
-        <span class="num">04</span>
-        <div><h3>Construction and handover</h3><p>Weekly follow-up through to final delivery.</p></div>
-      </div>
+      <p class="kicker">Live Széri</p>
+      <h2>The art of living with purpose.</h2>
+      <p class="sub">Széri Design invites you to experience a place where design isn't an add-on, but the starting point. Wake up facing the sea, among pathways connecting green areas, local retail and communal spaces designed down to the last detail — a balance between the active energy of the coast and the calm of a design-led home.</p>
+      <a class="btn btn-ghost" href="#contacto" style="margin-top:1.5rem;">Talk to the sales team</a>
     </div>
   </section>
 
-  <section>
+  <section id="tipologias" class="divider">
     <div class="section-head">
-      <p class="kicker">Track record</p>
+      <p class="kicker">Unit types</p>
+      <h2>Floor plans and unit types available.</h2>
     </div>
-    <div class="stats-grid">
-      <div><div class="stat-value">12+</div><div class="stat-label">Years of experience</div></div>
-      <div><div class="stat-value">80+</div><div class="stat-label">Projects delivered</div></div>
-      <div><div class="stat-value">100%</div><div class="stat-label">Projects with our own site supervision</div></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Loft · 1 bedroom</h3>
+        <p>750+ sq. ft.</p>
+        <a class="card-link" href="#contacto">View unit type →</a>
+        <p style="margin-top:1rem; font-weight:700;">Starting from €390,000</p>
+      </div>
+      <div class="card">
+        <h3>Penthouse · 2 bedrooms</h3>
+        <p>1,020+ sq. ft.</p>
+        <a class="card-link" href="#contacto">View unit type →</a>
+        <p style="margin-top:1rem; font-weight:700;">Starting from €610,000</p>
+      </div>
+      <div class="card">
+        <h3>Villa · 3 bedrooms</h3>
+        <p>1,560+ sq. ft.</p>
+        <a class="card-link" href="#contacto">View unit type →</a>
+        <p style="margin-top:1rem; font-weight:700;">Starting from €980,000</p>
+      </div>
+    </div>
+    <div class="brochure-band" style="margin-top:2.5rem;">
+      <div>
+        <h3>Get every floor plan in one click</h3>
+        <p>A detailed PDF with all unit types available at Vela del Mar. Pick the one that fits you best.</p>
+      </div>
+      <a class="btn btn-primary" href="#brochure">View all floor plans</a>
+    </div>
+  </section>
+
+  <section id="ubicacion">
+    <div class="section-head">
+      <p class="kicker">Location</p>
+      <h2>The heart of the Barcelona coast.</h2>
+      <p class="sub">Széri Design anchors its projects in strategic spots, at the points of highest tourism and economic growth along the Catalan coast.</p>
+    </div>
+    <div class="chip-list">
+      <span class="chip">Sitges beach</span>
+      <span class="chip">Barcelona centre · 35 min</span>
+      <span class="chip">BCN Airport · 25 min</span>
+      <span class="chip">Terramar Golf Club</span>
+      <span class="chip">International school</span>
+      <span class="chip">Marina</span>
+      <span class="chip">Old town</span>
+      <span class="chip">Train station</span>
+    </div>
+    <a class="btn btn-ghost" href="#contacto" style="margin-top:2rem;">Learn more</a>
+  </section>
+
+  <section class="divider">
+    <div class="section-head">
+      <p class="kicker">Amenities</p>
+      <h2>Elevate your daily experience.</h2>
+      <p class="sub">Széri Design takes care of every detail of community living, with facilities designed for every resident's wellbeing.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Infinity pool</h3>
+        <p>Sea views and a heated sun deck.</p>
+      </div>
+      <div class="card">
+        <h3>Fitness &amp; wellness</h3>
+        <p>Gym, yoga studio and spa area.</p>
+      </div>
+      <div class="card">
+        <h3>Retail boulevard</h3>
+        <p>Direct access to local shops and dining.</p>
+      </div>
+      <div class="card">
+        <h3>Central park</h3>
+        <p>Landscaped green areas with a running track.</p>
+      </div>
+      <div class="card">
+        <h3>Kids' zone</h3>
+        <p>Covered play areas and activity spaces.</p>
+      </div>
+      <div class="card">
+        <h3>24h concierge</h3>
+        <p>Ongoing community management and security.</p>
+      </div>
     </div>
   </section>
 
   <div class="cta-band">
-    <p class="kicker" style="color:var(--accent);">Let's talk?</p>
-    <h2>Your project starts with a conversation.</h2>
-    <p>Tell us what you have in mind and we'll tell you, with no obligation, how we can help.</p>
-    <a class="btn btn-primary" href="contacto.html">Request a consultation</a>
+    <p class="kicker" style="color:var(--accent);">Contact</p>
+    <h2>Receive a call back within 60 seconds.</h2>
+    <a class="btn btn-primary" href="#contacto">Talk to the sales team</a>
   </div>
+
+  <section>
+    <div class="section-head">
+      <p class="kicker">Investment plan</p>
+      <h2>Get your personal investment plan.</h2>
+      <p class="sub">Speak to one of our advisors and get an investment plan tailored to your goals.</p>
+      <a class="btn btn-primary" href="#contacto" style="margin-top:1.5rem;">Get my investment plan</a>
+    </div>
+  </section>
+
+  <section class="divider">
+    <div class="section-head">
+      <p class="kicker">About the studio</p>
+      <h2>Why invest with Széri Design?</h2>
+      <p class="sub">Investing with Széri Design is more than a real estate transaction; it's a partnership with one of the reference studios in Catalan residential architecture.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Design leadership</h3>
+        <p>Széri Design is a reference in design-led residential architecture on the Barcelona coast.</p>
+      </div>
+      <div class="card">
+        <h3>Financial strength</h3>
+        <p>80+ projects delivered and a steadily growing project pipeline.</p>
+      </div>
+      <div class="card">
+        <h3>Superior resale liquidity</h3>
+        <p>Széri Design communities typically offer the highest liquidity in the area's secondary market.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="trust-band">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>
+        <h3 style="font-size:1rem;">Verified project</h3>
+        <p>Building permit granted by the relevant local council.</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5z"></path></svg>
+        <h3 style="font-size:1rem;">Invest with confidence</h3>
+        <p>Purchase agreement with guarantees under current regulations.</p>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 2v4M16 2v4"></path></svg>
+        <h3 style="font-size:1rem;">Authorised sales partner</h3>
+        <p>Széri Design directly manages the sale of its own projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider">
+    <div class="section-head">
+      <p class="kicker">FAQ</p>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div id="szeri-faq">
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>Is investing off-plan with Széri Design safe?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Every project comes with a purchase agreement, legal guarantees on amounts paid on account, and the studio's own construction oversight.</p></div>
+      </div>
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>What return can I expect?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>It depends on the unit type and purchase phase; after the initial consultation we give you a ballpark estimate based on comparable data for the area.</p></div>
+      </div>
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>Can I buy as a foreign investor?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. We guide you through the whole process, including obtaining your NIE and coordinating with the notary and financing if you need it.</p></div>
+      </div>
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>Does Széri Design manage the community after handover?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes, we coordinate setting up the property management and shared services during the first year.</p></div>
+      </div>
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>What's the advantage of buying in the first phase?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>First-phase prices are usually the lowest in the project, before they rise as sales and construction progress.</p></div>
+      </div>
+      <div class="faq-item" data-open="false">
+        <button class="faq-q"><span>Can I manage my investment from abroad?</span><span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes, the entire process can be handled remotely through powers of attorney, with online meetings with your assigned advisor.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="divider">
+    <div class="section-head">
+      <p class="kicker">Contact</p>
+      <h2>Shall we talk to one of our advisors?</h2>
+      <p class="sub">Get an answer to all of your questions in less than 60 seconds.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:hola@szeridesign.example">hola@szeridesign.example</a>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <a href="tel:+34931234567">+34 931 234 567</a>
+        </div>
+        <div>
+          <div class="label">Studio</div>
+          <span>Sitges, Barcelona</span>
+        </div>
+      </div>
+      <div>
+        <form id="szeri-form" novalidate>
+          <div class="field">
+            <label for="s-name">Full name</label>
+            <input type="text" id="s-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="s-email">Email</label>
+            <input type="email" id="s-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="s-phone">Phone</label>
+            <input type="tel" id="s-phone" name="phone">
+          </div>
+          <div class="field">
+            <label for="s-message">Message</label>
+            <textarea id="s-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send request</button>
+        </form>
+        <div class="contact-success" id="szeri-success">
+          <strong>Received.</strong> We'll write to you within 48h.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider">
+    <div class="section-head">
+      <p class="kicker">Other projects</p>
+      <h2>Other projects by Széri Design.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Casa Matorral</h3>
+        <p>Single-family home · Sant Cugat</p>
+      </div>
+      <div class="card">
+        <h3>Casa Pins</h3>
+        <p>New build · Sitges</p>
+      </div>
+      <div class="card">
+        <h3>Loft Bertran</h3>
+        <p>Interior design · Barcelona</p>
+      </div>
+    </div>
+  </section>
+
+  <a class="whatsapp-float" href="#contacto" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.07-1.32A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.1-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.75s.68-1.95.92-2.22c.24-.26.52-.33.7-.33h.5c.16 0 .38-.06.6.45.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.26.45-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.16.26.7 1.15 1.5 1.86 1.03.92 1.9 1.21 2.16 1.34.26.13.42.11.57-.07.16-.18.66-.77.84-1.03.18-.26.35-.22.6-.13.24.09 1.55.73 1.82.87.26.13.44.2.5.31.07.11.07.65-.15 1.27z"></path></svg>
+  </a>
 
   <footer>
     <nav class="footer-links">
-      <a href="proyectos.html">Projects</a>
-      <a href="estudio.html">Studio</a>
-      <a href="servicios.html">Services</a>
-      <a href="proceso.html">Process</a>
-      <a href="contacto.html">Contact</a>
+      <a href="#resumen">Overview</a>
+      <a href="#caracteristicas">Features</a>
+      <a href="#plan-pagos">Payment plan</a>
+      <a href="#tipologias">Unit types</a>
+      <a href="#ubicacion">Location</a>
+      <a href="#contacto">Contact</a>
     </nav>
-    Széri Design is a sample website designed by <a href="../../index.html">BENAMAR</a> to showcase our work — it is not a real business.
+    Széri Design is a sample website designed by <a href="../../index.html">BENAMAR</a> to showcase our work — it is not a real business or real estate project.
   </footer>
 
   <script src="nav.js" defer></script>
+  <script>
+    (function () {
+      document.querySelectorAll(".faq-q").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var item = btn.closest(".faq-item");
+          var isOpen = item.getAttribute("data-open") === "true";
+          document.querySelectorAll(".faq-item").forEach(function (el) { el.setAttribute("data-open", "false"); });
+          item.setAttribute("data-open", isOpen ? "false" : "true");
+        });
+      });
+
+      var form = document.getElementById("szeri-form");
+      var success = document.getElementById("szeri-success");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!form.reportValidity()) return;
+          var btn = form.querySelector('[type="submit"]');
+          btn.disabled = true;
+          fetch("../../../contact.php", { method: "POST", body: new FormData(form) })
+            .then(function (res) { return res.json(); })
+            .catch(function () { return { success: false }; })
+            .then(function () {
+              btn.disabled = false;
+              form.style.display = "none";
+              success.classList.add("is-visible");
+            });
+        });
+      }
+
+      var brochureForm = document.getElementById("szeri-brochure-form");
+      if (brochureForm) {
+        brochureForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var btn = brochureForm.querySelector('[type="submit"]');
+          var original = btn.textContent;
+          btn.textContent = "Sent ✓";
+          btn.disabled = true;
+          setTimeout(function () { btn.textContent = original; btn.disabled = false; brochureForm.reset(); }, 2200);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
