@@ -289,9 +289,12 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
 }
 .badge-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.4rem; justify-content: center; }
 .badge {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  padding: 0.45rem 0.9rem; border-radius: 6px; font-size: 0.78rem; font-weight: 700;
-  background: rgba(243,241,236,0.1); border: 1px solid rgba(243,241,236,0.25); color: #f3f1ec;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.1rem; border-radius: 6px;
+  font-family: var(--display); font-size: 0.78rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  background: var(--accent); border: 1px solid rgba(255,255,255,0.25); color: #fff;
+  box-shadow: 0 10px 26px rgba(29,111,143,0.45);
 }
 .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #7fb885; display: inline-block; animation: szDotPulse 2s ease-in-out infinite; }
 @keyframes szDotPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
