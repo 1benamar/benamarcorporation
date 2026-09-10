@@ -11,7 +11,49 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  var navLinks = document.querySelectorAll(".nav-links a[href^='#'], .nav-mobile a[href^='#']");
+  var sections = [];
+  navLinks.forEach(function (a) {
+    var id = a.getAttribute("href").slice(1);
+    var target = document.getElementById(id);
+    if (target) sections.push({ id: id, el: target });
+  });
+  if (sections.length) {
+    var navIo = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var id = entry.target.id;
+          navLinks.forEach(function (a) {
+            a.classList.toggle("is-active", a.getAttribute("href") === "#" + id);
+          });
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    sections.forEach(function (s) { navIo.observe(s.el); });
+  }
+
   if (reduceMotion) return;
+
+  var heroScene = document.querySelector(".hero-re-skyline");
+  if (heroScene && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    var heroSection = document.querySelector(".hero-re");
+    var rafId = null;
+    heroSection.addEventListener("mousemove", function (e) {
+      if (rafId) return;
+      rafId = requestAnimationFrame(function () {
+        var r = heroSection.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - 0.5;
+        var py = (e.clientY - r.top) / r.height - 0.5;
+        heroScene.style.transform = "translate(" + (px * -12) + "px, " + (py * -8) + "px) scale(1.03)";
+        rafId = null;
+      });
+    });
+    heroSection.addEventListener("mouseleave", function () {
+      heroScene.style.transform = "";
+    });
+  }
 
   var revealEls = document.querySelectorAll(
     ".section-head, .card, .gallery-tile, .plan-item, .trust-item, .faq-item, " +

@@ -17,7 +17,14 @@
 
   <header>
     <nav class="site-nav">
-      <a href="#top" class="logo">Széri</a>
+      <a href="#top" class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#1d6f8f"></rect>
+          <path d="M16 7 L22.5 23 H9.5 Z" fill="#fff"></path>
+          <path d="M6 25.5 Q16 21 26 25.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"></path>
+        </svg>
+        Széri
+      </a>
       <div class="nav-links">
         <a href="#resumen">Resumen</a>
         <a href="#caracteristicas">Características</a>
@@ -442,12 +449,50 @@
     </div>
   </section>
 
-  <section>
-    <div class="section-head">
-      <p class="kicker">Vive Széri</p>
-      <h2>El arte de habitar con propósito.</h2>
-      <p class="sub">Széri Design te invita a experimentar un lugar donde el diseño no es un añadido, sino el punto de partida. Despertar frente al mar, entre senderos que conectan zonas verdes, comercio de cercanía y espacios comunes pensados al detalle — un equilibrio entre la vida activa de la costa y la calma de un hogar de autor.</p>
-      <a class="btn btn-ghost" href="#contacto" style="margin-top:1.5rem;">Hablar con el equipo comercial</a>
+  <section class="band-soft">
+    <div class="split reverse">
+      <div>
+        <div class="section-head">
+          <p class="kicker">Vive Széri</p>
+          <h2>El arte de habitar con propósito.</h2>
+          <p class="sub">Széri Design te invita a experimentar un lugar donde el diseño no es un añadido, sino el punto de partida. Despertar frente al mar, entre senderos que conectan zonas verdes, comercio de cercanía y espacios comunes pensados al detalle — un equilibrio entre la vida activa de la costa y la calma de un hogar de autor.</p>
+          <a class="btn btn-ghost" href="#contacto" style="margin-top:1.5rem;">Hablar con el equipo comercial</a>
+        </div>
+      </div>
+      <div class="split-media">
+        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terraza al atardecer con vistas al mar">
+          <defs>
+            <linearGradient id="szDuskSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2c5468"></stop>
+              <stop offset="55%" stop-color="#c98a63"></stop>
+              <stop offset="100%" stop-color="#f2c294"></stop>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="320" fill="url(#szDuskSky)"></rect>
+          <circle cx="90" cy="90" r="34" fill="#ffe0ab" opacity="0.9"></circle>
+          <rect x="0" y="230" width="400" height="90" fill="#0d2530"></rect>
+          <rect x="0" y="230" width="400" height="8" fill="#1d6f8f"></rect>
+          <g stroke="#f2c294" stroke-width="2" opacity="0.5" fill="none">
+            <path d="M0 250 Q100 244 200 250 T400 248"></path>
+          </g>
+          <rect x="0" y="280" width="400" height="40" fill="#12222c"></rect>
+          <rect x="20" y="270" width="14" height="50" fill="#0a1c26"></rect>
+          <rect x="366" y="270" width="14" height="50" fill="#0a1c26"></rect>
+          <rect x="60" y="190" width="110" height="60" rx="10" fill="#e3ab7c"></rect>
+          <rect x="60" y="190" width="110" height="16" rx="8" fill="#c97b5f"></rect>
+          <circle cx="230" cy="215" r="24" fill="#e3ab7c"></circle>
+          <rect x="222" y="239" width="16" height="34" fill="#4a3f2e"></rect>
+          <g fill="none" stroke="#f5f1e6" stroke-width="2" opacity="0.8">
+            <path d="M280 260 v-40 M280 220 q10 -6 20 0 M280 220 q-10 -6 -20 0"></path>
+          </g>
+          <rect x="300" y="150" width="10" height="130" fill="#4a3f2e"></rect>
+          <g fill="#6f9a5a">
+            <ellipse cx="305" cy="145" rx="30" ry="16"></ellipse>
+            <ellipse cx="280" cy="160" rx="22" ry="12"></ellipse>
+            <ellipse cx="330" cy="160" rx="22" ry="12"></ellipse>
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
@@ -568,26 +613,32 @@
     </div>
     <div class="grid grid-3">
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c1.5 1.5 3 1.5 4.5 0s3-1.5 4.5 0 3 1.5 4.5 0 3-1.5 4.5 0"></path><path d="M2 17c1.5 1.5 3 1.5 4.5 0s3-1.5 4.5 0 3 1.5 4.5 0 3-1.5 4.5 0"></path><path d="M6 12V5a2 2 0 0 1 2-2h4l6 6"></path></svg>
         <h3>Piscina infinita</h3>
         <p>Con vistas al mar y solárium climatizado.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5 17.5 17.5"></path><path d="m21 21-1.5-1.5M3 3l1.5 1.5"></path><path d="m18.5 5.5 1.5-1.5M4 20l1.5-1.5"></path><rect x="15.5" y="2.5" width="3" height="6" rx="1" transform="rotate(45 17 5.5)"></rect><rect x="5.5" y="15.5" width="3" height="6" rx="1" transform="rotate(45 7 18.5)"></rect></svg>
         <h3>Gimnasio y wellness</h3>
         <p>Sala de fitness, estudio de yoga y zona de spa.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"></path><path d="M4 9v11h16V9"></path><path d="M9 20v-6h6v6"></path></svg>
         <h3>Boulevard comercial</h3>
         <p>Acceso directo a comercios y restauración de proximidad.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M12 13 6 8l6-5 6 5z"></path><path d="M8 21h8"></path></svg>
         <h3>Parque central</h3>
         <p>Zonas verdes ajardinadas con circuito de running.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"></circle><path d="M6 21v-5l2-5 4 2 4-2 2 5v5"></path><path d="M9 12v9M15 12v9"></path></svg>
         <h3>Zona infantil</h3>
         <p>Áreas de juego cubiertas y espacio de actividades.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"></path><path d="M12 3v1M20 8h1M3 8h1"></path></svg>
         <h3>Conserjería 24h</h3>
         <p>Gestión de la comunidad y seguridad permanente.</p>
       </div>
@@ -617,14 +668,17 @@
     </div>
     <div class="grid grid-3">
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"></path><path d="M7 6H4a2 2 0 0 0 2 3.5M17 6h3a2 2 0 0 1-2 3.5"></path></svg>
         <h3>Liderazgo de criterio</h3>
         <p>Széri Design es referencia en diseño residencial de autor en la costa de Barcelona.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
         <h3>Solidez</h3>
         <p>80+ proyectos entregados y una cartera de encargos en crecimiento sostenido.</p>
       </div>
       <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M21 4v4h-4"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path><path d="M3 20v-4h4"></path></svg>
         <h3>Alta liquidez de reventa</h3>
         <p>Las comunidades de Széri Design suelen ofrecer la mayor liquidez en el mercado secundario de la zona.</p>
       </div>
@@ -739,14 +793,64 @@
     </div>
     <div class="grid grid-3">
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Casa Matorral, Sant Cugat">
+            <defs>
+              <linearGradient id="szProj1Sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bfe0e6"></stop>
+                <stop offset="100%" stop-color="#eaf3ec"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="225" fill="url(#szProj1Sky)"></rect>
+            <rect x="0" y="150" width="300" height="75" fill="#c8dcb8"></rect>
+            <rect x="40" y="100" width="130" height="60" fill="#f5f1e6"></rect>
+            <rect x="90" y="70" width="80" height="34" fill="#12222c"></rect>
+            <rect x="55" y="115" width="35" height="30" fill="#1d6f8f" opacity="0.6"></rect>
+            <rect x="115" y="115" width="40" height="30" fill="#1d6f8f" opacity="0.6"></rect>
+            <g fill="#6f9a5a">
+              <ellipse cx="210" cy="140" rx="26" ry="15"></ellipse>
+              <rect x="206" y="140" width="8" height="60" fill="#4a3f2e"></rect>
+            </g>
+          </svg>
+        </div>
         <h3>Casa Matorral</h3>
         <p>Vivienda unifamiliar · Sant Cugat</p>
       </div>
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Casa Pins, Sitges">
+            <defs>
+              <linearGradient id="szProj2Sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bfe0e6"></stop>
+                <stop offset="100%" stop-color="#eaf3ec"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="225" fill="url(#szProj2Sky)"></rect>
+            <rect x="0" y="160" width="300" height="65" fill="#dcd2b8"></rect>
+            <rect x="30" y="90" width="240" height="70" fill="#f5f1e6"></rect>
+            <rect x="30" y="80" width="240" height="12" fill="#12222c"></rect>
+            <rect x="45" y="105" width="45" height="40" fill="#1d6f8f" opacity="0.6"></rect>
+            <rect x="105" y="105" width="45" height="40" fill="#1d6f8f" opacity="0.6"></rect>
+            <rect x="165" y="105" width="45" height="40" fill="#1d6f8f" opacity="0.6"></rect>
+            <rect x="225" y="105" width="30" height="40" fill="#e3ab7c"></rect>
+          </svg>
+        </div>
         <h3>Casa Pins</h3>
         <p>Obra nueva · Sitges</p>
       </div>
       <div class="card">
+        <div class="card-media">
+          <svg viewBox="0 0 300 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loft Bertran, Barcelona">
+            <rect width="300" height="225" fill="#efe6d3"></rect>
+            <rect x="0" y="0" width="300" height="90" fill="#a9c7cf"></rect>
+            <rect x="0" y="0" width="300" height="90" fill="none" stroke="#e9e0cb" stroke-width="6"></rect>
+            <rect x="0" y="140" width="300" height="85" fill="#dcd2b8"></rect>
+            <rect x="30" y="130" width="110" height="45" rx="8" fill="#1d6f8f"></rect>
+            <rect x="30" y="130" width="110" height="14" rx="8" fill="#2a9d8f"></rect>
+            <circle cx="240" cy="150" r="22" fill="#e3ab7c"></circle>
+            <rect x="232" y="172" width="16" height="30" fill="#8a7f63"></rect>
+          </svg>
+        </div>
         <h3>Loft Bertran</h3>
         <p>Interiorismo · Barcelona</p>
       </div>
@@ -758,6 +862,14 @@
   </a>
 
   <footer>
+    <div class="footer-logo">
+      <svg class="logo-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="32" height="32" rx="9" fill="#1d6f8f"></rect>
+        <path d="M16 7 L22.5 23 H9.5 Z" fill="#fff"></path>
+        <path d="M6 25.5 Q16 21 26 25.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"></path>
+      </svg>
+      Széri
+    </div>
     <nav class="footer-links">
       <a href="#resumen">Resumen</a>
       <a href="#caracteristicas">Características</a>
