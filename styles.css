@@ -492,14 +492,12 @@ h1 em, h2 em, h3 em, .em-serif {
 /* =============================================================
    9. Services — full-bleed stacked tiles
    ============================================================= */
-.services { border-top: 1px solid transparent; border-image: var(--divider) 1; }
 .service-tile {
   position: relative;
   isolation: isolate;
   padding-block: 6.5rem;
   padding-inline: 1.5rem;
   text-align: center;
-  border-bottom: 1px solid var(--dark-line);
   color: #fff;
   background-size: cover;
   background-position: center;
@@ -584,8 +582,6 @@ h1 em, h2 em, h3 em, .em-serif {
   margin-inline: auto;
   padding-inline: 1.5rem;
   text-align: center;
-  border-top: 1px solid transparent;
-  border-image: var(--divider) 1;
 }
 .about-statement { font-size: clamp(1.8rem, 4.2vw, 3rem); }
 .about-body {
