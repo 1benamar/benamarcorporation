@@ -1,3 +1,10 @@
+# Hide version control, dotfiles and dev tooling from the public web.
+# Deploying the repo into public_html also copies .git/ and tools/.
+<IfModule mod_alias.c>
+  RedirectMatch 404 /\.(?!well-known/)
+  RedirectMatch 404 ^/tools(/|$)
+</IfModule>
+
 # HTML: never cache
 <IfModule mod_expires.c>
   ExpiresActive On
