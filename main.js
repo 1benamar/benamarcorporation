@@ -9,19 +9,19 @@
   var LANG = document.documentElement.lang || "es";
   var MSG = {
     es: {
-      success: "Hemos recibido tu solicitud. Te escribimos en menos de 24h con una propuesta.",
-      successNamed: function (name) { return name + ", hemos recibido tu solicitud. Te escribimos en menos de 24h con una propuesta."; },
-      error: "No hemos podido enviar tu solicitud. Escríbenos directamente a benamarcorporation@gmail.com."
+      success: "Hemos recibido su solicitud. Le escribimos en menos de 24 horas con una propuesta.",
+      successNamed: function (name) { return name + ", hemos recibido su solicitud. Le escribimos en menos de 24 horas con una propuesta."; },
+      error: "No hemos podido enviar su solicitud. Escríbanos directamente a benamarcorporation@gmail.com."
     },
     en: {
-      success: "We've received your request. We'll get back to you within 24h with a real proposal.",
-      successNamed: function (name) { return name + ", we've received your request. We'll get back to you within 24h with a real proposal."; },
-      error: "We couldn't send your request. Please email us directly at benamarcorporation@gmail.com."
+      success: "We have received your request. We will reply within 24 hours with a concrete proposal.",
+      successNamed: function (name) { return name + ", we have received your request. We will reply within 24 hours with a concrete proposal."; },
+      error: "We could not send your request. Please write to us directly at benamarcorporation@gmail.com."
     },
     fr: {
-      success: "Nous avons bien reçu votre demande. Nous vous répondons sous 24h avec une proposition réelle.",
-      successNamed: function (name) { return name + ", nous avons bien reçu votre demande. Nous vous répondons sous 24h avec une proposition réelle."; },
-      error: "Nous n'avons pas pu envoyer votre demande. Écrivez-nous directement à benamarcorporation@gmail.com."
+      success: "Nous avons bien reçu votre demande. Nous vous répondons sous 24 heures avec une proposition concrète.",
+      successNamed: function (name) { return name + ", nous avons bien reçu votre demande. Nous vous répondons sous 24 heures avec une proposition concrète."; },
+      error: "Nous n'avons pas pu envoyer votre demande. Veuillez nous écrire directement à benamarcorporation@gmail.com."
     }
   };
   var T = MSG[LANG] || MSG.es;
