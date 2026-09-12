@@ -52,6 +52,41 @@
     });
   }
 
+  /* ---- Scroll progress bar ---- */
+  function initScrollProgress() {
+    var bar = $("[data-scroll-progress]");
+    if (!bar) return;
+    var raf = null;
+    function update() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = max > 0 ? window.scrollY / max : 0;
+      bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, pct)).toFixed(4) + ")";
+      raf = null;
+    }
+    window.addEventListener("scroll", function () {
+      if (!raf) raf = requestAnimationFrame(update);
+    }, { passive: true });
+    update();
+  }
+
+  /* ---- Mouse-reactive gradient mesh (lerped) ---- */
+  function initMesh() {
+    if (!$("[data-mesh]")) return;
+    if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    var mx = 50, my = 45, tx = 50, ty = 45;
+    window.addEventListener("mousemove", function (e) {
+      tx = (e.clientX / window.innerWidth) * 100;
+      ty = (e.clientY / window.innerHeight) * 100;
+    }, { passive: true });
+    (function frame() {
+      mx += (tx - mx) * 0.045;
+      my += (ty - my) * 0.045;
+      document.documentElement.style.setProperty("--mx", mx.toFixed(2) + "%");
+      document.documentElement.style.setProperty("--my", my.toFixed(2) + "%");
+      requestAnimationFrame(frame);
+    })();
+  }
+
   /* ---- Sticky nav ---- */
   function initNav() {
     var nav = $("[data-nav]");
@@ -210,6 +245,8 @@
 
   function boot() {
     safe(initHeroParallax, "initHeroParallax");
+    safe(initScrollProgress, "initScrollProgress");
+    safe(initMesh, "initMesh");
     safe(initNav, "initNav");
     safe(initMobileMenu, "initMobileMenu");
     safe(initSmoothAnchors, "initSmoothAnchors");

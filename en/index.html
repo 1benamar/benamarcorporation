@@ -29,9 +29,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
 
-  <link rel="stylesheet" href="../styles.css?v=20260909">
+  <link rel="stylesheet" href="../styles.css?v=20260912">
   <noscript><style>
     [data-reveal]{opacity:1!important;transform:none!important;}
     .faq-body{grid-template-rows:1fr!important;}
@@ -40,6 +40,8 @@
 </head>
 <body class="has-photo-hero">
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -82,6 +84,7 @@
     <section class="hero" data-hero>
       <div class="hero-photo" data-hero-photo aria-hidden="true"></div>
       <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-mesh" data-mesh aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-frame" aria-hidden="true">
           <span class="hero-frame-corner hero-frame-corner--tl"></span>
@@ -91,7 +94,7 @@
         </div>
         <p class="kicker" data-reveal>BENAMAR · Marketing Agency</p>
         <h1 class="hero-title">
-          From strategy<br>to results.
+          From strategy<br>to <em>results</em>.
         </h1>
         <p class="hero-sub" data-reveal>Web design, branding, social media, SEO and advertising for businesses that want to grow for real.</p>
         <div class="hero-actions" data-reveal>
@@ -152,7 +155,7 @@
 
     <section class="about" id="nosotros">
       <p class="kicker" data-reveal>Who we are</p>
-      <h2 class="about-statement" data-reveal>An agency with big ideas and a clear vision.</h2>
+      <h2 class="about-statement" data-reveal>An agency with big ideas and a <em>clear vision</em>.</h2>
       <p class="about-body" data-reveal>BENAMAR was born in Barcelona with a simple idea: marketing doesn't have to be complicated or impersonal. We get involved in every project as if it were our own, understanding the business, its context and what it really needs to grow. When you work with us, you talk to the person making the decisions — no middle layers.</p>
 
       <p class="kicker stats-kicker" data-reveal>In numbers</p>
@@ -182,7 +185,7 @@
 
     <section class="manifesto" id="beneficios">
       <p class="kicker" data-reveal>Why BENAMAR</p>
-      <h2 class="manifesto-statement" data-reveal>A unique approach and results that don't depend on luck.</h2>
+      <h2 class="manifesto-statement" data-reveal>A unique approach and results that don't depend on <em>luck</em>.</h2>
       <p class="manifesto-body" data-reveal>No templates, no generic answers. Every project is designed and measured around the real needs of the business behind it. We're not chasing speed — we're chasing something that actually works.</p>
 
       <div class="benefits-grid">
@@ -215,7 +218,7 @@
 
     <section class="cta-band">
       <p class="kicker" data-reveal>Shall we continue?</p>
-      <h2 class="cta-band-heading" data-reveal>Let's make it count.</h2>
+      <h2 class="cta-band-heading" data-reveal>Let's make it <em>count</em>.</h2>
       <p class="cta-band-sub" data-reveal>Tell us about your project and we'll tell you, with no strings attached, where to start.</p>
       <a class="btn btn-primary" href="#contacto" data-reveal>Let's talk about your project</a>
     </section>
@@ -323,6 +326,6 @@
   <script defer src="../lib/gsap.min.js"></script>
   <script defer src="../lib/ScrollTrigger.min.js"></script>
   <script defer src="../lib/manifest.js"></script>
-  <script defer src="../main.js?v=20260909"></script>
+  <script defer src="../main.js?v=20260912"></script>
 </body>
 </html>

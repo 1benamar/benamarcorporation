@@ -29,9 +29,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
 
-  <link rel="stylesheet" href="../styles.css?v=20260909">
+  <link rel="stylesheet" href="../styles.css?v=20260912">
   <noscript><style>
     [data-reveal]{opacity:1!important;transform:none!important;}
     .faq-body{grid-template-rows:1fr!important;}
@@ -40,6 +40,8 @@
 </head>
 <body class="has-photo-hero">
   <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -82,6 +84,7 @@
     <section class="hero" data-hero>
       <div class="hero-photo" data-hero-photo aria-hidden="true"></div>
       <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-mesh" data-mesh aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-frame" aria-hidden="true">
           <span class="hero-frame-corner hero-frame-corner--tl"></span>
@@ -91,7 +94,7 @@
         </div>
         <p class="kicker" data-reveal>BENAMAR · Agence de marketing</p>
         <h1 class="hero-title">
-          De la stratégie<br>au résultat.
+          De la stratégie<br>au <em>résultat</em>.
         </h1>
         <p class="hero-sub" data-reveal>Conception de sites web, branding, réseaux sociaux, SEO et publicité pour les entreprises qui veulent vraiment se développer.</p>
         <div class="hero-actions" data-reveal>
@@ -152,7 +155,7 @@
 
     <section class="about" id="nosotros">
       <p class="kicker" data-reveal>Qui nous sommes</p>
-      <h2 class="about-statement" data-reveal>Une agence avec de grandes idées et une vision claire.</h2>
+      <h2 class="about-statement" data-reveal>Une agence avec de grandes idées et une <em>vision claire</em>.</h2>
       <p class="about-body" data-reveal>BENAMAR est née à Barcelone avec une idée simple : le marketing n'a pas besoin d'être compliqué ni impersonnel. Nous nous impliquons dans chaque projet comme s'il était le nôtre, en comprenant l'entreprise, son contexte et ce dont elle a réellement besoin pour grandir. En travaillant avec nous, vous parlez directement à la personne qui prend les décisions, sans intermédiaires.</p>
 
       <p class="kicker stats-kicker" data-reveal>En chiffres</p>
@@ -182,7 +185,7 @@
 
     <section class="manifesto" id="beneficios">
       <p class="kicker" data-reveal>Pourquoi BENAMAR</p>
-      <h2 class="manifesto-statement" data-reveal>Un traitement unique et des résultats qui ne dépendent pas de la chance.</h2>
+      <h2 class="manifesto-statement" data-reveal>Un traitement unique et des résultats qui ne dépendent pas de la <em>chance</em>.</h2>
       <p class="manifesto-body" data-reveal>Sans modèles ni réponses génériques. Chaque projet est conçu et mesuré selon les besoins réels de l'entreprise qui se trouve derrière. Nous ne cherchons pas à livrer vite, mais à livrer quelque chose qui fonctionne vraiment.</p>
 
       <div class="benefits-grid">
@@ -215,7 +218,7 @@
 
     <section class="cta-band">
       <p class="kicker" data-reveal>On continue ?</p>
-      <h2 class="cta-band-heading" data-reveal>Faisons en sorte que ça se voie.</h2>
+      <h2 class="cta-band-heading" data-reveal>Faisons en sorte que <em>ça se voie</em>.</h2>
       <p class="cta-band-sub" data-reveal>Parlez-nous de votre projet et nous vous dirons, sans engagement, par où commencer.</p>
       <a class="btn btn-primary" href="#contacto" data-reveal>Parlons de votre projet</a>
     </section>
@@ -323,6 +326,6 @@
   <script defer src="../lib/gsap.min.js"></script>
   <script defer src="../lib/ScrollTrigger.min.js"></script>
   <script defer src="../lib/manifest.js"></script>
-  <script defer src="../main.js?v=20260909"></script>
+  <script defer src="../main.js?v=20260912"></script>
 </body>
 </html>
