@@ -5,6 +5,13 @@
   RedirectMatch 404 ^/tools(/|$)
 </IfModule>
 
+# Canonical host: send www.benamar.es to benamar.es
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.benamar\.es$ [NC]
+  RewriteRule ^(.*)$ https://benamar.es/$1 [R=301,L]
+</IfModule>
+
 # HTML: never cache
 <IfModule mod_expires.c>
   ExpiresActive On
