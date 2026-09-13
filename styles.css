@@ -171,6 +171,11 @@ h1 em, h2 em, h3 em, .em-serif {
   white-space: nowrap;
 }
 .btn-sm { padding: .62rem 1.25rem; font-size: 0.86rem; }
+.btn.btn-back {
+  width: 44px; height: 44px; padding: 0;
+  font-size: 1.2rem; line-height: 1;
+  flex-shrink: 0;
+}
 .btn-primary {
   background: var(--ink);
   color: var(--accent-ink);
