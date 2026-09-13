@@ -174,15 +174,15 @@
       var target = parseFloat(el.dataset.countTo);
       var decimals = (el.dataset.countTo.split(".")[1] || "").length;
       var trigger = function () {
-        if (window.gsap) {
-          var obj = { v: 0 };
-          gsap.to(obj, {
-            v: target, duration: 1.5, ease: "power2.out",
-            onUpdate: function () { el.textContent = obj.v.toFixed(decimals); }
-          });
-        } else {
-          el.textContent = target.toFixed(decimals);
+        var start = null, duration = 1500;
+        function frame(now) {
+          if (start === null) start = now;
+          var p = Math.min(1, (now - start) / duration);
+          var eased = 1 - (1 - p) * (1 - p);
+          el.textContent = (target * eased).toFixed(decimals);
+          if (p < 1) requestAnimationFrame(frame);
         }
+        requestAnimationFrame(frame);
       };
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -254,10 +254,6 @@
     safe(initCountUp, "initCountUp");
     safe(initContactForm, "initContactForm");
     safe(initFooterYear, "initFooterYear");
-
-    if (window.gsap && window.ScrollTrigger) {
-      try { gsap.registerPlugin(ScrollTrigger); } catch (e) {}
-    }
 
     document.documentElement.classList.add("is-ready");
   }
