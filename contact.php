@@ -52,7 +52,7 @@ $body .= "Mensaje:\n{$message}\n";
 
 // El remitente debe ser del propio dominio: los proveedores de correo
 // descartan o mandan a spam los mensajes con un remitente ajeno al servidor.
-$from = 'no-reply@benamar.es';
+$from = 'contact@benamar.es';
 
 // Codifica el asunto para que tildes y eñes lleguen legibles
 $encoded_subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
