@@ -11,17 +11,17 @@
     es: {
       success: "Hemos recibido su solicitud. Le escribimos en menos de 24 horas con una propuesta.",
       successNamed: function (name) { return name + ", hemos recibido su solicitud. Le escribimos en menos de 24 horas con una propuesta."; },
-      error: "No hemos podido enviar su solicitud. Escríbanos directamente a benamarcorporation@gmail.com."
+      error: "No hemos podido enviar su solicitud. Escríbanos directamente a contact@benamar.es."
     },
     en: {
       success: "We have received your request. We will reply within 24 hours with a concrete proposal.",
       successNamed: function (name) { return name + ", we have received your request. We will reply within 24 hours with a concrete proposal."; },
-      error: "We could not send your request. Please write to us directly at benamarcorporation@gmail.com."
+      error: "We could not send your request. Please write to us directly at contact@benamar.es."
     },
     fr: {
       success: "Nous avons bien reçu votre demande. Nous vous répondons sous 24 heures avec une proposition concrète.",
       successNamed: function (name) { return name + ", nous avons bien reçu votre demande. Nous vous répondons sous 24 heures avec une proposition concrète."; },
-      error: "Nous n'avons pas pu envoyer votre demande. Veuillez nous écrire directement à benamarcorporation@gmail.com."
+      error: "Nous n'avons pas pu envoyer votre demande. Veuillez nous écrire directement à contact@benamar.es."
     }
   };
   var T = MSG[LANG] || MSG.es;
