@@ -50,14 +50,20 @@ if ($company !== '') {
 $body .= "Servicio de interes: {$service}\n\n";
 $body .= "Mensaje:\n{$message}\n";
 
-// IMPORTANTE: cambia "tu-dominio.com" por el dominio real donde quede
-// alojada la web (ej. benamar.agency) para que los emails no acaben en spam.
+// El remitente debe ser del propio dominio: los proveedores de correo
+// descartan o mandan a spam los mensajes con un remitente ajeno al servidor.
+$from = 'no-reply@benamar.es';
+
+// Codifica el asunto para que tildes y eñes lleguen legibles
+$encoded_subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
+
 $headers   = [];
-$headers[] = 'From: BENAMAR Web <no-reply@tu-dominio.com>';
+$headers[] = 'From: BENAMAR Web <' . $from . '>';
 $headers[] = 'Reply-To: ' . $email;
+$headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-Type: text/plain; charset=UTF-8';
 
-$sent = @mail($to, $subject, $body, implode("\r\n", $headers));
+$sent = @mail($to, $encoded_subject, $body, implode("\r\n", $headers), '-f' . $from);
 
 if ($sent) {
     echo json_encode(['success' => true]);
