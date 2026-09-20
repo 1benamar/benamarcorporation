@@ -1,0 +1,170 @@
+{
+  "lang": "es",
+  "dir": "",
+  "labels": {
+    "kicker": "Servicio",
+    "includes": "Qué incluye",
+    "process": "Cómo trabajamos",
+    "audience": "Para quién es",
+    "faq": "Preguntas frecuentes",
+    "others": "Otros servicios",
+    "ctaHeading": "Hablemos de su proyecto.",
+    "ctaSub": "Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta.",
+    "ctaButton": "Solicitar una propuesta",
+    "backToServices": "Ver todos los servicios"
+  },
+  "pages": [
+    {
+      "id": "web",
+      "slug": "diseno-web-barcelona.html",
+      "tile": "service-tile--web",
+      "title": "Diseño web en Barcelona — BENAMAR",
+      "description": "Diseño y desarrollo de webs corporativas a medida en Barcelona. Webs rápidas, claras y pensadas para convertir visitas en clientes.",
+      "h1": "Diseño web en Barcelona",
+      "teaser": "Una web que transmite el valor real de su negocio.",
+      "intro": [
+        "Para la mayoría de negocios, la web es el primer sitio donde un cliente comprueba si merece la pena llamar. Si carga despacio, se ve mal en el móvil o no explica con claridad a qué se dedica la empresa, esa llamada no llega.",
+        "En BENAMAR diseñamos y desarrollamos webs corporativas a medida desde Barcelona. Sin plantillas compradas y sin funciones que nadie va a usar: solo lo que el negocio necesita para explicarse bien y convertir visitas en clientes.",
+        "El resultado es una web propia, rápida en el móvil y preparada desde el primer día para que Google la entienda. Y queda a su nombre, con el dominio, el alojamiento y el código en su poder."
+      ],
+      "includes": [
+        { "h": "Diseño a medida", "p": "Cada web parte de cero, con la identidad del negocio. No adaptamos plantillas genéricas ni reutilizamos el mismo diseño cambiando el color." },
+        { "h": "Desarrollo ligero", "p": "Código propio, sin constructores pesados. La web carga rápido en el móvil, que es por donde entra la mayor parte del tráfico." },
+        { "h": "Estructura y textos", "p": "Ordenamos la información para que el visitante entienda en pocos segundos qué ofrece el negocio y qué puede hacer a continuación." },
+        { "h": "Base para posicionar", "p": "Etiquetas, velocidad, versiones de idioma y datos estructurados listos desde el primer día, para que Google entienda la web." }
+      ],
+      "process": [
+        { "h": "Conversación inicial", "p": "Entendemos el negocio, a quién se dirige y qué tiene que conseguir la web. Sin cuestionarios automáticos." },
+        { "h": "Propuesta cerrada", "p": "Presupuesto y plazo por escrito antes de empezar, con el alcance detallado. Sin partidas abiertas." },
+        { "h": "Diseño y desarrollo", "p": "Revisa el avance en cada fase y pide cambios antes de que sigamos. Nada se da por bueno sin que usted lo vea." },
+        { "h": "Publicación y seguimiento", "p": "Dejamos la web publicada, con el dominio y el correo configurados, y medida para saber qué hacen las visitas." }
+      ],
+      "audience": [
+        "Negocios que ya funcionan y cuya web se ha quedado desfasada o nunca llegó a dar resultados.",
+        "Profesionales y empresas que empiezan y necesitan una primera web seria, no una página improvisada.",
+        "Empresas que atienden en varios idiomas y necesitan una versión cuidada de cada uno."
+      ],
+      "faq": [
+        { "q": "¿Cuánto tarda una web corporativa?", "a": "Depende del número de páginas y de la rapidez con la que recibamos textos y fotografías. Una web de presentación suele estar publicada entre tres y seis semanas desde que empezamos." },
+        { "q": "¿Cuánto cuesta?", "a": "Cada proyecto se presupuesta por separado, porque no todas las webs necesitan lo mismo. Le damos un precio cerrado antes de empezar, y ese precio no cambia salvo que usted añada trabajo nuevo." },
+        { "q": "¿La web queda a mi nombre?", "a": "Sí. El dominio, el alojamiento y el código son suyos. Si algún día decide trabajar con otra empresa, se lo lleva todo sin depender de nosotros." },
+        { "q": "¿Puedo actualizar los contenidos yo mismo?", "a": "Sí. Preparamos las partes que cambian a menudo para que pueda editarlas sin tocar el código, y le explicamos cómo hacerlo." },
+        { "q": "¿Trabajáis solo en Barcelona?", "a": "Nos reunimos en persona en Barcelona y alrededores. El trabajo en sí se puede llevar en remoto, así que también atendemos a clientes de otras provincias." }
+      ]
+    },
+    {
+      "id": "landing",
+      "slug": "landing-pages-barcelona.html",
+      "tile": "service-tile--landing",
+      "title": "Landing pages en Barcelona — BENAMAR",
+      "description": "Diseño de landing pages en Barcelona para campañas de Google Ads y redes sociales. Una página, un objetivo y resultados medidos.",
+      "h1": "Landing pages en Barcelona",
+      "teaser": "Una página, un objetivo, una conversión.",
+      "intro": [
+        "Una landing page es una página con un único objetivo: que el visitante haga una cosa concreta. Pedir presupuesto, reservar una cita, dejar su teléfono o comprar. Nada más.",
+        "Se diferencia de la web corporativa en que no intenta explicar todo el negocio. Quita del medio todo lo que distrae, incluido el menú, y deja solo lo necesario para que esa acción ocurra.",
+        "Por eso es la página a la que conviene enviar el tráfico de una campaña de pago. Cada euro invertido en anuncios llega a una página hecha para esa campaña, no a una portada genérica donde el visitante se pierde."
+      ],
+      "includes": [
+        { "h": "Un solo mensaje", "p": "Definimos la oferta y la escribimos en un lenguaje claro, sin promesas vacías ni adornos que resten credibilidad." },
+        { "h": "Estructura de conversión", "p": "Orden pensado para acompañar al visitante: qué gana, por qué confiar, qué dudas resolver y dónde pulsar." },
+        { "h": "Formulario que llega", "p": "Formulario corto y revisado de punta a punta, con las solicitudes entrando en su correo y no en una carpeta de spam." },
+        { "h": "Preparada para medir", "p": "La página queda lista para conectarse con Google Ads o Meta y saber cuántas visitas se convierten en contactos." }
+      ],
+      "process": [
+        { "h": "Objetivo y oferta", "p": "Definimos qué acción tiene que hacer el visitante y qué recibe a cambio. De ahí sale todo lo demás." },
+        { "h": "Redacción y diseño", "p": "Escribimos los textos y diseñamos la página sobre esa oferta concreta, no sobre una plantilla reutilizada." },
+        { "h": "Publicación y medición", "p": "Publicamos, comprobamos el formulario y dejamos la medición activa antes de que empiece la campaña." },
+        { "h": "Ajustes con datos", "p": "Con las primeras visitas se ve qué funciona. Ajustamos titular, orden o formulario según lo que digan los números." }
+      ],
+      "audience": [
+        "Negocios que van a invertir en Google Ads o en redes y no quieren desperdiciar el presupuesto.",
+        "Servicios que necesitan captar solicitudes de presupuesto o reservas de forma constante.",
+        "Lanzamientos de un producto, una promoción o un evento con fecha concreta."
+      ],
+      "faq": [
+        { "q": "¿En cuánto tiempo está lista?", "a": "Una landing page suele estar publicada en una o dos semanas, porque el trabajo se concentra en una sola página y en un solo mensaje." },
+        { "q": "¿Sirve para campañas de Google Ads?", "a": "Sí, es su uso más habitual. La página se prepara para recibir el tráfico de la campaña y para medir cuántas visitas acaban en contacto." },
+        { "q": "¿Necesito una para cada campaña?", "a": "No siempre, pero cuanto más se parezca la página al anuncio que ha traído al visitante, mejor funciona. Si tiene dos ofertas muy distintas, conviene una página para cada una." },
+        { "q": "¿Se pueden probar dos versiones?", "a": "Sí. Se puede publicar una segunda versión con otro titular u otra estructura y repartir el tráfico entre las dos para ver cuál convierte mejor." },
+        { "q": "¿Incluye la gestión de la campaña?", "a": "La página y la campaña son dos trabajos distintos. Podemos hacer solo la página, o encargarnos también de la publicidad. Se lo detallamos por separado en el presupuesto." }
+      ]
+    },
+    {
+      "id": "social",
+      "slug": "gestion-redes-sociales-barcelona.html",
+      "tile": "service-tile--social",
+      "title": "Gestión de redes sociales en Barcelona — BENAMAR",
+      "description": "Gestión de redes sociales para empresas en Barcelona: estrategia, contenido, calendario editorial e informes mensuales claros.",
+      "h1": "Gestión de redes sociales en Barcelona",
+      "teaser": "Presencia constante, sin ocupar su tiempo.",
+      "intro": [
+        "El problema de las redes sociales rara vez es la falta de ideas. Es la constancia. Se empieza con ganas, se publica tres semanas seguidas y luego el negocio absorbe el tiempo y la cuenta se queda parada.",
+        "Nos encargamos de esa parte. Preparamos la estrategia, el calendario y el contenido, publicamos y respondemos, y cada mes le enviamos un informe con lo que ha funcionado y lo que no.",
+        "Trabajamos desde Barcelona y con reuniones periódicas, para que el contenido se parezca a su negocio y no a una cuenta genérica del sector."
+      ],
+      "includes": [
+        { "h": "Estrategia y calendario", "p": "Definimos qué contar, con qué frecuencia y en qué red. El calendario se aprueba antes de publicar nada." },
+        { "h": "Contenido propio", "p": "Diseño de las piezas y redacción de los textos, con la identidad de su marca. También adaptamos el material que usted ya tenga." },
+        { "h": "Publicación y comunidad", "p": "Publicamos en las fechas previstas y respondemos comentarios y mensajes con el tono que hayamos acordado." },
+        { "h": "Informe mensual", "p": "Un informe claro, sin jerga: qué se publicó, qué alcance tuvo, qué contenidos funcionaron y qué proponemos para el mes siguiente." }
+      ],
+      "process": [
+        { "h": "Auditoría inicial", "p": "Revisamos sus perfiles, los de la competencia y qué contenidos han funcionado hasta ahora." },
+        { "h": "Plan del mes", "p": "Le presentamos el calendario con los temas y las fechas. Usted lo aprueba o pide cambios antes de que se produzca nada." },
+        { "h": "Producción y publicación", "p": "Creamos las piezas, las programamos y gestionamos el día a día de los comentarios y los mensajes." },
+        { "h": "Informe y ajuste", "p": "Al cerrar el mes revisamos los datos juntos y ajustamos el plan del mes siguiente con lo aprendido." }
+      ],
+      "audience": [
+        "Negocios con perfiles abiertos pero parados por falta de tiempo.",
+        "Empresas que publican sin un plan y quieren dar una imagen más seria y constante.",
+        "Marcas que necesitan una presencia cuidada porque sus clientes las miran antes de comprar."
+      ],
+      "faq": [
+        { "q": "¿Qué redes gestionáis?", "a": "Las que tengan sentido para su negocio, normalmente Instagram, Facebook y LinkedIn. Es preferible llevar bien dos redes que estar a medias en cinco." },
+        { "q": "¿Quién hace las fotos y los vídeos?", "a": "Podemos trabajar con el material que usted tenga, producir las piezas de diseño nosotros o coordinar una sesión de fotos si el proyecto lo pide." },
+        { "q": "¿Hay permanencia?", "a": "No. Trabajamos mes a mes. Si en algún momento no le compensa, lo deja sin penalización." },
+        { "q": "¿Cuánto tarda en notarse?", "a": "Las primeras señales, como el alcance y la interacción, se ven en las primeras semanas. Una comunidad sólida y clientes que lleguen por las redes es un trabajo de meses, no de días." },
+        { "q": "¿Tengo que aprobar cada publicación?", "a": "Usted decide. Hay clientes que aprueban el calendario del mes y no quieren ver más, y otros que prefieren revisar pieza a pieza. Las dos formas funcionan." }
+      ]
+    },
+    {
+      "id": "seo",
+      "slug": "posicionamiento-seo-barcelona.html",
+      "tile": "service-tile--seo",
+      "title": "Posicionamiento SEO en Barcelona — BENAMAR",
+      "description": "Posicionamiento SEO en Barcelona: auditoría técnica, contenido, SEO local e informes mensuales con objetivos de tráfico cualificado.",
+      "h1": "Posicionamiento SEO en Barcelona",
+      "teaser": "Visibilidad en el momento en que le buscan.",
+      "intro": [
+        "El posicionamiento en buscadores, o SEO, es el trabajo de conseguir que su web aparezca en Google cuando alguien busca lo que usted ofrece, sin pagar por cada clic.",
+        "Es el tipo de visita más valiosa que existe: gente que ya tiene el problema que usted resuelve y está buscando a alguien que lo resuelva. También es el trabajo más lento, porque Google no cambia sus resultados de un día para otro.",
+        "Trabajamos las tres patas que lo determinan: que la web se pueda leer y cargue rápido, que los textos respondan a lo que la gente busca de verdad, y que su negocio tenga presencia local sólida en Barcelona."
+      ],
+      "includes": [
+        { "h": "Auditoría técnica", "p": "Revisamos velocidad, versión móvil, estructura, enlaces rotos y todo lo que impida a Google leer la web con normalidad." },
+        { "h": "Palabras clave y contenido", "p": "Averiguamos qué busca su cliente y con qué palabras, y escribimos o reescribimos las páginas que respondan a esas búsquedas." },
+        { "h": "SEO local", "p": "Ficha de Google Business, coherencia de nombre, teléfono y dirección, y presencia en los directorios que cuentan en Barcelona." },
+        { "h": "Medición mensual", "p": "Un informe mensual con posiciones, visitas y contactos conseguidos. Sin gráficos de adorno ni métricas que no significan nada." }
+      ],
+      "process": [
+        { "h": "Auditoría", "p": "Analizamos la web, la competencia y las búsquedas de su sector. De ahí sale la lista de problemas ordenada por impacto." },
+        { "h": "Plan de trabajo", "p": "Le presentamos qué se va a hacer, en qué orden y qué esperamos conseguir. Sin promesas de primera posición." },
+        { "h": "Ejecución", "p": "Aplicamos los cambios técnicos, publicamos el contenido y trabajamos la presencia local, mes a mes." },
+        { "h": "Medición", "p": "Revisamos qué búsquedas traen visitas y ajustamos el plan con esos datos, no con suposiciones." }
+      ],
+      "audience": [
+        "Negocios locales que quieren aparecer cuando alguien busca su servicio en Barcelona.",
+        "Empresas con una web que no recibe visitas desde Google y no saben por qué.",
+        "Quien está gastando en publicidad y quiere ir construyendo visitas que no dependan del presupuesto diario."
+      ],
+      "faq": [
+        { "q": "¿Cuánto tarda en verse el resultado?", "a": "Los arreglos técnicos se notan en semanas. Ganar posiciones en búsquedas con competencia suele llevar entre tres y seis meses de trabajo constante." },
+        { "q": "¿Garantizáis la primera posición en Google?", "a": "No, y desconfíe de quien se la garantice. Nadie controla el orden de los resultados de Google. Lo que sí hacemos es comprometernos con el trabajo, medirlo y enseñarle los datos cada mes." },
+        { "q": "¿Qué diferencia hay con Google Ads?", "a": "Los anuncios aparecen arriba desde el primer día y dejan de aparecer en cuanto deja de pagar. El posicionamiento tarda más, pero las visitas siguen llegando cuando el trabajo ya está hecho. Se complementan bien." },
+        { "q": "¿Incluye la ficha de Google Business?", "a": "Sí. En un negocio local es una de las partes que más pesa, así que la configuramos, la completamos y la mantenemos al día." },
+        { "q": "¿Hay permanencia?", "a": "No. Se trabaja mes a mes, aunque conviene saber que el posicionamiento necesita continuidad: tres meses sueltos no dan los mismos resultados que un trabajo sostenido." }
+      ]
+    }
+  ]
+}

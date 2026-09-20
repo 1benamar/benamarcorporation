@@ -1,0 +1,170 @@
+{
+  "lang": "en",
+  "dir": "en/",
+  "labels": {
+    "kicker": "Service",
+    "includes": "What it includes",
+    "process": "How we work",
+    "audience": "Who it is for",
+    "faq": "Frequently asked questions",
+    "others": "Other services",
+    "ctaHeading": "Let us talk about your project.",
+    "ctaSub": "Tell us what your business needs. We reply within 24 hours with a concrete proposal.",
+    "ctaButton": "Request a proposal",
+    "backToServices": "See all services"
+  },
+  "pages": [
+    {
+      "id": "web",
+      "slug": "web-design-barcelona.html",
+      "tile": "service-tile--web",
+      "title": "Web Design in Barcelona — BENAMAR",
+      "description": "Custom corporate website design and development in Barcelona. Fast, clear websites built to turn visits into customers.",
+      "h1": "Web design in Barcelona",
+      "teaser": "A website that conveys the real value of your business.",
+      "intro": [
+        "For most businesses, the website is the first place a client checks before deciding whether the call is worth making. If it loads slowly, looks wrong on a phone or fails to explain what the company does, that call never happens.",
+        "At BENAMAR we design and develop custom corporate websites from Barcelona. No bought templates and no features nobody will use: only what the business needs to explain itself well and turn visits into customers.",
+        "The result is a website of your own, fast on mobile and ready from day one for Google to understand it. And it stays in your name, with the domain, the hosting and the code under your control."
+      ],
+      "includes": [
+        { "h": "Custom design", "p": "Every website starts from scratch, built around the identity of the business. We do not adapt generic templates or reuse the same layout in a different colour." },
+        { "h": "Lightweight development", "p": "Our own code, without heavy page builders. The site loads quickly on mobile, which is where most of the traffic comes from." },
+        { "h": "Structure and copy", "p": "We order the information so that a visitor understands within seconds what the business offers and what to do next." },
+        { "h": "Ready to rank", "p": "Tags, speed, language versions and structured data in place from the first day, so that Google can read the site properly." }
+      ],
+      "process": [
+        { "h": "First conversation", "p": "We learn about the business, who it serves and what the website has to achieve. No automated questionnaires." },
+        { "h": "Fixed proposal", "p": "Budget and deadline in writing before we start, with the scope set out in detail. No open-ended items." },
+        { "h": "Design and development", "p": "You review the work at each stage and ask for changes before we move on. Nothing is signed off without you seeing it." },
+        { "h": "Launch and follow-up", "p": "We leave the site published, with the domain and email configured, and measured so you know what visitors do." }
+      ],
+      "audience": [
+        "Established businesses whose website has fallen behind or never delivered results.",
+        "Professionals and new companies that need a serious first website, not an improvised page.",
+        "Companies working in several languages that need a properly written version of each."
+      ],
+      "faq": [
+        { "q": "How long does a corporate website take?", "a": "It depends on the number of pages and on how quickly we receive copy and photographs. A presentation website is usually live between three and six weeks after we start." },
+        { "q": "How much does it cost?", "a": "Every project is quoted separately, because not all websites need the same work. You get a fixed price before we begin, and that price does not change unless you add new work." },
+        { "q": "Does the website belong to me?", "a": "Yes. The domain, the hosting and the code are yours. If one day you decide to work with another company, you take everything with you." },
+        { "q": "Can I update the content myself?", "a": "Yes. We prepare the parts that change often so that you can edit them without touching code, and we show you how." },
+        { "q": "Do you only work in Barcelona?", "a": "We meet clients in person in Barcelona and the surrounding area. The work itself can be done remotely, so we also serve clients elsewhere." }
+      ]
+    },
+    {
+      "id": "landing",
+      "slug": "landing-pages-barcelona.html",
+      "tile": "service-tile--landing",
+      "title": "Landing Pages in Barcelona — BENAMAR",
+      "description": "Landing page design in Barcelona for Google Ads and social media campaigns. One page, one goal and measured results.",
+      "h1": "Landing pages in Barcelona",
+      "teaser": "One page, one goal, one conversion.",
+      "intro": [
+        "A landing page is a page with a single purpose: getting the visitor to do one specific thing. Request a quote, book an appointment, leave a phone number or buy. Nothing else.",
+        "It differs from a corporate website in that it does not try to explain the whole business. It removes everything that distracts, including the menu, and keeps only what is needed for that action to happen.",
+        "That is why it is the right destination for paid traffic. Every euro spent on advertising lands on a page built for that campaign, not on a general homepage where the visitor gets lost."
+      ],
+      "includes": [
+        { "h": "A single message", "p": "We define the offer and write it in plain language, without empty promises or decoration that costs credibility." },
+        { "h": "Conversion structure", "p": "An order designed to guide the visitor: what they gain, why to trust you, which doubts to settle and where to click." },
+        { "h": "A form that arrives", "p": "A short form tested end to end, with enquiries landing in your inbox rather than in a spam folder." },
+        { "h": "Ready to measure", "p": "The page is prepared to connect with Google Ads or Meta, so you know how many visits become enquiries." }
+      ],
+      "process": [
+        { "h": "Goal and offer", "p": "We define the action the visitor must take and what they receive in return. Everything else follows from that." },
+        { "h": "Copy and design", "p": "We write the copy and design the page around that specific offer, not around a reused template." },
+        { "h": "Launch and tracking", "p": "We publish, test the form and leave tracking active before the campaign starts." },
+        { "h": "Adjustments from data", "p": "The first visits show what works. We adjust headline, order or form according to what the numbers say." }
+      ],
+      "audience": [
+        "Businesses about to invest in Google Ads or social media that do not want to waste the budget.",
+        "Service companies that need a steady flow of quote requests or bookings.",
+        "Launches of a product, a promotion or an event with a fixed date."
+      ],
+      "faq": [
+        { "q": "How soon is it ready?", "a": "A landing page is usually live within one or two weeks, because the work is concentrated on a single page and a single message." },
+        { "q": "Does it work for Google Ads campaigns?", "a": "Yes, that is its most common use. The page is prepared to receive campaign traffic and to measure how many visits end in contact." },
+        { "q": "Do I need one for every campaign?", "a": "Not always, but the closer the page is to the advert that brought the visitor, the better it performs. If you run two very different offers, one page for each is worth it." },
+        { "q": "Can two versions be tested?", "a": "Yes. A second version with a different headline or structure can be published, splitting the traffic between them to see which converts better." },
+        { "q": "Does it include running the campaign?", "a": "The page and the campaign are two separate jobs. We can build only the page, or also handle the advertising. Either way it is quoted separately." }
+      ]
+    },
+    {
+      "id": "social",
+      "slug": "social-media-management-barcelona.html",
+      "tile": "service-tile--social",
+      "title": "Social Media Management in Barcelona — BENAMAR",
+      "description": "Social media management for companies in Barcelona: strategy, content, editorial calendar and clear monthly reporting.",
+      "h1": "Social media management in Barcelona",
+      "teaser": "A constant presence, without demands on your time.",
+      "intro": [
+        "The problem with social media is rarely a lack of ideas. It is consistency. Most accounts start well, publish for three weeks and then stop, because the business takes up the time.",
+        "We take that part off your hands. We prepare the strategy, the calendar and the content, we publish and reply, and every month you receive a report on what worked and what did not.",
+        "We work from Barcelona and meet regularly, so that the content looks like your business rather than a generic account for your sector."
+      ],
+      "includes": [
+        { "h": "Strategy and calendar", "p": "We define what to say, how often and on which platform. The calendar is approved before anything is published." },
+        { "h": "Original content", "p": "Design of the pieces and writing of the copy, in your brand identity. We can also adapt material you already have." },
+        { "h": "Publishing and community", "p": "We publish on the agreed dates and answer comments and messages in the tone we have set together." },
+        { "h": "Monthly report", "p": "A clear report, without jargon: what was published, what reach it had, what performed and what we propose for the next month." }
+      ],
+      "process": [
+        { "h": "Initial audit", "p": "We review your profiles, those of your competitors and which content has worked so far." },
+        { "h": "Monthly plan", "p": "We present the calendar with topics and dates. You approve it or ask for changes before anything is produced." },
+        { "h": "Production and publishing", "p": "We create the pieces, schedule them and handle the daily comments and messages." },
+        { "h": "Report and adjustment", "p": "At the end of the month we review the figures together and adjust the following plan with what we learned." }
+      ],
+      "audience": [
+        "Businesses with open profiles that sit idle for lack of time.",
+        "Companies publishing without a plan that want a more consistent, more serious image.",
+        "Brands whose clients check them online before buying."
+      ],
+      "faq": [
+        { "q": "Which platforms do you manage?", "a": "Those that make sense for your business, normally Instagram, Facebook and LinkedIn. Two platforms handled well beat five handled halfway." },
+        { "q": "Who takes the photos and videos?", "a": "We can work with material you already have, produce the design pieces ourselves, or arrange a photo session when the project calls for it." },
+        { "q": "Is there a minimum contract?", "a": "No. We work month to month. If at any point it stops being worthwhile, you can leave without penalty." },
+        { "q": "How long before results show?", "a": "Early signals such as reach and engagement appear within the first weeks. A solid community and clients arriving through social media take months, not days." },
+        { "q": "Do I have to approve every post?", "a": "That is your call. Some clients approve the monthly calendar and nothing else; others prefer to review each piece. Both work." }
+      ]
+    },
+    {
+      "id": "seo",
+      "slug": "seo-barcelona.html",
+      "tile": "service-tile--seo",
+      "title": "SEO in Barcelona — BENAMAR",
+      "description": "SEO in Barcelona: technical audit, content, local search and monthly reporting with qualified traffic targets.",
+      "h1": "SEO in Barcelona",
+      "teaser": "Visibility at the moment people search.",
+      "intro": [
+        "Search engine optimisation, or SEO, is the work of getting your website to appear on Google when someone searches for what you offer, without paying for each click.",
+        "It brings the most valuable visits there are: people who already have the problem you solve and are looking for someone to solve it. It is also the slowest work, because Google does not rearrange its results overnight.",
+        "We work on the three factors that decide it: that the site can be read and loads quickly, that the copy answers what people actually search for, and that the business has a solid local presence in Barcelona."
+      ],
+      "includes": [
+        { "h": "Technical audit", "p": "We review speed, the mobile version, structure, broken links and anything that stops Google from reading the site normally." },
+        { "h": "Keywords and content", "p": "We find out what your client searches for and in which words, then write or rewrite the pages that answer those searches." },
+        { "h": "Local search", "p": "Google Business Profile, consistent name, phone and address, and presence in the directories that count in Barcelona." },
+        { "h": "Monthly measurement", "p": "A monthly report with positions, visits and enquiries obtained. No decorative charts and no metrics that mean nothing." }
+      ],
+      "process": [
+        { "h": "Audit", "p": "We analyse the site, the competition and the searches in your sector. That produces a list of problems ordered by impact." },
+        { "h": "Plan", "p": "We set out what will be done, in what order and what we expect to achieve. Without promises of first place." },
+        { "h": "Execution", "p": "We apply the technical fixes, publish the content and build the local presence, month by month." },
+        { "h": "Measurement", "p": "We review which searches bring visits and adjust the plan with that data, not with assumptions." }
+      ],
+      "audience": [
+        "Local businesses that want to appear when someone searches for their service in Barcelona.",
+        "Companies with a website that receives no traffic from Google and do not know why.",
+        "Advertisers who want to build visits that do not depend on a daily budget."
+      ],
+      "faq": [
+        { "q": "How long until results show?", "a": "Technical fixes show within weeks. Gaining positions on competitive searches usually takes between three and six months of consistent work." },
+        { "q": "Do you guarantee first place on Google?", "a": "No, and be wary of anyone who does. Nobody controls the order of Google results. What we commit to is the work, measuring it and showing you the figures every month." },
+        { "q": "How is it different from Google Ads?", "a": "Adverts appear at the top from day one and stop the moment you stop paying. SEO takes longer, but the visits keep arriving once the work is done. The two complement each other." },
+        { "q": "Does it include the Google Business Profile?", "a": "Yes. For a local business it is one of the heaviest factors, so we set it up, complete it and keep it current." },
+        { "q": "Is there a minimum contract?", "a": "No. The work runs month to month, though it is worth knowing that SEO needs continuity: three isolated months do not produce the results of sustained work." }
+      ]
+    }
+  ]
+}
