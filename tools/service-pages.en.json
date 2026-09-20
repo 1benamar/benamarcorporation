@@ -8,6 +8,7 @@
       "ctaHeading" : "Let us talk about your project.",
       "ctaSub" : "Tell us what your business needs. We reply within 24 hours with a concrete proposal.",
       "faq" : "Frequently asked questions",
+      "figures" : "In numbers",
       "includes" : "What it includes",
       "kicker" : "Service",
       "others" : "Other services",
@@ -50,18 +51,22 @@
          "includes" : [
             {
                "h" : "Custom design",
+               "icon" : "layout",
                "p" : "Every website starts from scratch, built around the identity of the business. We do not adapt generic templates or reuse the same layout in a different colour."
             },
             {
                "h" : "Lightweight development",
+               "icon" : "code",
                "p" : "Our own code, without heavy page builders. The site loads quickly on mobile, which is where most of the traffic comes from."
             },
             {
                "h" : "Structure and copy",
+               "icon" : "type",
                "p" : "We order the information so that a visitor understands within seconds what the business offers and what to do next."
             },
             {
                "h" : "Ready to rank",
+               "icon" : "search",
                "p" : "Tags, speed, language versions and structured data in place from the first day, so that Google can read the site properly."
             }
          ],
@@ -70,6 +75,7 @@
             "At BENAMAR we design and develop custom corporate websites from Barcelona. No bought templates and no features nobody will use: only what the business needs to explain itself well and turn visits into customers.",
             "The result is a website of your own, fast on mobile and ready from day one for Google to understand it. And it stays in your name, with the domain, the hosting and the code under your control."
          ],
+         "photo" : "proceso-trabajo",
          "process" : [
             {
                "h" : "First conversation",
@@ -132,18 +138,22 @@
          "includes" : [
             {
                "h" : "A single message",
+               "icon" : "target",
                "p" : "We define the offer and write it in plain language, without empty promises or decoration that costs credibility."
             },
             {
                "h" : "Conversion structure",
+               "icon" : "layers",
                "p" : "An order designed to guide the visitor: what they gain, why to trust you, which doubts to settle and where to click."
             },
             {
                "h" : "A form that arrives",
+               "icon" : "mail",
                "p" : "A short form tested end to end, with enquiries landing in your inbox rather than in a spam folder."
             },
             {
                "h" : "Ready to measure",
+               "icon" : "chart",
                "p" : "The page is prepared to connect with Google Ads or Meta, so you know how many visits become enquiries."
             }
          ],
@@ -152,6 +162,7 @@
             "It differs from a corporate website in that it does not try to explain the whole business. It removes everything that distracts, including the menu, and keeps only what is needed for that action to happen.",
             "That is why it is the right destination for paid traffic. Every euro spent on advertising lands on a page built for that campaign, not on a general homepage where the visitor gets lost."
          ],
+         "photo" : "landing-detalle",
          "process" : [
             {
                "h" : "Goal and offer",
@@ -214,18 +225,22 @@
          "includes" : [
             {
                "h" : "Strategy and calendar",
+               "icon" : "calendar",
                "p" : "We define what to say, how often and on which platform. The calendar is approved before anything is published."
             },
             {
                "h" : "Original content",
+               "icon" : "image",
                "p" : "Design of the pieces and writing of the copy, in your brand identity. We can also adapt material you already have."
             },
             {
                "h" : "Publishing and community",
+               "icon" : "message",
                "p" : "We publish on the agreed dates and answer comments and messages in the tone we have set together."
             },
             {
                "h" : "Monthly report",
+               "icon" : "chart",
                "p" : "A clear report, without jargon: what was published, what reach it had, what performed and what we propose for the next month."
             }
          ],
@@ -234,6 +249,7 @@
             "We take that part off your hands. We prepare the strategy, the calendar and the content, we publish and reply, and every month you receive a report on what worked and what did not.",
             "We work from Barcelona and meet regularly, so that the content looks like your business rather than a generic account for your sector."
          ],
+         "photo" : "redes-detalle",
          "process" : [
             {
                "h" : "Initial audit",
@@ -296,18 +312,22 @@
          "includes" : [
             {
                "h" : "Technical audit",
+               "icon" : "search",
                "p" : "We review speed, the mobile version, structure, broken links and anything that stops Google from reading the site normally."
             },
             {
                "h" : "Keywords and content",
+               "icon" : "tag",
                "p" : "We find out what your client searches for and in which words, then write or rewrite the pages that answer those searches."
             },
             {
                "h" : "Local search",
+               "icon" : "pin",
                "p" : "Google Business Profile, consistent name, phone and address, and presence in the directories that count in Barcelona."
             },
             {
                "h" : "Monthly measurement",
+               "icon" : "chart",
                "p" : "A monthly report with positions, visits and enquiries obtained. No decorative charts and no metrics that mean nothing."
             }
          ],
@@ -316,6 +336,7 @@
             "It brings the most valuable visits there are: people who already have the problem you solve and are looking for someone to solve it. It is also the slowest work, because Google does not rearrange its results overnight.",
             "We work on the three factors that decide it: that the site can be read and loads quickly, that the copy answers what people actually search for, and that the business has a solid local presence in Barcelona."
          ],
+         "photo" : "seo-detalle",
          "process" : [
             {
                "h" : "Audit",
@@ -338,6 +359,28 @@
          "teaser" : "Visibility at the moment people search.",
          "tile" : "service-tile--seo",
          "title" : "SEO in Barcelona — BENAMAR"
+      }
+   ],
+   "stats" : [
+      {
+         "i" : "clock",
+         "l" : "Response time",
+         "v" : "&lt;24h"
+      },
+      {
+         "i" : "target",
+         "l" : "Custom-built projects",
+         "v" : "100 %"
+      },
+      {
+         "i" : "user",
+         "l" : "Single point of contact, always",
+         "v" : "1"
+      },
+      {
+         "i" : "unlock",
+         "l" : "Contract lock-in",
+         "v" : "0"
       }
    ]
 }

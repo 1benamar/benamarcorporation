@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=20260920b">
+  <link rel="stylesheet" href="../styles.css?v=20260920c">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
@@ -156,33 +156,65 @@
       <p class="about-body" data-reveal>A landing page is a page with a single purpose: getting the visitor to do one specific thing. Request a quote, book an appointment, leave a phone number or buy. Nothing else.</p>
       <p class="about-body" data-reveal>It differs from a corporate website in that it does not try to explain the whole business. It removes everything that distracts, including the menu, and keeps only what is needed for that action to happen.</p>
       <p class="about-body" data-reveal>That is why it is the right destination for paid traffic. Every euro spent on advertising lands on a page built for that campaign, not on a general homepage where the visitor gets lost.</p>
+      <p class="kicker stats-kicker" data-reveal>In numbers</p>
+      <div class="stats-grid">
+        <div class="stat" data-reveal>
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>
+          <span class="stat-value">&lt;24h</span>
+          <span class="stat-label">Response time</span>
+        </div>
+        <div class="stat" data-reveal>
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+          <span class="stat-value">100 %</span>
+          <span class="stat-label">Custom-built projects</span>
+        </div>
+        <div class="stat" data-reveal>
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c0-3.5 3.1-6 7-6s7 2.5 7 6"></path></svg>
+          <span class="stat-value">1</span>
+          <span class="stat-label">Single point of contact, always</span>
+        </div>
+        <div class="stat" data-reveal>
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 7-2.6"></path></svg>
+          <span class="stat-value">0</span>
+          <span class="stat-label">Contract lock-in</span>
+        </div>
+      </div>
     </section>
 
     <section class="manifesto">
       <h2 class="manifesto-statement" data-reveal>What it includes</h2>
       <div class="benefits-grid benefits-grid--4">
         <div class="benefit" data-reveal>
+          <div class="benefit-head"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg></div>
           <h3>A single message</h3>
           <p>We define the offer and write it in plain language, without empty promises or decoration that costs credibility.</p>
         </div>
         <div class="benefit" data-reveal>
+          <div class="benefit-head"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 14l9 5 9-5"></path></svg></div>
           <h3>Conversion structure</h3>
           <p>An order designed to guide the visitor: what they gain, why to trust you, which doubts to settle and where to click.</p>
         </div>
         <div class="benefit" data-reveal>
+          <div class="benefit-head"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></div>
           <h3>A form that arrives</h3>
           <p>A short form tested end to end, with enquiries landing in your inbox rather than in a spam folder.</p>
         </div>
         <div class="benefit" data-reveal>
+          <div class="benefit-head"><svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7"></path></svg></div>
           <h3>Ready to measure</h3>
           <p>The page is prepared to connect with Google Ads or Meta, so you know how many visits become enquiries.</p>
         </div>
       </div>
     </section>
 
-    <section class="service-section">
-      <h2 data-reveal>How we work</h2>
-      <ol class="process">
+    <section class="service-process">
+      <div class="service-process-inner">
+        <div class="service-process-photo" data-reveal>
+          <span class="service-photo" style="background-image: url('../assets/img/landing-detalle.jpg')"></span>
+        </div>
+        <div class="service-process-text">
+          <h2 data-reveal>How we work</h2>
+          <ol class="process">
         <li data-reveal>
           <h3>Goal and offer</h3>
           <p>We define the action the visitor must take and what they receive in return. Everything else follows from that.</p>
@@ -199,7 +231,9 @@
           <h3>Adjustments from data</h3>
           <p>The first visits show what works. We adjust headline, order or form according to what the numbers say.</p>
         </li>
-      </ol>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <section class="service-band" data-reveal>

@@ -1,0 +1,4 @@
+web-detalle|laptop code screen|wide|
+landing-detalle|marketing notebook desk|wide|
+redes-detalle|smartphone camera hands|wide|
+seo-detalle|chart analytics screen|wide|

@@ -8,6 +8,7 @@
       "ctaHeading" : "Hablemos de su proyecto.",
       "ctaSub" : "Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta.",
       "faq" : "Preguntas frecuentes",
+      "figures" : "En cifras",
       "includes" : "Qué incluye",
       "kicker" : "Servicio",
       "others" : "Otros servicios",
@@ -50,18 +51,22 @@
          "includes" : [
             {
                "h" : "Diseño a medida",
+               "icon" : "layout",
                "p" : "Cada web parte de cero, con la identidad del negocio. No adaptamos plantillas genéricas ni reutilizamos el mismo diseño cambiando el color."
             },
             {
                "h" : "Desarrollo ligero",
+               "icon" : "code",
                "p" : "Código propio, sin constructores pesados. La web carga rápido en el móvil, que es por donde entra la mayor parte del tráfico."
             },
             {
                "h" : "Estructura y textos",
+               "icon" : "type",
                "p" : "Ordenamos la información para que el visitante entienda en pocos segundos qué ofrece el negocio y qué puede hacer a continuación."
             },
             {
                "h" : "Base para posicionar",
+               "icon" : "search",
                "p" : "Etiquetas, velocidad, versiones de idioma y datos estructurados listos desde el primer día, para que Google entienda la web."
             }
          ],
@@ -70,6 +75,7 @@
             "En BENAMAR diseñamos y desarrollamos webs corporativas a medida desde Barcelona. Sin plantillas compradas y sin funciones que nadie va a usar: solo lo que el negocio necesita para explicarse bien y convertir visitas en clientes.",
             "El resultado es una web propia, rápida en el móvil y preparada desde el primer día para que Google la entienda. Y queda a su nombre, con el dominio, el alojamiento y el código en su poder."
          ],
+         "photo" : "proceso-trabajo",
          "process" : [
             {
                "h" : "Conversación inicial",
@@ -132,18 +138,22 @@
          "includes" : [
             {
                "h" : "Un solo mensaje",
+               "icon" : "target",
                "p" : "Definimos la oferta y la escribimos en un lenguaje claro, sin promesas vacías ni adornos que resten credibilidad."
             },
             {
                "h" : "Estructura de conversión",
+               "icon" : "layers",
                "p" : "Orden pensado para acompañar al visitante: qué gana, por qué confiar, qué dudas resolver y dónde pulsar."
             },
             {
                "h" : "Formulario que llega",
+               "icon" : "mail",
                "p" : "Formulario corto y revisado de punta a punta, con las solicitudes entrando en su correo y no en una carpeta de spam."
             },
             {
                "h" : "Preparada para medir",
+               "icon" : "chart",
                "p" : "La página queda lista para conectarse con Google Ads o Meta y saber cuántas visitas se convierten en contactos."
             }
          ],
@@ -152,6 +162,7 @@
             "Se diferencia de la web corporativa en que no intenta explicar todo el negocio. Quita del medio todo lo que distrae, incluido el menú, y deja solo lo necesario para que esa acción ocurra.",
             "Por eso es la página a la que conviene enviar el tráfico de una campaña de pago. Cada euro invertido en anuncios llega a una página hecha para esa campaña, no a una portada genérica donde el visitante se pierde."
          ],
+         "photo" : "landing-detalle",
          "process" : [
             {
                "h" : "Objetivo y oferta",
@@ -214,18 +225,22 @@
          "includes" : [
             {
                "h" : "Estrategia y calendario",
+               "icon" : "calendar",
                "p" : "Definimos qué contar, con qué frecuencia y en qué red. El calendario se aprueba antes de publicar nada."
             },
             {
                "h" : "Contenido propio",
+               "icon" : "image",
                "p" : "Diseño de las piezas y redacción de los textos, con la identidad de su marca. También adaptamos el material que usted ya tenga."
             },
             {
                "h" : "Publicación y comunidad",
+               "icon" : "message",
                "p" : "Publicamos en las fechas previstas y respondemos comentarios y mensajes con el tono que hayamos acordado."
             },
             {
                "h" : "Informe mensual",
+               "icon" : "chart",
                "p" : "Un informe claro, sin jerga: qué se publicó, qué alcance tuvo, qué contenidos funcionaron y qué proponemos para el mes siguiente."
             }
          ],
@@ -234,6 +249,7 @@
             "Nos encargamos de esa parte. Preparamos la estrategia, el calendario y el contenido, publicamos y respondemos, y cada mes le enviamos un informe con lo que ha funcionado y lo que no.",
             "Trabajamos desde Barcelona y con reuniones periódicas, para que el contenido se parezca a su negocio y no a una cuenta genérica del sector."
          ],
+         "photo" : "redes-detalle",
          "process" : [
             {
                "h" : "Auditoría inicial",
@@ -296,18 +312,22 @@
          "includes" : [
             {
                "h" : "Auditoría técnica",
+               "icon" : "search",
                "p" : "Revisamos velocidad, versión móvil, estructura, enlaces rotos y todo lo que impida a Google leer la web con normalidad."
             },
             {
                "h" : "Palabras clave y contenido",
+               "icon" : "tag",
                "p" : "Averiguamos qué busca su cliente y con qué palabras, y escribimos o reescribimos las páginas que respondan a esas búsquedas."
             },
             {
                "h" : "SEO local",
+               "icon" : "pin",
                "p" : "Ficha de Google Business, coherencia de nombre, teléfono y dirección, y presencia en los directorios que cuentan en Barcelona."
             },
             {
                "h" : "Medición mensual",
+               "icon" : "chart",
                "p" : "Un informe mensual con posiciones, visitas y contactos conseguidos. Sin gráficos de adorno ni métricas que no significan nada."
             }
          ],
@@ -316,6 +336,7 @@
             "Es el tipo de visita más valiosa que existe: gente que ya tiene el problema que usted resuelve y está buscando a alguien que lo resuelva. También es el trabajo más lento, porque Google no cambia sus resultados de un día para otro.",
             "Trabajamos las tres patas que lo determinan: que la web se pueda leer y cargue rápido, que los textos respondan a lo que la gente busca de verdad, y que su negocio tenga presencia local sólida en Barcelona."
          ],
+         "photo" : "seo-detalle",
          "process" : [
             {
                "h" : "Auditoría",
@@ -338,6 +359,28 @@
          "teaser" : "Visibilidad en el momento en que le buscan.",
          "tile" : "service-tile--seo",
          "title" : "Posicionamiento SEO en Barcelona — BENAMAR"
+      }
+   ],
+   "stats" : [
+      {
+         "i" : "clock",
+         "l" : "Tiempo de respuesta",
+         "v" : "&lt;24h"
+      },
+      {
+         "i" : "target",
+         "l" : "Proyectos hechos a medida",
+         "v" : "100 %"
+      },
+      {
+         "i" : "user",
+         "l" : "Interlocutor único, siempre",
+         "v" : "1"
+      },
+      {
+         "i" : "unlock",
+         "l" : "Permanencia de contrato",
+         "v" : "0"
       }
    ]
 }

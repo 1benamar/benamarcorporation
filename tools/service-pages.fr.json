@@ -8,6 +8,7 @@
       "ctaHeading" : "Parlons de votre projet.",
       "ctaSub" : "Parlez-nous des besoins de votre entreprise. Nous vous répondons sous 24 heures avec une proposition concrète.",
       "faq" : "Questions fréquentes",
+      "figures" : "En chiffres",
       "includes" : "Ce que cela comprend",
       "kicker" : "Service",
       "others" : "Autres services",
@@ -50,18 +51,22 @@
          "includes" : [
             {
                "h" : "Conception sur mesure",
+               "icon" : "layout",
                "p" : "Chaque site part de zéro, avec l'identité de l'entreprise. Nous n'adaptons pas de modèles génériques et ne réutilisons pas la même maquette en changeant la couleur."
             },
             {
                "h" : "Développement léger",
+               "icon" : "code",
                "p" : "Du code propre, sans constructeurs lourds. Le site se charge vite sur mobile, d'où vient l'essentiel du trafic."
             },
             {
                "h" : "Structure et textes",
+               "icon" : "type",
                "p" : "Nous organisons l'information pour que le visiteur comprenne en quelques secondes ce que vous proposez et ce qu'il peut faire ensuite."
             },
             {
                "h" : "Base pour le référencement",
+               "icon" : "search",
                "p" : "Balises, vitesse, versions linguistiques et données structurées en place dès le départ, pour que Google lise correctement le site."
             }
          ],
@@ -70,6 +75,7 @@
             "Chez BENAMAR, nous concevons et développons des sites corporatifs sur mesure depuis Barcelone. Sans modèles achetés et sans fonctions que personne n'utilisera : uniquement ce dont l'entreprise a besoin pour bien se présenter et transformer les visites en clients.",
             "Le résultat est un site qui vous appartient, rapide sur mobile et prêt dès le premier jour à être compris par Google. Le domaine, l'hébergement et le code restent à votre nom."
          ],
+         "photo" : "proceso-trabajo",
          "process" : [
             {
                "h" : "Première conversation",
@@ -132,18 +138,22 @@
          "includes" : [
             {
                "h" : "Un seul message",
+               "icon" : "target",
                "p" : "Nous définissons l'offre et l'écrivons dans un langage clair, sans promesses creuses ni ornements qui coûtent en crédibilité."
             },
             {
                "h" : "Structure de conversion",
+               "icon" : "layers",
                "p" : "Un ordre pensé pour accompagner le visiteur : ce qu'il gagne, pourquoi vous faire confiance, quels doutes lever et où cliquer."
             },
             {
                "h" : "Un formulaire qui arrive",
+               "icon" : "mail",
                "p" : "Un formulaire court, testé de bout en bout, dont les demandes arrivent dans votre boîte et non dans les indésirables."
             },
             {
                "h" : "Prête à être mesurée",
+               "icon" : "chart",
                "p" : "La page est prête à être reliée à Google Ads ou Meta, pour savoir combien de visites deviennent des contacts."
             }
          ],
@@ -152,6 +162,7 @@
             "Elle se distingue du site corporatif parce qu'elle ne cherche pas à présenter toute l'entreprise. Elle retire ce qui distrait, y compris le menu, et ne garde que le nécessaire pour que cette action se produise.",
             "C'est donc la bonne destination pour le trafic payant. Chaque euro investi en publicité arrive sur une page conçue pour cette campagne, et non sur un accueil général où le visiteur se perd."
          ],
+         "photo" : "landing-detalle",
          "process" : [
             {
                "h" : "Objectif et offre",
@@ -214,18 +225,22 @@
          "includes" : [
             {
                "h" : "Stratégie et calendrier",
+               "icon" : "calendar",
                "p" : "Nous définissons quoi dire, à quelle fréquence et sur quel réseau. Le calendrier est validé avant toute publication."
             },
             {
                "h" : "Contenu original",
+               "icon" : "image",
                "p" : "Création des visuels et rédaction des textes, dans votre identité de marque. Nous pouvons aussi adapter vos éléments existants."
             },
             {
                "h" : "Publication et communauté",
+               "icon" : "message",
                "p" : "Nous publions aux dates prévues et répondons aux commentaires et aux messages sur le ton convenu."
             },
             {
                "h" : "Rapport mensuel",
+               "icon" : "chart",
                "p" : "Un rapport clair, sans jargon : ce qui a été publié, la portée obtenue, ce qui a marché et ce que nous proposons pour le mois suivant."
             }
          ],
@@ -234,6 +249,7 @@
             "Nous prenons cette partie en charge. Nous préparons la stratégie, le calendrier et les contenus, nous publions et répondons, et chaque mois vous recevez un rapport sur ce qui a fonctionné et ce qui n'a pas marché.",
             "Nous travaillons depuis Barcelone, avec des points réguliers, pour que le contenu ressemble à votre entreprise et non à un compte générique du secteur."
          ],
+         "photo" : "redes-detalle",
          "process" : [
             {
                "h" : "Audit initial",
@@ -296,18 +312,22 @@
          "includes" : [
             {
                "h" : "Audit technique",
+               "icon" : "search",
                "p" : "Nous examinons la vitesse, la version mobile, la structure, les liens cassés et tout ce qui empêche Google de lire le site normalement."
             },
             {
                "h" : "Mots-clés et contenu",
+               "icon" : "tag",
                "p" : "Nous identifions ce que cherche votre client et avec quels mots, puis rédigeons ou réécrivons les pages qui répondent à ces recherches."
             },
             {
                "h" : "Référencement local",
+               "icon" : "pin",
                "p" : "Fiche Google Business, cohérence du nom, du téléphone et de l'adresse, et présence dans les annuaires qui comptent à Barcelone."
             },
             {
                "h" : "Mesure mensuelle",
+               "icon" : "chart",
                "p" : "Un rapport mensuel avec les positions, les visites et les contacts obtenus. Sans graphiques décoratifs ni indicateurs vides."
             }
          ],
@@ -316,6 +336,7 @@
             "Ce sont les visites les plus précieuses qui existent : des personnes qui ont déjà le problème que vous résolvez et cherchent quelqu'un pour le résoudre. C'est aussi le travail le plus lent, car Google ne réorganise pas ses résultats du jour au lendemain.",
             "Nous travaillons les trois facteurs qui le déterminent : un site lisible et rapide, des textes qui répondent aux recherches réelles, et une présence locale solide à Barcelone."
          ],
+         "photo" : "seo-detalle",
          "process" : [
             {
                "h" : "Audit",
@@ -338,6 +359,28 @@
          "teaser" : "Une visibilité au moment où l'on vous cherche.",
          "tile" : "service-tile--seo",
          "title" : "Référencement SEO à Barcelone — BENAMAR"
+      }
+   ],
+   "stats" : [
+      {
+         "i" : "clock",
+         "l" : "Temps de réponse",
+         "v" : "&lt;24h"
+      },
+      {
+         "i" : "target",
+         "l" : "Projets sur mesure",
+         "v" : "100 %"
+      },
+      {
+         "i" : "user",
+         "l" : "Interlocuteur unique, toujours",
+         "v" : "1"
+      },
+      {
+         "i" : "unlock",
+         "l" : "Engagement de durée",
+         "v" : "0"
       }
    ]
 }

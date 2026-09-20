@@ -323,7 +323,7 @@ h1 em, h2 em, h3 em, .em-serif {
   position: absolute;
   inset: -4%;
   z-index: -2;
-  background-image: url("assets/img/hero-agency.jpg");
+  background-image: url("assets/img/equipo-reunion.jpg");
   background-size: cover;
   background-position: center 42%;
   transform: scale(1.08);
@@ -952,25 +952,32 @@ h1 em, h2 em, h3 em, .em-serif {
   background: var(--accent);
 }
 
-/* Cómo trabajamos */
+/* Cómo trabajamos: línea de tiempo */
 .process {
-  margin: 2.8rem 0 0; padding: 0; list-style: none;
+  margin: 2.4rem 0 0; padding: 0; list-style: none;
   counter-reset: paso; text-align: left;
 }
 .process li {
   counter-increment: paso;
   position: relative;
-  padding: 1.5rem 0 1.5rem 3rem;
-  border-top: 1px solid var(--line);
+  padding: 0 0 2.2rem 3rem;
 }
-.process li:first-child { border-top: 0; padding-top: 0; }
+.process li:last-child { padding-bottom: 0; }
 .process li::before {
   content: counter(paso);
-  position: absolute; left: 0; top: 1.6rem;
-  color: var(--accent);
-  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em;
+  position: absolute; left: 0; top: 0;
+  width: 1.7rem; height: 1.7rem;
+  display: grid; place-items: center;
+  border: 1px solid var(--line-2); border-radius: 50%;
+  color: var(--accent); font-size: 0.72rem; font-weight: 600;
 }
-.process li:first-child::before { top: 0.2rem; }
+.process li::after {
+  content: "";
+  position: absolute; left: 0.85rem; top: 2rem; bottom: 0.4rem;
+  width: 1px;
+  background: linear-gradient(180deg, var(--line-2), transparent);
+}
+.process li:last-child::after { display: none; }
 .process h3 { font-size: 1.05rem; }
 .process p { margin-top: 0.4rem; color: var(--mute); font-size: 0.95rem; max-width: 58ch; }
 
@@ -1067,4 +1074,43 @@ h1 em, h2 em, h3 em, .em-serif {
   .page-hero { padding-block: 10rem; }
   .service-section { padding-block: 6.5rem; }
   .service-band { padding-block: 9rem; }
+}
+
+/* Proceso con fotografía al lado */
+.service-process { padding-block: 5rem; padding-inline: 1.5rem; }
+.service-process-inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  gap: 2.5rem;
+}
+.service-photo {
+  display: block; width: 100%;
+  aspect-ratio: 16 / 10;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  filter: brightness(0.85);
+}
+.service-process-text > h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+  position: relative;
+  padding-top: 1.7rem;
+  text-align: center;
+}
+.service-process-text > h2::before {
+  content: "";
+  position: absolute; top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 26px; height: 1px;
+  background: var(--accent);
+}
+@media (min-width: 960px) {
+  .service-process { padding-block: 6.5rem; }
+  .service-process-inner { grid-template-columns: 5fr 7fr; gap: 4rem; align-items: start; }
+  .service-process-photo { position: sticky; top: 96px; }
+  .service-photo { aspect-ratio: 4 / 5; }
+  .service-process-text > h2 { text-align: left; }
+  .service-process-text > h2::before { left: 0; transform: none; }
 }

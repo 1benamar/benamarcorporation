@@ -20,6 +20,32 @@ for my $l (@langs) {
     $slug{$l}{ $_->{id} } = $_->{slug} for @{ $data{$l}{pages} };
 }
 
+# Iconos de linea, del mismo trazo que los de la portada.
+my %ICON = (
+    layout   => '<rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M9 9v11"></path>',
+    code     => '<path d="M8 6l-5 6 5 6M16 6l5 6-5 6"></path>',
+    type     => '<path d="M5 6h14M12 6v12M9 18h6"></path>',
+    search   => '<circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.5-4.5"></path>',
+    target   => '<circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle>',
+    layers   => '<path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 14l9 5 9-5"></path>',
+    mail     => '<rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path>',
+    chart    => '<path d="M4 20V10M10 20V4M16 20v-7"></path>',
+    calendar => '<rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path>',
+    image    => '<rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="8.5" cy="10" r="1.5"></circle><path d="M21 16l-5-5-6 6"></path>',
+    message  => '<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 21 12z"></path>',
+    pin      => '<path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle>',
+    tag      => '<path d="M20 12l-8 8-8-8V4h8l8 8z"></path><circle cx="8.5" cy="8.5" r="1.5"></circle>',
+    clock    => '<circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path>',
+    user     => '<circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c0-3.5 3.1-6 7-6s7 2.5 7 6"></path>',
+    unlock   => '<rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 7-2.6"></path>',
+);
+
+sub icon {
+    my ($name, $class) = @_;
+    my $paths = $ICON{ $name // '' } or return '';
+    return qq{<svg class="$class" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">$paths</svg>};
+}
+
 sub esc {
     my $s = shift // '';
     $s =~ s/&/&amp;/g;
@@ -88,10 +114,20 @@ for my $lang (@langs) {
 
         my $includes = join "\n", map {
                   qq{        <div class="benefit" data-reveal>\n}
+                . qq{          <div class="benefit-head">} . icon($_->{icon}, 'benefit-icon') . qq{</div>\n}
                 . qq{          <h3>} . esc($_->{h}) . qq{</h3>\n}
                 . qq{          <p>} . esc($_->{p}) . qq{</p>\n}
                 . qq{        </div>}
         } @{ $p->{includes} };
+
+        # Franja de cifras, las mismas que declara la portada.
+        my $stats = join "\n", map {
+                  qq{        <div class="stat" data-reveal>\n}
+                . qq{          } . icon($_->{i}, 'stat-icon') . qq{\n}
+                . qq{          <span class="stat-value">$_->{v}</span>\n}
+                . qq{          <span class="stat-label">} . esc($_->{l}) . qq{</span>\n}
+                . qq{        </div>}
+        } @{ $d->{stats} };
 
         my $process = join "\n", map {
                   qq{        <li data-reveal>\n}
@@ -170,7 +206,7 @@ $hreflang
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920b">
+  <link rel="stylesheet" href="${up}styles.css?v=20260920c">
   <script type="application/ld+json">
 $ld  </script>
 </head>
@@ -188,6 +224,10 @@ $ld  </script>
 
     <section class="about">
 $intro
+      <p class="kicker stats-kicker" data-reveal>@{[ esc($L->{figures}) ]}</p>
+      <div class="stats-grid">
+$stats
+      </div>
     </section>
 
     <section class="manifesto">
@@ -197,11 +237,18 @@ $includes
       </div>
     </section>
 
-    <section class="service-section">
-      <h2 data-reveal>@{[ esc($L->{process}) ]}</h2>
-      <ol class="process">
+    <section class="service-process">
+      <div class="service-process-inner">
+        <div class="service-process-photo" data-reveal>
+          <span class="service-photo" style="background-image: url('${up}assets/img/$p->{photo}.jpg')"></span>
+        </div>
+        <div class="service-process-text">
+          <h2 data-reveal>@{[ esc($L->{process}) ]}</h2>
+          <ol class="process">
 $process
-      </ol>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <section class="service-band" data-reveal>
