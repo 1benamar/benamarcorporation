@@ -228,7 +228,6 @@ for my $lang (@langs) {
         my ($hw, $hh) = dims($p->{heroImage});
         my $title = esc($p->{title});
         my $desc  = esc($p->{description});
-        my $fonts = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap';
 
         my $html = <<"HTML";
 <!doctype html>
@@ -256,16 +255,15 @@ $hreflang
   <meta name="twitter:image" content="${base}assets/img/$p->{heroImage}.jpg">
   <link rel="preload" as="image" href="${up}assets/img/$p->{heroImage}.jpg" fetchpriority="high">
   <link rel="icon" href="${up}assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260921a">
+  <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/inter-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="${up}styles.css?v=20260921c">
   <script type="application/ld+json">
 $ld  </script>
 </head>
 <body>
   $head<main id="main">
     <section class="service-tile $p->{tile} page-hero">
+      <img class="tile-photo" src="${up}assets/img/$p->{heroImage}.jpg" alt="@{[ esc($p->{heroAlt}) ]}" width="$hw" height="$hh" fetchpriority="high" decoding="async">
       <h1 class="service-title">@{[ esc($p->{h1}) ]}</h1>
       <p class="service-teaser">@{[ esc($p->{teaser}) ]}</p>
       <div class="service-actions">
@@ -350,7 +348,7 @@ $others
 
   $foot
 
-  <script defer src="${up}main.js?v=20260920"></script>
+  <script defer src="${up}main.js?v=20260921"></script>
 </body>
 </html>
 HTML

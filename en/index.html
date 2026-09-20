@@ -25,13 +25,11 @@
   <meta name="twitter:image" content="https://benamar.es/assets/img/hero-agency.jpg">
 
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="../assets/img/hero-agency.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/equipo-reunion.jpg" fetchpriority="high">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
+  <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/inter-latin.woff2" crossorigin>
 
-  <link rel="stylesheet" href="../styles.css?v=20260921a">
+  <link rel="stylesheet" href="../styles.css?v=20260921c">
   <noscript><style>
     [data-reveal]{opacity:1!important;transform:none!important;}
     .faq-body{grid-template-rows:1fr!important;}
@@ -112,7 +110,7 @@
     <a id="top"></a>
 
     <section class="hero" data-hero>
-      <div class="hero-photo" data-hero-photo aria-hidden="true"></div>
+        <img class="hero-photo-img" src="../assets/img/equipo-reunion.jpg" alt="Several people gathered around a wooden table with laptops and notebooks, taking notes" width="960" height="640" fetchpriority="high" decoding="async" data-hero-photo>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-mesh" data-mesh aria-hidden="true"></div>
       <div class="hero-inner">
@@ -138,6 +136,7 @@
 
     <section class="services" id="servicios">
       <article class="service-tile service-tile--web" data-reveal-scale>
+        <img class="tile-photo" src="../assets/img/web-corporativa.jpg" alt="Two people reviewing a hand-drawn website layout on paper, with laptops around the table" width="960" height="641" loading="lazy" decoding="async">
         <h2 class="service-title">Corporate Website</h2>
         <p class="service-teaser">A website that conveys the real value of your business.</p>
         <p class="service-body">Custom design and development: a website that is fast, clear and built to turn visits into customers.</p>
@@ -148,6 +147,7 @@
       </article>
 
       <article class="service-tile service-tile--landing" data-reveal-scale>
+        <img class="tile-photo" src="../assets/img/landing-pages.jpg" alt="Desktop computer showing a data dashboard, on a white desk with a plant and a coffee" width="960" height="640" loading="lazy" decoding="async">
         <h2 class="service-title">Landing Pages</h2>
         <p class="service-teaser">One page, one goal, one conversion.</p>
         <p class="service-body">Landing pages focused on a single outcome: the sale, the enquiry or the booking the campaign requires.</p>
@@ -158,6 +158,7 @@
       </article>
 
       <article class="service-tile service-tile--social" data-reveal-scale>
+        <img class="tile-photo" src="../assets/img/redes-sociales.jpg" alt="Overhead view of an open laptop and a hand typing on a phone, with a coffee cup on a wooden table" width="1024" height="683" loading="lazy" decoding="async">
         <h2 class="service-title">Social Media Management</h2>
         <p class="service-teaser">A constant presence, without demands on your time.</p>
         <p class="service-body">Strategy, content and editorial calendar managed end to end, with clear reporting on what works.</p>
@@ -168,6 +169,7 @@
       </article>
 
       <article class="service-tile service-tile--seo" data-reveal-scale>
+        <img class="tile-photo" src="../assets/img/seo-google.jpg" alt="Desktop computer showing an analytics tool with a website’s traffic graph" width="960" height="640" loading="lazy" decoding="async">
         <h2 class="service-title">Google Positioning (SEO)</h2>
         <p class="service-teaser">Visibility at the moment people search.</p>
         <p class="service-body">Technical and content SEO with qualified traffic targets, measured month by month.</p>
@@ -341,6 +343,6 @@
   </footer>
 
   <script defer src="../lib/manifest.js"></script>
-  <script defer src="../main.js?v=20260914"></script>
+  <script defer src="../main.js?v=20260921"></script>
 </body>
 </html>
