@@ -7,3 +7,6 @@ Thumbs.db
 # no forman parte de la web y no deben subirse al hosting.
 .agents/
 skills-lock.json
+
+# Solicitudes que el correo del servidor no pudo enviar
+.solicitudes-no-enviadas.log

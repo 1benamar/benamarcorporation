@@ -68,6 +68,14 @@ $sent = @mail($to, $encoded_subject, $body, implode("\r\n", $headers), '-f' . $f
 if ($sent) {
     echo json_encode(['success' => true]);
 } else {
+    // Si el correo del servidor falla, la solicitud se guarda en disco para
+    // que no se pierda. El nombre empieza por punto y el .htaccess bloquea
+    // esas rutas, así que el archivo no es accesible desde fuera.
+    $registro  = str_repeat('-', 60) . "\n";
+    $registro .= 'Fecha: ' . date('Y-m-d H:i:s') . "\n";
+    $registro .= $body;
+    @file_put_contents(__DIR__ . '/.solicitudes-no-enviadas.log', $registro, FILE_APPEND | LOCK_EX);
+
     http_response_code(500);
     echo json_encode(['success' => false, 'error' => 'send_failed']);
 }

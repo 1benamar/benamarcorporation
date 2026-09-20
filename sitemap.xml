@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://benamar.es/</loc>
     <lastmod>2026-09-21</lastmod>
@@ -8,6 +9,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/en/</loc>
@@ -16,6 +32,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/fr/</loc>
@@ -24,6 +55,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/aviso-legal.html</loc>
@@ -104,6 +150,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/web-design-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/creation-site-web-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/diseno-web-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/en/web-design-barcelona.html</loc>
@@ -112,6 +173,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/web-design-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/creation-site-web-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/diseno-web-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/fr/creation-site-web-barcelone.html</loc>
@@ -120,6 +196,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/web-design-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/creation-site-web-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/diseno-web-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/landing-pages-barcelona.html</loc>
@@ -128,6 +219,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/landing-pages-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/landing-pages-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/landing-pages-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/en/landing-pages-barcelona.html</loc>
@@ -136,6 +242,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/landing-pages-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/landing-pages-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/landing-pages-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/fr/landing-pages-barcelone.html</loc>
@@ -144,6 +265,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/landing-pages-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/landing-pages-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/landing-pages-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-trabajo.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/gestion-redes-sociales-barcelona.html</loc>
@@ -152,6 +288,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/social-media-management-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/gestion-reseaux-sociaux-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/gestion-redes-sociales-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/en/social-media-management-barcelona.html</loc>
@@ -160,6 +311,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/social-media-management-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/gestion-reseaux-sociaux-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/gestion-redes-sociales-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/fr/gestion-reseaux-sociaux-barcelone.html</loc>
@@ -168,6 +334,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/social-media-management-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/gestion-reseaux-sociaux-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/gestion-redes-sociales-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/posicionamiento-seo-barcelona.html</loc>
@@ -176,6 +357,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/seo-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/referencement-seo-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/posicionamiento-seo-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/en/seo-barcelona.html</loc>
@@ -184,6 +380,21 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/seo-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/referencement-seo-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/posicionamiento-seo-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://benamar.es/fr/referencement-seo-barcelone.html</loc>
@@ -192,5 +403,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/seo-barcelona.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/referencement-seo-barcelone.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/posicionamiento-seo-barcelona.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/equipo-reunion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/landing-pages.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>

@@ -232,6 +232,20 @@
     var form = $("[data-contact-form]");
     var success = $("[data-contact-success]");
     if (!form || !success) return;
+    var errorBox = $("[data-contact-error]");
+
+    // El aviso del navegador se cierra y no deja rastro. Un panel en la
+    // página mantiene a la vista las otras formas de contacto, para que
+    // una solicitud no se pierda porque el correo del servidor falle.
+    function mostrarFallo() {
+      if (!errorBox) { alert(T.error); return; }
+      errorBox.hidden = false;
+      errorBox.setAttribute("role", "alert");
+      errorBox.scrollIntoView({ block: "center", behavior: reduced ? "auto" : "smooth" });
+    }
+    function ocultarFallo() {
+      if (errorBox) errorBox.hidden = true;
+    }
     var submitBtn = form.querySelector('[type="submit"]');
     var msg = $("[data-contact-success-msg]");
 
@@ -240,6 +254,7 @@
       if (form.classList.contains("is-sending")) return;
       if (!form.reportValidity()) return;
 
+      ocultarFallo();
       form.classList.add("is-sending");
       submitBtn.disabled = true;
 
@@ -260,13 +275,13 @@
             success.setAttribute("aria-hidden", "false");
             success.classList.add("is-visible");
           } else {
-            alert(T.error);
+            mostrarFallo();
           }
         })
         .catch(function () {
           form.classList.remove("is-sending");
           submitBtn.disabled = false;
-          alert(T.error);
+          mostrarFallo();
         });
     });
   }
