@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Diseño de landing pages en Barcelona para campañas de Google Ads y redes sociales. Una página, un objetivo y resultados medidos.",
-           "name" : "Landing pages en Barcelona",
+           "name" : "Landing pages",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Landing pages en Barcelona",
+           "serviceType" : "Landing pages",
            "url" : "https://benamar.es/landing-pages-barcelona.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "La página y la campaña son dos trabajos distintos. Podemos hacer solo la página, o encargarnos también de la publicidad. Se lo detallamos por separado en el presupuesto."
                  },
                  "name" : "¿Incluye la gestión de la campaña?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés."
+                 },
+                 "name" : "¿Trabajáis solo en Barcelona?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--landing page-hero">
       <p class="service-num">Servicio</p>
-      <h1 class="service-title">Landing pages en Barcelona</h1>
+      <h1 class="service-title">Landing pages</h1>
       <p class="service-teaser">Una página, un objetivo, una conversión.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Ver todos los servicios &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Negocios que van a invertir en Google Ads o en redes y no quieren desperdiciar el presupuesto.</li>
         <li data-reveal>Servicios que necesitan captar solicitudes de presupuesto o reservas de forma constante.</li>
         <li data-reveal>Lanzamientos de un producto, una promoción o un evento con fecha concreta.</li>
+        <li data-reveal>Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>¿Incluye la gestión de la campaña?</h3>
           <p>La página y la campaña son dos trabajos distintos. Podemos hacer solo la página, o encargarnos también de la publicidad. Se lo detallamos por separado en el presupuesto.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>¿Trabajáis solo en Barcelona?</h3>
+          <p>No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Otros servicios</h2>
       <div class="other-services">
-        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web en Barcelona</a>
-        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales en Barcelona</a>
-        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO en Barcelona</a>
+        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web</a>
+        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales</a>
+        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO</a>
       </div>
     </section>
   </main>

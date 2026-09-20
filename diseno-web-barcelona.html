@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Diseño y desarrollo de webs corporativas a medida en Barcelona. Webs rápidas, claras y pensadas para convertir visitas en clientes.",
-           "name" : "Diseño web en Barcelona",
+           "name" : "Diseño web",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Diseño web en Barcelona",
+           "serviceType" : "Diseño web",
            "url" : "https://benamar.es/diseno-web-barcelona.html"
         },
         {
@@ -77,7 +83,7 @@
                  "@type" : "Question",
                  "acceptedAnswer" : {
                     "@type" : "Answer",
-                    "text" : "Nos reunimos en persona en Barcelona y alrededores. El trabajo en sí se puede llevar en remoto, así que también atendemos a clientes de otras provincias."
+                    "text" : "No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés."
                  },
                  "name" : "¿Trabajáis solo en Barcelona?"
               }
@@ -130,7 +136,7 @@
 <main id="main">
     <section class="service-tile service-tile--web page-hero">
       <p class="service-num">Servicio</p>
-      <h1 class="service-title">Diseño web en Barcelona</h1>
+      <h1 class="service-title">Diseño web</h1>
       <p class="service-teaser">Una web que transmite el valor real de su negocio.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Ver todos los servicios &rsaquo;</a>
@@ -194,6 +200,7 @@
         <li data-reveal>Negocios que ya funcionan y cuya web se ha quedado desfasada o nunca llegó a dar resultados.</li>
         <li data-reveal>Profesionales y empresas que empiezan y necesitan una primera web seria, no una página improvisada.</li>
         <li data-reveal>Empresas que atienden en varios idiomas y necesitan una versión cuidada de cada uno.</li>
+        <li data-reveal>Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto.</li>
       </ul>
     </section>
 
@@ -218,7 +225,7 @@
         </div>
         <div class="faq-item" data-reveal>
           <h3>¿Trabajáis solo en Barcelona?</h3>
-          <p>Nos reunimos en persona en Barcelona y alrededores. El trabajo en sí se puede llevar en remoto, así que también atendemos a clientes de otras provincias.</p>
+          <p>No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés.</p>
         </div>
       </div>
     </section>
@@ -232,9 +239,9 @@
     <section class="service-section">
       <h2 data-reveal>Otros servicios</h2>
       <div class="other-services">
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages en Barcelona</a>
-        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales en Barcelona</a>
-        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO en Barcelona</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales</a>
+        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO</a>
       </div>
     </section>
   </main>

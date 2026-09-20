@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "SEO in Barcelona: technical audit, content, local search and monthly reporting with qualified traffic targets.",
-           "name" : "SEO in Barcelona",
+           "name" : "SEO",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "SEO in Barcelona",
+           "serviceType" : "SEO",
            "url" : "https://benamar.es/en/seo-barcelona.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "No. The work runs month to month, though it is worth knowing that SEO needs continuity: three isolated months do not produce the results of sustained work."
                  },
                  "name" : "Is there a minimum contract?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French."
+                 },
+                 "name" : "Do you only work in Barcelona?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--seo page-hero">
       <p class="service-num">Service</p>
-      <h1 class="service-title">SEO in Barcelona</h1>
+      <h1 class="service-title">SEO</h1>
       <p class="service-teaser">Visibility at the moment people search.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">See all services &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Local businesses that want to appear when someone searches for their service in Barcelona.</li>
         <li data-reveal>Companies with a website that receives no traffic from Google and do not know why.</li>
         <li data-reveal>Advertisers who want to build visits that do not depend on a daily budget.</li>
+        <li data-reveal>Companies outside Barcelona, in Spain or abroad, that prefer to work remotely.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>Is there a minimum contract?</h3>
           <p>No. The work runs month to month, though it is worth knowing that SEO needs continuity: three isolated months do not produce the results of sustained work.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>Do you only work in Barcelona?</h3>
+          <p>No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Other services</h2>
       <div class="other-services">
-        <a class="other-service" href="web-design-barcelona.html" data-reveal>Web design in Barcelona</a>
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages in Barcelona</a>
-        <a class="other-service" href="social-media-management-barcelona.html" data-reveal>Social media management in Barcelona</a>
+        <a class="other-service" href="web-design-barcelona.html" data-reveal>Web design</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="social-media-management-barcelona.html" data-reveal>Social media management</a>
       </div>
     </section>
   </main>

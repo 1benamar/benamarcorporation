@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Social media management for companies in Barcelona: strategy, content, editorial calendar and clear monthly reporting.",
-           "name" : "Social media management in Barcelona",
+           "name" : "Social media management",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Social media management in Barcelona",
+           "serviceType" : "Social media management",
            "url" : "https://benamar.es/en/social-media-management-barcelona.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "That is your call. Some clients approve the monthly calendar and nothing else; others prefer to review each piece. Both work."
                  },
                  "name" : "Do I have to approve every post?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French."
+                 },
+                 "name" : "Do you only work in Barcelona?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--social page-hero">
       <p class="service-num">Service</p>
-      <h1 class="service-title">Social media management in Barcelona</h1>
+      <h1 class="service-title">Social media management</h1>
       <p class="service-teaser">A constant presence, without demands on your time.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">See all services &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Businesses with open profiles that sit idle for lack of time.</li>
         <li data-reveal>Companies publishing without a plan that want a more consistent, more serious image.</li>
         <li data-reveal>Brands whose clients check them online before buying.</li>
+        <li data-reveal>Companies outside Barcelona, in Spain or abroad, that prefer to work remotely.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>Do I have to approve every post?</h3>
           <p>That is your call. Some clients approve the monthly calendar and nothing else; others prefer to review each piece. Both work.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>Do you only work in Barcelona?</h3>
+          <p>No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Other services</h2>
       <div class="other-services">
-        <a class="other-service" href="web-design-barcelona.html" data-reveal>Web design in Barcelona</a>
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages in Barcelona</a>
-        <a class="other-service" href="seo-barcelona.html" data-reveal>SEO in Barcelona</a>
+        <a class="other-service" href="web-design-barcelona.html" data-reveal>Web design</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="seo-barcelona.html" data-reveal>SEO</a>
       </div>
     </section>
   </main>

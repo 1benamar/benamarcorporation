@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Création de landing pages à Barcelone pour vos campagnes Google Ads et réseaux sociaux. Une page, un objectif, des résultats mesurés.",
-           "name" : "Landing pages à Barcelone",
+           "name" : "Landing pages",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Landing pages à Barcelone",
+           "serviceType" : "Landing pages",
            "url" : "https://benamar.es/fr/landing-pages-barcelone.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "La page et la campagne sont deux travaux distincts. Nous pouvons réaliser seulement la page, ou prendre aussi en charge la publicité. C'est chiffré séparément."
                  },
                  "name" : "La gestion de la campagne est-elle incluse ?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français."
+                 },
+                 "name" : "Travaillez-vous uniquement à Barcelone ?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--landing page-hero">
       <p class="service-num">Service</p>
-      <h1 class="service-title">Landing pages à Barcelone</h1>
+      <h1 class="service-title">Landing pages</h1>
       <p class="service-teaser">Une page, un objectif, une conversion.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Voir tous les services &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Des entreprises qui vont investir en Google Ads ou sur les réseaux et ne veulent pas gaspiller leur budget.</li>
         <li data-reveal>Des activités de services qui ont besoin d'un flux régulier de demandes de devis ou de réservations.</li>
         <li data-reveal>Le lancement d'un produit, d'une promotion ou d'un événement à date fixe.</li>
+        <li data-reveal>Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>La gestion de la campagne est-elle incluse ?</h3>
           <p>La page et la campagne sont deux travaux distincts. Nous pouvons réaliser seulement la page, ou prendre aussi en charge la publicité. C'est chiffré séparément.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>Travaillez-vous uniquement à Barcelone ?</h3>
+          <p>Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Autres services</h2>
       <div class="other-services">
-        <a class="other-service" href="creation-site-web-barcelone.html" data-reveal>Création de site web à Barcelone</a>
-        <a class="other-service" href="gestion-reseaux-sociaux-barcelone.html" data-reveal>Gestion des réseaux sociaux à Barcelone</a>
-        <a class="other-service" href="referencement-seo-barcelone.html" data-reveal>Référencement SEO à Barcelone</a>
+        <a class="other-service" href="creation-site-web-barcelone.html" data-reveal>Création de site web</a>
+        <a class="other-service" href="gestion-reseaux-sociaux-barcelone.html" data-reveal>Gestion des réseaux sociaux</a>
+        <a class="other-service" href="referencement-seo-barcelone.html" data-reveal>Référencement SEO</a>
       </div>
     </section>
   </main>

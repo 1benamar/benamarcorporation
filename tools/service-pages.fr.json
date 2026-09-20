@@ -1,170 +1,342 @@
 {
-  "lang": "fr",
-  "dir": "fr/",
-  "labels": {
-    "kicker": "Service",
-    "includes": "Ce que cela comprend",
-    "process": "Notre méthode",
-    "audience": "À qui cela s'adresse",
-    "faq": "Questions fréquentes",
-    "others": "Autres services",
-    "ctaHeading": "Parlons de votre projet.",
-    "ctaSub": "Parlez-nous des besoins de votre entreprise. Nous vous répondons sous 24 heures avec une proposition concrète.",
-    "ctaButton": "Demander une proposition",
-    "backToServices": "Voir tous les services"
-  },
-  "pages": [
-    {
-      "id": "web",
-      "slug": "creation-site-web-barcelone.html",
-      "tile": "service-tile--web",
-      "title": "Création de site web à Barcelone — BENAMAR",
-      "description": "Conception et développement de sites web corporatifs sur mesure à Barcelone. Des sites rapides, clairs et conçus pour convertir.",
-      "h1": "Création de site web à Barcelone",
-      "teaser": "Un site web qui traduit la valeur réelle de votre entreprise.",
-      "intro": [
-        "Pour la plupart des entreprises, le site web est le premier endroit où un client vérifie si l'appel vaut la peine. S'il est lent, s'il s'affiche mal sur téléphone ou s'il n'explique pas clairement l'activité, cet appel n'arrive jamais.",
-        "Chez BENAMAR, nous concevons et développons des sites corporatifs sur mesure depuis Barcelone. Sans modèles achetés et sans fonctions que personne n'utilisera : uniquement ce dont l'entreprise a besoin pour bien se présenter et transformer les visites en clients.",
-        "Le résultat est un site qui vous appartient, rapide sur mobile et prêt dès le premier jour à être compris par Google. Le domaine, l'hébergement et le code restent à votre nom."
-      ],
-      "includes": [
-        { "h": "Conception sur mesure", "p": "Chaque site part de zéro, avec l'identité de l'entreprise. Nous n'adaptons pas de modèles génériques et ne réutilisons pas la même maquette en changeant la couleur." },
-        { "h": "Développement léger", "p": "Du code propre, sans constructeurs lourds. Le site se charge vite sur mobile, d'où vient l'essentiel du trafic." },
-        { "h": "Structure et textes", "p": "Nous organisons l'information pour que le visiteur comprenne en quelques secondes ce que vous proposez et ce qu'il peut faire ensuite." },
-        { "h": "Base pour le référencement", "p": "Balises, vitesse, versions linguistiques et données structurées en place dès le départ, pour que Google lise correctement le site." }
-      ],
-      "process": [
-        { "h": "Première conversation", "p": "Nous comprenons l'entreprise, sa clientèle et ce que le site doit accomplir. Sans questionnaire automatique." },
-        { "h": "Proposition ferme", "p": "Devis et délai par écrit avant de commencer, avec le périmètre détaillé. Sans postes ouverts." },
-        { "h": "Conception et développement", "p": "Vous suivez l'avancement à chaque étape et demandez des changements avant la suite. Rien n'est validé sans votre accord." },
-        { "h": "Mise en ligne et suivi", "p": "Nous livrons le site publié, avec le domaine et la messagerie configurés, et mesuré pour savoir ce que font les visiteurs." }
-      ],
-      "audience": [
-        "Des entreprises établies dont le site a vieilli ou n'a jamais donné de résultats.",
-        "Des indépendants et des sociétés qui démarrent et ont besoin d'un premier site sérieux.",
-        "Des entreprises qui travaillent en plusieurs langues et veulent une version soignée de chacune."
-      ],
-      "faq": [
-        { "q": "Combien de temps faut-il pour un site corporatif ?", "a": "Cela dépend du nombre de pages et de la rapidité avec laquelle nous recevons les textes et les photographies. Un site de présentation est généralement en ligne entre trois et six semaines après le début." },
-        { "q": "Combien cela coûte-t-il ?", "a": "Chaque projet est chiffré séparément, car tous les sites n'ont pas les mêmes besoins. Vous recevez un prix ferme avant de commencer, et ce prix ne change pas sauf si vous ajoutez du travail." },
-        { "q": "Le site m'appartient-il ?", "a": "Oui. Le domaine, l'hébergement et le code sont les vôtres. Si un jour vous choisissez un autre prestataire, vous emportez l'ensemble." },
-        { "q": "Puis-je mettre à jour le contenu moi-même ?", "a": "Oui. Nous préparons les parties qui changent souvent pour que vous puissiez les modifier sans toucher au code, et nous vous expliquons comment." },
-        { "q": "Travaillez-vous uniquement à Barcelone ?", "a": "Nous rencontrons les clients à Barcelone et dans les environs. Le travail lui-même peut se faire à distance, nous accompagnons donc aussi des clients ailleurs." }
-      ]
-    },
-    {
-      "id": "landing",
-      "slug": "landing-pages-barcelone.html",
-      "tile": "service-tile--landing",
-      "title": "Landing pages à Barcelone — BENAMAR",
-      "description": "Création de landing pages à Barcelone pour vos campagnes Google Ads et réseaux sociaux. Une page, un objectif, des résultats mesurés.",
-      "h1": "Landing pages à Barcelone",
-      "teaser": "Une page, un objectif, une conversion.",
-      "intro": [
-        "Une landing page est une page qui poursuit un seul but : amener le visiteur à faire une action précise. Demander un devis, prendre rendez-vous, laisser son téléphone ou acheter. Rien d'autre.",
-        "Elle se distingue du site corporatif parce qu'elle ne cherche pas à présenter toute l'entreprise. Elle retire ce qui distrait, y compris le menu, et ne garde que le nécessaire pour que cette action se produise.",
-        "C'est donc la bonne destination pour le trafic payant. Chaque euro investi en publicité arrive sur une page conçue pour cette campagne, et non sur un accueil général où le visiteur se perd."
-      ],
-      "includes": [
-        { "h": "Un seul message", "p": "Nous définissons l'offre et l'écrivons dans un langage clair, sans promesses creuses ni ornements qui coûtent en crédibilité." },
-        { "h": "Structure de conversion", "p": "Un ordre pensé pour accompagner le visiteur : ce qu'il gagne, pourquoi vous faire confiance, quels doutes lever et où cliquer." },
-        { "h": "Un formulaire qui arrive", "p": "Un formulaire court, testé de bout en bout, dont les demandes arrivent dans votre boîte et non dans les indésirables." },
-        { "h": "Prête à être mesurée", "p": "La page est prête à être reliée à Google Ads ou Meta, pour savoir combien de visites deviennent des contacts." }
-      ],
-      "process": [
-        { "h": "Objectif et offre", "p": "Nous définissons l'action attendue et ce que le visiteur reçoit en échange. Tout le reste en découle." },
-        { "h": "Rédaction et design", "p": "Nous écrivons les textes et concevons la page autour de cette offre précise, pas d'un modèle réutilisé." },
-        { "h": "Mise en ligne et mesure", "p": "Nous publions, vérifions le formulaire et activons la mesure avant le lancement de la campagne." },
-        { "h": "Ajustements par les données", "p": "Les premières visites montrent ce qui fonctionne. Nous ajustons le titre, l'ordre ou le formulaire selon les chiffres." }
-      ],
-      "audience": [
-        "Des entreprises qui vont investir en Google Ads ou sur les réseaux et ne veulent pas gaspiller leur budget.",
-        "Des activités de services qui ont besoin d'un flux régulier de demandes de devis ou de réservations.",
-        "Le lancement d'un produit, d'une promotion ou d'un événement à date fixe."
-      ],
-      "faq": [
-        { "q": "En combien de temps est-elle prête ?", "a": "Une landing page est généralement en ligne en une à deux semaines, car le travail se concentre sur une seule page et un seul message." },
-        { "q": "Fonctionne-t-elle pour Google Ads ?", "a": "Oui, c'est son usage le plus courant. La page est préparée pour recevoir le trafic de la campagne et pour mesurer combien de visites aboutissent à un contact." },
-        { "q": "En faut-il une par campagne ?", "a": "Pas toujours, mais plus la page ressemble à l'annonce qui a amené le visiteur, meilleurs sont les résultats. Avec deux offres très différentes, une page pour chacune se justifie." },
-        { "q": "Peut-on tester deux versions ?", "a": "Oui. Une seconde version avec un autre titre ou une autre structure peut être publiée, en répartissant le trafic pour voir laquelle convertit le mieux." },
-        { "q": "La gestion de la campagne est-elle incluse ?", "a": "La page et la campagne sont deux travaux distincts. Nous pouvons réaliser seulement la page, ou prendre aussi en charge la publicité. C'est chiffré séparément." }
-      ]
-    },
-    {
-      "id": "social",
-      "slug": "gestion-reseaux-sociaux-barcelone.html",
-      "tile": "service-tile--social",
-      "title": "Gestion des réseaux sociaux à Barcelone — BENAMAR",
-      "description": "Gestion des réseaux sociaux pour les entreprises à Barcelone : stratégie, contenu, calendrier éditorial et rapports mensuels clairs.",
-      "h1": "Gestion des réseaux sociaux à Barcelone",
-      "teaser": "Une présence constante, sans mobiliser votre temps.",
-      "intro": [
-        "Le problème des réseaux sociaux tient rarement au manque d'idées. Il tient à la régularité. On commence avec élan, on publie trois semaines, puis l'activité prend le dessus et le compte s'arrête.",
-        "Nous prenons cette partie en charge. Nous préparons la stratégie, le calendrier et les contenus, nous publions et répondons, et chaque mois vous recevez un rapport sur ce qui a fonctionné et ce qui n'a pas marché.",
-        "Nous travaillons depuis Barcelone, avec des points réguliers, pour que le contenu ressemble à votre entreprise et non à un compte générique du secteur."
-      ],
-      "includes": [
-        { "h": "Stratégie et calendrier", "p": "Nous définissons quoi dire, à quelle fréquence et sur quel réseau. Le calendrier est validé avant toute publication." },
-        { "h": "Contenu original", "p": "Création des visuels et rédaction des textes, dans votre identité de marque. Nous pouvons aussi adapter vos éléments existants." },
-        { "h": "Publication et communauté", "p": "Nous publions aux dates prévues et répondons aux commentaires et aux messages sur le ton convenu." },
-        { "h": "Rapport mensuel", "p": "Un rapport clair, sans jargon : ce qui a été publié, la portée obtenue, ce qui a marché et ce que nous proposons pour le mois suivant." }
-      ],
-      "process": [
-        { "h": "Audit initial", "p": "Nous examinons vos profils, ceux de vos concurrents et les contenus qui ont fonctionné jusqu'ici." },
-        { "h": "Plan du mois", "p": "Nous présentons le calendrier avec les thèmes et les dates. Vous validez ou demandez des changements avant toute production." },
-        { "h": "Production et publication", "p": "Nous créons les visuels, les programmons et gérons au quotidien les commentaires et les messages." },
-        { "h": "Rapport et ajustement", "p": "En fin de mois, nous examinons les chiffres ensemble et ajustons le plan suivant avec ces enseignements." }
-      ],
-      "audience": [
-        "Des entreprises dont les profils existent mais restent inactifs, faute de temps.",
-        "Des sociétés qui publient sans plan et souhaitent une image plus régulière et plus sérieuse.",
-        "Des marques dont les clients consultent les réseaux avant d'acheter."
-      ],
-      "faq": [
-        { "q": "Quels réseaux gérez-vous ?", "a": "Ceux qui ont du sens pour votre activité, le plus souvent Instagram, Facebook et LinkedIn. Mieux vaut deux réseaux bien tenus que cinq à moitié." },
-        { "q": "Qui réalise les photos et les vidéos ?", "a": "Nous pouvons travailler avec vos éléments existants, produire nous-mêmes les visuels, ou organiser une séance photo si le projet le demande." },
-        { "q": "Y a-t-il un engagement de durée ?", "a": "Non. Nous travaillons mois par mois. Si cela ne vous convient plus, vous arrêtez sans pénalité." },
-        { "q": "Au bout de combien de temps voit-on des résultats ?", "a": "Les premiers signaux, comme la portée et les interactions, apparaissent dès les premières semaines. Une communauté solide et des clients venus des réseaux demandent des mois." },
-        { "q": "Dois-je valider chaque publication ?", "a": "C'est vous qui décidez. Certains clients valident le calendrier du mois et rien d'autre, d'autres préfèrent relire chaque visuel. Les deux fonctionnent." }
-      ]
-    },
-    {
-      "id": "seo",
-      "slug": "referencement-seo-barcelone.html",
-      "tile": "service-tile--seo",
-      "title": "Référencement SEO à Barcelone — BENAMAR",
-      "description": "Référencement naturel à Barcelone : audit technique, contenu, référencement local et rapports mensuels avec objectifs de trafic qualifié.",
-      "h1": "Référencement SEO à Barcelone",
-      "teaser": "Une visibilité au moment où l'on vous cherche.",
-      "intro": [
-        "Le référencement naturel, ou SEO, consiste à faire apparaître votre site dans Google lorsque quelqu'un cherche ce que vous proposez, sans payer à chaque clic.",
-        "Ce sont les visites les plus précieuses qui existent : des personnes qui ont déjà le problème que vous résolvez et cherchent quelqu'un pour le résoudre. C'est aussi le travail le plus lent, car Google ne réorganise pas ses résultats du jour au lendemain.",
-        "Nous travaillons les trois facteurs qui le déterminent : un site lisible et rapide, des textes qui répondent aux recherches réelles, et une présence locale solide à Barcelone."
-      ],
-      "includes": [
-        { "h": "Audit technique", "p": "Nous examinons la vitesse, la version mobile, la structure, les liens cassés et tout ce qui empêche Google de lire le site normalement." },
-        { "h": "Mots-clés et contenu", "p": "Nous identifions ce que cherche votre client et avec quels mots, puis rédigeons ou réécrivons les pages qui répondent à ces recherches." },
-        { "h": "Référencement local", "p": "Fiche Google Business, cohérence du nom, du téléphone et de l'adresse, et présence dans les annuaires qui comptent à Barcelone." },
-        { "h": "Mesure mensuelle", "p": "Un rapport mensuel avec les positions, les visites et les contacts obtenus. Sans graphiques décoratifs ni indicateurs vides." }
-      ],
-      "process": [
-        { "h": "Audit", "p": "Nous analysons le site, la concurrence et les recherches de votre secteur. Il en sort une liste de problèmes classés par impact." },
-        { "h": "Plan de travail", "p": "Nous présentons ce qui sera fait, dans quel ordre et ce que nous visons. Sans promesse de première position." },
-        { "h": "Exécution", "p": "Nous appliquons les corrections techniques, publions le contenu et construisons la présence locale, mois après mois." },
-        { "h": "Mesure", "p": "Nous regardons quelles recherches amènent des visites et ajustons le plan avec ces données, pas avec des suppositions." }
-      ],
-      "audience": [
-        "Des commerces et services locaux qui veulent apparaître quand on cherche leur activité à Barcelone.",
-        "Des entreprises dont le site ne reçoit aucune visite depuis Google, sans savoir pourquoi.",
-        "Ceux qui investissent en publicité et veulent bâtir des visites indépendantes du budget quotidien."
-      ],
-      "faq": [
-        { "q": "Au bout de combien de temps voit-on des résultats ?", "a": "Les corrections techniques se ressentent en quelques semaines. Gagner des positions sur des recherches concurrentielles demande généralement de trois à six mois de travail régulier." },
-        { "q": "Garantissez-vous la première position sur Google ?", "a": "Non, et méfiez-vous de ceux qui la garantissent. Personne ne contrôle l'ordre des résultats de Google. Nous nous engageons sur le travail, sa mesure et la transparence des chiffres chaque mois." },
-        { "q": "Quelle différence avec Google Ads ?", "a": "Les annonces apparaissent en haut dès le premier jour et disparaissent dès que vous cessez de payer. Le référencement prend plus de temps, mais les visites continuent une fois le travail fait. Les deux se complètent." },
-        { "q": "La fiche Google Business est-elle incluse ?", "a": "Oui. Pour une activité locale, c'est l'un des éléments les plus déterminants : nous la configurons, la complétons et la tenons à jour." },
-        { "q": "Y a-t-il un engagement de durée ?", "a": "Non. Le travail se fait mois par mois, même s'il faut savoir que le référencement demande de la continuité : trois mois isolés ne donnent pas les résultats d'un travail suivi." }
-      ]
-    }
-  ]
+   "dir" : "fr/",
+   "labels" : {
+      "audience" : "À qui cela s'adresse",
+      "backToServices" : "Voir tous les services",
+      "ctaButton" : "Demander une proposition",
+      "ctaHeading" : "Parlons de votre projet.",
+      "ctaSub" : "Parlez-nous des besoins de votre entreprise. Nous vous répondons sous 24 heures avec une proposition concrète.",
+      "faq" : "Questions fréquentes",
+      "includes" : "Ce que cela comprend",
+      "kicker" : "Service",
+      "others" : "Autres services",
+      "process" : "Notre méthode"
+   },
+   "lang" : "fr",
+   "pages" : [
+      {
+         "audience" : [
+            "Des entreprises établies dont le site a vieilli ou n'a jamais donné de résultats.",
+            "Des indépendants et des sociétés qui démarrent et ont besoin d'un premier site sérieux.",
+            "Des entreprises qui travaillent en plusieurs langues et veulent une version soignée de chacune.",
+            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+         ],
+         "description" : "Conception et développement de sites web corporatifs sur mesure à Barcelone. Des sites rapides, clairs et conçus pour convertir.",
+         "faq" : [
+            {
+               "a" : "Cela dépend du nombre de pages et de la rapidité avec laquelle nous recevons les textes et les photographies. Un site de présentation est généralement en ligne entre trois et six semaines après le début.",
+               "q" : "Combien de temps faut-il pour un site corporatif ?"
+            },
+            {
+               "a" : "Chaque projet est chiffré séparément, car tous les sites n'ont pas les mêmes besoins. Vous recevez un prix ferme avant de commencer, et ce prix ne change pas sauf si vous ajoutez du travail.",
+               "q" : "Combien cela coûte-t-il ?"
+            },
+            {
+               "a" : "Oui. Le domaine, l'hébergement et le code sont les vôtres. Si un jour vous choisissez un autre prestataire, vous emportez l'ensemble.",
+               "q" : "Le site m'appartient-il ?"
+            },
+            {
+               "a" : "Oui. Nous préparons les parties qui changent souvent pour que vous puissiez les modifier sans toucher au code, et nous vous expliquons comment.",
+               "q" : "Puis-je mettre à jour le contenu moi-même ?"
+            },
+            {
+               "a" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.",
+               "q" : "Travaillez-vous uniquement à Barcelone ?"
+            }
+         ],
+         "h1" : "Création de site web",
+         "id" : "web",
+         "includes" : [
+            {
+               "h" : "Conception sur mesure",
+               "p" : "Chaque site part de zéro, avec l'identité de l'entreprise. Nous n'adaptons pas de modèles génériques et ne réutilisons pas la même maquette en changeant la couleur."
+            },
+            {
+               "h" : "Développement léger",
+               "p" : "Du code propre, sans constructeurs lourds. Le site se charge vite sur mobile, d'où vient l'essentiel du trafic."
+            },
+            {
+               "h" : "Structure et textes",
+               "p" : "Nous organisons l'information pour que le visiteur comprenne en quelques secondes ce que vous proposez et ce qu'il peut faire ensuite."
+            },
+            {
+               "h" : "Base pour le référencement",
+               "p" : "Balises, vitesse, versions linguistiques et données structurées en place dès le départ, pour que Google lise correctement le site."
+            }
+         ],
+         "intro" : [
+            "Pour la plupart des entreprises, le site web est le premier endroit où un client vérifie si l'appel vaut la peine. S'il est lent, s'il s'affiche mal sur téléphone ou s'il n'explique pas clairement l'activité, cet appel n'arrive jamais.",
+            "Chez BENAMAR, nous concevons et développons des sites corporatifs sur mesure depuis Barcelone. Sans modèles achetés et sans fonctions que personne n'utilisera : uniquement ce dont l'entreprise a besoin pour bien se présenter et transformer les visites en clients.",
+            "Le résultat est un site qui vous appartient, rapide sur mobile et prêt dès le premier jour à être compris par Google. Le domaine, l'hébergement et le code restent à votre nom."
+         ],
+         "process" : [
+            {
+               "h" : "Première conversation",
+               "p" : "Nous comprenons l'entreprise, sa clientèle et ce que le site doit accomplir. Sans questionnaire automatique."
+            },
+            {
+               "h" : "Proposition ferme",
+               "p" : "Devis et délai par écrit avant de commencer, avec le périmètre détaillé. Sans postes ouverts."
+            },
+            {
+               "h" : "Conception et développement",
+               "p" : "Vous suivez l'avancement à chaque étape et demandez des changements avant la suite. Rien n'est validé sans votre accord."
+            },
+            {
+               "h" : "Mise en ligne et suivi",
+               "p" : "Nous livrons le site publié, avec le domaine et la messagerie configurés, et mesuré pour savoir ce que font les visiteurs."
+            }
+         ],
+         "slug" : "creation-site-web-barcelone.html",
+         "teaser" : "Un site web qui traduit la valeur réelle de votre entreprise.",
+         "tile" : "service-tile--web",
+         "title" : "Création de site web à Barcelone — BENAMAR"
+      },
+      {
+         "audience" : [
+            "Des entreprises qui vont investir en Google Ads ou sur les réseaux et ne veulent pas gaspiller leur budget.",
+            "Des activités de services qui ont besoin d'un flux régulier de demandes de devis ou de réservations.",
+            "Le lancement d'un produit, d'une promotion ou d'un événement à date fixe.",
+            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+         ],
+         "description" : "Création de landing pages à Barcelone pour vos campagnes Google Ads et réseaux sociaux. Une page, un objectif, des résultats mesurés.",
+         "faq" : [
+            {
+               "a" : "Une landing page est généralement en ligne en une à deux semaines, car le travail se concentre sur une seule page et un seul message.",
+               "q" : "En combien de temps est-elle prête ?"
+            },
+            {
+               "a" : "Oui, c'est son usage le plus courant. La page est préparée pour recevoir le trafic de la campagne et pour mesurer combien de visites aboutissent à un contact.",
+               "q" : "Fonctionne-t-elle pour Google Ads ?"
+            },
+            {
+               "a" : "Pas toujours, mais plus la page ressemble à l'annonce qui a amené le visiteur, meilleurs sont les résultats. Avec deux offres très différentes, une page pour chacune se justifie.",
+               "q" : "En faut-il une par campagne ?"
+            },
+            {
+               "a" : "Oui. Une seconde version avec un autre titre ou une autre structure peut être publiée, en répartissant le trafic pour voir laquelle convertit le mieux.",
+               "q" : "Peut-on tester deux versions ?"
+            },
+            {
+               "a" : "La page et la campagne sont deux travaux distincts. Nous pouvons réaliser seulement la page, ou prendre aussi en charge la publicité. C'est chiffré séparément.",
+               "q" : "La gestion de la campagne est-elle incluse ?"
+            },
+            {
+               "a" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.",
+               "q" : "Travaillez-vous uniquement à Barcelone ?"
+            }
+         ],
+         "h1" : "Landing pages",
+         "id" : "landing",
+         "includes" : [
+            {
+               "h" : "Un seul message",
+               "p" : "Nous définissons l'offre et l'écrivons dans un langage clair, sans promesses creuses ni ornements qui coûtent en crédibilité."
+            },
+            {
+               "h" : "Structure de conversion",
+               "p" : "Un ordre pensé pour accompagner le visiteur : ce qu'il gagne, pourquoi vous faire confiance, quels doutes lever et où cliquer."
+            },
+            {
+               "h" : "Un formulaire qui arrive",
+               "p" : "Un formulaire court, testé de bout en bout, dont les demandes arrivent dans votre boîte et non dans les indésirables."
+            },
+            {
+               "h" : "Prête à être mesurée",
+               "p" : "La page est prête à être reliée à Google Ads ou Meta, pour savoir combien de visites deviennent des contacts."
+            }
+         ],
+         "intro" : [
+            "Une landing page est une page qui poursuit un seul but : amener le visiteur à faire une action précise. Demander un devis, prendre rendez-vous, laisser son téléphone ou acheter. Rien d'autre.",
+            "Elle se distingue du site corporatif parce qu'elle ne cherche pas à présenter toute l'entreprise. Elle retire ce qui distrait, y compris le menu, et ne garde que le nécessaire pour que cette action se produise.",
+            "C'est donc la bonne destination pour le trafic payant. Chaque euro investi en publicité arrive sur une page conçue pour cette campagne, et non sur un accueil général où le visiteur se perd."
+         ],
+         "process" : [
+            {
+               "h" : "Objectif et offre",
+               "p" : "Nous définissons l'action attendue et ce que le visiteur reçoit en échange. Tout le reste en découle."
+            },
+            {
+               "h" : "Rédaction et design",
+               "p" : "Nous écrivons les textes et concevons la page autour de cette offre précise, pas d'un modèle réutilisé."
+            },
+            {
+               "h" : "Mise en ligne et mesure",
+               "p" : "Nous publions, vérifions le formulaire et activons la mesure avant le lancement de la campagne."
+            },
+            {
+               "h" : "Ajustements par les données",
+               "p" : "Les premières visites montrent ce qui fonctionne. Nous ajustons le titre, l'ordre ou le formulaire selon les chiffres."
+            }
+         ],
+         "slug" : "landing-pages-barcelone.html",
+         "teaser" : "Une page, un objectif, une conversion.",
+         "tile" : "service-tile--landing",
+         "title" : "Landing pages à Barcelone — BENAMAR"
+      },
+      {
+         "audience" : [
+            "Des entreprises dont les profils existent mais restent inactifs, faute de temps.",
+            "Des sociétés qui publient sans plan et souhaitent une image plus régulière et plus sérieuse.",
+            "Des marques dont les clients consultent les réseaux avant d'acheter.",
+            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+         ],
+         "description" : "Gestion des réseaux sociaux pour les entreprises à Barcelone : stratégie, contenu, calendrier éditorial et rapports mensuels clairs.",
+         "faq" : [
+            {
+               "a" : "Ceux qui ont du sens pour votre activité, le plus souvent Instagram, Facebook et LinkedIn. Mieux vaut deux réseaux bien tenus que cinq à moitié.",
+               "q" : "Quels réseaux gérez-vous ?"
+            },
+            {
+               "a" : "Nous pouvons travailler avec vos éléments existants, produire nous-mêmes les visuels, ou organiser une séance photo si le projet le demande.",
+               "q" : "Qui réalise les photos et les vidéos ?"
+            },
+            {
+               "a" : "Non. Nous travaillons mois par mois. Si cela ne vous convient plus, vous arrêtez sans pénalité.",
+               "q" : "Y a-t-il un engagement de durée ?"
+            },
+            {
+               "a" : "Les premiers signaux, comme la portée et les interactions, apparaissent dès les premières semaines. Une communauté solide et des clients venus des réseaux demandent des mois.",
+               "q" : "Au bout de combien de temps voit-on des résultats ?"
+            },
+            {
+               "a" : "C'est vous qui décidez. Certains clients valident le calendrier du mois et rien d'autre, d'autres préfèrent relire chaque visuel. Les deux fonctionnent.",
+               "q" : "Dois-je valider chaque publication ?"
+            },
+            {
+               "a" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.",
+               "q" : "Travaillez-vous uniquement à Barcelone ?"
+            }
+         ],
+         "h1" : "Gestion des réseaux sociaux",
+         "id" : "social",
+         "includes" : [
+            {
+               "h" : "Stratégie et calendrier",
+               "p" : "Nous définissons quoi dire, à quelle fréquence et sur quel réseau. Le calendrier est validé avant toute publication."
+            },
+            {
+               "h" : "Contenu original",
+               "p" : "Création des visuels et rédaction des textes, dans votre identité de marque. Nous pouvons aussi adapter vos éléments existants."
+            },
+            {
+               "h" : "Publication et communauté",
+               "p" : "Nous publions aux dates prévues et répondons aux commentaires et aux messages sur le ton convenu."
+            },
+            {
+               "h" : "Rapport mensuel",
+               "p" : "Un rapport clair, sans jargon : ce qui a été publié, la portée obtenue, ce qui a marché et ce que nous proposons pour le mois suivant."
+            }
+         ],
+         "intro" : [
+            "Le problème des réseaux sociaux tient rarement au manque d'idées. Il tient à la régularité. On commence avec élan, on publie trois semaines, puis l'activité prend le dessus et le compte s'arrête.",
+            "Nous prenons cette partie en charge. Nous préparons la stratégie, le calendrier et les contenus, nous publions et répondons, et chaque mois vous recevez un rapport sur ce qui a fonctionné et ce qui n'a pas marché.",
+            "Nous travaillons depuis Barcelone, avec des points réguliers, pour que le contenu ressemble à votre entreprise et non à un compte générique du secteur."
+         ],
+         "process" : [
+            {
+               "h" : "Audit initial",
+               "p" : "Nous examinons vos profils, ceux de vos concurrents et les contenus qui ont fonctionné jusqu'ici."
+            },
+            {
+               "h" : "Plan du mois",
+               "p" : "Nous présentons le calendrier avec les thèmes et les dates. Vous validez ou demandez des changements avant toute production."
+            },
+            {
+               "h" : "Production et publication",
+               "p" : "Nous créons les visuels, les programmons et gérons au quotidien les commentaires et les messages."
+            },
+            {
+               "h" : "Rapport et ajustement",
+               "p" : "En fin de mois, nous examinons les chiffres ensemble et ajustons le plan suivant avec ces enseignements."
+            }
+         ],
+         "slug" : "gestion-reseaux-sociaux-barcelone.html",
+         "teaser" : "Une présence constante, sans mobiliser votre temps.",
+         "tile" : "service-tile--social",
+         "title" : "Gestion des réseaux sociaux à Barcelone — BENAMAR"
+      },
+      {
+         "audience" : [
+            "Des commerces et services locaux qui veulent apparaître quand on cherche leur activité à Barcelone.",
+            "Des entreprises dont le site ne reçoit aucune visite depuis Google, sans savoir pourquoi.",
+            "Ceux qui investissent en publicité et veulent bâtir des visites indépendantes du budget quotidien.",
+            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+         ],
+         "description" : "Référencement naturel à Barcelone : audit technique, contenu, référencement local et rapports mensuels avec objectifs de trafic qualifié.",
+         "faq" : [
+            {
+               "a" : "Les corrections techniques se ressentent en quelques semaines. Gagner des positions sur des recherches concurrentielles demande généralement de trois à six mois de travail régulier.",
+               "q" : "Au bout de combien de temps voit-on des résultats ?"
+            },
+            {
+               "a" : "Non, et méfiez-vous de ceux qui la garantissent. Personne ne contrôle l'ordre des résultats de Google. Nous nous engageons sur le travail, sa mesure et la transparence des chiffres chaque mois.",
+               "q" : "Garantissez-vous la première position sur Google ?"
+            },
+            {
+               "a" : "Les annonces apparaissent en haut dès le premier jour et disparaissent dès que vous cessez de payer. Le référencement prend plus de temps, mais les visites continuent une fois le travail fait. Les deux se complètent.",
+               "q" : "Quelle différence avec Google Ads ?"
+            },
+            {
+               "a" : "Oui. Pour une activité locale, c'est l'un des éléments les plus déterminants : nous la configurons, la complétons et la tenons à jour.",
+               "q" : "La fiche Google Business est-elle incluse ?"
+            },
+            {
+               "a" : "Non. Le travail se fait mois par mois, même s'il faut savoir que le référencement demande de la continuité : trois mois isolés ne donnent pas les résultats d'un travail suivi.",
+               "q" : "Y a-t-il un engagement de durée ?"
+            },
+            {
+               "a" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.",
+               "q" : "Travaillez-vous uniquement à Barcelone ?"
+            }
+         ],
+         "h1" : "Référencement SEO",
+         "id" : "seo",
+         "includes" : [
+            {
+               "h" : "Audit technique",
+               "p" : "Nous examinons la vitesse, la version mobile, la structure, les liens cassés et tout ce qui empêche Google de lire le site normalement."
+            },
+            {
+               "h" : "Mots-clés et contenu",
+               "p" : "Nous identifions ce que cherche votre client et avec quels mots, puis rédigeons ou réécrivons les pages qui répondent à ces recherches."
+            },
+            {
+               "h" : "Référencement local",
+               "p" : "Fiche Google Business, cohérence du nom, du téléphone et de l'adresse, et présence dans les annuaires qui comptent à Barcelone."
+            },
+            {
+               "h" : "Mesure mensuelle",
+               "p" : "Un rapport mensuel avec les positions, les visites et les contacts obtenus. Sans graphiques décoratifs ni indicateurs vides."
+            }
+         ],
+         "intro" : [
+            "Le référencement naturel, ou SEO, consiste à faire apparaître votre site dans Google lorsque quelqu'un cherche ce que vous proposez, sans payer à chaque clic.",
+            "Ce sont les visites les plus précieuses qui existent : des personnes qui ont déjà le problème que vous résolvez et cherchent quelqu'un pour le résoudre. C'est aussi le travail le plus lent, car Google ne réorganise pas ses résultats du jour au lendemain.",
+            "Nous travaillons les trois facteurs qui le déterminent : un site lisible et rapide, des textes qui répondent aux recherches réelles, et une présence locale solide à Barcelone."
+         ],
+         "process" : [
+            {
+               "h" : "Audit",
+               "p" : "Nous analysons le site, la concurrence et les recherches de votre secteur. Il en sort une liste de problèmes classés par impact."
+            },
+            {
+               "h" : "Plan de travail",
+               "p" : "Nous présentons ce qui sera fait, dans quel ordre et ce que nous visons. Sans promesse de première position."
+            },
+            {
+               "h" : "Exécution",
+               "p" : "Nous appliquons les corrections techniques, publions le contenu et construisons la présence locale, mois après mois."
+            },
+            {
+               "h" : "Mesure",
+               "p" : "Nous regardons quelles recherches amènent des visites et ajustons le plan avec ces données, pas avec des suppositions."
+            }
+         ],
+         "slug" : "referencement-seo-barcelone.html",
+         "teaser" : "Une visibilité au moment où l'on vous cherche.",
+         "tile" : "service-tile--seo",
+         "title" : "Référencement SEO à Barcelone — BENAMAR"
+      }
+   ]
 }

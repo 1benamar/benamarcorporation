@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Gestion des réseaux sociaux pour les entreprises à Barcelone : stratégie, contenu, calendrier éditorial et rapports mensuels clairs.",
-           "name" : "Gestion des réseaux sociaux à Barcelone",
+           "name" : "Gestion des réseaux sociaux",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Gestion des réseaux sociaux à Barcelone",
+           "serviceType" : "Gestion des réseaux sociaux",
            "url" : "https://benamar.es/fr/gestion-reseaux-sociaux-barcelone.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "C'est vous qui décidez. Certains clients valident le calendrier du mois et rien d'autre, d'autres préfèrent relire chaque visuel. Les deux fonctionnent."
                  },
                  "name" : "Dois-je valider chaque publication ?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français."
+                 },
+                 "name" : "Travaillez-vous uniquement à Barcelone ?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--social page-hero">
       <p class="service-num">Service</p>
-      <h1 class="service-title">Gestion des réseaux sociaux à Barcelone</h1>
+      <h1 class="service-title">Gestion des réseaux sociaux</h1>
       <p class="service-teaser">Une présence constante, sans mobiliser votre temps.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Voir tous les services &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Des entreprises dont les profils existent mais restent inactifs, faute de temps.</li>
         <li data-reveal>Des sociétés qui publient sans plan et souhaitent une image plus régulière et plus sérieuse.</li>
         <li data-reveal>Des marques dont les clients consultent les réseaux avant d'acheter.</li>
+        <li data-reveal>Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>Dois-je valider chaque publication ?</h3>
           <p>C'est vous qui décidez. Certains clients valident le calendrier du mois et rien d'autre, d'autres préfèrent relire chaque visuel. Les deux fonctionnent.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>Travaillez-vous uniquement à Barcelone ?</h3>
+          <p>Non. Nous sommes basés à Barcelone et rencontrons les clients ici et dans les environs, mais le travail se mène tout aussi bien à distance. Nous accompagnons des clients dans toute l'Espagne et à l'étranger, en espagnol, en anglais et en français.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Autres services</h2>
       <div class="other-services">
-        <a class="other-service" href="creation-site-web-barcelone.html" data-reveal>Création de site web à Barcelone</a>
-        <a class="other-service" href="landing-pages-barcelone.html" data-reveal>Landing pages à Barcelone</a>
-        <a class="other-service" href="referencement-seo-barcelone.html" data-reveal>Référencement SEO à Barcelone</a>
+        <a class="other-service" href="creation-site-web-barcelone.html" data-reveal>Création de site web</a>
+        <a class="other-service" href="landing-pages-barcelone.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="referencement-seo-barcelone.html" data-reveal>Référencement SEO</a>
       </div>
     </section>
   </main>

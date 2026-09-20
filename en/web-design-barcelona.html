@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Custom corporate website design and development in Barcelona. Fast, clear websites built to turn visits into customers.",
-           "name" : "Web design in Barcelona",
+           "name" : "Web design",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Web design in Barcelona",
+           "serviceType" : "Web design",
            "url" : "https://benamar.es/en/web-design-barcelona.html"
         },
         {
@@ -77,7 +83,7 @@
                  "@type" : "Question",
                  "acceptedAnswer" : {
                     "@type" : "Answer",
-                    "text" : "We meet clients in person in Barcelona and the surrounding area. The work itself can be done remotely, so we also serve clients elsewhere."
+                    "text" : "No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French."
                  },
                  "name" : "Do you only work in Barcelona?"
               }
@@ -130,7 +136,7 @@
 <main id="main">
     <section class="service-tile service-tile--web page-hero">
       <p class="service-num">Service</p>
-      <h1 class="service-title">Web design in Barcelona</h1>
+      <h1 class="service-title">Web design</h1>
       <p class="service-teaser">A website that conveys the real value of your business.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">See all services &rsaquo;</a>
@@ -194,6 +200,7 @@
         <li data-reveal>Established businesses whose website has fallen behind or never delivered results.</li>
         <li data-reveal>Professionals and new companies that need a serious first website, not an improvised page.</li>
         <li data-reveal>Companies working in several languages that need a properly written version of each.</li>
+        <li data-reveal>Companies outside Barcelona, in Spain or abroad, that prefer to work remotely.</li>
       </ul>
     </section>
 
@@ -218,7 +225,7 @@
         </div>
         <div class="faq-item" data-reveal>
           <h3>Do you only work in Barcelona?</h3>
-          <p>We meet clients in person in Barcelona and the surrounding area. The work itself can be done remotely, so we also serve clients elsewhere.</p>
+          <p>No. We are based in Barcelona and meet clients in person here and nearby, but the work itself runs just as well remotely. We serve clients across Spain and abroad, in Spanish, English and French.</p>
         </div>
       </div>
     </section>
@@ -232,9 +239,9 @@
     <section class="service-section">
       <h2 data-reveal>Other services</h2>
       <div class="other-services">
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages in Barcelona</a>
-        <a class="other-service" href="social-media-management-barcelona.html" data-reveal>Social media management in Barcelona</a>
-        <a class="other-service" href="seo-barcelona.html" data-reveal>SEO in Barcelona</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="social-media-management-barcelona.html" data-reveal>Social media management</a>
+        <a class="other-service" href="seo-barcelona.html" data-reveal>SEO</a>
       </div>
     </section>
   </main>

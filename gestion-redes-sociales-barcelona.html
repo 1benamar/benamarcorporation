@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Gestión de redes sociales para empresas en Barcelona: estrategia, contenido, calendario editorial e informes mensuales claros.",
-           "name" : "Gestión de redes sociales en Barcelona",
+           "name" : "Gestión de redes sociales",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Gestión de redes sociales en Barcelona",
+           "serviceType" : "Gestión de redes sociales",
            "url" : "https://benamar.es/gestion-redes-sociales-barcelona.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "Usted decide. Hay clientes que aprueban el calendario del mes y no quieren ver más, y otros que prefieren revisar pieza a pieza. Las dos formas funcionan."
                  },
                  "name" : "¿Tengo que aprobar cada publicación?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés."
+                 },
+                 "name" : "¿Trabajáis solo en Barcelona?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--social page-hero">
       <p class="service-num">Servicio</p>
-      <h1 class="service-title">Gestión de redes sociales en Barcelona</h1>
+      <h1 class="service-title">Gestión de redes sociales</h1>
       <p class="service-teaser">Presencia constante, sin ocupar su tiempo.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Ver todos los servicios &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Negocios con perfiles abiertos pero parados por falta de tiempo.</li>
         <li data-reveal>Empresas que publican sin un plan y quieren dar una imagen más seria y constante.</li>
         <li data-reveal>Marcas que necesitan una presencia cuidada porque sus clientes las miran antes de comprar.</li>
+        <li data-reveal>Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>¿Tengo que aprobar cada publicación?</h3>
           <p>Usted decide. Hay clientes que aprueban el calendario del mes y no quieren ver más, y otros que prefieren revisar pieza a pieza. Las dos formas funcionan.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>¿Trabajáis solo en Barcelona?</h3>
+          <p>No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Otros servicios</h2>
       <div class="other-services">
-        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web en Barcelona</a>
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages en Barcelona</a>
-        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO en Barcelona</a>
+        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="posicionamiento-seo-barcelona.html" data-reveal>Posicionamiento SEO</a>
       </div>
     </section>
   </main>

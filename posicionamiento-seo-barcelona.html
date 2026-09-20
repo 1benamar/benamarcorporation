@@ -26,16 +26,22 @@
      "@graph" : [
         {
            "@type" : "Service",
-           "areaServed" : {
-              "@type" : "City",
-              "name" : "Barcelona"
-           },
+           "areaServed" : [
+              {
+                 "@type" : "City",
+                 "name" : "Barcelona"
+              },
+              {
+                 "@type" : "Country",
+                 "name" : "España"
+              }
+           ],
            "description" : "Posicionamiento SEO en Barcelona: auditoría técnica, contenido, SEO local e informes mensuales con objetivos de tráfico cualificado.",
-           "name" : "Posicionamiento SEO en Barcelona",
+           "name" : "Posicionamiento SEO",
            "provider" : {
               "@id" : "https://benamar.es/#organization"
            },
-           "serviceType" : "Posicionamiento SEO en Barcelona",
+           "serviceType" : "Posicionamiento SEO",
            "url" : "https://benamar.es/posicionamiento-seo-barcelona.html"
         },
         {
@@ -80,6 +86,14 @@
                     "text" : "No. Se trabaja mes a mes, aunque conviene saber que el posicionamiento necesita continuidad: tres meses sueltos no dan los mismos resultados que un trabajo sostenido."
                  },
                  "name" : "¿Hay permanencia?"
+              },
+              {
+                 "@type" : "Question",
+                 "acceptedAnswer" : {
+                    "@type" : "Answer",
+                    "text" : "No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés."
+                 },
+                 "name" : "¿Trabajáis solo en Barcelona?"
               }
            ]
         }
@@ -130,7 +144,7 @@
 <main id="main">
     <section class="service-tile service-tile--seo page-hero">
       <p class="service-num">Servicio</p>
-      <h1 class="service-title">Posicionamiento SEO en Barcelona</h1>
+      <h1 class="service-title">Posicionamiento SEO</h1>
       <p class="service-teaser">Visibilidad en el momento en que le buscan.</p>
       <div class="service-actions">
         <a class="link-more" href="index.html#servicios">Ver todos los servicios &rsaquo;</a>
@@ -194,6 +208,7 @@
         <li data-reveal>Negocios locales que quieren aparecer cuando alguien busca su servicio en Barcelona.</li>
         <li data-reveal>Empresas con una web que no recibe visitas desde Google y no saben por qué.</li>
         <li data-reveal>Quien está gastando en publicidad y quiere ir construyendo visitas que no dependan del presupuesto diario.</li>
+        <li data-reveal>Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto.</li>
       </ul>
     </section>
 
@@ -220,6 +235,10 @@
           <h3>¿Hay permanencia?</h3>
           <p>No. Se trabaja mes a mes, aunque conviene saber que el posicionamiento necesita continuidad: tres meses sueltos no dan los mismos resultados que un trabajo sostenido.</p>
         </div>
+        <div class="faq-item" data-reveal>
+          <h3>¿Trabajáis solo en Barcelona?</h3>
+          <p>No. Tenemos la base en Barcelona y nos reunimos en persona aquí y en los alrededores, pero el trabajo se lleva igual de bien en remoto. Atendemos a clientes del resto de España y de fuera del país, en español, inglés y francés.</p>
+        </div>
       </div>
     </section>
 
@@ -232,9 +251,9 @@
     <section class="service-section">
       <h2 data-reveal>Otros servicios</h2>
       <div class="other-services">
-        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web en Barcelona</a>
-        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages en Barcelona</a>
-        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales en Barcelona</a>
+        <a class="other-service" href="diseno-web-barcelona.html" data-reveal>Diseño web</a>
+        <a class="other-service" href="landing-pages-barcelona.html" data-reveal>Landing pages</a>
+        <a class="other-service" href="gestion-redes-sociales-barcelona.html" data-reveal>Gestión de redes sociales</a>
       </div>
     </section>
   </main>

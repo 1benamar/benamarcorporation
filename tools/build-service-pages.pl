@@ -125,7 +125,7 @@ for my $lang (@langs) {
                     'serviceType' => $p->{h1},
                     'description' => $p->{description},
                     'url'         => $canonical,
-                    'areaServed'  => { '@type' => 'City', 'name' => 'Barcelona' },
+                    'areaServed'  => [ { '@type' => 'City', 'name' => 'Barcelona' }, { '@type' => 'Country', 'name' => 'España' } ],
                     'provider'    => { '@id' => 'https://benamar.es/#organization' },
                 },
                 {   '@type'      => 'FAQPage',
