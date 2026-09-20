@@ -5,6 +5,9 @@
   RedirectMatch 404 ^/tools(/|$)
 </IfModule>
 
+# Página de error propia en lugar de la genérica del hosting
+ErrorDocument 404 /404.html
+
 # Canonical host: send www.benamar.es to benamar.es
 <IfModule mod_rewrite.c>
   RewriteEngine On
