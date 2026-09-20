@@ -110,8 +110,14 @@ for my $lang (@langs) {
                 . qq{        </div>}
         } @{ $p->{faq} };
 
+        # Cada servicio relacionado se presenta con su propia fotografia.
         my $others = join "\n",
-            map { qq{        <a class="other-service" href="$_->{slug}" data-reveal>} . esc($_->{h1}) . qq{</a>} }
+            map {
+                  qq{        <a class="other-service" href="$_->{slug}" data-reveal>\n}
+                . qq{          <span class="other-service-photo $_->{tile}" aria-hidden="true"></span>\n}
+                . qq{          <span class="other-service-name">} . esc($_->{h1}) . qq{</span>\n}
+                . qq{        </a>}
+            }
             grep { $_->{id} ne $p->{id} } @{ $d->{pages} };
 
         my $intro = join "\n",
@@ -164,7 +170,7 @@ $hreflang
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920">
+  <link rel="stylesheet" href="${up}styles.css?v=20260920b">
   <script type="application/ld+json">
 $ld  </script>
 </head>
@@ -196,6 +202,10 @@ $includes
       <ol class="process">
 $process
       </ol>
+    </section>
+
+    <section class="service-band" data-reveal>
+      <p class="service-band-line">@{[ esc($L->{band}) ]}</p>
     </section>
 
     <section class="service-section">
