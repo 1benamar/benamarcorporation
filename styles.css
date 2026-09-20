@@ -1109,8 +1109,8 @@ h1 em, h2 em, h3 em, .em-serif {
 .other-service-photo {
   display: block;
   aspect-ratio: 16 / 10;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  object-fit: cover;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   filter: grayscale(0.45) brightness(0.72);
@@ -1161,8 +1161,8 @@ h1 em, h2 em, h3 em, .em-serif {
 .service-photo {
   display: block; width: 100%;
   aspect-ratio: 16 / 10;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   filter: brightness(0.85);
@@ -1295,4 +1295,16 @@ a, button, [role="button"], input, select, textarea, summary {
 }
 @media (min-width: 960px) {
   .service-process-text .section-deck { margin-inline: 0; }
+}
+
+/* Enlaces dentro del texto corrido de las páginas de servicio. */
+.about-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color .3s var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .about-body a:hover { color: var(--accent-2); }
 }

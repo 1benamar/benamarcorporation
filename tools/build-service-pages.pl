@@ -46,6 +46,24 @@ sub icon {
     return qq{<svg class="$class" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">$paths</svg>};
 }
 
+# Lee el tamaño real de un JPEG en su cabecera, para reservarle el hueco.
+sub dims {
+    my $name = shift;
+    open my $fh, '<:raw', "assets/img/$name.jpg" or die "falta la foto $name\n";
+    my $d = do { local $/; <$fh> }; close $fh;
+    my $i = 2;
+    while ($i < length($d) - 8) {
+        last unless ord(substr($d,$i,1)) == 0xFF;
+        my $m = ord(substr($d,$i+1,1));
+        my $len = unpack('n', substr($d,$i+2,2));
+        if ($m >= 0xC0 && $m <= 0xCF && $m != 0xC4 && $m != 0xC8 && $m != 0xCC) {
+            return (unpack('n', substr($d,$i+7,2)), unpack('n', substr($d,$i+5,2)));
+        }
+        $i += 2 + $len;
+    }
+    die "no leo el tamaño de $name\n";
+}
+
 sub esc {
     my $s = shift // '';
     $s =~ s/&/&amp;/g;
@@ -157,14 +175,23 @@ for my $lang (@langs) {
         my $others = join "\n",
             map {
                   qq{        <a class="other-service" href="$_->{slug}" data-reveal>\n}
-                . qq{          <span class="other-service-photo $_->{tile}" aria-hidden="true"></span>\n}
+                . do { my ($ow,$oh) = dims($_->{heroImage});
+                       qq{          <img class="other-service-photo" src="${up}assets/img/$_->{heroImage}.jpg" alt="} . esc($_->{heroAlt}) . qq{" width="$ow" height="$oh" loading="lazy" decoding="async">\n} }
                 . qq{          <span class="other-service-name">} . esc($_->{h1}) . qq{</span>\n}
                 . qq{        </a>}
             }
             grep { $_->{id} ne $p->{id} } @{ $d->{pages} };
 
-        my $intro = join "\n",
-            map { qq{      <p class="about-body" data-reveal>} . esc($_) . qq{</p>} } @{ $p->{intro} };
+        # Una frase de cada texto enlaza al servicio del que habla.
+        my %enlace = map { $_->{text} => $slug{$lang}{ $_->{to} } } @{ $p->{links} || [] };
+        my $intro = join "\n", map {
+            my $t = esc($_);
+            for my $frase (sort { length($b) <=> length($a) } keys %enlace) {
+                my $e = esc($frase);
+                $t =~ s{\Q$e\E}{<a href="$enlace{$frase}">$e</a>};
+            }
+            qq{      <p class="about-body" data-reveal>$t</p>}
+        } @{ $p->{intro} };
 
         my $ld = JSON::PP->new->canonical->pretty->encode({
             '@context' => 'https://schema.org',
@@ -196,6 +223,9 @@ for my $lang (@langs) {
         });
         $ld =~ s/^/  /mg;
 
+        my $og_locale = { es => 'es_ES', en => 'en_GB', fr => 'fr_FR' }->{$lang};
+        my ($pw, $ph) = dims($p->{photo});
+        my ($hw, $hh) = dims($p->{heroImage});
         my $title = esc($p->{title});
         my $desc  = esc($p->{description});
         my $fonts = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap';
@@ -214,12 +244,22 @@ $hreflang
   <meta property="og:title" content="$title">
   <meta property="og:description" content="$desc">
   <meta property="og:url" content="$canonical">
-  <meta property="og:image" content="${base}assets/img/hero-agency.jpg">
+  <meta property="og:image" content="${base}assets/img/$p->{heroImage}.jpg">
+  <meta property="og:image:width" content="$hw">
+  <meta property="og:image:height" content="$hh">
+  <meta property="og:image:alt" content="@{[ esc($p->{heroAlt}) ]}">
+  <meta property="og:locale" content="$og_locale">
+  <meta property="og:site_name" content="BENAMAR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$title">
+  <meta name="twitter:description" content="$desc">
+  <meta name="twitter:image" content="${base}assets/img/$p->{heroImage}.jpg">
+  <link rel="preload" as="image" href="${up}assets/img/$p->{heroImage}.jpg" fetchpriority="high">
   <link rel="icon" href="${up}assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920f">
+  <link rel="stylesheet" href="${up}styles.css?v=20260921a">
   <script type="application/ld+json">
 $ld  </script>
 </head>
@@ -261,7 +301,7 @@ $includes
     <section class="service-process">
       <div class="service-process-inner">
         <div class="service-process-photo" data-reveal>
-          <span class="service-photo" style="background-image: url('${up}assets/img/$p->{photo}.jpg')"></span>
+          <img class="service-photo" src="${up}assets/img/$p->{photo}.jpg" alt="@{[ esc($p->{photoAlt}) ]}" width="$pw" height="$ph" loading="lazy" decoding="async">
         </div>
         <div class="service-process-text">
           <h2 data-reveal>@{[ esc($L->{process}) ]}</h2>

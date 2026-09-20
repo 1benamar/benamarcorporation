@@ -21,17 +21,6 @@
       "src" : "assets/img/hero-agency.jpg",
       "title" : "Woman Working"
    },
-   "landing-detalle" : {
-      "creator" : "Freestocks.org",
-      "creator_url" : "https://stocksnap.io/author/20064",
-      "foreign_landing_url" : "https://stocksnap.io/photo/instagram-socialmedia-3M1WKORDOL",
-      "license" : "cc0",
-      "license_url" : "https://creativecommons.org/publicdomain/zero/1.0/",
-      "license_version" : "1.0",
-      "source" : "stocksnap",
-      "src" : "assets/img/landing-detalle.jpg",
-      "title" : "Instagram Socialmedia"
-   },
    "landing-pages" : {
       "creator" : "Serpstat",
       "creator_url" : "https://serpstat.com/ru",
@@ -43,38 +32,16 @@
       "src" : "assets/img/landing-pages.jpg",
       "title" : "Seo Ppc"
    },
-   "plantilla-estetica" : {
-      "creator" : "Authentic Stock",
-      "creator_url" : "https://www.authentic.co",
-      "foreign_landing_url" : "https://stocksnap.io/photo/woman-massage-VH22RVC5UT",
+   "landing-trabajo" : {
+      "creator" : "Fabian Irsara",
+      "creator_url" : "https://stocksnap.io/author/28938",
+      "foreign_landing_url" : "https://stocksnap.io/photo/office-work-X4AAF4SU9Q",
       "license" : "cc0",
       "license_url" : "https://creativecommons.org/publicdomain/zero/1.0/",
       "license_version" : "1.0",
       "source" : "stocksnap",
-      "src" : "assets/img/plantilla-estetica.jpg",
-      "title" : "Woman Massage"
-   },
-   "plantilla-hotel" : {
-      "creator" : "sarahstierch",
-      "creator_url" : "https://www.flickr.com/photos/7633518@N08",
-      "foreign_landing_url" : "https://www.flickr.com/photos/7633518@N08/51714019040",
-      "license" : "by",
-      "license_url" : "https://creativecommons.org/licenses/by/2.0/",
-      "license_version" : "2.0",
-      "source" : "flickr",
-      "src" : "assets/img/plantilla-hotel.jpg",
-      "title" : "8th floor hotel room"
-   },
-   "plantilla-restaurante" : {
-      "creator" : "sarahstierch",
-      "creator_url" : "https://www.flickr.com/photos/7633518@N08",
-      "foreign_landing_url" : "https://www.flickr.com/photos/7633518@N08/51734586078",
-      "license" : "by",
-      "license_url" : "https://creativecommons.org/licenses/by/2.0/",
-      "license_version" : "2.0",
-      "source" : "flickr",
-      "src" : "assets/img/plantilla-restaurante.jpg",
-      "title" : "Cafe Whitney"
+      "src" : "assets/img/landing-trabajo.jpg",
+      "title" : "Office Work"
    },
    "proceso-trabajo" : {
       "creator" : "Jeffrey Betts",
@@ -87,16 +54,16 @@
       "src" : "assets/img/proceso-trabajo.jpg",
       "title" : "Notebook Notepad"
    },
-   "redes-detalle" : {
-      "creator" : "Fabian Irsara",
-      "creator_url" : "https://stocksnap.io/author/28938",
-      "foreign_landing_url" : "https://stocksnap.io/photo/office-work-X4AAF4SU9Q",
+   "redes-instagram" : {
+      "creator" : "Freestocks.org",
+      "creator_url" : "https://stocksnap.io/author/20064",
+      "foreign_landing_url" : "https://stocksnap.io/photo/instagram-socialmedia-3M1WKORDOL",
       "license" : "cc0",
       "license_url" : "https://creativecommons.org/publicdomain/zero/1.0/",
       "license_version" : "1.0",
       "source" : "stocksnap",
-      "src" : "assets/img/redes-detalle.jpg",
-      "title" : "Office Work"
+      "src" : "assets/img/redes-instagram.jpg",
+      "title" : "Instagram Socialmedia"
    },
    "redes-sociales" : {
       "creator" : "Rawpixel Ltd",
@@ -108,17 +75,6 @@
       "source" : "flickr",
       "src" : "assets/img/redes-sociales.jpg",
       "title" : "Aerial view of woman using computer laptop and a smartphone on wooden table"
-   },
-   "seo-detalle" : {
-      "creator" : "Serpstat",
-      "creator_url" : "https://serpstat.com/ru",
-      "foreign_landing_url" : "https://stocksnap.io/photo/seo-computer-959IURDRGJ",
-      "license" : "cc0",
-      "license_url" : "https://creativecommons.org/publicdomain/zero/1.0/",
-      "license_version" : "1.0",
-      "source" : "stocksnap",
-      "src" : "assets/img/seo-detalle.jpg",
-      "title" : "Seo Computer"
    },
    "seo-google" : {
       "creator" : "Serpstat",

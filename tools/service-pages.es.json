@@ -67,6 +67,8 @@
             }
          ],
          "h1" : "Diseño web",
+         "heroAlt" : "Dos personas revisan sobre la mesa el boceto a mano de la estructura de una web, con portátiles alrededor",
+         "heroImage" : "web-corporativa",
          "id" : "web",
          "includes" : [
             {
@@ -96,7 +98,14 @@
             "El resultado es una web propia, rápida en el móvil y preparada desde el primer día para que Google la entienda. Y queda a su nombre, con el dominio, el alojamiento y el código en su poder."
          ],
          "lead" : "Una web corporativa es la página donde un cliente comprueba si merece la pena llamarle. Este servicio cubre el diseño, la programación, los textos y la publicación, con el dominio y el código a su nombre desde el primer día.",
+         "links" : [
+            {
+               "text" : "para que Google la entienda",
+               "to" : "seo"
+            }
+         ],
          "photo" : "proceso-trabajo",
+         "photoAlt" : "Cuaderno con el boceto a mano de las pantallas de una web, junto a un teléfono sobre una mesa de madera",
          "process" : [
             {
                "h" : "Conversación inicial",
@@ -189,6 +198,8 @@
             }
          ],
          "h1" : "Landing pages",
+         "heroAlt" : "Ordenador de sobremesa mostrando un panel de datos, sobre un escritorio blanco con una planta y un café",
+         "heroImage" : "landing-pages",
          "id" : "landing",
          "includes" : [
             {
@@ -218,7 +229,14 @@
             "Por eso es la página a la que conviene enviar el tráfico de una campaña de pago. Cada euro invertido en anuncios llega a una página hecha para esa campaña, no a una portada genérica donde el visitante se pierde."
          ],
          "lead" : "Una landing page no explica todo el negocio: quita el menú y las distracciones y deja solo lo necesario para que ocurra una acción. Es la página a la que conviene enviar el tráfico que paga en campañas.",
-         "photo" : "landing-detalle",
+         "links" : [
+            {
+               "text" : "la web corporativa",
+               "to" : "web"
+            }
+         ],
+         "photo" : "landing-trabajo",
+         "photoAlt" : "Vista cenital de unas manos escribiendo en un portátil, con una cámara y un teléfono sobre una mesa de madera",
          "process" : [
             {
                "h" : "Objetivo y oferta",
@@ -311,6 +329,8 @@
             }
          ],
          "h1" : "Gestión de redes sociales",
+         "heroAlt" : "Vista cenital de un portátil abierto y una mano escribiendo en el móvil, con una taza de café sobre una mesa de madera",
+         "heroImage" : "redes-sociales",
          "id" : "social",
          "includes" : [
             {
@@ -340,7 +360,8 @@
             "Trabajamos desde Barcelona y con reuniones periódicas, para que el contenido se parezca a su negocio y no a una cuenta genérica del sector."
          ],
          "lead" : "El problema de las redes casi nunca son las ideas, sino la constancia. Aquí la constancia la ponemos nosotros: un calendario aprobado por usted, contenido propio y un informe cada mes con lo que ha funcionado.",
-         "photo" : "redes-detalle",
+         "photo" : "redes-instagram",
+         "photoAlt" : "Teléfono móvil con la pantalla de inicio de Instagram, apoyado sobre un cuaderno cuadriculado con un bolígrafo",
          "process" : [
             {
                "h" : "Auditoría inicial",
@@ -433,6 +454,8 @@
             }
          ],
          "h1" : "Posicionamiento SEO",
+         "heroAlt" : "Ordenador de sobremesa mostrando una herramienta de analítica con la gráfica de visitas de una web",
+         "heroImage" : "seo-google",
          "id" : "seo",
          "includes" : [
             {
@@ -462,7 +485,14 @@
             "Trabajamos las tres patas que lo determinan: que la web se pueda leer y cargue rápido, que los textos respondan a lo que la gente busca de verdad, y que su negocio tenga presencia local sólida en Barcelona."
          ],
          "lead" : "El posicionamiento en buscadores es el trabajo de aparecer en Google sin pagar por cada clic. Es la visita más valiosa que existe y también la más lenta de conseguir: se trabaja en tres frentes a la vez y se mide cada mes.",
-         "photo" : "seo-detalle",
+         "links" : [
+            {
+               "text" : "que la web se pueda leer y cargue rápido",
+               "to" : "web"
+            }
+         ],
+         "photo" : "equipo-reunion",
+         "photoAlt" : "Varias personas reunidas alrededor de una mesa de madera con portátiles y cuadernos, tomando notas",
          "process" : [
             {
                "h" : "Auditoría",

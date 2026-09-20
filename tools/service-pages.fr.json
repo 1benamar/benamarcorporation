@@ -67,6 +67,8 @@
             }
          ],
          "h1" : "Création de site web",
+         "heroAlt" : "Deux personnes examinent sur la table le croquis à la main de la structure d'un site, entourées d'ordinateurs portables",
+         "heroImage" : "web-corporativa",
          "id" : "web",
          "includes" : [
             {
@@ -96,7 +98,14 @@
             "Le résultat est un site qui vous appartient, rapide sur mobile et prêt dès le premier jour à être compris par Google. Le domaine, l'hébergement et le code restent à votre nom."
          ],
          "lead" : "Un site d'entreprise est l'endroit où un client vérifie si cela vaut la peine de vous appeler. Ce service couvre la conception, le développement, les textes et la mise en ligne, avec le domaine et le code à votre nom dès le premier jour.",
+         "links" : [
+            {
+               "text" : "à être compris par Google",
+               "to" : "seo"
+            }
+         ],
          "photo" : "proceso-trabajo",
+         "photoAlt" : "Carnet avec le croquis à la main des écrans d'un site, à côté d'un téléphone sur une table en bois",
          "process" : [
             {
                "h" : "Première conversation",
@@ -189,6 +198,8 @@
             }
          ],
          "h1" : "Landing pages",
+         "heroAlt" : "Ordinateur de bureau affichant un tableau de bord de données, sur un bureau blanc avec une plante et un café",
+         "heroImage" : "landing-pages",
          "id" : "landing",
          "includes" : [
             {
@@ -218,7 +229,14 @@
             "C'est donc la bonne destination pour le trafic payant. Chaque euro investi en publicité arrive sur une page conçue pour cette campagne, et non sur un accueil général où le visiteur se perd."
          ],
          "lead" : "Une landing page n'explique pas toute l'activité : elle retire le menu et les distractions et ne laisse que le nécessaire pour qu'une action se produise. C'est là que doit arriver le trafic payant d'une campagne.",
-         "photo" : "landing-detalle",
+         "links" : [
+            {
+               "text" : "du site corporatif",
+               "to" : "web"
+            }
+         ],
+         "photo" : "landing-trabajo",
+         "photoAlt" : "Vue de dessus de mains tapant sur un ordinateur portable, avec un appareil photo et un téléphone sur une table en bois",
          "process" : [
             {
                "h" : "Objectif et offre",
@@ -311,6 +329,8 @@
             }
          ],
          "h1" : "Gestion des réseaux sociaux",
+         "heroAlt" : "Vue de dessus d'un ordinateur portable ouvert et d'une main tapant sur un téléphone, avec une tasse de café sur une table en bois",
+         "heroImage" : "redes-sociales",
          "id" : "social",
          "includes" : [
             {
@@ -340,7 +360,8 @@
             "Nous travaillons depuis Barcelone, avec des points réguliers, pour que le contenu ressemble à votre entreprise et non à un compte générique du secteur."
          ],
          "lead" : "Le problème des réseaux sociaux, ce sont rarement les idées : c'est la régularité. Ici, la régularité vient de nous : un calendrier que vous validez, du contenu propre et un rapport chaque mois sur ce qui a fonctionné.",
-         "photo" : "redes-detalle",
+         "photo" : "redes-instagram",
+         "photoAlt" : "Téléphone mobile affichant l'écran de connexion d'Instagram, posé sur un carnet quadrillé avec un stylo",
          "process" : [
             {
                "h" : "Audit initial",
@@ -433,6 +454,8 @@
             }
          ],
          "h1" : "Référencement SEO",
+         "heroAlt" : "Ordinateur de bureau affichant un outil d'analyse avec la courbe de visites d'un site",
+         "heroImage" : "seo-google",
          "id" : "seo",
          "includes" : [
             {
@@ -462,7 +485,14 @@
             "Nous travaillons les trois facteurs qui le déterminent : un site lisible et rapide, des textes qui répondent aux recherches réelles, et une présence locale solide à Barcelone."
          ],
          "lead" : "Le référencement naturel consiste à apparaître sur Google sans payer chaque clic. C'est la visite la plus précieuse qui soit, et aussi la plus lente à obtenir : trois fronts travaillés en même temps et mesurés chaque mois.",
-         "photo" : "seo-detalle",
+         "links" : [
+            {
+               "text" : "un site lisible et rapide",
+               "to" : "web"
+            }
+         ],
+         "photo" : "equipo-reunion",
+         "photoAlt" : "Plusieurs personnes réunies autour d'une table en bois avec ordinateurs portables et carnets, prenant des notes",
          "process" : [
             {
                "h" : "Audit",

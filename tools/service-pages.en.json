@@ -67,6 +67,8 @@
             }
          ],
          "h1" : "Web design",
+         "heroAlt" : "Two people reviewing a hand-drawn website layout on paper, with laptops around the table",
+         "heroImage" : "web-corporativa",
          "id" : "web",
          "includes" : [
             {
@@ -96,7 +98,14 @@
             "The result is a website of your own, fast on mobile and ready from day one for Google to understand it. And it stays in your name, with the domain, the hosting and the code under your control."
          ],
          "lead" : "A company website is where a client checks whether you are worth calling. This service covers design, development, copy and launch, with the domain and the code in your name from day one.",
+         "links" : [
+            {
+               "text" : "for Google to understand it",
+               "to" : "seo"
+            }
+         ],
          "photo" : "proceso-trabajo",
+         "photoAlt" : "Notebook with a hand-drawn sketch of a website’s screens, next to a phone on a wooden table",
          "process" : [
             {
                "h" : "First conversation",
@@ -189,6 +198,8 @@
             }
          ],
          "h1" : "Landing pages",
+         "heroAlt" : "Desktop computer showing a data dashboard, on a white desk with a plant and a coffee",
+         "heroImage" : "landing-pages",
          "id" : "landing",
          "includes" : [
             {
@@ -218,7 +229,14 @@
             "That is why it is the right destination for paid traffic. Every euro spent on advertising lands on a page built for that campaign, not on a general homepage where the visitor gets lost."
          ],
          "lead" : "A landing page does not explain the whole business: it removes the menu and the distractions and leaves only what is needed for one action to happen. It is where paid campaign traffic should land.",
-         "photo" : "landing-detalle",
+         "links" : [
+            {
+               "text" : "a corporate website",
+               "to" : "web"
+            }
+         ],
+         "photo" : "landing-trabajo",
+         "photoAlt" : "Overhead view of hands typing on a laptop, with a camera and a phone on a wooden table",
          "process" : [
             {
                "h" : "Goal and offer",
@@ -311,6 +329,8 @@
             }
          ],
          "h1" : "Social media management",
+         "heroAlt" : "Overhead view of an open laptop and a hand typing on a phone, with a coffee cup on a wooden table",
+         "heroImage" : "redes-sociales",
          "id" : "social",
          "includes" : [
             {
@@ -340,7 +360,8 @@
             "We work from Barcelona and meet regularly, so that the content looks like your business rather than a generic account for your sector."
          ],
          "lead" : "The problem with social media is rarely ideas; it is consistency. Here the consistency is ours: a calendar you approve, original content and a monthly report on what worked.",
-         "photo" : "redes-detalle",
+         "photo" : "redes-instagram",
+         "photoAlt" : "Mobile phone showing the Instagram sign-in screen, resting on a squared notebook with a pen",
          "process" : [
             {
                "h" : "Initial audit",
@@ -433,6 +454,8 @@
             }
          ],
          "h1" : "SEO",
+         "heroAlt" : "Desktop computer showing an analytics tool with a website’s traffic graph",
+         "heroImage" : "seo-google",
          "id" : "seo",
          "includes" : [
             {
@@ -462,7 +485,14 @@
             "We work on the three factors that decide it: that the site can be read and loads quickly, that the copy answers what people actually search for, and that the business has a solid local presence in Barcelona."
          ],
          "lead" : "Search engine optimisation is the work of appearing on Google without paying for each click. It is the most valuable visit there is and also the slowest to earn: three fronts worked at once, measured every month.",
-         "photo" : "seo-detalle",
+         "links" : [
+            {
+               "text" : "that the site can be read and loads quickly",
+               "to" : "web"
+            }
+         ],
+         "photo" : "equipo-reunion",
+         "photoAlt" : "Several people gathered around a wooden table with laptops and notebooks, taking notes",
          "process" : [
             {
                "h" : "Audit",
