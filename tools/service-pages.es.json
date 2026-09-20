@@ -46,7 +46,7 @@
          "description" : "Diseño y desarrollo de webs corporativas a medida en Barcelona. Webs rápidas, claras y pensadas para convertir visitas en clientes.",
          "faq" : [
             {
-               "a" : "Depende del número de páginas y de la rapidez con la que recibamos textos y fotografías. Una web de presentación suele estar publicada entre tres y seis semanas desde que empezamos.",
+               "a" : "Depende del número de páginas y de la rapidez con la que recibamos textos y fotografías. Una web de presentación suele estar publicada entre dos y cuatro semanas desde que empezamos.",
                "q" : "¿Cuánto tarda una web corporativa?"
             },
             {
@@ -125,7 +125,7 @@
             {
                "i" : "clock",
                "l" : "Semanas hasta publicar",
-               "v" : "3–6"
+               "v" : "2–4"
             },
             {
                "i" : "layers",
