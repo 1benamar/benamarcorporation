@@ -151,18 +151,30 @@
     try { el = document.querySelector(window.location.hash); } catch (err) { return; }
     if (!el) return;
 
-    // El navegador salta al ancla antes de que carguen las fotografías y
-    // las tipografías, así que para cuando la página termina de componerse
-    // la sección ya no está donde estaba. Se repite el salto al final.
+    // El navegador salta al ancla antes de que carguen las tipografías, y
+    // al cambiar la métrica del texto la sección se mueve. Se recoloca
+    // cuando las fuentes están listas, y se deja de hacer en cuanto el
+    // visitante toma el control del desplazamiento.
+    var manda = false;
+    function suelta() { manda = true; }
+    window.addEventListener("wheel", suelta, { passive: true, once: true });
+    window.addEventListener("touchstart", suelta, { passive: true, once: true });
+    window.addEventListener("keydown", suelta, { once: true });
+
     function go() {
+      if (manda) return;
       window.scrollTo({
         top: el.getBoundingClientRect().top + window.scrollY - 72,
         behavior: "auto"
       });
     }
+
     window.addEventListener("load", function () {
       go();
-      setTimeout(go, 150);
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(go).catch(function () {});
+      }
+      setTimeout(go, 400);
     });
   }
 
