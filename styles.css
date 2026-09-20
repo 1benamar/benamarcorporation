@@ -565,7 +565,7 @@ h1 em, h2 em, h3 em, .em-serif {
 /* Centered composition on desktop */
 @media (min-width: 960px) {
   .service-tile { padding-block: 8.5rem; }
-  .service-tile > * {
+  .service-tile > *:not(.tile-photo) {
     max-width: 720px;
     margin-inline: auto;
   }
