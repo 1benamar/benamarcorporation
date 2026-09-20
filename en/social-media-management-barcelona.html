@@ -19,11 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=20260920d">
+  <link rel="stylesheet" href="../styles.css?v=20260920e">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
      "@graph" : [
+        {
+           "@type" : "BreadcrumbList",
+           "itemListElement" : [
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/en/",
+                 "name" : "Home",
+                 "position" : 1
+              },
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/en/social-media-management-barcelona.html",
+                 "name" : "Social media management",
+                 "position" : 2
+              }
+           ]
+        },
         {
            "@type" : "Service",
            "areaServed" : [
@@ -104,7 +121,6 @@
 <body>
   <a class="skip-link" href="index.html#main">Skip to content</a>
   <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -143,7 +159,6 @@
 
 <main id="main">
     <section class="service-tile service-tile--social page-hero">
-      <p class="service-num">Service</p>
       <h1 class="service-title">Social media management</h1>
       <p class="service-teaser">A constant presence, without demands on your time.</p>
       <div class="service-actions">
@@ -151,6 +166,13 @@
         <a class="btn btn-primary btn-sm" href="index.html#contacto">Request a proposal</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><span aria-current="page">Social media management</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
       <p class="about-body" data-reveal>The problem with social media is rarely a lack of ideas. It is consistency. Most accounts start well, publish for three weeks and then stop, because the business takes up the time.</p>

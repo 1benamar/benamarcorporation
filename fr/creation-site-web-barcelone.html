@@ -19,11 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=20260920d">
+  <link rel="stylesheet" href="../styles.css?v=20260920e">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
      "@graph" : [
+        {
+           "@type" : "BreadcrumbList",
+           "itemListElement" : [
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/fr/",
+                 "name" : "Accueil",
+                 "position" : 1
+              },
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/fr/creation-site-web-barcelone.html",
+                 "name" : "Création de site web",
+                 "position" : 2
+              }
+           ]
+        },
         {
            "@type" : "Service",
            "areaServed" : [
@@ -96,7 +113,6 @@
 <body>
   <a class="skip-link" href="index.html#main">Aller au contenu</a>
   <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -135,7 +151,6 @@
 
 <main id="main">
     <section class="service-tile service-tile--web page-hero">
-      <p class="service-num">Service</p>
       <h1 class="service-title">Création de site web</h1>
       <p class="service-teaser">Un site web qui traduit la valeur réelle de votre entreprise.</p>
       <div class="service-actions">
@@ -143,6 +158,13 @@
         <a class="btn btn-primary btn-sm" href="index.html#contacto">Demander une proposition</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li><span aria-current="page">Création de site web</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
       <p class="about-body" data-reveal>Pour la plupart des entreprises, le site web est le premier endroit où un client vérifie si l'appel vaut la peine. S'il est lent, s'il s'affiche mal sur téléphone ou s'il n'explique pas clairement l'activité, cet appel n'arrive jamais.</p>

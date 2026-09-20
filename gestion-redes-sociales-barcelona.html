@@ -19,11 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20260920d">
+  <link rel="stylesheet" href="styles.css?v=20260920e">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
      "@graph" : [
+        {
+           "@type" : "BreadcrumbList",
+           "itemListElement" : [
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/",
+                 "name" : "Inicio",
+                 "position" : 1
+              },
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/gestion-redes-sociales-barcelona.html",
+                 "name" : "Gestión de redes sociales",
+                 "position" : 2
+              }
+           ]
+        },
         {
            "@type" : "Service",
            "areaServed" : [
@@ -104,7 +121,6 @@
 <body>
   <a class="skip-link" href="index.html#main">Saltar al contenido</a>
   <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -143,7 +159,6 @@
 
 <main id="main">
     <section class="service-tile service-tile--social page-hero">
-      <p class="service-num">Servicio</p>
       <h1 class="service-title">Gestión de redes sociales</h1>
       <p class="service-teaser">Presencia constante, sin ocupar su tiempo.</p>
       <div class="service-actions">
@@ -151,6 +166,13 @@
         <a class="btn btn-primary btn-sm" href="index.html#contacto">Solicitar una propuesta</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><span aria-current="page">Gestión de redes sociales</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
       <p class="about-body" data-reveal>El problema de las redes sociales rara vez es la falta de ideas. Es la constancia. Se empieza con ganas, se publica tres semanas seguidas y luego el negocio absorbe el tiempo y la cuenta se queda parada.</p>

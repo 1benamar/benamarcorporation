@@ -19,11 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="../styles.css?v=20260920d">
+  <link rel="stylesheet" href="../styles.css?v=20260920e">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
      "@graph" : [
+        {
+           "@type" : "BreadcrumbList",
+           "itemListElement" : [
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/fr/",
+                 "name" : "Accueil",
+                 "position" : 1
+              },
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/fr/landing-pages-barcelone.html",
+                 "name" : "Landing pages",
+                 "position" : 2
+              }
+           ]
+        },
         {
            "@type" : "Service",
            "areaServed" : [
@@ -104,7 +121,6 @@
 <body>
   <a class="skip-link" href="index.html#main">Aller au contenu</a>
   <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -143,7 +159,6 @@
 
 <main id="main">
     <section class="service-tile service-tile--landing page-hero">
-      <p class="service-num">Service</p>
       <h1 class="service-title">Landing pages</h1>
       <p class="service-teaser">Une page, un objectif, une conversion.</p>
       <div class="service-actions">
@@ -151,6 +166,13 @@
         <a class="btn btn-primary btn-sm" href="index.html#contacto">Demander une proposition</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li><span aria-current="page">Landing pages</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
       <p class="about-body" data-reveal>Une landing page est une page qui poursuit un seul but : amener le visiteur à faire une action précise. Demander un devis, prendre rendez-vous, laisser son téléphone ou acheter. Rien d'autre.</p>

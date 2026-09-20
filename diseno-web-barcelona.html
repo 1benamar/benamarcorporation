@@ -19,11 +19,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300..700&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20260920d">
+  <link rel="stylesheet" href="styles.css?v=20260920e">
   <script type="application/ld+json">
   {
      "@context" : "https://schema.org",
      "@graph" : [
+        {
+           "@type" : "BreadcrumbList",
+           "itemListElement" : [
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/",
+                 "name" : "Inicio",
+                 "position" : 1
+              },
+              {
+                 "@type" : "ListItem",
+                 "item" : "https://benamar.es/diseno-web-barcelona.html",
+                 "name" : "Diseño web",
+                 "position" : 2
+              }
+           ]
+        },
         {
            "@type" : "Service",
            "areaServed" : [
@@ -96,7 +113,6 @@
 <body>
   <a class="skip-link" href="index.html#main">Saltar al contenido</a>
   <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="nav" data-nav>
     <div class="nav-inner">
@@ -135,7 +151,6 @@
 
 <main id="main">
     <section class="service-tile service-tile--web page-hero">
-      <p class="service-num">Servicio</p>
       <h1 class="service-title">Diseño web</h1>
       <p class="service-teaser">Una web que transmite el valor real de su negocio.</p>
       <div class="service-actions">
@@ -143,6 +158,13 @@
         <a class="btn btn-primary btn-sm" href="index.html#contacto">Solicitar una propuesta</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><span aria-current="page">Diseño web</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
       <p class="about-body" data-reveal>Para la mayoría de negocios, la web es el primer sitio donde un cliente comprueba si merece la pena llamar. Si carga despacio, se ve mal en el móvil o no explica con claridad a qué se dedica la empresa, esa llamada no llega.</p>

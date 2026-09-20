@@ -8,7 +8,7 @@ use utf8;
 use JSON::PP;
 binmode(STDOUT, ':encoding(UTF-8)');
 
-my @langs = @ARGV ? @ARGV : qw(es);
+my @langs = @ARGV ? @ARGV : qw(es en fr);
 my (%data, %slug);
 
 for my $l (@langs) {
@@ -106,6 +106,7 @@ for my $lang (@langs) {
             fr => $base . 'fr/' . ($slug{fr}{ $p->{id} } || ''),
         );
         my $canonical = $alt{$lang};
+        my $home_url  = 'https://benamar.es/' . ($lang eq 'es' ? '' : "$lang/");
 
         my $hreflang = join "\n",
             map { qq{  <link rel="alternate" hreflang="$_" href="$alt{$_}">} }
@@ -162,6 +163,12 @@ for my $lang (@langs) {
         my $ld = JSON::PP->new->canonical->pretty->encode({
             '@context' => 'https://schema.org',
             '@graph'   => [
+                {   '@type'            => 'BreadcrumbList',
+                    'itemListElement'  => [
+                        { '@type' => 'ListItem', 'position' => 1, 'name' => $L->{home}, 'item' => $home_url },
+                        { '@type' => 'ListItem', 'position' => 2, 'name' => $p->{h1},   'item' => $canonical },
+                    ],
+                },
                 {   '@type'       => 'Service',
                     'name'        => $p->{h1},
                     'serviceType' => $p->{h1},
@@ -206,14 +213,13 @@ $hreflang
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920d">
+  <link rel="stylesheet" href="${up}styles.css?v=20260920e">
   <script type="application/ld+json">
 $ld  </script>
 </head>
 <body>
   $head<main id="main">
     <section class="service-tile $p->{tile} page-hero">
-      <p class="service-num">@{[ esc($L->{kicker}) ]}</p>
       <h1 class="service-title">@{[ esc($p->{h1}) ]}</h1>
       <p class="service-teaser">@{[ esc($p->{teaser}) ]}</p>
       <div class="service-actions">
@@ -221,6 +227,13 @@ $ld  </script>
         <a class="btn btn-primary btn-sm" href="index.html#contacto">@{[ esc($L->{ctaButton}) ]}</a>
       </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="@{[ esc($L->{breadcrumb}) ]}">
+      <ol>
+        <li><a href="index.html">@{[ esc($L->{home}) ]}</a></li>
+        <li><span aria-current="page">@{[ esc($p->{h1}) ]}</span></li>
+      </ol>
+    </nav>
 
     <section class="about">
 $intro
