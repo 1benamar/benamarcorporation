@@ -206,7 +206,7 @@ $hreflang
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920c">
+  <link rel="stylesheet" href="${up}styles.css?v=20260920d">
   <script type="application/ld+json">
 $ld  </script>
 </head>

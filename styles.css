@@ -452,7 +452,6 @@ h1 em, h2 em, h3 em, .em-serif {
   background: linear-gradient(165deg, var(--bg-3) 0%, var(--bg-soft) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
   transition: opacity .8s var(--ease-soft), transform .45s var(--ease-soft), box-shadow .45s var(--ease-soft), border-color .3s var(--ease-out);
 }
 .benefit::before {
@@ -465,7 +464,6 @@ h1 em, h2 em, h3 em, .em-serif {
 @media (hover: hover) and (pointer: fine) {
   .benefit:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-glow);
     border-color: var(--line-2);
   }
   .benefit:hover::before { transform: scaleX(1); }
@@ -610,13 +608,11 @@ h1 em, h2 em, h3 em, .em-serif {
   background: linear-gradient(165deg, var(--bg-3) 0%, var(--bg-soft) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
   transition: opacity .8s var(--ease-soft), transform .45s var(--ease-soft), box-shadow .45s var(--ease-soft), border-color .3s var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .stat:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-glow);
     border-color: var(--line-2);
   }
 }
@@ -1114,3 +1110,18 @@ h1 em, h2 em, h3 em, .em-serif {
   .service-process-text > h2 { text-align: left; }
   .service-process-text > h2::before { left: 0; transform: none; }
 }
+
+/* =============================================================
+   16. Superficies del propio navegador
+   ============================================================= */
+html { scrollbar-width: thin; scrollbar-color: var(--line-2) var(--bg); }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--line-2);
+  border: 3px solid var(--bg);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+input, textarea, select { caret-color: var(--accent); }
+a { text-underline-offset: 3px; }

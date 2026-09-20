@@ -2,3 +2,8 @@
 Thumbs.db
 *.b64
 .claude/
+
+# Skills instaladas con npx skills: son herramientas de desarrollo,
+# no forman parte de la web y no deben subirse al hosting.
+.agents/
+skills-lock.json
