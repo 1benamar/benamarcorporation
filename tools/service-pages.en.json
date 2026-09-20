@@ -8,6 +8,13 @@
       "ctaButton" : "Request a proposal",
       "ctaHeading" : "Let us talk about your project.",
       "ctaSub" : "Tell us what your business needs. We reply within 24 hours with a concrete proposal.",
+      "deck" : {
+         "audience" : "Four common situations. If you recognise yours, it fits.",
+         "faq" : "The questions we get before starting, answered plainly.",
+         "includes" : "What the service covers, with no small print.",
+         "others" : "The other services, in case yours needs more than one.",
+         "process" : "The stages the project goes through, and what you decide at each one."
+      },
       "faq" : "Frequently asked questions",
       "figures" : "In numbers",
       "home" : "Home",
@@ -19,10 +26,22 @@
    "pages" : [
       {
          "audience" : [
-            "Established businesses whose website has fallen behind or never delivered results.",
-            "Professionals and new companies that need a serious first website, not an improvised page.",
-            "Companies working in several languages that need a properly written version of each.",
-            "Companies outside Barcelona, in Spain or abroad, that prefer to work remotely."
+            {
+               "who" : "Businesses with a dated website",
+               "why" : "The business works, but the site is years old, looks wrong on a phone or never brought in clients."
+            },
+            {
+               "who" : "Those starting out who need credibility",
+               "why" : "New professionals and companies who need a solid first website, not an improvised page to be redone within a year."
+            },
+            {
+               "who" : "Companies working in several languages",
+               "why" : "Each language with its own considered version, properly declared, not machine translation laid over the page."
+            },
+            {
+               "who" : "Clients outside Barcelona",
+               "why" : "Inside or outside Spain. We meet in person here and nearby; everything else works just as well remotely."
+            }
          ],
          "description" : "Custom corporate website design and development in Barcelona. Fast, clear websites built to turn visits into customers.",
          "faq" : [
@@ -76,6 +95,7 @@
             "At BENAMAR we design and develop custom corporate websites from Barcelona. No bought templates and no features nobody will use: only what the business needs to explain itself well and turn visits into customers.",
             "The result is a website of your own, fast on mobile and ready from day one for Google to understand it. And it stays in your name, with the domain, the hosting and the code under your control."
          ],
+         "lead" : "A company website is where a client checks whether you are worth calling. This service covers design, development, copy and launch, with the domain and the code in your name from day one.",
          "photo" : "proceso-trabajo",
          "process" : [
             {
@@ -96,16 +116,50 @@
             }
          ],
          "slug" : "web-design-barcelona.html",
-         "teaser" : "A website that conveys the real value of your business.",
+         "stats" : [
+            {
+               "i" : "unlock",
+               "l" : "Bought templates",
+               "v" : "0"
+            },
+            {
+               "i" : "clock",
+               "l" : "Weeks to launch",
+               "v" : "3–6"
+            },
+            {
+               "i" : "layers",
+               "l" : "Stages you review before we go on",
+               "v" : "4"
+            },
+            {
+               "i" : "user",
+               "l" : "Domain and code in your name",
+               "v" : "100 %"
+            }
+         ],
+         "teaser" : "We design and build your company website from scratch: bespoke, fast on mobile and registered in your name.",
          "tile" : "service-tile--web",
          "title" : "Web Design in Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Businesses about to invest in Google Ads or social media that do not want to waste the budget.",
-            "Service companies that need a steady flow of quote requests or bookings.",
-            "Launches of a product, a promotion or an event with a fixed date.",
-            "Companies outside Barcelona, in Spain or abroad, that prefer to work remotely."
+            {
+               "who" : "Anyone about to spend on advertising",
+               "why" : "If you are paying for each visit on Google Ads or social, that visit should land on a page built for the campaign."
+            },
+            {
+               "who" : "Services that live on enquiries",
+               "why" : "Businesses that need a steady flow of quote requests, appointments or bookings."
+            },
+            {
+               "who" : "Launches with a date",
+               "why" : "A new product, a promotion or an event with a beginning and an end that needs a page of its own."
+            },
+            {
+               "who" : "Clients outside Barcelona",
+               "why" : "Inside or outside Spain. A landing page is planned, written and measured just as well remotely."
+            }
          ],
          "description" : "Landing page design in Barcelona for Google Ads and social media campaigns. One page, one goal and measured results.",
          "faq" : [
@@ -163,6 +217,7 @@
             "It differs from a corporate website in that it does not try to explain the whole business. It removes everything that distracts, including the menu, and keeps only what is needed for that action to happen.",
             "That is why it is the right destination for paid traffic. Every euro spent on advertising lands on a page built for that campaign, not on a general homepage where the visitor gets lost."
          ],
+         "lead" : "A landing page does not explain the whole business: it removes the menu and the distractions and leaves only what is needed for one action to happen. It is where paid campaign traffic should land.",
          "photo" : "landing-detalle",
          "process" : [
             {
@@ -183,16 +238,50 @@
             }
          ],
          "slug" : "landing-pages-barcelona.html",
-         "teaser" : "One page, one goal, one conversion.",
+         "stats" : [
+            {
+               "i" : "target",
+               "l" : "Goal per page",
+               "v" : "1"
+            },
+            {
+               "i" : "clock",
+               "l" : "Weeks to launch",
+               "v" : "1–2"
+            },
+            {
+               "i" : "layers",
+               "l" : "Versions you can compare",
+               "v" : "2"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Menus or links that distract",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "A single page, built so the visitor does one specific thing: request, book or buy.",
          "tile" : "service-tile--landing",
          "title" : "Landing Pages in Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Businesses with open profiles that sit idle for lack of time.",
-            "Companies publishing without a plan that want a more consistent, more serious image.",
-            "Brands whose clients check them online before buying.",
-            "Companies outside Barcelona, in Spain or abroad, that prefer to work remotely."
+            {
+               "who" : "Accounts open but idle",
+               "why" : "The profile exists, it started well and it has been months without movement because the business takes the time."
+            },
+            {
+               "who" : "Those publishing without a plan",
+               "why" : "Posting in bursts, without criteria or calendar, giving a less serious impression than the business deserves."
+            },
+            {
+               "who" : "Brands that get checked before buying",
+               "why" : "Sectors where the client opens the profile to decide whether to trust you. A considered presence sells there."
+            },
+            {
+               "who" : "Clients outside Barcelona",
+               "why" : "Inside or outside Spain. Content is planned and approved at a distance without losing the tone of the business."
+            }
          ],
          "description" : "Social media management for companies in Barcelona: strategy, content, editorial calendar and clear monthly reporting.",
          "faq" : [
@@ -250,6 +339,7 @@
             "We take that part off your hands. We prepare the strategy, the calendar and the content, we publish and reply, and every month you receive a report on what worked and what did not.",
             "We work from Barcelona and meet regularly, so that the content looks like your business rather than a generic account for your sector."
          ],
+         "lead" : "The problem with social media is rarely ideas; it is consistency. Here the consistency is ours: a calendar you approve, original content and a monthly report on what worked.",
          "photo" : "redes-detalle",
          "process" : [
             {
@@ -270,16 +360,50 @@
             }
          ],
          "slug" : "social-media-management-barcelona.html",
-         "teaser" : "A constant presence, without demands on your time.",
+         "stats" : [
+            {
+               "i" : "chart",
+               "l" : "Reports a year, one a month",
+               "v" : "12"
+            },
+            {
+               "i" : "message",
+               "l" : "Networks done well, not five halfway",
+               "v" : "2"
+            },
+            {
+               "i" : "calendar",
+               "l" : "Calendar approved before publishing",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Lock-in: the work runs month to month",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "We run your social accounts end to end: strategy, content, publishing and a monthly report.",
          "tile" : "service-tile--social",
          "title" : "Social Media Management in Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Local businesses that want to appear when someone searches for their service in Barcelona.",
-            "Companies with a website that receives no traffic from Google and do not know why.",
-            "Advertisers who want to build visits that do not depend on a daily budget.",
-            "Companies outside Barcelona, in Spain or abroad, that prefer to work remotely."
+            {
+               "who" : "Local businesses",
+               "why" : "Those who need to appear when someone searches for their service in Barcelona or their area, with a well-kept Google listing."
+            },
+            {
+               "who" : "Websites that get no visits",
+               "why" : "The site exists, it is published, and Google sends it almost no traffic. There is usually a specific cause, and it can be found."
+            },
+            {
+               "who" : "Those dependent on advertising",
+               "why" : "Businesses that only receive visits while they pay, and want a channel that does not switch off when the budget stops."
+            },
+            {
+               "who" : "Clients outside Barcelona",
+               "why" : "Inside or outside Spain. Technical and content work does not depend on distance."
+            }
          ],
          "description" : "SEO in Barcelona: technical audit, content, local search and monthly reporting with qualified traffic targets.",
          "faq" : [
@@ -337,6 +461,7 @@
             "It brings the most valuable visits there are: people who already have the problem you solve and are looking for someone to solve it. It is also the slowest work, because Google does not rearrange its results overnight.",
             "We work on the three factors that decide it: that the site can be read and loads quickly, that the copy answers what people actually search for, and that the business has a solid local presence in Barcelona."
          ],
+         "lead" : "Search engine optimisation is the work of appearing on Google without paying for each click. It is the most valuable visit there is and also the slowest to earn: three fronts worked at once, measured every month.",
          "photo" : "seo-detalle",
          "process" : [
             {
@@ -357,31 +482,31 @@
             }
          ],
          "slug" : "seo-barcelona.html",
-         "teaser" : "Visibility at the moment people search.",
+         "stats" : [
+            {
+               "i" : "layers",
+               "l" : "Fronts at once: technical, content and local",
+               "v" : "3"
+            },
+            {
+               "i" : "clock",
+               "l" : "Months for competitive positions",
+               "v" : "3–6"
+            },
+            {
+               "i" : "chart",
+               "l" : "Report each month on what moved",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Guarantees of a first position",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "We work to have your website appear on Google when someone searches for what you offer, without paying per click.",
          "tile" : "service-tile--seo",
          "title" : "SEO in Barcelona — BENAMAR"
-      }
-   ],
-   "stats" : [
-      {
-         "i" : "clock",
-         "l" : "Response time",
-         "v" : "&lt;24h"
-      },
-      {
-         "i" : "target",
-         "l" : "Custom-built projects",
-         "v" : "100 %"
-      },
-      {
-         "i" : "user",
-         "l" : "Single point of contact, always",
-         "v" : "1"
-      },
-      {
-         "i" : "unlock",
-         "l" : "Contract lock-in",
-         "v" : "0"
       }
    ]
 }

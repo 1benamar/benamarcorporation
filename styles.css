@@ -1003,16 +1003,31 @@ h1 em, h2 em, h3 em, .em-serif {
 .process p { margin-top: 0.4rem; color: var(--mute); font-size: 0.95rem; max-width: 58ch; }
 
 /* Para quién es */
-.audience {
-  margin: 2.4rem 0 0; padding: 0; list-style: none;
-  display: grid; gap: 1.1rem; text-align: left; color: var(--mute);
+.audience { margin: 2.6rem 0 0; padding: 0; display: grid; text-align: left; }
+.audience-item {
+  display: grid; gap: 0.5rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--line);
 }
-.audience li { position: relative; padding-left: 1.6rem; }
-.audience li::before {
+.audience-item:first-child { border-top: 0; padding-top: 0.6rem; }
+.audience dt {
+  position: relative; padding-left: 1.5rem;
+  color: var(--ink); font-weight: 600; font-size: 1.02rem;
+  letter-spacing: -0.008em;
+}
+.audience dt::before {
   content: "";
-  position: absolute; left: 0; top: 0.72em;
-  width: 9px; height: 1px;
+  position: absolute; left: 0; top: 0.64em;
+  width: 10px; height: 1px;
   background: var(--accent);
+}
+.audience dd {
+  margin: 0; color: var(--mute);
+  font-size: 0.95rem; line-height: 1.65; max-width: 58ch;
+}
+@media (min-width: 720px) {
+  .audience-item { grid-template-columns: 1fr 1.65fr; gap: 2.2rem; align-items: start; }
+  .audience dd { padding-top: 0.12rem; }
 }
 
 /* Banda fotográfica de descanso */
@@ -1045,10 +1060,48 @@ h1 em, h2 em, h3 em, .em-serif {
 
 /* Preguntas frecuentes */
 .faq { margin-top: 2.6rem; text-align: left; }
-.faq-item { padding: 1.6rem 0; border-top: 1px solid var(--line); }
-.faq-item:first-child { border-top: 0; padding-top: 0; }
-.faq-item h3 { font-size: 1.05rem; }
-.faq-item p { margin-top: 0.45rem; color: var(--mute); font-size: 0.95rem; max-width: 62ch; }
+.faq-item { border-top: 1px solid var(--line); }
+.faq-item:first-child { border-top: 0; }
+.faq-item > summary {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem;
+  padding: 1.4rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+.faq-item > summary::marker { content: ""; }
+.faq-item summary h3 {
+  margin: 0; font-size: 1.05rem; font-weight: 600;
+  transition: color .3s var(--ease-out);
+}
+.faq-sign {
+  position: relative; flex-shrink: 0;
+  width: 12px; height: 12px; margin-top: 0.42rem;
+}
+.faq-sign::before, .faq-sign::after {
+  content: ""; position: absolute; background: var(--accent);
+  transition: transform .4s var(--ease-out), opacity .3s var(--ease-out);
+}
+.faq-sign::before { left: 0; top: 5px; width: 12px; height: 1px; }
+.faq-sign::after  { left: 5px; top: 0; width: 1px; height: 12px; }
+.faq-item[open] .faq-sign::after { transform: rotate(90deg); opacity: 0; }
+.faq-answer { padding-bottom: 1.5rem; }
+.faq-answer p {
+  margin: 0; color: var(--mute);
+  font-size: 0.95rem; line-height: 1.65; max-width: 62ch;
+}
+.faq-item[open] .faq-answer { animation: faqAbrir .4s var(--ease-out); }
+@keyframes faqAbrir {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: none; }
+}
+.faq-item > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  .faq-item > summary:hover h3 { color: var(--accent); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-item[open] .faq-answer { animation: none; }
+}
 
 /* Otros servicios */
 .other-services { margin-top: 2.6rem; display: grid; gap: 1.3rem; }
@@ -1200,3 +1253,46 @@ a, button, [role="button"], input, select, textarea, summary {
   .breadcrumb a:hover { color: var(--accent); }
 }
 .breadcrumb [aria-current="page"] { color: var(--ink); }
+
+/* =============================================================
+   18. Entradilla y bajadas de sección
+   ============================================================= */
+.service-lead {
+  max-width: 60ch;
+  margin: 0 auto 2.2rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: clamp(1.08rem, 2.1vw, 1.3rem);
+  line-height: 1.58;
+  letter-spacing: -0.006em;
+}
+
+.section-deck {
+  max-width: 52ch;
+  margin: 0.9rem auto 0;
+  color: var(--mute);
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+
+/* Los títulos de sección ganan cuerpo y comparten el mismo filete. */
+.service-section > h2,
+.service-process-text > h2 {
+  font-size: clamp(1.75rem, 3.8vw, 2.4rem);
+  letter-spacing: -0.018em;
+}
+.manifesto-statement {
+  position: relative;
+  padding-top: 1.75rem;
+}
+.manifesto-statement::before {
+  content: "";
+  position: absolute; top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 26px; height: 1px;
+  background: var(--accent);
+}
+@media (min-width: 960px) {
+  .service-process-text .section-deck { margin-inline: 0; }
+}

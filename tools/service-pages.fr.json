@@ -8,6 +8,13 @@
       "ctaButton" : "Demander une proposition",
       "ctaHeading" : "Parlons de votre projet.",
       "ctaSub" : "Parlez-nous des besoins de votre entreprise. Nous vous répondons sous 24 heures avec une proposition concrète.",
+      "deck" : {
+         "audience" : "Quatre situations courantes. Si vous reconnaissez la vôtre, cela correspond.",
+         "faq" : "Les questions qui reviennent avant de commencer, répondues sans détour.",
+         "includes" : "Ce que couvre le service, sans petites lignes.",
+         "others" : "Les autres services, au cas où le vôtre en demanderait plusieurs.",
+         "process" : "Les étapes du projet, et ce que vous décidez à chacune."
+      },
       "faq" : "Questions fréquentes",
       "figures" : "En chiffres",
       "home" : "Accueil",
@@ -19,10 +26,22 @@
    "pages" : [
       {
          "audience" : [
-            "Des entreprises établies dont le site a vieilli ou n'a jamais donné de résultats.",
-            "Des indépendants et des sociétés qui démarrent et ont besoin d'un premier site sérieux.",
-            "Des entreprises qui travaillent en plusieurs langues et veulent une version soignée de chacune.",
-            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+            {
+               "who" : "Entreprises au site dépassé",
+               "why" : "L'activité tourne, mais le site date, s'affiche mal sur mobile ou n'a jamais apporté de clients."
+            },
+            {
+               "who" : "Ceux qui démarrent et doivent inspirer confiance",
+               "why" : "Professionnels et entreprises qui ont besoin d'un premier site solide, pas d'une page improvisée à refaire dans un an."
+            },
+            {
+               "who" : "Entreprises qui travaillent en plusieurs langues",
+               "why" : "Chaque langue avec sa version soignée et correctement déclarée, pas une traduction automatique posée sur la page."
+            },
+            {
+               "who" : "Clients hors de Barcelone",
+               "why" : "En Espagne ou à l'étranger. Nous nous rencontrons ici et aux alentours ; le reste se mène aussi bien à distance."
+            }
          ],
          "description" : "Conception et développement de sites web corporatifs sur mesure à Barcelone. Des sites rapides, clairs et conçus pour convertir.",
          "faq" : [
@@ -76,6 +95,7 @@
             "Chez BENAMAR, nous concevons et développons des sites corporatifs sur mesure depuis Barcelone. Sans modèles achetés et sans fonctions que personne n'utilisera : uniquement ce dont l'entreprise a besoin pour bien se présenter et transformer les visites en clients.",
             "Le résultat est un site qui vous appartient, rapide sur mobile et prêt dès le premier jour à être compris par Google. Le domaine, l'hébergement et le code restent à votre nom."
          ],
+         "lead" : "Un site d'entreprise est l'endroit où un client vérifie si cela vaut la peine de vous appeler. Ce service couvre la conception, le développement, les textes et la mise en ligne, avec le domaine et le code à votre nom dès le premier jour.",
          "photo" : "proceso-trabajo",
          "process" : [
             {
@@ -96,16 +116,50 @@
             }
          ],
          "slug" : "creation-site-web-barcelone.html",
-         "teaser" : "Un site web qui traduit la valeur réelle de votre entreprise.",
+         "stats" : [
+            {
+               "i" : "unlock",
+               "l" : "Modèles achetés",
+               "v" : "0"
+            },
+            {
+               "i" : "clock",
+               "l" : "Semaines avant la mise en ligne",
+               "v" : "3–6"
+            },
+            {
+               "i" : "layers",
+               "l" : "Étapes que vous validez avant la suite",
+               "v" : "4"
+            },
+            {
+               "i" : "user",
+               "l" : "Domaine et code à votre nom",
+               "v" : "100 %"
+            }
+         ],
+         "teaser" : "Nous concevons et développons le site de votre entreprise à partir de zéro : sur mesure, rapide sur mobile et à votre nom.",
          "tile" : "service-tile--web",
          "title" : "Création de site web à Barcelone — BENAMAR"
       },
       {
          "audience" : [
-            "Des entreprises qui vont investir en Google Ads ou sur les réseaux et ne veulent pas gaspiller leur budget.",
-            "Des activités de services qui ont besoin d'un flux régulier de demandes de devis ou de réservations.",
-            "Le lancement d'un produit, d'une promotion ou d'un événement à date fixe.",
-            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+            {
+               "who" : "Ceux qui vont investir en publicité",
+               "why" : "Si vous payez chaque visite sur Google Ads ou sur les réseaux, cette visite doit arriver sur une page faite pour la campagne."
+            },
+            {
+               "who" : "Services qui vivent des demandes",
+               "why" : "Entreprises qui ont besoin d'un flux constant de devis, de rendez-vous ou de réservations."
+            },
+            {
+               "who" : "Lancements avec une date",
+               "why" : "Un nouveau produit, une promotion ou un événement qui a un début et une fin et mérite sa propre page."
+            },
+            {
+               "who" : "Clients hors de Barcelone",
+               "why" : "En Espagne ou à l'étranger. Une landing se pense, s'écrit et se mesure aussi bien à distance."
+            }
          ],
          "description" : "Création de landing pages à Barcelone pour vos campagnes Google Ads et réseaux sociaux. Une page, un objectif, des résultats mesurés.",
          "faq" : [
@@ -163,6 +217,7 @@
             "Elle se distingue du site corporatif parce qu'elle ne cherche pas à présenter toute l'entreprise. Elle retire ce qui distrait, y compris le menu, et ne garde que le nécessaire pour que cette action se produise.",
             "C'est donc la bonne destination pour le trafic payant. Chaque euro investi en publicité arrive sur une page conçue pour cette campagne, et non sur un accueil général où le visiteur se perd."
          ],
+         "lead" : "Une landing page n'explique pas toute l'activité : elle retire le menu et les distractions et ne laisse que le nécessaire pour qu'une action se produise. C'est là que doit arriver le trafic payant d'une campagne.",
          "photo" : "landing-detalle",
          "process" : [
             {
@@ -183,16 +238,50 @@
             }
          ],
          "slug" : "landing-pages-barcelone.html",
-         "teaser" : "Une page, un objectif, une conversion.",
+         "stats" : [
+            {
+               "i" : "target",
+               "l" : "Objectif par page",
+               "v" : "1"
+            },
+            {
+               "i" : "clock",
+               "l" : "Semaines avant la mise en ligne",
+               "v" : "1–2"
+            },
+            {
+               "i" : "layers",
+               "l" : "Versions que l’on peut comparer",
+               "v" : "2"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Menus ou liens qui détournent",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Une seule page, construite pour que le visiteur fasse une chose précise : demander, réserver ou acheter.",
          "tile" : "service-tile--landing",
          "title" : "Landing pages à Barcelone — BENAMAR"
       },
       {
          "audience" : [
-            "Des entreprises dont les profils existent mais restent inactifs, faute de temps.",
-            "Des sociétés qui publient sans plan et souhaitent une image plus régulière et plus sérieuse.",
-            "Des marques dont les clients consultent les réseaux avant d'acheter.",
-            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+            {
+               "who" : "Comptes ouverts mais à l’arrêt",
+               "why" : "Le profil existe, le départ était bon, et cela fait des mois sans mouvement parce que l'activité prend tout le temps."
+            },
+            {
+               "who" : "Ceux qui publient sans plan",
+               "why" : "On publie par à-coups, sans ligne ni calendrier, et le résultat donne une image moins sérieuse que ce que mérite l'entreprise."
+            },
+            {
+               "who" : "Marques que l’on vérifie avant d’acheter",
+               "why" : "Des secteurs où le client ouvre le profil pour décider s'il vous fait confiance. Une présence soignée y vend."
+            },
+            {
+               "who" : "Clients hors de Barcelone",
+               "why" : "En Espagne ou à l'étranger. Le contenu se planifie et se valide à distance sans perdre le ton de l'entreprise."
+            }
          ],
          "description" : "Gestion des réseaux sociaux pour les entreprises à Barcelone : stratégie, contenu, calendrier éditorial et rapports mensuels clairs.",
          "faq" : [
@@ -250,6 +339,7 @@
             "Nous prenons cette partie en charge. Nous préparons la stratégie, le calendrier et les contenus, nous publions et répondons, et chaque mois vous recevez un rapport sur ce qui a fonctionné et ce qui n'a pas marché.",
             "Nous travaillons depuis Barcelone, avec des points réguliers, pour que le contenu ressemble à votre entreprise et non à un compte générique du secteur."
          ],
+         "lead" : "Le problème des réseaux sociaux, ce sont rarement les idées : c'est la régularité. Ici, la régularité vient de nous : un calendrier que vous validez, du contenu propre et un rapport chaque mois sur ce qui a fonctionné.",
          "photo" : "redes-detalle",
          "process" : [
             {
@@ -270,16 +360,50 @@
             }
          ],
          "slug" : "gestion-reseaux-sociaux-barcelone.html",
-         "teaser" : "Une présence constante, sans mobiliser votre temps.",
+         "stats" : [
+            {
+               "i" : "chart",
+               "l" : "Rapports par an, un chaque mois",
+               "v" : "12"
+            },
+            {
+               "i" : "message",
+               "l" : "Réseaux bien tenus plutôt que cinq à moitié",
+               "v" : "2"
+            },
+            {
+               "i" : "calendar",
+               "l" : "Calendrier validé avant publication",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Engagement : le travail se fait au mois",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Nous prenons en charge vos réseaux de bout en bout : stratégie, contenu, publication et rapport mensuel.",
          "tile" : "service-tile--social",
          "title" : "Gestion des réseaux sociaux à Barcelone — BENAMAR"
       },
       {
          "audience" : [
-            "Des commerces et services locaux qui veulent apparaître quand on cherche leur activité à Barcelone.",
-            "Des entreprises dont le site ne reçoit aucune visite depuis Google, sans savoir pourquoi.",
-            "Ceux qui investissent en publicité et veulent bâtir des visites indépendantes du budget quotidien.",
-            "Des entreprises hors de Barcelone, en Espagne ou à l'étranger, qui préfèrent travailler à distance."
+            {
+               "who" : "Commerces et services locaux",
+               "why" : "Ceux qui doivent apparaître quand on cherche leur service à Barcelone ou dans leur zone, avec une fiche Google bien tenue."
+            },
+            {
+               "who" : "Sites qui ne reçoivent pas de visites",
+               "why" : "Le site existe, il est en ligne, et Google ne lui envoie presque rien. Il y a en général une cause précise, et elle se trouve."
+            },
+            {
+               "who" : "Ceux qui dépendent de la publicité",
+               "why" : "Entreprises qui ne reçoivent des visites que tant qu'elles paient, et veulent un canal qui ne s'éteint pas avec le budget."
+            },
+            {
+               "who" : "Clients hors de Barcelone",
+               "why" : "En Espagne ou à l'étranger. Le travail technique et éditorial ne dépend pas de la distance."
+            }
          ],
          "description" : "Référencement naturel à Barcelone : audit technique, contenu, référencement local et rapports mensuels avec objectifs de trafic qualifié.",
          "faq" : [
@@ -337,6 +461,7 @@
             "Ce sont les visites les plus précieuses qui existent : des personnes qui ont déjà le problème que vous résolvez et cherchent quelqu'un pour le résoudre. C'est aussi le travail le plus lent, car Google ne réorganise pas ses résultats du jour au lendemain.",
             "Nous travaillons les trois facteurs qui le déterminent : un site lisible et rapide, des textes qui répondent aux recherches réelles, et une présence locale solide à Barcelone."
          ],
+         "lead" : "Le référencement naturel consiste à apparaître sur Google sans payer chaque clic. C'est la visite la plus précieuse qui soit, et aussi la plus lente à obtenir : trois fronts travaillés en même temps et mesurés chaque mois.",
          "photo" : "seo-detalle",
          "process" : [
             {
@@ -357,31 +482,31 @@
             }
          ],
          "slug" : "referencement-seo-barcelone.html",
-         "teaser" : "Une visibilité au moment où l'on vous cherche.",
+         "stats" : [
+            {
+               "i" : "layers",
+               "l" : "Fronts à la fois : technique, contenu et local",
+               "v" : "3"
+            },
+            {
+               "i" : "clock",
+               "l" : "Mois pour des positions disputées",
+               "v" : "3–6"
+            },
+            {
+               "i" : "chart",
+               "l" : "Rapport chaque mois sur ce qui a bougé",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Garanties de première position",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Nous travaillons pour que votre site apparaisse sur Google quand on cherche ce que vous proposez, sans payer au clic.",
          "tile" : "service-tile--seo",
          "title" : "Référencement SEO à Barcelone — BENAMAR"
-      }
-   ],
-   "stats" : [
-      {
-         "i" : "clock",
-         "l" : "Temps de réponse",
-         "v" : "&lt;24h"
-      },
-      {
-         "i" : "target",
-         "l" : "Projets sur mesure",
-         "v" : "100 %"
-      },
-      {
-         "i" : "user",
-         "l" : "Interlocuteur unique, toujours",
-         "v" : "1"
-      },
-      {
-         "i" : "unlock",
-         "l" : "Engagement de durée",
-         "v" : "0"
       }
    ]
 }

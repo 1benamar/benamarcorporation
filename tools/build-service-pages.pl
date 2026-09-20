@@ -121,14 +121,14 @@ for my $lang (@langs) {
                 . qq{        </div>}
         } @{ $p->{includes} };
 
-        # Franja de cifras, las mismas que declara la portada.
+        # Franja de cifras, distinta en cada servicio.
         my $stats = join "\n", map {
                   qq{        <div class="stat" data-reveal>\n}
                 . qq{          } . icon($_->{i}, 'stat-icon') . qq{\n}
                 . qq{          <span class="stat-value">$_->{v}</span>\n}
                 . qq{          <span class="stat-label">} . esc($_->{l}) . qq{</span>\n}
                 . qq{        </div>}
-        } @{ $d->{stats} };
+        } @{ $p->{stats} };
 
         my $process = join "\n", map {
                   qq{        <li data-reveal>\n}
@@ -137,14 +137,20 @@ for my $lang (@langs) {
                 . qq{        </li>}
         } @{ $p->{process} };
 
-        my $audience = join "\n",
-            map { qq{        <li data-reveal>} . esc($_) . qq{</li>} } @{ $p->{audience} };
-
-        my $faq = join "\n", map {
-                  qq{        <div class="faq-item" data-reveal>\n}
-                . qq{          <h3>} . esc($_->{q}) . qq{</h3>\n}
-                . qq{          <p>} . esc($_->{a}) . qq{</p>\n}
+        my $audience = join "\n", map {
+                  qq{        <div class="audience-item" data-reveal>\n}
+                . qq{          <dt>} . esc($_->{who}) . qq{</dt>\n}
+                . qq{          <dd>} . esc($_->{why}) . qq{</dd>\n}
                 . qq{        </div>}
+        } @{ $p->{audience} };
+
+        my $n_faq = 0;
+        my $faq = join "\n", map {
+                  my $open = $n_faq++ ? '' : ' open';
+                  qq{        <details class="faq-item" data-reveal$open>\n}
+                . qq{          <summary><h3>} . esc($_->{q}) . qq{</h3><span class="faq-sign" aria-hidden="true"></span></summary>\n}
+                . qq{          <div class="faq-answer"><p>} . esc($_->{a}) . qq{</p></div>\n}
+                . qq{        </details>}
         } @{ $p->{faq} };
 
         # Cada servicio relacionado se presenta con su propia fotografia.
@@ -213,7 +219,7 @@ $hreflang
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="$fonts">
-  <link rel="stylesheet" href="${up}styles.css?v=20260920e">
+  <link rel="stylesheet" href="${up}styles.css?v=20260920f">
   <script type="application/ld+json">
 $ld  </script>
 </head>
@@ -236,6 +242,7 @@ $ld  </script>
     </nav>
 
     <section class="about">
+      <p class="service-lead" data-reveal>@{[ esc($p->{lead}) ]}</p>
 $intro
       <p class="kicker stats-kicker" data-reveal>@{[ esc($L->{figures}) ]}</p>
       <div class="stats-grid">
@@ -245,6 +252,7 @@ $stats
 
     <section class="manifesto">
       <h2 class="manifesto-statement" data-reveal>@{[ esc($L->{includes}) ]}</h2>
+      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{includes}) ]}</p>
       <div class="benefits-grid benefits-grid--4">
 $includes
       </div>
@@ -257,6 +265,7 @@ $includes
         </div>
         <div class="service-process-text">
           <h2 data-reveal>@{[ esc($L->{process}) ]}</h2>
+      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{process}) ]}</p>
           <ol class="process">
 $process
           </ol>
@@ -270,13 +279,15 @@ $process
 
     <section class="service-section">
       <h2 data-reveal>@{[ esc($L->{audience}) ]}</h2>
-      <ul class="audience">
+      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{audience}) ]}</p>
+      <dl class="audience">
 $audience
-      </ul>
+      </dl>
     </section>
 
     <section class="service-section">
       <h2 data-reveal>@{[ esc($L->{faq}) ]}</h2>
+      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{faq}) ]}</p>
       <div class="faq">
 $faq
       </div>
@@ -290,6 +301,7 @@ $faq
 
     <section class="service-section">
       <h2 data-reveal>@{[ esc($L->{others}) ]}</h2>
+      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{others}) ]}</p>
       <div class="other-services">
 $others
       </div>

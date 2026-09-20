@@ -8,6 +8,13 @@
       "ctaButton" : "Solicitar una propuesta",
       "ctaHeading" : "Hablemos de su proyecto.",
       "ctaSub" : "Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta.",
+      "deck" : {
+         "audience" : "Cuatro situaciones habituales. Si reconoce la suya, es que encaja.",
+         "faq" : "Las dudas que nos llegan antes de empezar, respondidas sin rodeos.",
+         "includes" : "Lo que entra en el servicio, sin letra pequeña.",
+         "others" : "El resto de servicios, por si el suyo necesita más de uno.",
+         "process" : "Las fases por las que pasa el proyecto, y qué decide usted en cada una."
+      },
       "faq" : "Preguntas frecuentes",
       "figures" : "En cifras",
       "home" : "Inicio",
@@ -19,10 +26,22 @@
    "pages" : [
       {
          "audience" : [
-            "Negocios que ya funcionan y cuya web se ha quedado desfasada o nunca llegó a dar resultados.",
-            "Profesionales y empresas que empiezan y necesitan una primera web seria, no una página improvisada.",
-            "Empresas que atienden en varios idiomas y necesitan una versión cuidada de cada uno.",
-            "Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto."
+            {
+               "who" : "Negocios con una web desfasada",
+               "why" : "Funciona el negocio, pero la web es de hace años, no se ve bien en el móvil o nunca llegó a traer clientes."
+            },
+            {
+               "who" : "Quien empieza y necesita seriedad",
+               "why" : "Profesionales y empresas nuevas que necesitan una primera web solvente, no una página improvisada que haya que rehacer en un año."
+            },
+            {
+               "who" : "Empresas que atienden en varios idiomas",
+               "why" : "Cada idioma con su versión cuidada y bien declarada, no un traductor automático encima de la página."
+            },
+            {
+               "who" : "Clientes fuera de Barcelona",
+               "why" : "Dentro o fuera de España. Nos reunimos en persona aquí y en los alrededores; el resto se lleva igual de bien en remoto."
+            }
          ],
          "description" : "Diseño y desarrollo de webs corporativas a medida en Barcelona. Webs rápidas, claras y pensadas para convertir visitas en clientes.",
          "faq" : [
@@ -76,6 +95,7 @@
             "En BENAMAR diseñamos y desarrollamos webs corporativas a medida desde Barcelona. Sin plantillas compradas y sin funciones que nadie va a usar: solo lo que el negocio necesita para explicarse bien y convertir visitas en clientes.",
             "El resultado es una web propia, rápida en el móvil y preparada desde el primer día para que Google la entienda. Y queda a su nombre, con el dominio, el alojamiento y el código en su poder."
          ],
+         "lead" : "Una web corporativa es la página donde un cliente comprueba si merece la pena llamarle. Este servicio cubre el diseño, la programación, los textos y la publicación, con el dominio y el código a su nombre desde el primer día.",
          "photo" : "proceso-trabajo",
          "process" : [
             {
@@ -96,16 +116,50 @@
             }
          ],
          "slug" : "diseno-web-barcelona.html",
-         "teaser" : "Una web que transmite el valor real de su negocio.",
+         "stats" : [
+            {
+               "i" : "unlock",
+               "l" : "Plantillas compradas",
+               "v" : "0"
+            },
+            {
+               "i" : "clock",
+               "l" : "Semanas hasta publicar",
+               "v" : "3–6"
+            },
+            {
+               "i" : "layers",
+               "l" : "Fases con revisión suya",
+               "v" : "4"
+            },
+            {
+               "i" : "user",
+               "l" : "Dominio y código a su nombre",
+               "v" : "100 %"
+            }
+         ],
+         "teaser" : "Diseñamos y programamos la web de su empresa desde cero: a medida, rápida en el móvil y a su nombre.",
          "tile" : "service-tile--web",
          "title" : "Diseño web en Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Negocios que van a invertir en Google Ads o en redes y no quieren desperdiciar el presupuesto.",
-            "Servicios que necesitan captar solicitudes de presupuesto o reservas de forma constante.",
-            "Lanzamientos de un producto, una promoción o un evento con fecha concreta.",
-            "Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto."
+            {
+               "who" : "Quien va a invertir en publicidad",
+               "why" : "Si va a pagar por cada visita en Google Ads o en redes, conviene que esa visita llegue a una página hecha para la campaña."
+            },
+            {
+               "who" : "Servicios que viven de las solicitudes",
+               "why" : "Negocios que necesitan un flujo constante de peticiones de presupuesto, citas o reservas."
+            },
+            {
+               "who" : "Lanzamientos con fecha",
+               "why" : "Un producto nuevo, una promoción o un evento que tiene un principio y un final y necesita su propia página."
+            },
+            {
+               "who" : "Clientes fuera de Barcelona",
+               "why" : "Dentro o fuera de España. Una landing se plantea, se escribe y se mide igual de bien en remoto."
+            }
          ],
          "description" : "Diseño de landing pages en Barcelona para campañas de Google Ads y redes sociales. Una página, un objetivo y resultados medidos.",
          "faq" : [
@@ -163,6 +217,7 @@
             "Se diferencia de la web corporativa en que no intenta explicar todo el negocio. Quita del medio todo lo que distrae, incluido el menú, y deja solo lo necesario para que esa acción ocurra.",
             "Por eso es la página a la que conviene enviar el tráfico de una campaña de pago. Cada euro invertido en anuncios llega a una página hecha para esa campaña, no a una portada genérica donde el visitante se pierde."
          ],
+         "lead" : "Una landing page no explica todo el negocio: quita el menú y las distracciones y deja solo lo necesario para que ocurra una acción. Es la página a la que conviene enviar el tráfico que paga en campañas.",
          "photo" : "landing-detalle",
          "process" : [
             {
@@ -183,16 +238,50 @@
             }
          ],
          "slug" : "landing-pages-barcelona.html",
-         "teaser" : "Una página, un objetivo, una conversión.",
+         "stats" : [
+            {
+               "i" : "target",
+               "l" : "Objetivo por página",
+               "v" : "1"
+            },
+            {
+               "i" : "clock",
+               "l" : "Semanas hasta publicar",
+               "v" : "1–2"
+            },
+            {
+               "i" : "layers",
+               "l" : "Versiones que se pueden comparar",
+               "v" : "2"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Menús ni enlaces que distraigan",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Una sola página, construida para que el visitante haga una cosa concreta: pedir, reservar o comprar.",
          "tile" : "service-tile--landing",
          "title" : "Landing pages en Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Negocios con perfiles abiertos pero parados por falta de tiempo.",
-            "Empresas que publican sin un plan y quieren dar una imagen más seria y constante.",
-            "Marcas que necesitan una presencia cuidada porque sus clientes las miran antes de comprar.",
-            "Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto."
+            {
+               "who" : "Perfiles abiertos pero parados",
+               "why" : "La cuenta existe, se empezó con ganas y lleva meses sin movimiento porque el negocio absorbe el tiempo."
+            },
+            {
+               "who" : "Quien publica sin un plan",
+               "why" : "Se publica a rachas, sin criterio ni calendario, y el resultado da una imagen menos seria de la que merece el negocio."
+            },
+            {
+               "who" : "Marcas que se miran antes de comprar",
+               "why" : "Sectores donde el cliente entra en el perfil para decidir si le da confianza. Ahí la presencia cuidada vende."
+            },
+            {
+               "who" : "Clientes fuera de Barcelona",
+               "why" : "Dentro o fuera de España. El contenido se planifica y se aprueba a distancia sin perder el tono del negocio."
+            }
          ],
          "description" : "Gestión de redes sociales para empresas en Barcelona: estrategia, contenido, calendario editorial e informes mensuales claros.",
          "faq" : [
@@ -250,6 +339,7 @@
             "Nos encargamos de esa parte. Preparamos la estrategia, el calendario y el contenido, publicamos y respondemos, y cada mes le enviamos un informe con lo que ha funcionado y lo que no.",
             "Trabajamos desde Barcelona y con reuniones periódicas, para que el contenido se parezca a su negocio y no a una cuenta genérica del sector."
          ],
+         "lead" : "El problema de las redes casi nunca son las ideas, sino la constancia. Aquí la constancia la ponemos nosotros: un calendario aprobado por usted, contenido propio y un informe cada mes con lo que ha funcionado.",
          "photo" : "redes-detalle",
          "process" : [
             {
@@ -270,16 +360,50 @@
             }
          ],
          "slug" : "gestion-redes-sociales-barcelona.html",
-         "teaser" : "Presencia constante, sin ocupar su tiempo.",
+         "stats" : [
+            {
+               "i" : "chart",
+               "l" : "Informes al año, uno cada mes",
+               "v" : "12"
+            },
+            {
+               "i" : "message",
+               "l" : "Redes bien llevadas, no cinco a medias",
+               "v" : "2"
+            },
+            {
+               "i" : "calendar",
+               "l" : "Calendario aprobado antes de publicar",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Permanencia: se trabaja mes a mes",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Nos ocupamos de sus redes de principio a fin: estrategia, contenido, publicación e informe mensual.",
          "tile" : "service-tile--social",
          "title" : "Gestión de redes sociales en Barcelona — BENAMAR"
       },
       {
          "audience" : [
-            "Negocios locales que quieren aparecer cuando alguien busca su servicio en Barcelona.",
-            "Empresas con una web que no recibe visitas desde Google y no saben por qué.",
-            "Quien está gastando en publicidad y quiere ir construyendo visitas que no dependan del presupuesto diario.",
-            "Empresas de fuera de Barcelona, dentro o fuera de España, que prefieren trabajar en remoto."
+            {
+               "who" : "Negocios locales",
+               "why" : "Quien necesita aparecer cuando alguien busca su servicio en Barcelona o en su zona, con la ficha de Google bien trabajada."
+            },
+            {
+               "who" : "Webs que no reciben visitas",
+               "why" : "La web existe, está publicada y Google apenas la manda tráfico. Normalmente hay una causa concreta y se puede encontrar."
+            },
+            {
+               "who" : "Quien depende de la publicidad",
+               "why" : "Negocios que hoy solo reciben visitas mientras pagan, y quieren construir un canal que no se apague al parar el presupuesto."
+            },
+            {
+               "who" : "Clientes fuera de Barcelona",
+               "why" : "Dentro o fuera de España. El trabajo técnico y de contenido no depende de la distancia."
+            }
          ],
          "description" : "Posicionamiento SEO en Barcelona: auditoría técnica, contenido, SEO local e informes mensuales con objetivos de tráfico cualificado.",
          "faq" : [
@@ -337,6 +461,7 @@
             "Es el tipo de visita más valiosa que existe: gente que ya tiene el problema que usted resuelve y está buscando a alguien que lo resuelva. También es el trabajo más lento, porque Google no cambia sus resultados de un día para otro.",
             "Trabajamos las tres patas que lo determinan: que la web se pueda leer y cargue rápido, que los textos respondan a lo que la gente busca de verdad, y que su negocio tenga presencia local sólida en Barcelona."
          ],
+         "lead" : "El posicionamiento en buscadores es el trabajo de aparecer en Google sin pagar por cada clic. Es la visita más valiosa que existe y también la más lenta de conseguir: se trabaja en tres frentes a la vez y se mide cada mes.",
          "photo" : "seo-detalle",
          "process" : [
             {
@@ -357,31 +482,31 @@
             }
          ],
          "slug" : "posicionamiento-seo-barcelona.html",
-         "teaser" : "Visibilidad en el momento en que le buscan.",
+         "stats" : [
+            {
+               "i" : "layers",
+               "l" : "Frentes a la vez: técnico, contenido y local",
+               "v" : "3"
+            },
+            {
+               "i" : "clock",
+               "l" : "Meses para posiciones disputadas",
+               "v" : "3–6"
+            },
+            {
+               "i" : "chart",
+               "l" : "Informe cada mes de lo que se mueve",
+               "v" : "1"
+            },
+            {
+               "i" : "unlock",
+               "l" : "Garantías de primera posición",
+               "v" : "0"
+            }
+         ],
+         "teaser" : "Trabajamos para que su web aparezca en Google cuando alguien busca lo que usted ofrece, sin pagar por clic.",
          "tile" : "service-tile--seo",
          "title" : "Posicionamiento SEO en Barcelona — BENAMAR"
-      }
-   ],
-   "stats" : [
-      {
-         "i" : "clock",
-         "l" : "Tiempo de respuesta",
-         "v" : "&lt;24h"
-      },
-      {
-         "i" : "target",
-         "l" : "Proyectos hechos a medida",
-         "v" : "100 %"
-      },
-      {
-         "i" : "user",
-         "l" : "Interlocutor único, siempre",
-         "v" : "1"
-      },
-      {
-         "i" : "unlock",
-         "l" : "Permanencia de contrato",
-         "v" : "0"
       }
    ]
 }
