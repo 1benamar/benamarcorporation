@@ -144,6 +144,28 @@
   }
 
   /* ---- Reveal on scroll (fade + fade/scale variants) ---- */
+  /* ---- Ancla al llegar desde otra página ---- */
+  function initHashOnLoad() {
+    if (!window.location.hash) return;
+    var el;
+    try { el = document.querySelector(window.location.hash); } catch (err) { return; }
+    if (!el) return;
+
+    // El navegador salta al ancla antes de que carguen las fotografías y
+    // las tipografías, así que para cuando la página termina de componerse
+    // la sección ya no está donde estaba. Se repite el salto al final.
+    function go() {
+      window.scrollTo({
+        top: el.getBoundingClientRect().top + window.scrollY - 72,
+        behavior: "auto"
+      });
+    }
+    window.addEventListener("load", function () {
+      go();
+      setTimeout(go, 150);
+    });
+  }
+
   function initReveals() {
     var els = $$("[data-reveal], [data-reveal-scale]");
     if (!els.length) return;
@@ -250,6 +272,7 @@
     safe(initNav, "initNav");
     safe(initMobileMenu, "initMobileMenu");
     safe(initSmoothAnchors, "initSmoothAnchors");
+    safe(initHashOnLoad, "initHashOnLoad");
     safe(initReveals, "initReveals");
     safe(initCountUp, "initCountUp");
     safe(initContactForm, "initContactForm");

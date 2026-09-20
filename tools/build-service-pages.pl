@@ -84,15 +84,20 @@ sub shell_for {
     my ($head) = $src =~ m{(<a class="skip-link".*?)(?=  <main)}s or die "sin cabecera en $lang\n";
     my ($foot) = $src =~ m{(<footer class="footer".*?</footer>)}s  or die "sin pie en $lang\n";
 
+    # La portada de cada idioma, en su forma canónica.
+    my $home = "/$dir";
+
     for ($head, $foot) {
-        s{href="#top"}{href="index.html"}g;
-        s{href="#([a-z0-9-]+)"}{href="index.html#$1"}g;
+        s{href="#top"}{href="$home"}g;
+        s{href="#([a-z0-9-]+)"}{href="$home#$1"}g;
+        # El enlace de salto lleva al contenido de esta página, no al de la portada.
+        s{(<a class="skip-link" href=")[^"]*(")}{${1}#main$2};
     }
 
     my %path = (
-        es => ($lang eq 'es' ? '' : '../') . ($slug{es}{ $page->{id} } || 'index.html'),
-        en => ($lang eq 'en' ? '' : ($lang eq 'es' ? 'en/' : '../en/')) . ($slug{en}{ $page->{id} } || 'index.html'),
-        fr => ($lang eq 'fr' ? '' : ($lang eq 'es' ? 'fr/' : '../fr/')) . ($slug{fr}{ $page->{id} } || 'index.html'),
+        es => $slug{es}{ $page->{id} } ? '/'    . $slug{es}{ $page->{id} } : '/',
+        en => $slug{en}{ $page->{id} } ? '/en/' . $slug{en}{ $page->{id} } : '/en/',
+        fr => $slug{fr}{ $page->{id} } ? '/fr/' . $slug{fr}{ $page->{id} } : '/fr/',
     );
     my $sep = '<span class="lang-switch-sep">&#183;</span>';
     my $switch = join $sep, map {
@@ -223,6 +228,7 @@ for my $lang (@langs) {
         });
         $ld =~ s/^/  /mg;
 
+        my $home = "/$dir";
         my $og_locale = { es => 'es_ES', en => 'en_GB', fr => 'fr_FR' }->{$lang};
         my ($pw, $ph) = dims($p->{photo});
         my ($hw, $hh) = dims($p->{heroImage});
@@ -267,14 +273,14 @@ $ld  </script>
       <h1 class="service-title">@{[ esc($p->{h1}) ]}</h1>
       <p class="service-teaser">@{[ esc($p->{teaser}) ]}</p>
       <div class="service-actions">
-        <a class="link-more" href="index.html#servicios">@{[ esc($L->{backToServices}) ]} &rsaquo;</a>
-        <a class="btn btn-primary btn-sm" href="index.html#contacto">@{[ esc($L->{ctaButton}) ]}</a>
+        <a class="link-more" href="${home}#servicios">@{[ esc($L->{backToServices}) ]} &rsaquo;</a>
+        <a class="btn btn-primary btn-sm" href="${home}#contacto">@{[ esc($L->{ctaButton}) ]}</a>
       </div>
     </section>
 
     <nav class="breadcrumb" aria-label="@{[ esc($L->{breadcrumb}) ]}">
       <ol>
-        <li><a href="index.html">@{[ esc($L->{home}) ]}</a></li>
+        <li><a href="$home">@{[ esc($L->{home}) ]}</a></li>
         <li><span aria-current="page">@{[ esc($p->{h1}) ]}</span></li>
       </ol>
     </nav>
@@ -334,7 +340,7 @@ $faq
     <section class="cta-band">
       <h2 class="cta-band-heading" data-reveal>@{[ esc($L->{ctaHeading}) ]}</h2>
       <p class="cta-band-sub" data-reveal>@{[ esc($L->{ctaSub}) ]}</p>
-      <a class="btn btn-primary" href="index.html#contacto" data-reveal>@{[ esc($L->{ctaButton}) ]}</a>
+      <a class="btn btn-primary" href="${home}#contacto" data-reveal>@{[ esc($L->{ctaButton}) ]}</a>
     </section>
 
     <section class="service-section">
@@ -348,7 +354,7 @@ $others
 
   $foot
 
-  <script defer src="${up}main.js?v=20260921"></script>
+  <script defer src="${up}main.js?v=20260921b"></script>
 </body>
 </html>
 HTML
