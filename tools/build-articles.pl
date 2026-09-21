@@ -243,7 +243,7 @@ for my $lang (@langs) {
             $rel = qq{      <aside class="post-related" aria-label="@{[ esc($L->{related}) ]}">\n}
                  . qq{        <p class="post-related-title">@{[ esc($L->{related}) ]}</p>\n}
                  . qq{        <ul>\n}
-                 . join('', map { qq{          <li><a href="$_->{href}">@{[ esc($_->{name}) ]} &rsaquo;</a></li>\n} } @{ $p->{related} })
+                 . join('', map { qq{          <li><a class="link-more" href="$_->{href}">@{[ esc($_->{name}) ]} &rsaquo;</a></li>\n} } @{ $p->{related} })
                  . qq{        </ul>\n}
                  . qq{      </aside>\n};
         }

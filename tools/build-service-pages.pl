@@ -266,7 +266,7 @@ $hreflang
   <link rel="icon" href="/assets/favicon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/inter-latin.woff2" crossorigin>
-  <link rel="stylesheet" href="${up}styles.css?v=20260921i">
+  <link rel="stylesheet" href="${up}styles.css?v=20260921j">
   <script type="application/ld+json">
 $ld  </script>
 </head>
