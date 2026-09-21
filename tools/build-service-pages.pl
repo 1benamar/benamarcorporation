@@ -260,7 +260,11 @@ $hreflang
   <meta name="twitter:description" content="$desc">
   <meta name="twitter:image" content="${base}assets/img/$p->{heroImage}.jpg">
   <link rel="preload" as="image" href="${up}assets/img/$p->{heroImage}.jpg" fetchpriority="high">
-  <link rel="icon" href="${up}assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/assets/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/inter-latin.woff2" crossorigin>
   <link rel="stylesheet" href="${up}styles.css?v=20260921f">
   <script type="application/ld+json">
