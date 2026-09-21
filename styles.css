@@ -546,6 +546,7 @@ h1 em, h2 em, h3 em, .em-serif {
 .service-tile {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
   padding-block: 6.5rem;
   padding-inline: 1.5rem;
   text-align: center;
@@ -1346,10 +1347,10 @@ a, button, [role="button"], input, select, textarea, summary {
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 1.6s var(--ease-soft);
+  transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media (hover: hover) and (pointer: fine) {
-  .service-tile:hover .tile-photo { transform: scale(1.06); }
+  .service-tile:hover .tile-photo { transform: scale(1.035); }
 }
 
 /* Aviso cuando el formulario no consigue enviarse. Mantiene a la vista
