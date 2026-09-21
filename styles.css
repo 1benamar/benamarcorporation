@@ -943,7 +943,6 @@ h1 em, h2 em, h3 em, .em-serif {
 }
 .lang-switch .lang-current { color: var(--ink); }
 .lang-switch-sep { color: var(--line-2); }
-.footer-lang { margin-top: 1.2rem; }
 
 /* =============================================================
    13. Responsive
