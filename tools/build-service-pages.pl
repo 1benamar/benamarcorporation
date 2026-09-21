@@ -262,7 +262,7 @@ $hreflang
   <link rel="preload" as="image" href="${up}assets/img/$p->{heroImage}.jpg" fetchpriority="high">
   <link rel="icon" href="${up}assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="font" type="font/woff2" href="${up}assets/fonts/inter-latin.woff2" crossorigin>
-  <link rel="stylesheet" href="${up}styles.css?v=20260921e">
+  <link rel="stylesheet" href="${up}styles.css?v=20260921f">
   <script type="application/ld+json">
 $ld  </script>
 </head>

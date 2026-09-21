@@ -1355,7 +1355,8 @@ a, button, [role="button"], input, select, textarea, summary {
 /* Aviso cuando el formulario no consigue enviarse. Mantiene a la vista
    las otras formas de contacto para que la solicitud no se pierda. */
 .cta-error {
-  margin-top: 1.4rem;
+  grid-column: 1 / -1;
+  margin-top: 0.4rem;
   padding: 1.3rem 1.4rem;
   border: 1px solid var(--accent);
   border-radius: var(--radius-md);
