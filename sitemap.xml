@@ -434,5 +434,26 @@
       <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+  </url>
   <!-- articulos:fin -->
 </urlset>

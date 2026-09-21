@@ -1,39 +1,113 @@
 {
-  "lang": "es",
-  "dir": "",
-  "section": "articulos",
-  "locale": "es_ES",
-  "labels": {
-    "section": "Artículos",
-    "sectionTitle": "Artículos sobre marketing digital — BENAMAR",
-    "sectionDescription": "Artículos de BENAMAR sobre webs, landing pages, redes sociales y posicionamiento en Google, escritos para empresas que quieren decidir con criterio.",
-    "deck": "Lo que conviene saber antes de invertir en una web, una campaña o las redes de su negocio.",
-    "home": "Inicio",
-    "breadcrumb": "Ruta de navegación",
-    "minutes": "min de lectura",
-    "readMore": "Leer el artículo",
-    "related": "Servicios relacionados",
-    "ctaHeading": "Hablemos de su proyecto.",
-    "ctaSub": "Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta.",
-    "ctaButton": "Solicitar una propuesta",
-    "months": ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
-    "dateFormat": "%d de %m de %y"
-  },
-  "articles": [
-    {
-      "slug": "landing-page-o-web-corporativa",
-      "title": "Landing page o web corporativa: cuál necesita su negocio — BENAMAR",
-      "h1": "Landing page o web corporativa: cuál necesita su negocio",
-      "description": "Qué diferencia una landing page de una web corporativa, cuándo conviene cada una y por qué no conviene enviar el tráfico de una campaña a la portada.",
-      "excerpt": "Se parecen y no hacen el mismo trabajo. Una explica el negocio entero; la otra existe para que ocurra una sola cosa. Elegir mal cuesta dinero, sobre todo cuando hay publicidad de por medio.",
-      "date": "2026-09-21",
-      "updated": "2026-09-21",
-      "image": "web-corporativa",
-      "imageAlt": "Dos personas revisan sobre la mesa el boceto a mano de la estructura de una web, con portátiles alrededor",
-      "related": [
-        { "name": "Diseño web", "href": "/diseno-web-barcelona.html" },
-        { "name": "Landing pages", "href": "/landing-pages-barcelona.html" }
-      ]
-    }
-  ]
+   "articles" : [
+      {
+         "category" : "Diseño web",
+         "date" : "2026-09-21",
+         "description" : "Qué diferencia una landing page de una web corporativa, cuándo conviene cada una y por qué no conviene enviar el tráfico de una campaña a la portada.",
+         "excerpt" : "Se parecen y no hacen el mismo trabajo. Una explica el negocio entero; la otra existe para que ocurra una sola cosa. Elegir mal cuesta dinero, sobre todo cuando hay publicidad de por medio.",
+         "h1" : "Landing page o web corporativa: cuál necesita *su negocio*",
+         "image" : "web-corporativa",
+         "imageAlt" : "Dos personas revisan sobre la mesa el boceto a mano de la estructura de una web, con portátiles alrededor",
+         "related" : [
+            {
+               "href" : "/diseno-web-barcelona.html",
+               "name" : "Diseño web"
+            },
+            {
+               "href" : "/landing-pages-barcelona.html",
+               "name" : "Landing pages"
+            }
+         ],
+         "slug" : "landing-page-o-web-corporativa",
+         "title" : "Landing page o web corporativa: cuál necesita su negocio — BENAMAR",
+         "updated" : "2026-09-21"
+      },
+      {
+         "category" : "Posicionamiento SEO",
+         "date" : "2026-09-21",
+         "description" : "Qué se nota en semanas, qué tarda meses y por qué nadie puede garantizarle la primera posición en Google. Plazos realistas para el posicionamiento.",
+         "excerpt" : "Es la pregunta que llega antes que ninguna otra. La respuesta honrada tiene dos partes: lo que se nota en semanas y lo que solo llega con meses de trabajo constante.",
+         "h1" : "Cuánto tarda el SEO en dar *resultados*",
+         "image" : "seo-google",
+         "imageAlt" : "Ordenador de sobremesa mostrando una herramienta de analítica con la gráfica de visitas de una web",
+         "related" : [
+            {
+               "href" : "/posicionamiento-seo-barcelona.html",
+               "name" : "Posicionamiento SEO"
+            }
+         ],
+         "slug" : "cuanto-tarda-el-seo-en-dar-resultados",
+         "title" : "Cuánto tarda el SEO en dar resultados — BENAMAR",
+         "updated" : "2026-09-21"
+      },
+      {
+         "category" : "Redes sociales",
+         "date" : "2026-09-21",
+         "description" : "El problema de las redes sociales de una empresa casi nunca son las ideas, sino la constancia. Cómo evitar que la cuenta vuelva a quedarse parada.",
+         "excerpt" : "Se empieza con ganas, se publica tres semanas seguidas y luego el negocio se come el tiempo. El problema casi nunca son las ideas: es la constancia, y tiene solución.",
+         "h1" : "Por qué las redes de su negocio se quedan *paradas*",
+         "image" : "redes-instagram",
+         "imageAlt" : "Teléfono móvil con la pantalla de inicio de Instagram, apoyado sobre un cuaderno cuadriculado con un bolígrafo",
+         "related" : [
+            {
+               "href" : "/gestion-redes-sociales-barcelona.html",
+               "name" : "Gestión de redes sociales"
+            }
+         ],
+         "slug" : "por-que-las-redes-de-su-negocio-se-quedan-paradas",
+         "title" : "Por qué las redes de su negocio se quedan paradas — BENAMAR",
+         "updated" : "2026-09-21"
+      },
+      {
+         "category" : "Diseño web",
+         "date" : "2026-09-21",
+         "description" : "Velocidad en el móvil, claridad, una base para Google y, sobre todo, que sea suya. Lo que conviene comprobar antes de dar por buena la web de su empresa.",
+         "excerpt" : "Una web puede ser bonita y no traer una sola llamada. Estas son las cosas que marcan la diferencia, y una lista para comprobar la suya en cinco minutos.",
+         "h1" : "Qué debe tener la web de una empresa para traer *clientes*",
+         "image" : "proceso-trabajo",
+         "imageAlt" : "Cuaderno con el boceto a mano de las pantallas de una web, junto a un teléfono sobre una mesa de madera",
+         "related" : [
+            {
+               "href" : "/diseno-web-barcelona.html",
+               "name" : "Diseño web"
+            }
+         ],
+         "slug" : "que-debe-tener-la-web-de-una-empresa",
+         "title" : "Qué debe tener la web de una empresa para traer clientes — BENAMAR",
+         "updated" : "2026-09-21"
+      }
+   ],
+   "dir" : "",
+   "labels" : {
+      "breadcrumb" : "Ruta de navegación",
+      "ctaButton" : "Solicitar una propuesta",
+      "ctaHeading" : "Hablemos de su proyecto.",
+      "ctaSub" : "Cuéntenos qué necesita su negocio. Le respondemos en menos de 24 horas con una propuesta concreta.",
+      "dateFormat" : "%d de %m de %y",
+      "deck" : "Lo que conviene saber antes de invertir en una web, una campaña o las redes de su negocio.",
+      "home" : "Inicio",
+      "minutes" : "min de lectura",
+      "months" : [
+         "enero",
+         "febrero",
+         "marzo",
+         "abril",
+         "mayo",
+         "junio",
+         "julio",
+         "agosto",
+         "septiembre",
+         "octubre",
+         "noviembre",
+         "diciembre"
+      ],
+      "readMore" : "Leer el artículo",
+      "related" : "Servicios relacionados",
+      "section" : "Artículos",
+      "sectionDescription" : "Artículos de BENAMAR sobre webs, landing pages, redes sociales y posicionamiento en Google, escritos para empresas que quieren decidir con criterio.",
+      "sectionTitle" : "Artículos sobre marketing digital — BENAMAR"
+   },
+   "lang" : "es",
+   "locale" : "es_ES",
+   "section" : "articulos"
 }

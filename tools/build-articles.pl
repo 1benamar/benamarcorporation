@@ -63,6 +63,11 @@ sub fecha {
     return $s;
 }
 
+# En los títulos, una palabra entre asteriscos lleva el acento de la casa:
+# la cursiva serif que usa la portada. En los demás sitios se quita.
+sub rico  { my $s = esc(shift); $s =~ s{\*(.+?)\*}{<em>$1</em>}g; return $s; }
+sub plano { my $s = shift // ''; $s =~ s/\*//g; return $s; }
+
 sub palabras {
     my $html = shift;
     (my $t = $html) =~ s/<[^>]+>/ /g;
@@ -155,6 +160,13 @@ sub cta {
 HTML
 }
 
+sub meta {
+    my ($p, $L) = @_;
+    my $sep = qq{<span class="post-meta-sep" aria-hidden="true">·</span>};
+    my $cat = $p->{category} ? qq{<span class="post-category">@{[ esc($p->{category}) ]}</span>$sep} : '';
+    return $cat . qq{<time datetime="$p->{date}">@{[ fecha($p->{date}, $L) ]}</time>$sep$p->{minutes} @{[ esc($L->{minutes}) ]}};
+}
+
 sub tarjeta {
     my ($p, $L, $sec_url, $tag) = @_;
     my ($w, $h) = dims($p->{image});
@@ -164,7 +176,7 @@ sub tarjeta {
          . qq{            <span class="post-card-text">\n}
          . qq{              <$tag class="post-card-title">@{[ esc($p->{h1}) ]}</$tag>\n}
          . qq{              <span class="post-card-excerpt">@{[ esc($p->{excerpt}) ]}</span>\n}
-         . qq{              <span class="post-meta"><time datetime="$p->{date}">@{[ fecha($p->{date}, $L) ]}</time><span class="post-meta-sep" aria-hidden="true">·</span>$p->{minutes} @{[ esc($L->{minutes}) ]}</span>\n}
+         . qq{              <span class="post-meta">@{[ meta($p, $L) ]}</span>\n}
          . qq{              <span class="link-more">@{[ esc($L->{readMore}) ]} &rsaquo;</span>\n}
          . qq{            </span>\n}
          . qq{          </a>\n}
@@ -205,6 +217,8 @@ for my $lang (@langs) {
         local $/; $p->{body} = <$bf>; close $bf;
         $p->{words}   = palabras($p->{body});
         $p->{minutes} = ceil($p->{words} / 200) || 1;
+        $p->{h1_html} = rico($p->{h1});
+        $p->{h1}      = plano($p->{h1});
     }
 
     # ---------- Cada artículo ----------
@@ -230,6 +244,7 @@ for my $lang (@langs) {
                     'dateModified'     => $p->{updated} || $p->{date},
                     'inLanguage'       => $lang,
                     'wordCount'        => $p->{words},
+                    ($p->{category} ? ('articleSection' => $p->{category}) : ()),
                     'url'              => $url,
                     'mainEntityOfPage' => $url,
                     'author'           => { '@type' => 'Organization', 'name' => 'BENAMAR', 'url' => "$BASE/" },
@@ -281,9 +296,9 @@ for my $lang (@langs) {
 
     <article class="post">
       <header class="post-header">
-        <h1 class="post-title">@{[ esc($p->{h1}) ]}</h1>
+        <h1 class="post-title">$p->{h1_html}</h1>
         <p class="post-lead">@{[ esc($p->{excerpt}) ]}</p>
-        <p class="post-meta"><time datetime="$p->{date}">@{[ fecha($p->{date}, $L) ]}</time><span class="post-meta-sep" aria-hidden="true">·</span>$p->{minutes} @{[ esc($L->{minutes}) ]}</p>
+        <p class="post-meta">@{[ meta($p, $L) ]}</p>
       </header>
 
       <figure class="post-figure">

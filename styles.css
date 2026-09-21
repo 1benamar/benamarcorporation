@@ -1581,7 +1581,7 @@ a, button, [role="button"], input, select, textarea, summary {
 .nav-link[aria-current="page"]::after { transform: scaleX(1); }
 
 /* =============================================================
-   20. Movimiento de la secci�n de art�culos
+   20. Movimiento de la sección de artículos
    Un solo momento al llegar: la cabecera entra escalonada y la foto
    se asienta. El texto que se lee no se mueve.
    ============================================================= */
@@ -1593,7 +1593,7 @@ a, button, [role="button"], input, select, textarea, summary {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-/* Solo transformaci�n: la foto se ve desde el primer instante, as� que
+/* Solo transformación: la foto se ve desde el primer instante, así que
    no retrasa la medida de carga de Google. */
 @keyframes asiento {
   from { transform: scale(1.02); }
@@ -1622,7 +1622,7 @@ a, button, [role="button"], input, select, textarea, summary {
   .post-item:nth-child(4) { transition-delay: 180ms; }
 }
 
-/* Los t�tulos dentro del art�culo llevan el mismo filete que el resto de
+/* Los títulos dentro del artículo llevan el mismo filete que el resto de
    la web: marca el ritmo del texto sin decorarlo. */
 .post-body h2 { position: relative; padding-top: 1.1rem; }
 .post-body h2::before {
@@ -1640,3 +1640,107 @@ a, button, [role="button"], input, select, textarea, summary {
   .post-figure img,
   .posts-title.section-rule::before { animation: none; }
 }
+
+/* =============================================================
+   21. Tipografía y piezas de los artículos
+   ============================================================= */
+/* Texto que solo leen los lectores de pantalla. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap;
+}
+
+/* El primer párrafo hace de entrada: un punto más grande y más claro. */
+.post-body > p:first-child {
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2.1vw, 1.28rem);
+  line-height: 1.65;
+}
+
+/* Jerarquía más marcada entre título de sección, subtítulo y texto. */
+.post-body h2 {
+  margin-top: 2.6em;
+  font-size: clamp(1.45rem, 2.9vw, 1.95rem);
+  letter-spacing: -0.016em;
+}
+.post-body h3 { font-size: 1.18rem; letter-spacing: -0.008em; }
+
+/* La idea que resume el artículo, con la cursiva serif de la portada. */
+.post-body blockquote {
+  margin-block: 2em;
+  padding: 0.15em 0 0.15em 1.4rem;
+  border-left: 1px solid var(--accent);
+  color: var(--accent-2);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+  line-height: 1.4;
+}
+.post-body blockquote p { margin: 0; }
+
+/* Tabla comparativa */
+.post-table { margin-top: 1.4em; overflow-x: auto; }
+.post-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.post-table th,
+.post-table td {
+  padding: 0.85rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.post-table thead th {
+  border-bottom-color: var(--line-2);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.post-table tbody th { width: 24%; color: var(--ink); font-weight: 600; }
+.post-table td { color: var(--ink-soft); }
+.post-table tbody tr:last-child > * { border-bottom: 0; }
+/* En el móvil, cada fila pasa a ser una ficha con sus dos respuestas. */
+@media (max-width: 599px) {
+  .post-table thead {
+    position: absolute; width: 1px; height: 1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0);
+  }
+  .post-table table,
+  .post-table tbody,
+  .post-table tr,
+  .post-table th,
+  .post-table td { display: block; width: auto; }
+  .post-table tr { padding-block: 1rem; border-bottom: 1px solid var(--line); }
+  .post-table tbody tr:last-child { border-bottom: 0; }
+  .post-table th,
+  .post-table td { padding: 0; border: 0; }
+  .post-table tbody th { margin-bottom: 0.45rem; font-size: 1rem; width: auto; }
+  .post-table td + td { margin-top: 0.55rem; }
+  .post-table td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+/* Lista de comprobación, con una marca en lugar de viñeta. */
+.post-body .post-checklist { padding-left: 0; list-style: none; }
+.post-checklist li { position: relative; padding-left: 1.9rem; }
+.post-checklist li::before {
+  content: "";
+  position: absolute; left: 0.2rem; top: 0.55em;
+  width: 0.72rem; height: 0.38rem;
+  border-left: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  transform: rotate(-45deg);
+}
+
+/* La categoría, delante de la fecha. */
+.post-category { color: var(--accent); font-weight: 500; }
