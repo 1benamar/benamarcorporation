@@ -418,5 +418,21 @@
     <image:image>
       <image:loc>https://benamar.es/assets/img/redes-sociales.jpg</image:loc>
     </image:image>
+  </url>
+  <!-- articulos:inicio -->
+  <url>
+    <loc>https://benamar.es/articulos/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
   </url>
+  <url>
+    <loc>https://benamar.es/articulos/landing-page-o-web-corporativa.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+  </url>
+  <!-- articulos:fin -->
 </urlset>

@@ -28,7 +28,7 @@ while ($listener.IsListening) {
   $res = $context.Response
   try {
     $path = $req.Url.AbsolutePath
-    if ($path -eq "/") { $path = "/index.html" }
+    if ($path.EndsWith("/")) { $path = $path + "index.html" }
     $filePath = Join-Path $Root ($path.TrimStart("/") -replace "/", [IO.Path]::DirectorySeparatorChar)
 
     if (Test-Path $filePath -PathType Leaf) {
