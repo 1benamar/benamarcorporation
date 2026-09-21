@@ -40,15 +40,29 @@
     if (!hero || !photo || reduced) return;
     if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
+    // La medida del encabezado se toma una vez y se invalida al hacer scroll
+    // o cambiar el tamaño, en lugar de leerla en cada movimiento del ratón.
+    // Los movimientos se agrupan: como mucho un cambio por fotograma.
+    var rect = null, px = 0, py = 0, raf = null;
+    function apply() {
+      photo.style.transform = "scale(1.08) translate3d(" + (-px * 22).toFixed(1) + "px, " + (-py * 16).toFixed(1) + "px, 0)";
+      raf = null;
+    }
+    function queue() { if (!raf) raf = requestAnimationFrame(apply); }
+    function forget() { rect = null; }
+    window.addEventListener("scroll", forget, { passive: true });
+    window.addEventListener("resize", forget, { passive: true });
+
     hero.addEventListener("mousemove", function (e) {
-      var rect = hero.getBoundingClientRect();
-      var px = (e.clientX - rect.left) / rect.width - 0.5;
-      var py = (e.clientY - rect.top) / rect.height - 0.5;
-      photo.style.transform = "scale(1.08) translate(" + (-px * 22).toFixed(1) + "px, " + (-py * 16).toFixed(1) + "px)";
+      if (!rect) rect = hero.getBoundingClientRect();
+      px = (e.clientX - rect.left) / rect.width - 0.5;
+      py = (e.clientY - rect.top) / rect.height - 0.5;
+      queue();
     }, { passive: true });
 
     hero.addEventListener("mouseleave", function () {
-      photo.style.transform = "scale(1.08) translate(0, 0)";
+      px = 0; py = 0;
+      queue();
     });
   }
 
@@ -71,20 +85,33 @@
 
   /* ---- Mouse-reactive gradient mesh (lerped) ---- */
   function initMesh() {
-    if (!$("[data-mesh]")) return;
+    var mesh = $("[data-mesh]");
+    if (!mesh || reduced) return;
     if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-    var mx = 50, my = 45, tx = 50, ty = 45;
+
+    // Antes el bucle corría sin parar y cambiaba una variable en la raíz de la
+    // página, lo que obligaba a recalcular los estilos de todo el documento y a
+    // repintar el degradado en cada fotograma. Ahora se desplaza solo la capa,
+    // el bucle se detiene al llegar a su sitio y no corre fuera de pantalla.
+    var mx = 50, my = 45, tx = 50, ty = 45, raf = null, visible = true;
+    function frame() {
+      mx += (tx - mx) * 0.045;
+      my += (ty - my) * 0.045;
+      mesh.style.transform = "translate3d(" + (mx - 50).toFixed(2) + "%, " + (my - 45).toFixed(2) + "%, 0)";
+      raf = (Math.abs(tx - mx) > 0.05 || Math.abs(ty - my) > 0.05) ? requestAnimationFrame(frame) : null;
+    }
     window.addEventListener("mousemove", function (e) {
       tx = (e.clientX / window.innerWidth) * 100;
       ty = (e.clientY / window.innerHeight) * 100;
+      if (visible && !raf) raf = requestAnimationFrame(frame);
     }, { passive: true });
-    (function frame() {
-      mx += (tx - mx) * 0.045;
-      my += (ty - my) * 0.045;
-      document.documentElement.style.setProperty("--mx", mx.toFixed(2) + "%");
-      document.documentElement.style.setProperty("--my", my.toFixed(2) + "%");
-      requestAnimationFrame(frame);
-    })();
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting;
+        if (!visible && raf) { cancelAnimationFrame(raf); raf = null; }
+      }).observe(mesh.parentElement);
+    }
   }
 
   /* ---- Sticky nav ---- */

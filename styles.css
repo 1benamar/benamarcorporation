@@ -80,9 +80,6 @@
 }
 
 /* Animated mesh gradient axes (progressive enhancement) */
-@property --mesh-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
-@property --mesh-x { syntax: "<percentage>"; inherits: false; initial-value: 50%; }
-@property --mesh-y { syntax: "<percentage>"; inherits: false; initial-value: 50%; }
 
 /* =============================================================
    2. Reset & base
@@ -175,14 +172,14 @@ h1 em, h2 em, h3 em, .em-serif {
 .contact .kicker { font-size: 0.78rem; }
 
 [data-reveal] {
-  opacity: 0; transform: translateY(24px);
-  transition: opacity .8s var(--ease-soft), transform .8s var(--ease-soft);
+  opacity: 0; transform: translateY(16px);
+  transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
 }
 [data-reveal].is-revealed { opacity: 1; transform: none; }
 
 [data-reveal-scale] {
-  opacity: 0; transform: scale(0.96) translateY(30px);
-  transition: opacity .9s var(--ease-soft), transform .9s var(--ease-soft);
+  opacity: 0; transform: scale(0.97) translateY(20px);
+  transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
 }
 [data-reveal-scale].is-revealed { opacity: 1; transform: none; }
 
@@ -205,7 +202,7 @@ h1 em, h2 em, h3 em, .em-serif {
   font-weight: 500;
   font-size: 0.94rem;
   letter-spacing: 0.02em;
-  transition: opacity .8s var(--ease-soft), transform .4s var(--ease-soft), box-shadow .4s var(--ease-soft), background .3s var(--ease-out), color .3s var(--ease-out), border-color .3s var(--ease-out);
+  transition: opacity .6s var(--ease-out), transform 200ms var(--ease-out), box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease;
   white-space: nowrap;
 }
 .btn-sm { padding: .62rem 1.25rem; font-size: 0.86rem; }
@@ -248,7 +245,7 @@ h1 em, h2 em, h3 em, .em-serif {
   content: ""; position: absolute; left: 0; right: 0; bottom: .6rem;
   height: 1px; background: currentColor;
   transform: scaleX(0); transform-origin: right;
-  transition: transform .45s var(--ease-soft);
+  transition: transform 250ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .btn-text:hover::after { transform: scaleX(1); transform-origin: left; }
@@ -263,7 +260,7 @@ h1 em, h2 em, h3 em, .em-serif {
   content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
   height: 1px; background: currentColor;
   transform: scaleX(0); transform-origin: right;
-  transition: transform .4s var(--ease-soft);
+  transition: transform 250ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .link-more:hover::after { transform: scaleX(1); transform-origin: left; }
@@ -275,7 +272,7 @@ h1 em, h2 em, h3 em, .em-serif {
 .nav {
   position: fixed; top: 0; inset-inline: 0; z-index: 100;
   height: var(--nav-h);
-  transition: background-color .4s var(--ease-out), backdrop-filter .4s var(--ease-out), border-color .4s var(--ease-out);
+  transition: background-color 300ms ease, border-color 300ms ease;
   border-bottom: 1px solid transparent;
 }
 .nav.is-scrolled {
@@ -318,7 +315,7 @@ h1 em, h2 em, h3 em, .em-serif {
   content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
   height: 1px; background: var(--accent);
   transform: scaleX(0); transform-origin: right;
-  transition: transform .4s var(--ease-soft);
+  transition: transform 250ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
@@ -335,7 +332,7 @@ h1 em, h2 em, h3 em, .em-serif {
   position: absolute; left: 50%; top: 50%;
   width: 20px; height: 1.5px; background: var(--ink);
   transform: translate(-50%, -50%) translateY(-6px);
-  transition: transform .35s var(--ease-soft), opacity .35s var(--ease-soft);
+  transition: transform 240ms var(--ease-out), opacity 240ms var(--ease-out);
 }
 .nav-burger span:nth-child(2) { transform: translate(-50%, -50%); }
 .nav-burger span:nth-child(3) { transform: translate(-50%, -50%) translateY(6px); }
@@ -349,7 +346,7 @@ h1 em, h2 em, h3 em, .em-serif {
   background: var(--bg);
   display: grid; place-items: center;
   clip-path: inset(0 0 100% 0);
-  transition: clip-path .6s var(--ease-soft);
+  transition: clip-path 420ms var(--ease-out);
 }
 .nav-mobile.is-open { clip-path: inset(0); }
 .nav-mobile nav { display: flex; flex-direction: column; gap: 2rem; text-align: center; }
@@ -376,7 +373,9 @@ h1 em, h2 em, h3 em, .em-serif {
   object-position: center 42%;
   transform: scale(1.08);
   transition: transform 0.2s var(--ease-out);
-  will-change: transform;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hero-photo-img { will-change: transform; }
 }
 .hero-scrim {
   position: absolute; inset: 0; z-index: -1;
@@ -394,8 +393,13 @@ h1 em, h2 em, h3 em, .em-serif {
   mix-blend-mode: screen;
   filter: blur(90px);
   background:
-    radial-gradient(circle 32vw at var(--mx, 50%) var(--my, 45%), rgba(179,146,95,0.34), transparent 62%),
-    radial-gradient(circle 36vw at calc(var(--mx, 50%) + 14%) calc(var(--my, 45%) - 12%), rgba(217,199,167,0.16), transparent 64%);
+    radial-gradient(circle 32vw at 50% 45%, rgba(179,146,95,0.34), transparent 62%),
+    radial-gradient(circle 36vw at 64% 33%, rgba(217,199,167,0.16), transparent 64%);
+}
+/* La capa se desplaza siguiendo al ratón: se le reserva su propia capa de
+   composición solo donde hay ratón, que es donde se mueve. */
+@media (hover: hover) and (pointer: fine) {
+  .hero-mesh { will-change: transform; }
 }
 .hero-inner {
   position: relative;
@@ -500,14 +504,14 @@ h1 em, h2 em, h3 em, .em-serif {
   background: linear-gradient(165deg, var(--bg-3) 0%, var(--bg-soft) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  transition: opacity .8s var(--ease-soft), transform .45s var(--ease-soft), box-shadow .45s var(--ease-soft), border-color .3s var(--ease-out);
+  transition: opacity 600ms var(--ease-out), transform 400ms var(--ease-out), border-color 200ms ease;
 }
 .benefit::before {
   content: "";
   position: absolute; top: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
   transform: scaleX(0);
-  transition: transform .55s var(--ease-soft);
+  transition: transform 300ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .benefit:hover {
@@ -551,7 +555,7 @@ h1 em, h2 em, h3 em, .em-serif {
   padding-inline: 1.5rem;
   text-align: center;
   color: #fff;
-  transition: opacity .9s var(--ease-soft), transform .9s var(--ease-soft);
+  transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
 }
@@ -650,7 +654,7 @@ h1 em, h2 em, h3 em, .em-serif {
   background: linear-gradient(165deg, var(--bg-3) 0%, var(--bg-soft) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  transition: opacity .8s var(--ease-soft), transform .45s var(--ease-soft), box-shadow .45s var(--ease-soft), border-color .3s var(--ease-out);
+  transition: opacity 600ms var(--ease-out), transform 400ms var(--ease-out), border-color 200ms ease;
 }
 @media (hover: hover) and (pointer: fine) {
   .stat:hover {
@@ -683,25 +687,36 @@ h1 em, h2 em, h3 em, .em-serif {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
-.cta-band::before {
+/* Dos brillos que se cruzan despacio. Antes se movían cambiando variables
+   dentro de un degradado difuminado, lo que obligaba a repintarlo en cada
+   fotograma; ahora el degradado se pinta una vez y solo se desplaza la capa. */
+.cta-band::before,
+.cta-band::after {
   content: "";
   position: absolute; inset: -35%; z-index: -1;
   pointer-events: none;
   opacity: 0.3;
   mix-blend-mode: screen;
   filter: blur(110px);
-  background:
-    radial-gradient(48% 48% at var(--mesh-x) var(--mesh-y), rgba(179,146,95,0.4), transparent 64%),
-    radial-gradient(40% 40% at calc(100% - var(--mesh-x)) calc(100% - var(--mesh-y)), rgba(217,199,167,0.16), transparent 62%);
-  animation: meshShift 44s linear infinite;
 }
-@keyframes meshShift {
-  0%   { --mesh-angle: 0deg;   --mesh-x: 32%; --mesh-y: 42%; }
-  50%  { --mesh-angle: 180deg; --mesh-x: 68%; --mesh-y: 58%; }
-  100% { --mesh-angle: 360deg; --mesh-x: 32%; --mesh-y: 42%; }
+.cta-band::before {
+  background: radial-gradient(48% 48% at 50% 50%, rgba(179,146,95,0.4), transparent 64%);
+  animation: brilloIda 22s ease-in-out infinite alternate;
+}
+.cta-band::after {
+  background: radial-gradient(40% 40% at 50% 50%, rgba(217,199,167,0.16), transparent 62%);
+  animation: brilloVuelta 22s ease-in-out infinite alternate;
+}
+@keyframes brilloIda {
+  from { transform: translate(-18%, -8%); }
+  to   { transform: translate(18%, 8%); }
+}
+@keyframes brilloVuelta {
+  from { transform: translate(18%, 8%); }
+  to   { transform: translate(-18%, -8%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .cta-band::before { animation-duration: 90s; }
+  .cta-band::before, .cta-band::after { animation: none; }
 }
 .cta-band-heading { font-size: clamp(2.2rem, 5.4vw, 3.6rem); color: #fff; }
 .cta-band-sub { margin-top: 1rem; color: rgba(255,255,255,0.7); max-width: 46ch; margin-inline: auto; }
@@ -739,7 +754,7 @@ h1 em, h2 em, h3 em, .em-serif {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0;
   height: 2px; background: var(--accent);
   transform: scaleX(0); transform-origin: right;
-  transition: transform .5s var(--ease-soft);
+  transition: transform 250ms var(--ease-out);
 }
 @media (hover: hover) and (pointer: fine) {
   .contact-email:hover::after { transform: scaleX(1); transform-origin: left; }
@@ -777,7 +792,7 @@ h1 em, h2 em, h3 em, .em-serif {
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(244,242,239,0.045), rgba(244,242,239,0.012));
   box-shadow: 0 34px 80px -46px rgba(0,0,0,0.9);
-  transition: opacity .55s var(--ease-out), transform .55s var(--ease-soft);
+  transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
 }
 .cta-form::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
@@ -814,12 +829,17 @@ h1 em, h2 em, h3 em, .em-serif {
 }
 .field label {
   position: absolute; left: 1rem; top: 1.1rem;
-  pointer-events: none; transition: all .25s var(--ease-out);
+  pointer-events: none;
   color: var(--mute); font-size: 0.95rem;
+  transform-origin: left top;
+  transition: transform 200ms var(--ease-out), color 200ms ease;
 }
 .field input:focus + label, .field input:not(:placeholder-shown) + label,
 .field textarea:focus + label, .field textarea:not(:placeholder-shown) + label {
-  top: 0.5rem; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+  /* De 1,1rem a 0,5rem y de 0,95rem a 0,72rem, con transform en vez de
+     mover la maquetación: 0,72 / 0,95 = 0,758. */
+  transform: translateY(-0.6rem) scale(0.758);
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
 }
 .field-textarea label { top: 1.1rem; }
 .label-select {
@@ -862,7 +882,7 @@ h1 em, h2 em, h3 em, .em-serif {
   position: absolute; left: 50%; top: 60%;
   transform: translate(-50%, -40%);
   opacity: 0; pointer-events: none;
-  transition: opacity .8s var(--ease-out) .2s, transform .9s var(--ease-soft) .2s;
+  transition: opacity 600ms var(--ease-out) 150ms, transform 700ms var(--ease-out) 150ms;
   width: 100%;
 }
 .cta-success.is-visible {
@@ -1111,7 +1131,7 @@ h1 em, h2 em, h3 em, .em-serif {
 }
 .faq-sign::before, .faq-sign::after {
   content: ""; position: absolute; background: var(--accent);
-  transition: transform .4s var(--ease-out), opacity .3s var(--ease-out);
+  transition: transform 200ms var(--ease-out), opacity 200ms var(--ease-out);
 }
 .faq-sign::before { left: 0; top: 5px; width: 12px; height: 1px; }
 .faq-sign::after  { left: 5px; top: 0; width: 1px; height: 12px; }
@@ -1121,7 +1141,7 @@ h1 em, h2 em, h3 em, .em-serif {
   margin: 0; color: var(--mute);
   font-size: 0.95rem; line-height: 1.65; max-width: 62ch;
 }
-.faq-item[open] .faq-answer { animation: faqAbrir .4s var(--ease-out); }
+.faq-item[open] .faq-answer { animation: faqAbrir 250ms var(--ease-out); }
 @keyframes faqAbrir {
   from { opacity: 0; transform: translateY(-5px); }
   to   { opacity: 1; transform: none; }
@@ -1145,7 +1165,7 @@ h1 em, h2 em, h3 em, .em-serif {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   filter: grayscale(0.45) brightness(0.72);
-  transition: transform .6s var(--ease-soft), filter .5s var(--ease-out), border-color .3s var(--ease-out);
+  transition: transform 300ms var(--ease-out), filter 300ms ease, border-color 200ms ease;
 }
 .other-service-name { font-size: 0.95rem; transition: color .3s var(--ease-out); }
 @media (hover: hover) and (pointer: fine) {
@@ -1387,3 +1407,6 @@ a, button, [role="button"], input, select, textarea, summary {
 @media (hover: hover) and (pointer: fine) {
   .cta-error-links a:hover { color: var(--accent-2); }
 }
+
+/* Al pulsar, el botón cede un poco: confirma que se ha tocado. */
+.btn:active { transform: scale(0.97); transition-duration: 100ms; }
