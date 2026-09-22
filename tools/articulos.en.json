@@ -1,0 +1,117 @@
+{
+   "articles" : [
+      {
+         "category" : "Web design",
+         "date" : "2026-09-22",
+         "description" : "What sets a landing page apart from a company website, when each one makes sense and why campaign traffic should not be sent to the homepage.",
+         "excerpt" : "They look alike and do different jobs. One explains the whole business; the other exists so that one single thing happens. Choosing wrong costs money, especially when advertising is involved.",
+         "h1" : "Landing page or company website: which one *your business* needs",
+         "image" : "web-corporativa",
+         "imageAlt" : "Two people reviewing a hand-drawn website layout on paper, with laptops around the table",
+         "key" : "landing-vs-web",
+         "related" : [
+            {
+               "href" : "/en/web-design-barcelona.html",
+               "name" : "Web design"
+            },
+            {
+               "href" : "/en/landing-pages-barcelona.html",
+               "name" : "Landing pages"
+            }
+         ],
+         "slug" : "landing-page-or-company-website",
+         "title" : "Landing page or company website: which one your business needs — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "SEO",
+         "date" : "2026-09-22",
+         "description" : "What shows in weeks, what takes months and why nobody can guarantee you the top position on Google. Realistic timelines for SEO.",
+         "excerpt" : "It is the question that comes before any other. The honest answer has two parts: what shows in weeks and what only comes with months of steady work.",
+         "h1" : "How long SEO takes to deliver *results*",
+         "image" : "seo-google",
+         "imageAlt" : "Desktop computer showing an analytics tool with a website’s traffic graph",
+         "key" : "seo-plazos",
+         "related" : [
+            {
+               "href" : "/en/seo-barcelona.html",
+               "name" : "SEO"
+            }
+         ],
+         "slug" : "how-long-does-seo-take",
+         "title" : "How long SEO takes to deliver results — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "Social media management",
+         "date" : "2026-09-22",
+         "description" : "The problem with a company’s social media is almost never ideas, but consistency. How to stop the account from stalling again.",
+         "excerpt" : "You start with enthusiasm, post three weeks in a row and then the business takes over your time. The problem is almost never ideas: it is consistency, and it can be solved.",
+         "h1" : "Why your business’s social media *stalls*",
+         "image" : "redes-instagram",
+         "imageAlt" : "Mobile phone showing the Instagram sign-in screen, resting on a squared notebook with a pen",
+         "key" : "redes-paradas",
+         "related" : [
+            {
+               "href" : "/en/social-media-management-barcelona.html",
+               "name" : "Social media management"
+            }
+         ],
+         "slug" : "why-your-business-social-media-stalls",
+         "title" : "Why your business’s social media stalls — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "Web design",
+         "date" : "2026-09-22",
+         "description" : "Speed on mobile, clarity, a foundation for Google and, above all, that it is yours. What to check before signing off your company’s website.",
+         "excerpt" : "A website can be beautiful and not bring in a single call. These are the things that make the difference, and a list to check yours in five minutes.",
+         "h1" : "What a company website needs to bring in *clients*",
+         "image" : "proceso-trabajo",
+         "imageAlt" : "Notebook with a hand-drawn sketch of a website’s screens, next to a phone on a wooden table",
+         "key" : "web-empresa",
+         "related" : [
+            {
+               "href" : "/en/web-design-barcelona.html",
+               "name" : "Web design"
+            }
+         ],
+         "slug" : "what-a-company-website-needs",
+         "title" : "What a company website needs to bring in clients — BENAMAR",
+         "updated" : "2026-09-22"
+      }
+   ],
+   "dir" : "en/",
+   "labels" : {
+      "breadcrumb" : "Breadcrumb",
+      "ctaButton" : "Request a proposal",
+      "ctaHeading" : "Let us talk about your project.",
+      "ctaSub" : "Tell us what your business needs. We reply within 24 hours with a concrete proposal.",
+      "dateFormat" : "%m %d, %y",
+      "deck" : "What is worth knowing before you invest in a website, a campaign or your business’s social media.",
+      "home" : "Home",
+      "minutes" : "min read",
+      "months" : [
+         "January",
+         "February",
+         "March",
+         "April",
+         "May",
+         "June",
+         "July",
+         "August",
+         "September",
+         "October",
+         "November",
+         "December"
+      ],
+      "readMore" : "Read the article",
+      "related" : "Related services",
+      "section" : "Articles",
+      "sectionDescription" : "Articles by BENAMAR on websites, landing pages, social media and search engine optimisation, written for businesses that want to decide with good judgement.",
+      "sectionTitle" : "Articles on digital marketing — BENAMAR"
+   },
+   "lang" : "en",
+   "locale" : "en_GB",
+   "section" : "articles"
+}

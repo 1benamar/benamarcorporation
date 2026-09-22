@@ -74,6 +74,20 @@ sub esc {
 }
 
 # Cabecera y pie del index del idioma, adaptados a una subpagina.
+# Artículos que enlazan a este servicio: la página de servicio los enlaza
+# de vuelta, para que los enlaces vayan en los dos sentidos.
+sub articulos_de {
+    my ($lang, $ruta) = @_;
+    my $jf = "tools/articulos.$lang.json";
+    return () unless -f $jf;
+    open my $h, '<:encoding(UTF-8)', $jf or die; local $/; my $x = JSON::PP->new->decode(<$h>); close $h;
+    my @r = grep { !$_->{draft} && grep { $_->{href} eq $ruta } @{ $_->{related} || [] } } @{ $x->{articles} };
+    @r = sort { $b->{date} cmp $a->{date} } @r;
+    $_->{url} = "/$x->{dir}$x->{section}/$_->{slug}.html" for @r;
+    $_->{readMore} = $x->{labels}{readMore} for @r;
+    return @r[0 .. ($#r < 1 ? $#r : 1)];
+}
+
 sub shell_for {
     my ($lang, $dir, $page) = @_;
     open my $f, '<:encoding(UTF-8)', "${dir}index.html" or die "falta ${dir}index.html\n";
@@ -177,6 +191,32 @@ for my $lang (@langs) {
         } @{ $p->{faq} };
 
         # Cada servicio relacionado se presenta con su propia fotografia.
+        # Artículos relacionados con este servicio.
+        my $ruta = '/' . $dir . $p->{slug};
+        my @arts = articulos_de($lang, $ruta);
+        my $articulos = '';
+        if (@arts) {
+            my $items = join "\n", map {
+                my ($aw, $ah) = dims($_->{image});
+                (my $t = $_->{h1}) =~ s/\*//g;
+                  qq{        <li class="post-item" data-reveal>\n}
+                . qq{          <a class="post-card" href="$_->{url}">\n}
+                . qq{            <img class="post-card-photo" src="${up}assets/img/$_->{image}.jpg" alt="} . esc($_->{imageAlt}) . qq{" width="$aw" height="$ah" loading="lazy" decoding="async">\n}
+                . qq{            <span class="post-card-text">\n}
+                . qq{              <h3 class="post-card-title">} . esc($t) . qq{</h3>\n}
+                . qq{              <span class="post-card-excerpt">} . esc($_->{excerpt}) . qq{</span>\n}
+                . qq{              <span class="link-more">} . esc($_->{readMore}) . qq{ &rsaquo;</span>\n}
+                . qq{            </span>\n}
+                . qq{          </a>\n}
+                . qq{        </li>}
+            } @arts;
+            $articulos = qq{    <section class="service-section">\n}
+                       . qq{      <h2 data-reveal>} . esc($L->{relatedArticles}) . qq{</h2>\n}
+                       . qq{      <p class="section-deck" data-reveal>} . esc($L->{relatedDeck}) . qq{</p>\n}
+                       . qq{      <ol class="post-list">\n$items\n      </ol>\n}
+                       . qq{    </section>\n\n};
+        }
+
         my $others = join "\n",
             map {
                   qq{        <a class="other-service" href="$_->{slug}" data-reveal>\n}
@@ -341,7 +381,7 @@ $faq
       </div>
     </section>
 
-    <section class="cta-band">
+$articulos    <section class="cta-band">
       <h2 class="cta-band-heading" data-reveal>@{[ esc($L->{ctaHeading}) ]}</h2>
       <p class="cta-band-sub" data-reveal>@{[ esc($L->{ctaSub}) ]}</p>
       <a class="btn btn-primary" href="${home}#contacto" data-reveal>@{[ esc($L->{ctaButton}) ]}</a>

@@ -99,6 +99,35 @@ sub shell {
     return ($head, $foot);
 }
 
+# Etiquetas que le dicen a Google cuáles son las otras versiones de la página.
+sub hreflang {
+    my $alts = shift || {};
+    return '' unless keys %$alts > 1;
+    my $s = '';
+    $s .= qq{  <link rel="alternate" hreflang="$_" href="$alts->{$_}">\n} for grep { $alts->{$_} } qw(es en fr);
+    my $def = $alts->{es} || (map { $alts->{$_} } grep { $alts->{$_} } qw(en fr))[0];
+    $s .= qq{  <link rel="alternate" hreflang="x-default" href="$def">\n};
+    return $s;
+}
+
+# El selector de idioma lleva a la misma página en el otro idioma, si existe;
+# si no, a la portada de ese idioma.
+sub idiomas {
+    my ($head, $lang, $alts) = @_;
+    my %portada = (es => '/', en => '/en/', fr => '/fr/');
+    my $sep = '<span class="lang-switch-sep">&#183;</span>';
+    my $html = join $sep, map {
+        my $u = uc $_;
+        if ($_ eq $lang) { qq{<span class="lang-current">$u</span>} }
+        else {
+            (my $ruta = $alts->{$_} // $portada{$_}) =~ s{^\Q$BASE\E}{};
+            qq{<a href="$ruta">$u</a>};
+        }
+    } qw(es en fr);
+    $head =~ s{(<div class="lang-switch[^"]*"[^>]*>)\s*.*?\s*(</div>)}{$1\n        $html\n      $2}s;
+    return $head;
+}
+
 sub cabeza {
     my (%a) = @_;
     my $ld = join '', map {
@@ -122,7 +151,7 @@ sub cabeza {
   <title>@{[ esc($a{title}) ]}</title>
   <meta name="description" content="@{[ esc($a{description}) ]}">
   <link rel="canonical" href="$a{canonical}">
-  <meta property="og:type" content="$a{ogtype}">
+@{[ hreflang($a{alts}) ]}  <meta property="og:type" content="$a{ogtype}">
   <meta property="og:site_name" content="BENAMAR">
   <meta property="og:locale" content="$a{locale}">
   <meta property="og:title" content="@{[ esc($a{title}) ]}">
@@ -191,6 +220,19 @@ sub escribe {
 }
 
 my @mapa;   # direcciones para el sitemap
+
+# Las versiones de cada artículo en los tres idiomas, unidas por su clave.
+my (%alt, %alt_index);
+for my $l (qw(es en fr)) {
+    my $jf = "tools/articulos.$l.json";
+    next unless -f $jf;
+    open my $h, '<:encoding(UTF-8)', $jf or die; local $/; my $x = JSON::PP->new->decode(<$h>); close $h;
+    $alt_index{$l} = "$BASE/$x->{dir}$x->{section}/";
+    for my $a (@{ $x->{articles} }) {
+        next if $a->{draft} || !$a->{key};
+        $alt{ $a->{key} }{$l} = "$BASE/$x->{dir}$x->{section}/$a->{slug}.html";
+    }
+}
 
 for my $lang (@langs) {
     open my $jf, '<:encoding(UTF-8)', "tools/articulos.$lang.json" or die;
@@ -279,13 +321,16 @@ for my $lang (@langs) {
         (my $body = $p->{body}) =~ s/^/      /mg;
         $body =~ s/^\s+$//mg;
 
+        my $alts  = $p->{key} ? ($alt{ $p->{key} } || {}) : {};
+        my $headp = idiomas($head, $lang, $alts);
         my $html = cabeza(
+            alts => $alts,
             lang => $lang, locale => $d->{locale}, title => $p->{title}, description => $p->{description},
             canonical => $url, ogtype => 'article', image => $p->{image}, imageAlt => $p->{imageAlt},
             w => $w, h => $h, ld => $ld, published => $p->{date}, modified => $p->{updated} || $p->{date},
         ) . <<"HTML";
 <body>
-  $head<main id="main" class="post-main">
+  $headp<main id="main" class="post-main">
     <nav class="breadcrumb breadcrumb--top" aria-label="@{[ esc($L->{breadcrumb}) ]}">
       <ol>
         <li><a href="/$dir">@{[ esc($L->{home}) ]}</a></li>
@@ -320,7 +365,7 @@ $mas  </main>
 </html>
 HTML
         escribe("$dir$section/$p->{slug}.html", $html);
-        push @mapa, { loc => $url, lastmod => $p->{updated} || $p->{date}, image => $p->{image} };
+        push @mapa, { loc => $url, lastmod => $p->{updated} || $p->{date}, image => $p->{image}, alts => $alts };
     }
 
     # ---------- El índice de la sección ----------
@@ -350,13 +395,15 @@ HTML
     }];
 
     my $lista = join "\n", map { tarjeta($_, $L, $sec_url, 'h2') } @arts;
+    my $headp = idiomas($head, $lang, \%alt_index);
     my $html = cabeza(
+        alts => \%alt_index,
         lang => $lang, locale => $d->{locale}, title => $L->{sectionTitle}, description => $L->{sectionDescription},
         canonical => $sec_abs, ogtype => 'website', image => $img0, imageAlt => (@arts ? $arts[0]{imageAlt} : ''),
         w => $iw, h => $ih, ld => $ld,
     ) . <<"HTML";
 <body>
-  $head<main id="main" class="post-main">
+  $headp<main id="main" class="post-main">
     <nav class="breadcrumb breadcrumb--top" aria-label="@{[ esc($L->{breadcrumb}) ]}">
       <ol>
         <li><a href="/$dir">@{[ esc($L->{home}) ]}</a></li>
@@ -381,7 +428,7 @@ $lista
 </html>
 HTML
     escribe("$dir$section/index.html", $html);
-    unshift @mapa, { loc => $sec_abs, lastmod => (@arts ? $arts[0]{updated} || $arts[0]{date} : undef), image => $img0 };
+    unshift @mapa, { loc => $sec_abs, lastmod => (@arts ? $arts[0]{updated} || $arts[0]{date} : undef), image => $img0, alts => \%alt_index };
 }
 
 # ---------- El bloque de artículos del sitemap ----------
@@ -394,6 +441,11 @@ HTML
     for my $u (@mapa) {
         $bloque .= "\n  <url>\n    <loc>$u->{loc}</loc>";
         $bloque .= "\n    <lastmod>$u->{lastmod}</lastmod>" if $u->{lastmod};
+        if ($u->{alts} && keys %{ $u->{alts} } > 1) {
+            $bloque .= qq{\n    <xhtml:link rel="alternate" hreflang="$_" href="$u->{alts}{$_}"/>} for grep { $u->{alts}{$_} } qw(es en fr);
+            my $def = $u->{alts}{es} || $u->{loc};
+            $bloque .= qq{\n    <xhtml:link rel="alternate" hreflang="x-default" href="$def"/>};
+        }
         $bloque .= "\n    <image:image>\n      <image:loc>$BASE/assets/img/$u->{image}.jpg</image:loc>\n    </image:image>";
         $bloque .= "\n  </url>";
     }

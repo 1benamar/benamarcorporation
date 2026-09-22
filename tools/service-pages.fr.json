@@ -20,7 +20,9 @@
       "home" : "Accueil",
       "includes" : "Ce que cela comprend",
       "others" : "Autres services",
-      "process" : "Notre méthode"
+      "process" : "Notre méthode",
+      "relatedArticles" : "Articles liés",
+      "relatedDeck" : "Pour ceux qui préfèrent bien comprendre avant de décider."
    },
    "lang" : "fr",
    "pages" : [

@@ -8,6 +8,7 @@
          "h1" : "Landing page o web corporativa: cuál necesita *su negocio*",
          "image" : "web-corporativa",
          "imageAlt" : "Dos personas revisan sobre la mesa el boceto a mano de la estructura de una web, con portátiles alrededor",
+         "key" : "landing-vs-web",
          "related" : [
             {
                "href" : "/diseno-web-barcelona.html",
@@ -30,6 +31,7 @@
          "h1" : "Cuánto tarda el SEO en dar *resultados*",
          "image" : "seo-google",
          "imageAlt" : "Ordenador de sobremesa mostrando una herramienta de analítica con la gráfica de visitas de una web",
+         "key" : "seo-plazos",
          "related" : [
             {
                "href" : "/posicionamiento-seo-barcelona.html",
@@ -48,6 +50,7 @@
          "h1" : "Por qué las redes de su negocio se quedan *paradas*",
          "image" : "redes-instagram",
          "imageAlt" : "Teléfono móvil con la pantalla de inicio de Instagram, apoyado sobre un cuaderno cuadriculado con un bolígrafo",
+         "key" : "redes-paradas",
          "related" : [
             {
                "href" : "/gestion-redes-sociales-barcelona.html",
@@ -66,6 +69,7 @@
          "h1" : "Qué debe tener la web de una empresa para traer *clientes*",
          "image" : "proceso-trabajo",
          "imageAlt" : "Cuaderno con el boceto a mano de las pantallas de una web, junto a un teléfono sobre una mesa de madera",
+         "key" : "web-empresa",
          "related" : [
             {
                "href" : "/diseno-web-barcelona.html",

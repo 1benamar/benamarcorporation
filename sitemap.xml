@@ -421,8 +421,34 @@
   </url>
   <!-- articulos:inicio -->
   <url>
+    <loc>https://benamar.es/fr/articles/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/en/articles/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://benamar.es/articulos/</loc>
     <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/"/>
     <image:image>
       <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
     </image:image>
@@ -430,6 +456,10 @@
   <url>
     <loc>https://benamar.es/articulos/landing-page-o-web-corporativa.html</loc>
     <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/landing-page-or-company-website.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/landing-page-ou-site-corporatif.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
     <image:image>
       <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
     </image:image>
@@ -437,6 +467,10 @@
   <url>
     <loc>https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html</loc>
     <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/how-long-does-seo-take.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/combien-de-temps-pour-le-referencement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
     <image:image>
       <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
     </image:image>
@@ -444,6 +478,10 @@
   <url>
     <loc>https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html</loc>
     <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/why-your-business-social-media-stalls.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/pourquoi-les-reseaux-de-votre-entreprise-sarretent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
     <image:image>
       <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
     </image:image>
@@ -451,6 +489,98 @@
   <url>
     <loc>https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html</loc>
     <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/what-a-company-website-needs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/ce-que-doit-avoir-le-site-dune-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/en/articles/landing-page-or-company-website.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/landing-page-or-company-website.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/landing-page-ou-site-corporatif.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/en/articles/how-long-does-seo-take.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/how-long-does-seo-take.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/combien-de-temps-pour-le-referencement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/en/articles/why-your-business-social-media-stalls.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/why-your-business-social-media-stalls.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/pourquoi-les-reseaux-de-votre-entreprise-sarretent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/en/articles/what-a-company-website-needs.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/what-a-company-website-needs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/ce-que-doit-avoir-le-site-dune-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/fr/articles/landing-page-ou-site-corporatif.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/landing-page-or-company-website.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/landing-page-ou-site-corporatif.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/landing-page-o-web-corporativa.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/web-corporativa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/fr/articles/combien-de-temps-pour-le-referencement.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/how-long-does-seo-take.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/combien-de-temps-pour-le-referencement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/cuanto-tarda-el-seo-en-dar-resultados.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/seo-google.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/fr/articles/pourquoi-les-reseaux-de-votre-entreprise-sarretent.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/why-your-business-social-media-stalls.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/pourquoi-les-reseaux-de-votre-entreprise-sarretent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/por-que-las-redes-de-su-negocio-se-quedan-paradas.html"/>
+    <image:image>
+      <image:loc>https://benamar.es/assets/img/redes-instagram.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://benamar.es/fr/articles/ce-que-doit-avoir-le-site-dune-entreprise.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://benamar.es/en/articles/what-a-company-website-needs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://benamar.es/fr/articles/ce-que-doit-avoir-le-site-dune-entreprise.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://benamar.es/articulos/que-debe-tener-la-web-de-una-empresa.html"/>
     <image:image>
       <image:loc>https://benamar.es/assets/img/proceso-trabajo.jpg</image:loc>
     </image:image>

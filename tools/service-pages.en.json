@@ -20,7 +20,9 @@
       "home" : "Home",
       "includes" : "What it includes",
       "others" : "Other services",
-      "process" : "How we work"
+      "process" : "How we work",
+      "relatedArticles" : "Related articles",
+      "relatedDeck" : "For those who prefer to understand it properly before deciding."
    },
    "lang" : "en",
    "pages" : [

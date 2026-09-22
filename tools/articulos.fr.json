@@ -1,0 +1,117 @@
+{
+   "articles" : [
+      {
+         "category" : "Création de site web",
+         "date" : "2026-09-22",
+         "description" : "Ce qui distingue une landing page d’un site corporatif, quand choisir l’un ou l’autre et pourquoi il ne faut pas envoyer le trafic d’une campagne vers la page d’accueil.",
+         "excerpt" : "Ils se ressemblent et ne font pas le même travail. L’un présente toute l’entreprise ; l’autre existe pour qu’une seule chose se produise. Mal choisir coûte cher, surtout quand il y a de la publicité.",
+         "h1" : "Landing page ou site corporatif : ce dont *votre entreprise* a besoin",
+         "image" : "web-corporativa",
+         "imageAlt" : "Deux personnes examinent sur la table le croquis à la main de la structure d'un site, entourées d'ordinateurs portables",
+         "key" : "landing-vs-web",
+         "related" : [
+            {
+               "href" : "/fr/creation-site-web-barcelone.html",
+               "name" : "Création de site web"
+            },
+            {
+               "href" : "/fr/landing-pages-barcelone.html",
+               "name" : "Landing pages"
+            }
+         ],
+         "slug" : "landing-page-ou-site-corporatif",
+         "title" : "Landing page ou site corporatif : ce dont votre entreprise a besoin — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "Référencement SEO",
+         "date" : "2026-09-22",
+         "description" : "Ce qui se voit en quelques semaines, ce qui prend des mois et pourquoi personne ne peut vous garantir la première position sur Google. Des délais réalistes pour le référencement.",
+         "excerpt" : "C’est la question qui arrive avant toutes les autres. La réponse honnête comporte deux parties : ce qui se voit en quelques semaines et ce qui ne vient qu’avec des mois de travail régulier.",
+         "h1" : "Combien de temps le référencement met-il à donner des *résultats*",
+         "image" : "seo-google",
+         "imageAlt" : "Ordinateur de bureau affichant un outil d'analyse avec la courbe de visites d'un site",
+         "key" : "seo-plazos",
+         "related" : [
+            {
+               "href" : "/fr/referencement-seo-barcelone.html",
+               "name" : "Référencement SEO"
+            }
+         ],
+         "slug" : "combien-de-temps-pour-le-referencement",
+         "title" : "Combien de temps le référencement met-il à donner des résultats — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "Gestion des réseaux sociaux",
+         "date" : "2026-09-22",
+         "description" : "Le problème des réseaux sociaux d’une entreprise n’est presque jamais le manque d’idées, mais la régularité. Comment éviter que le compte ne s’arrête à nouveau.",
+         "excerpt" : "On commence avec enthousiasme, on publie trois semaines d’affilée, puis l’activité prend tout le temps. Le problème n’est presque jamais les idées : c’est la régularité, et cela se règle.",
+         "h1" : "Pourquoi les réseaux de votre entreprise *s’arrêtent*",
+         "image" : "redes-instagram",
+         "imageAlt" : "Téléphone mobile affichant l'écran de connexion d'Instagram, posé sur un carnet quadrillé avec un stylo",
+         "key" : "redes-paradas",
+         "related" : [
+            {
+               "href" : "/fr/gestion-reseaux-sociaux-barcelone.html",
+               "name" : "Gestion des réseaux sociaux"
+            }
+         ],
+         "slug" : "pourquoi-les-reseaux-de-votre-entreprise-sarretent",
+         "title" : "Pourquoi les réseaux de votre entreprise s’arrêtent — BENAMAR",
+         "updated" : "2026-09-22"
+      },
+      {
+         "category" : "Création de site web",
+         "date" : "2026-09-22",
+         "description" : "Vitesse sur mobile, clarté, une base pour Google et, surtout, qu’il soit à vous. Ce qu’il faut vérifier avant de valider le site de votre entreprise.",
+         "excerpt" : "Un site peut être beau et n’apporter aucun appel. Voici ce qui fait la différence, et une liste pour vérifier le vôtre en cinq minutes.",
+         "h1" : "Ce que doit avoir le site d’une entreprise pour attirer des *clients*",
+         "image" : "proceso-trabajo",
+         "imageAlt" : "Carnet avec le croquis à la main des écrans d'un site, à côté d'un téléphone sur une table en bois",
+         "key" : "web-empresa",
+         "related" : [
+            {
+               "href" : "/fr/creation-site-web-barcelone.html",
+               "name" : "Création de site web"
+            }
+         ],
+         "slug" : "ce-que-doit-avoir-le-site-dune-entreprise",
+         "title" : "Ce que doit avoir le site d’une entreprise pour attirer des clients — BENAMAR",
+         "updated" : "2026-09-22"
+      }
+   ],
+   "dir" : "fr/",
+   "labels" : {
+      "breadcrumb" : "Fil d'Ariane",
+      "ctaButton" : "Demander une proposition",
+      "ctaHeading" : "Parlons de votre projet.",
+      "ctaSub" : "Parlez-nous des besoins de votre entreprise. Nous vous répondons sous 24 heures avec une proposition concrète.",
+      "dateFormat" : "%d %m %y",
+      "deck" : "Ce qu’il faut savoir avant d’investir dans un site, une campagne ou les réseaux de votre entreprise.",
+      "home" : "Accueil",
+      "minutes" : "min de lecture",
+      "months" : [
+         "janvier",
+         "février",
+         "mars",
+         "avril",
+         "mai",
+         "juin",
+         "juillet",
+         "août",
+         "septembre",
+         "octobre",
+         "novembre",
+         "décembre"
+      ],
+      "readMore" : "Lire l’article",
+      "related" : "Services liés",
+      "section" : "Articles",
+      "sectionDescription" : "Articles de BENAMAR sur les sites web, les landing pages, les réseaux sociaux et le référencement, écrits pour les entreprises qui veulent décider en connaissance de cause.",
+      "sectionTitle" : "Articles sur le marketing digital — BENAMAR"
+   },
+   "lang" : "fr",
+   "locale" : "fr_FR",
+   "section" : "articles"
+}
