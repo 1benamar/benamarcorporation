@@ -152,7 +152,7 @@ for my $lang (@langs) {
 
         my $includes = join "\n", map {
                   qq{        <div class="benefit" data-reveal>\n}
-                . qq{          <div class="benefit-head">} . icon($_->{icon}, 'benefit-icon') . qq{</div>\n}
+                . qq{          } . icon($_->{icon}, 'benefit-icon') . qq{\n}
                 . qq{          <h3>} . esc($_->{h}) . qq{</h3>\n}
                 . qq{          <p>} . esc($_->{p}) . qq{</p>\n}
                 . qq{        </div>}
@@ -161,7 +161,6 @@ for my $lang (@langs) {
         # Franja de cifras, distinta en cada servicio.
         my $stats = join "\n", map {
                   qq{        <div class="stat" data-reveal>\n}
-                . qq{          } . icon($_->{i}, 'stat-icon') . qq{\n}
                 . qq{          <span class="stat-value">$_->{v}</span>\n}
                 . qq{          <span class="stat-label">} . esc($_->{l}) . qq{</span>\n}
                 . qq{        </div>}
@@ -235,7 +234,7 @@ for my $lang (@langs) {
                 my $e = esc($frase);
                 $t =~ s{\Q$e\E}{<a href="$enlace{$frase}">$e</a>};
             }
-            qq{      <p class="about-body" data-reveal>$t</p>}
+            qq{        <p class="about-body" data-reveal>$t</p>}
         } @{ $p->{intro} };
 
         my $ld = JSON::PP->new->canonical->pretty->encode({
@@ -330,9 +329,11 @@ $ld  </script>
     </nav>
 
     <section class="about">
-      <p class="service-lead" data-reveal>@{[ esc($p->{lead}) ]}</p>
+      <div class="about-text">
+        <p class="service-lead" data-reveal>@{[ esc($p->{lead}) ]}</p>
 $intro
-      <p class="kicker stats-kicker" data-reveal>@{[ esc($L->{figures}) ]}</p>
+      </div>
+
       <div class="stats-grid">
 $stats
       </div>
@@ -348,15 +349,15 @@ $includes
 
     <section class="service-process">
       <div class="service-process-inner">
-        <div class="service-process-photo" data-reveal>
-          <img class="service-photo" src="${up}assets/img/$p->{photo}.jpg" alt="@{[ esc($p->{photoAlt}) ]}" width="$pw" height="$ph" loading="lazy" decoding="async">
-        </div>
         <div class="service-process-text">
           <h2 data-reveal>@{[ esc($L->{process}) ]}</h2>
-      <p class="section-deck" data-reveal>@{[ esc($L->{deck}{process}) ]}</p>
+          <p class="section-deck" data-reveal>@{[ esc($L->{deck}{process}) ]}</p>
           <ol class="process">
 $process
           </ol>
+        </div>
+        <div class="service-process-photo" data-reveal>
+          <img class="service-photo" src="${up}assets/img/$p->{photo}.jpg" alt="@{[ esc($p->{photoAlt}) ]}" width="$pw" height="$ph" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -365,7 +366,7 @@ $process
       <p class="service-band-line">@{[ esc($L->{band}) ]}</p>
     </section>
 
-    <section class="service-section">
+    <section class="service-section service-section--aside">
       <h2 data-reveal>@{[ esc($L->{audience}) ]}</h2>
       <p class="section-deck" data-reveal>@{[ esc($L->{deck}{audience}) ]}</p>
       <dl class="audience">
@@ -373,7 +374,7 @@ $audience
       </dl>
     </section>
 
-    <section class="service-section">
+    <section class="service-section service-section--aside">
       <h2 data-reveal>@{[ esc($L->{faq}) ]}</h2>
       <p class="section-deck" data-reveal>@{[ esc($L->{deck}{faq}) ]}</p>
       <div class="faq">
