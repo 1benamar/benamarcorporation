@@ -26,6 +26,10 @@
   };
   var T = MSG[LANG] || MSG.es;
 
+  // Capas del fondo del hero que se mueven con el ratón: la foto y, cuando se
+  // monta, el vídeo que va encima.
+  var heroLayers = [];
+
   var $ = function (sel, scope) { return (scope || document).querySelector(sel); };
   var $$ = function (sel, scope) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); };
 
@@ -44,8 +48,10 @@
     // o cambiar el tamaño, en lugar de leerla en cada movimiento del ratón.
     // Los movimientos se agrupan: como mucho un cambio por fotograma.
     var rect = null, px = 0, py = 0, raf = null;
+    heroLayers.push(photo);
     function apply() {
-      photo.style.transform = "scale(1.08) translate3d(" + (-px * 22).toFixed(1) + "px, " + (-py * 16).toFixed(1) + "px, 0)";
+      var t = "scale(1.08) translate3d(" + (-px * 22).toFixed(1) + "px, " + (-py * 16).toFixed(1) + "px, 0)";
+      for (var i = 0; i < heroLayers.length; i++) heroLayers[i].style.transform = t;
       raf = null;
     }
     function queue() { if (!raf) raf = requestAnimationFrame(apply); }
@@ -64,6 +70,64 @@
       px = 0; py = 0;
       queue();
     });
+  }
+
+  /* ---- Vídeo de fondo del hero ----
+     Solo en pantallas anchas, sin ahorro de datos y sin movimiento reducido.
+     Se monta cuando la página ya ha cargado: la foto de debajo es lo que se
+     ve primero y lo que queda si el vídeo no llega a reproducirse. */
+  function initHeroVideo() {
+    var hero = $("[data-hero]");
+    var src = hero && hero.getAttribute("data-hero-video");
+    var media = hero && $(".hero-media", hero);
+    if (!src || !media || reduced) return;
+    if (!matchMedia("(min-width: 900px)").matches) return;
+    var conn = navigator.connection;
+    if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return;
+
+    function montar() {
+      var video = document.createElement("video");
+      video.className = "hero-video";
+      video.muted = true;
+      video.defaultMuted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.setAttribute("playsinline", "");
+      video.setAttribute("aria-hidden", "true");
+      video.setAttribute("tabindex", "-1");
+      video.setAttribute("disablepictureinpicture", "");
+      video.preload = "auto";
+      video.src = src;
+
+      var photo = $("[data-hero-photo]");
+      if (photo && photo.style.transform) video.style.transform = photo.style.transform;
+      heroLayers.push(video);
+
+      video.addEventListener("playing", function () { video.classList.add("is-playing"); }, { once: true });
+      video.addEventListener("error", function () {
+        var i = heroLayers.indexOf(video);
+        if (i > -1) heroLayers.splice(i, 1);
+        video.remove();
+      });
+      media.appendChild(video);
+
+      // Se reproduce solo mientras el hero está a la vista.
+      function reproducir() {
+        var p = video.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) reproducir();
+          else video.pause();
+        }).observe(hero);
+      } else {
+        reproducir();
+      }
+    }
+
+    if (document.readyState === "complete") montar();
+    else window.addEventListener("load", montar, { once: true });
   }
 
   /* ---- Scroll progress bar ---- */
@@ -290,6 +354,7 @@
 
   function boot() {
     safe(initHeroParallax, "initHeroParallax");
+    safe(initHeroVideo, "initHeroVideo");
     safe(initScrollProgress, "initScrollProgress");
     safe(initNav, "initNav");
     safe(initMobileMenu, "initMobileMenu");

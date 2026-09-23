@@ -43,6 +43,17 @@
       "src" : "assets/img/landing-trabajo.jpg",
       "title" : "Office Work"
    },
+   "mesa-trabajo" : {
+      "creator" : "Mixkit",
+      "creator_url" : "https://mixkit.co",
+      "foreign_landing_url" : "https://mixkit.co/free-stock-video/people-working-on-a-wooden-table-3247/",
+      "license" : "mixkit",
+      "license_url" : "https://mixkit.co/license/#videoFree",
+      "license_version" : "Stock Video Free License",
+      "source" : "mixkit",
+      "src" : "assets/video/mesa-trabajo.mp4",
+      "title" : "People working on a wooden table"
+   },
    "proceso-trabajo" : {
       "creator" : "Jeffrey Betts",
       "creator_url" : "http://mmtstock.com",

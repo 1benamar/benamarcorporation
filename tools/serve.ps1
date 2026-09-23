@@ -19,6 +19,7 @@ $mime = @{
   ".jpeg" = "image/jpeg"
   ".png"  = "image/png"
   ".ico"  = "image/x-icon"
+  ".mp4"  = "video/mp4"
   ".woff2"= "font/woff2"
 }
 
