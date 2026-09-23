@@ -67,6 +67,8 @@
   --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   --nav-h: 64px;
+  --nav-top: 12px;
+  --nav-space: calc(var(--nav-h) + var(--nav-top));
   --container: 1180px;
 
   --radius-sm: 3px;
@@ -270,26 +272,47 @@ h1 em, h2 em, h3 em, .em-serif {
 /* =============================================================
    6. Navigation
    ============================================================= */
+/* Barra flotante: separada de los bordes, alineada con el contenido de la
+   página y con fondo propio desde el principio. Al bajar sube un poco y se
+   vuelve más opaca. El filete va por dentro para no mover el contenido. */
 .nav {
-  position: fixed; top: 0; inset-inline: 0; z-index: 100;
+  position: fixed; top: var(--nav-top); z-index: 100;
+  left: max(var(--nav-top), calc((100% - var(--container)) / 2));
+  right: max(var(--nav-top), calc((100% - var(--container)) / 2));
   height: var(--nav-h);
-  transition: background-color 300ms ease, border-color 300ms ease;
-  border-bottom: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  background: rgba(12,13,15,0.52);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: inset 0 0 0 1px var(--line-2), 0 18px 40px -20px rgba(0,0,0,0.7);
+  transition: background-color 300ms ease, box-shadow 300ms ease, transform 400ms var(--ease-out);
 }
 .nav.is-scrolled {
-  background: rgba(20,23,26,0.78);
-  backdrop-filter: blur(14px) saturate(180%);
-  -webkit-backdrop-filter: blur(14px) saturate(180%);
-  border-color: var(--line);
-  box-shadow: 0 1px 0 var(--line), 0 12px 32px rgba(6,8,10,0.18);
+  background: rgba(16,17,19,0.86);
+  transform: translateY(-4px);
+  box-shadow: inset 0 0 0 1px var(--line-2), 0 22px 48px -20px rgba(0,0,0,0.85);
+}
+/* Páginas legales y de error: la misma barra, pero en su sitio, sin fijarse. */
+.nav--static,
+.nav--static.is-scrolled {
+  position: relative; inset: auto;
+  margin: var(--nav-top) max(var(--nav-top), calc((100% - var(--container)) / 2)) 0;
+  background: rgba(16,17,19,0.86);
+  transform: none;
+}
+@media (prefers-reduced-transparency: reduce) {
+  .nav, .nav.is-scrolled { background: rgba(16,17,19,0.97); backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
 .nav-inner {
-  max-width: var(--container);
-  margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: 0.75rem;
   height: 100%;
   display: flex; align-items: center; justify-content: space-between;
   gap: 1.5rem;
+}
+/* Con la barra ya separada de los bordes, el contenido se alinea con el de
+   la página. */
+@media (min-width: 1204px) {
+  .nav-inner { padding-inline: 1.5rem; }
 }
 .nav-logo {
   display: inline-flex;
@@ -356,22 +379,32 @@ h1 em, h2 em, h3 em, .em-serif {
 /* =============================================================
    7. Hero
    ============================================================= */
+/* La fotografía, en blanco y negro, ocupa el lado derecho y se funde con el
+   fondo por la izquierda, donde se apoya el texto. En pantallas estrechas va
+   a sangre y el texto queda abajo, sobre la parte oscura. */
 .hero {
-  min-height: 92svh;
-  display: flex; align-items: center;
-  padding-top: var(--nav-h);
+  min-height: 100svh;
+  display: flex; align-items: flex-end;
+  padding-top: calc(var(--nav-space) + 2rem);
+  padding-bottom: clamp(3.5rem, 12vh, 8rem);
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  text-align: center;
+}
+.hero-media {
+  position: absolute; inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  transform-origin: 70% 45%;
+  animation: heroAsiento 1.6s var(--ease-out) both;
 }
 .hero-photo-img {
   position: absolute;
   inset: -4%;
-  z-index: -2;
   width: 108%; height: 108%;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: 42% 45%;
+  filter: grayscale(1) contrast(1.08) brightness(0.92);
   transform: scale(1.08);
   transition: transform 0.2s var(--ease-out);
 }
@@ -381,30 +414,38 @@ h1 em, h2 em, h3 em, .em-serif {
 .hero-scrim {
   position: absolute; inset: 0; z-index: -1;
   pointer-events: none;
-  background:
-    radial-gradient(ellipse 90% 70% at 50% 45%, rgba(11,12,15,0.34) 0%, rgba(11,12,15,0.72) 62%, rgba(11,12,15,0.92) 100%),
-    linear-gradient(180deg, rgba(11,12,15,0.82) 0%, rgba(11,12,15,0.44) 38%, rgba(11,12,15,0.88) 100%);
+  background: linear-gradient(180deg,
+    rgba(10,11,12,0.55) 0%,
+    rgba(10,11,12,0.18) 26%,
+    rgba(10,11,12,0.62) 52%,
+    rgba(10,11,12,0.94) 76%,
+    var(--bg) 100%);
+}
+@media (min-width: 900px) {
+  /* La foto se funde por sí misma con el fondo: sin borde visible. */
+  .hero-media {
+    left: 22%;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.55) 22%, #000 50%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.55) 22%, #000 50%);
+  }
+  .hero-scrim {
+    background:
+      linear-gradient(90deg,
+        rgba(10,11,12,0.7) 22%,
+        rgba(10,11,12,0.4) 48%,
+        rgba(10,11,12,0.1) 78%,
+        rgba(10,11,12,0.2) 100%),
+      linear-gradient(180deg,
+        rgba(10,11,12,0.5) 0%,
+        rgba(10,11,12,0) 22%,
+        rgba(10,11,12,0) 70%,
+        var(--bg) 100%);
+  }
 }
 
-/* Mouse-reactive gradient mesh (archetype 05 signature) */
-.hero-mesh {
-  position: absolute; inset: -20%; z-index: -1;
-  pointer-events: none;
-  opacity: 0.34;
-  mix-blend-mode: screen;
-  filter: blur(90px);
-  background:
-    radial-gradient(circle 32vw at 50% 45%, rgba(179,146,95,0.34), transparent 62%),
-    radial-gradient(circle 36vw at 64% 33%, rgba(217,199,167,0.16), transparent 64%);
-}
-/* La capa se desplaza siguiendo al ratón: se le reserva su propia capa de
-   composición solo donde hay ratón, que es donde se mueve. */
-@media (hover: hover) and (pointer: fine) {
-  .hero-mesh { will-change: transform; }
-}
 .hero-inner {
   position: relative;
-  max-width: 900px;
+  max-width: var(--container);
   margin-inline: auto;
   padding-inline: 1.5rem;
   width: 100%;
@@ -412,61 +453,48 @@ h1 em, h2 em, h3 em, .em-serif {
 }
 .hero-inner .btn-text { color: #fff; }
 
-.hero-frame {
-  position: absolute;
-  inset: -2.6rem -1.5rem;
-  pointer-events: none;
-}
-.hero-frame-corner {
-  position: absolute;
-  width: 18px; height: 18px;
-  border: 1px solid rgba(255,255,255,0.4);
-}
-.hero-frame-corner--tl { top: 0; left: 0; border-right: 0; border-bottom: 0; }
-.hero-frame-corner--tr { top: 0; right: 0; border-left: 0; border-bottom: 0; }
-.hero-frame-corner--bl { bottom: 0; left: 0; border-right: 0; border-top: 0; }
-.hero-frame-corner--br { bottom: 0; right: 0; border-left: 0; border-top: 0; }
-@media (max-width: 539px) {
-  .hero-frame { display: none; }
-}
-
+/* El filete de bronce de los titulares de la web, aquí a la izquierda. */
 .hero-title {
-  font-size: clamp(2.6rem, 7.6vw, 5.4rem);
-  line-height: 1.08;
+  position: relative;
+  padding-top: 1.9rem;
+  font-size: clamp(2.5rem, 5.4vw, 4.6rem);
+  line-height: 1.05;
   letter-spacing: -0.02em;
   font-weight: 500;
-  text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+}
+.hero-title::before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 40px; height: 1px;
+  background: var(--accent);
+  transform-origin: left center;
 }
 .hero-title em { display: inline-block; }
 .hero-sub {
-  margin-top: 1.7rem;
-  max-width: 44ch;
-  margin-inline: auto;
-  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
-  color: rgba(236,233,227,0.82);
-  text-shadow: 0 1px 16px rgba(0,0,0,0.5);
+  margin-top: 1.5rem;
+  max-width: 46ch;
+  text-wrap: pretty;
+  font-size: clamp(1.02rem, 1.3vw, 1.15rem);
+  line-height: 1.7;
+  color: rgba(236,233,227,0.8);
 }
 .hero-actions {
-  margin-top: 2.4rem;
-  display: flex; align-items: center; justify-content: center; gap: 1.2rem; flex-wrap: wrap;
+  margin-top: 2.2rem;
+  display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap;
 }
 
-.hero-scroll-cue {
-  position: absolute;
-  left: 50%;
-  bottom: 28px;
-  transform: translateX(-50%);
-  width: 22px; height: 22px;
-  color: rgba(255,255,255,0.55);
-  pointer-events: none;
-  animation: heroScrollBreath 3.2s cubic-bezier(.22,1,.36,1) infinite;
-}
-@keyframes heroScrollBreath {
-  0%, 100% { transform: translateX(-50%); opacity: 0.3; }
-  50%      { transform: translateX(-50%); opacity: 0.8; }
-}
+/* Entrada: la foto se asienta, el titular baja a su sitio y el resto llega
+   desde la izquierda, uno detrás de otro. */
+@keyframes heroAsiento { from { transform: scale(1.06); } to { transform: none; } }
+@keyframes heroBaja    { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes heroEntra   { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: none; } }
+@keyframes heroFilete  { from { transform: scaleX(0); } to { transform: none; } }
+.hero-title          { animation: heroBaja 900ms var(--ease-out) 100ms both; }
+.hero-title::before  { animation: heroFilete 700ms var(--ease-out) 500ms both; }
+.hero-sub            { animation: heroEntra 900ms var(--ease-out) 280ms both; }
+.hero-actions        { animation: heroEntra 900ms var(--ease-out) 400ms both; }
 @media (prefers-reduced-motion: reduce) {
-  .hero-scroll-cue { animation: none; opacity: 0.6; }
+  .hero-media, .hero-title, .hero-title::before, .hero-sub, .hero-actions { animation: none; }
 }
 
 /* =============================================================
@@ -870,8 +898,10 @@ h1 em, h2 em, h3 em, .em-serif {
 .cta-form-spinner::after {
   content: ""; width: 16px; height: 16px;
   border: 1.5px solid rgba(20,23,26,0.25); border-top-color: var(--accent-ink);
-  border-radius: 50%; animation: spin .9s linear infinite;
+  border-radius: 50%;
 }
+/* Solo gira mientras se envía; oculto, no consume nada. */
+.cta-form.is-sending .cta-form-spinner::after { animation: spin .9s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .cta-form-check path {
   stroke: currentColor; stroke-width: 2; fill: none;
@@ -1416,7 +1446,7 @@ a, button, [role="button"], input, select, textarea, summary {
    ============================================================= */
 /* En la sección no hay foto de cabecera: la ruta de navegación deja sitio
    a la barra fija. */
-.breadcrumb--top { padding-top: calc(var(--nav-h) + 1.1rem); }
+.breadcrumb--top { padding-top: calc(var(--nav-space) + 1.1rem); }
 
 /* Índice */
 .posts-index { padding-top: 4rem; }

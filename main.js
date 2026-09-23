@@ -83,37 +83,6 @@
     update();
   }
 
-  /* ---- Mouse-reactive gradient mesh (lerped) ---- */
-  function initMesh() {
-    var mesh = $("[data-mesh]");
-    if (!mesh || reduced) return;
-    if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-
-    // Antes el bucle corría sin parar y cambiaba una variable en la raíz de la
-    // página, lo que obligaba a recalcular los estilos de todo el documento y a
-    // repintar el degradado en cada fotograma. Ahora se desplaza solo la capa,
-    // el bucle se detiene al llegar a su sitio y no corre fuera de pantalla.
-    var mx = 50, my = 45, tx = 50, ty = 45, raf = null, visible = true;
-    function frame() {
-      mx += (tx - mx) * 0.045;
-      my += (ty - my) * 0.045;
-      mesh.style.transform = "translate3d(" + (mx - 50).toFixed(2) + "%, " + (my - 45).toFixed(2) + "%, 0)";
-      raf = (Math.abs(tx - mx) > 0.05 || Math.abs(ty - my) > 0.05) ? requestAnimationFrame(frame) : null;
-    }
-    window.addEventListener("mousemove", function (e) {
-      tx = (e.clientX / window.innerWidth) * 100;
-      ty = (e.clientY / window.innerHeight) * 100;
-      if (visible && !raf) raf = requestAnimationFrame(frame);
-    }, { passive: true });
-
-    if ("IntersectionObserver" in window) {
-      new IntersectionObserver(function (entries) {
-        visible = entries[0].isIntersecting;
-        if (!visible && raf) { cancelAnimationFrame(raf); raf = null; }
-      }).observe(mesh.parentElement);
-    }
-  }
-
   /* ---- Sticky nav ---- */
   function initNav() {
     var nav = $("[data-nav]");
@@ -322,7 +291,6 @@
   function boot() {
     safe(initHeroParallax, "initHeroParallax");
     safe(initScrollProgress, "initScrollProgress");
-    safe(initMesh, "initMesh");
     safe(initNav, "initNav");
     safe(initMobileMenu, "initMobileMenu");
     safe(initSmoothAnchors, "initSmoothAnchors");
