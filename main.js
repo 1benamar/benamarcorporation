@@ -34,15 +34,14 @@
   }
 
   /* ---- Vídeo de fondo del hero ----
-     Solo en pantallas anchas, sin ahorro de datos y sin movimiento reducido.
+     En cualquier pantalla, salvo con ahorro de datos y sin movimiento reducido.
      Se monta cuando la página ya ha cargado: la foto de debajo es lo que se
      ve primero y lo que queda si el vídeo no llega a reproducirse. */
   function initHeroVideo() {
     var hero = $("[data-hero]");
     var src = hero && hero.getAttribute("data-hero-video");
     var media = hero && $(".hero-media", hero);
-    if (!src || !media || reduced) return;
-    if (!matchMedia("(min-width: 900px)").matches) return;
+    if (!src || !media || reduced) return;
     var conn = navigator.connection;
     if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return;
 

@@ -398,7 +398,7 @@ $others
 
   $foot
 
-  <script defer src="${up}main.js?v=20260923c"></script>
+  <script defer src="${up}main.js?v=20260923d"></script>
 </body>
 </html>
 HTML
