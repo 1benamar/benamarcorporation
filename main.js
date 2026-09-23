@@ -26,50 +26,11 @@
   };
   var T = MSG[LANG] || MSG.es;
 
-  // Capas del fondo del hero que se mueven con el ratón: la foto y, cuando se
-  // monta, el vídeo que va encima.
-  var heroLayers = [];
-
   var $ = function (sel, scope) { return (scope || document).querySelector(sel); };
   var $$ = function (sel, scope) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); };
 
   function safe(fn, name) {
     try { fn(); } catch (e) { console.warn("[" + name + "]", e); }
-  }
-
-  /* ---- Hero photo mouse parallax ---- */
-  function initHeroParallax() {
-    var hero = $("[data-hero]");
-    var photo = $("[data-hero-photo]");
-    if (!hero || !photo || reduced) return;
-    if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-
-    // La medida del encabezado se toma una vez y se invalida al hacer scroll
-    // o cambiar el tamaño, en lugar de leerla en cada movimiento del ratón.
-    // Los movimientos se agrupan: como mucho un cambio por fotograma.
-    var rect = null, px = 0, py = 0, raf = null;
-    heroLayers.push(photo);
-    function apply() {
-      var t = "scale(1.08) translate3d(" + (-px * 22).toFixed(1) + "px, " + (-py * 16).toFixed(1) + "px, 0)";
-      for (var i = 0; i < heroLayers.length; i++) heroLayers[i].style.transform = t;
-      raf = null;
-    }
-    function queue() { if (!raf) raf = requestAnimationFrame(apply); }
-    function forget() { rect = null; }
-    window.addEventListener("scroll", forget, { passive: true });
-    window.addEventListener("resize", forget, { passive: true });
-
-    hero.addEventListener("mousemove", function (e) {
-      if (!rect) rect = hero.getBoundingClientRect();
-      px = (e.clientX - rect.left) / rect.width - 0.5;
-      py = (e.clientY - rect.top) / rect.height - 0.5;
-      queue();
-    }, { passive: true });
-
-    hero.addEventListener("mouseleave", function () {
-      px = 0; py = 0;
-      queue();
-    });
   }
 
   /* ---- Vídeo de fondo del hero ----
@@ -99,16 +60,8 @@
       video.preload = "auto";
       video.src = src;
 
-      var photo = $("[data-hero-photo]");
-      if (photo && photo.style.transform) video.style.transform = photo.style.transform;
-      heroLayers.push(video);
-
       video.addEventListener("playing", function () { video.classList.add("is-playing"); }, { once: true });
-      video.addEventListener("error", function () {
-        var i = heroLayers.indexOf(video);
-        if (i > -1) heroLayers.splice(i, 1);
-        video.remove();
-      });
+      video.addEventListener("error", function () { video.remove(); });
       media.appendChild(video);
 
       // Se reproduce solo mientras el hero está a la vista.
@@ -353,7 +306,6 @@
   }
 
   function boot() {
-    safe(initHeroParallax, "initHeroParallax");
     safe(initHeroVideo, "initHeroVideo");
     safe(initScrollProgress, "initScrollProgress");
     safe(initNav, "initNav");

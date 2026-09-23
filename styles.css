@@ -426,37 +426,29 @@ body:has([data-hero]) .nav { animation: navLlega 700ms var(--ease-out) backwards
   overflow: hidden;
   animation: heroAsiento 1.6s var(--ease-out) both;
 }
+/* Fondo fijo: la foto y el vídeo no se mueven con el ratón. */
 .hero-photo-img {
   position: absolute;
-  inset: -4%;
-  width: 108%; height: 108%;
+  inset: 0;
+  width: 100%; height: 100%;
   object-fit: cover;
   object-position: 50% 45%;
   filter: grayscale(1) contrast(1.08) brightness(0.92);
-  transform: scale(1.08);
-  transition: transform 0.2s var(--ease-out);
-}
-@media (hover: hover) and (pointer: fine) {
-  .hero-photo-img { will-change: transform; }
 }
 /* El vídeo va encima de la foto, con el mismo encuadre y el mismo blanco y
    negro, y aparece en fundido cuando empieza a reproducirse. */
 .hero-video {
   position: absolute;
-  inset: -4%;
-  width: 108%; height: 108%;
+  inset: 0;
+  width: 100%; height: 100%;
   object-fit: cover;
   object-position: 50% 45%;
   filter: grayscale(1) contrast(1.08) brightness(0.92);
-  transform: scale(1.08);
   opacity: 0;
-  transition: opacity 1.2s var(--ease-out), transform 0.2s var(--ease-out);
+  transition: opacity 1.2s var(--ease-out);
   pointer-events: none;
 }
 .hero-video.is-playing { opacity: 1; }
-@media (hover: hover) and (pointer: fine) {
-  .hero-video { will-change: transform; }
-}
 .hero-scrim {
   position: absolute; inset: 0; z-index: -1;
   pointer-events: none;
