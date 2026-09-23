@@ -193,7 +193,7 @@ sub meta {
     my ($p, $L) = @_;
     my $sep = qq{<span class="post-meta-sep" aria-hidden="true">·</span>};
     my $cat = $p->{category} ? qq{<span class="post-category">@{[ esc($p->{category}) ]}</span>$sep} : '';
-    return $cat . qq{<time datetime="$p->{date}">@{[ fecha($p->{date}, $L) ]}</time>$sep<span class="post-minutes">$p->{minutes} @{[ esc($L->{minutes}) ]}</span>};
+    return $cat . qq{<time datetime="$p->{date}">@{[ fecha($p->{date}, $L) ]}</time>$sep$p->{minutes} @{[ esc($L->{minutes}) ]}};
 }
 
 sub tarjeta {
