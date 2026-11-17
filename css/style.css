@@ -2403,3 +2403,19 @@ html[lang="fr"] .solo-idioma[data-l="fr"], html[lang="ro"] .solo-idioma[data-l="
 .art-card__go { font-weight: 600; color: var(--es); }
 @media (hover: hover) and (pointer: fine) { .art-card:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px var(--line-2), 0 24px 40px -28px rgba(30, 20, 12, .5); } }
 @media (max-width: 759px) { .art-grid--idx { grid-template-columns: 1fr; } .art__srv { padding: 24px 22px; } }
+
+/* «Ver el servicio» en cada ficha de la portada (17-11-2026): una fila más en la rejilla y botón de verdad,
+   de contorno crema con su flecha, a todo el ancho de la ficha; al pasar el ratón se rellena. */
+.services .svc { grid-row: span 6; }
+.services .svc .svc__more {
+  align-self: end; justify-self: stretch; margin-top: var(--s4);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 48px; padding: 0 8px 0 18px; border-radius: 12px;
+  border: 1px solid rgba(245, 239, 230, .3); color: var(--paper); text-decoration: none; font-weight: 600; font-size: .98rem;
+  transition: background-color .25s, color .25s, border-color .25s;
+}
+.services .svc .svc__more span[aria-hidden] { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: rgba(245, 239, 230, .1); transition: translate .3s var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .services .svc .svc__more:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .services .svc .svc__more:hover span[aria-hidden] { background: var(--ink); color: var(--paper); translate: 2px 0; }
+}
