@@ -43,6 +43,10 @@ ErrorDocument 404 /404.html
   <FilesMatch "\.(html|css|js|mjs|json)$">
     Header set Cache-Control "no-cache, must-revalidate"
   </FilesMatch>
+  # CSS y JS de la web nueva: siempre se piden con ?v=N, así que pueden guardarse un año
+  <FilesMatch "^(style\.css|main\.js|lang\.js|i18n\.js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
   <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico|woff|woff2|mp4)$">
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
