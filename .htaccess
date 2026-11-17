@@ -15,6 +15,17 @@ ErrorDocument 404 /404.html
   RewriteRule ^(.*)$ https://benamar.es/$1 [R=301,L]
 </IfModule>
 
+# Web nueva (17-11-2026): las páginas de servicio y las portadas en inglés y francés pasan a la portada nueva,
+# que tiene los servicios y los idiomas. Se mantienen artículos, aviso legal, privacidad y créditos.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(diseno-web|landing-pages|gestion-redes-sociales|posicionamiento-seo)-barcelona.html$ https://benamar.es/#servicios [R=301,L,NE]
+  RewriteRule ^en/(index.html)?$ https://benamar.es/?lang=en [R=301,L]
+  RewriteRule ^en/(web-design|landing-pages|social-media-management|seo)-barcelona.html$ https://benamar.es/?lang=en#servicios [R=301,L,NE]
+  RewriteRule ^fr/(index.html)?$ https://benamar.es/?lang=fr [R=301,L]
+  RewriteRule ^fr/(creation-site-web|landing-pages|gestion-reseaux-sociaux|referencement-seo)-barcelone.html$ https://benamar.es/?lang=fr#servicios [R=301,L,NE]
+</IfModule>
+
 # HTML: never cache
 <IfModule mod_expires.c>
   ExpiresActive On
