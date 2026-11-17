@@ -105,7 +105,7 @@
 
     team_alt: 'Mario and Sami from BENAMAR sitting on rocks by a river, with mountains behind',
     team_h: 'Who runs your project',
-    team_p: 'Behind BENAMAR there is a story, an idea and two people.', team_p2: 'BENAMAR was born from the enthusiasm and initiative of Mario and Sami, two people who decided to join paths to bring a project of their own to life. With different experiences and perspectives and a shared vision, we began building a brand that reflected our way of understanding the business world.', team_p3: 'What started as an idea gradually became a project with its own identity, driven by the desire to grow, learn and create something that represented us.', team_p4: 'Today, BENAMAR is the result of that journey: an initiative built from scratch, with effort, ambition and a story that is still being written every day.', team_tag: 'One team', lbl_origen: 'Origin', lbl_origen_v: 'Barcelona', lbl_mercados: 'Markets', lbl_mercados_v: 'Spain, Morocco and Romania', lbl_idiomas: 'Languages', lbl_socios: 'Partners', lbl_hecho: 'Made in Barcelona', team_link: 'Talk to us',
+    team_p: 'Behind BENAMAR there is a story, an idea and two people.', team_p2: 'BENAMAR was born from the enthusiasm and initiative of Mario and Sami, two people who decided to join paths to bring a project of their own to life. With different experiences and perspectives and a shared vision, we began building a brand that reflected our way of understanding the business world.', team_p3: 'What started as an idea gradually became a project with its own identity, driven by the desire to grow, learn and create something that represented us.', team_p4: 'Today, BENAMAR is the result of that journey: an initiative built from scratch, with effort, ambition and a story that is still being written every day.', team_tag: 'One team', tl_aviso: 'Legal notice · BENAMAR', dl_aviso: 'Legal notice of BENAMAR, a digital marketing agency based in Barcelona.', tl_priv: 'Privacy policy · BENAMAR', dl_priv: 'How BENAMAR handles the data you share through its website.', back_home: 'Back to home', lbl_origen: 'Origin', lbl_origen_v: 'Barcelona', lbl_mercados: 'Markets', lbl_mercados_v: 'Spain, Morocco and Romania', lbl_idiomas: 'Languages', lbl_socios: 'Partners', lbl_hecho: 'Made in Barcelona', team_link: 'Talk to us',
     tf1_t: 'Base', tf1_d: 'Barcelona',
     tf2_t: 'Clients', tf2_d: '3 countries',
     tf3_t: 'Languages', tf3_d: 'ES CA EN FR AR RO',
@@ -135,7 +135,7 @@
     f_country: 'Project country', f_country_ph: 'Choose a country', opt_es: 'Spain', opt_ma: 'Morocco', opt_ro: 'Romania', opt_other: 'Another country',
     f_service: 'Service', f_service_ph: 'Choose a service', o1: 'Web design', o2: 'Landing page', o3: 'Social media', o4: 'Google rankings', o5: 'Not sure yet',
     f_msg: 'What you need',
-    f_consent: 'I have read and accept the <a href="https://benamar.es/en/privacidad.html" target="_blank" rel="noopener">privacy policy</a>.',
+    f_consent: 'I have read and accept the <a href="privacidad.html" target="_blank" rel="noopener">privacy policy</a>.',
     f_submit: 'Send request',
     fail_h: 'We couldn’t send it from here.',
     fail_p: 'Your message is ready: send it in one click by WhatsApp or email.',
@@ -144,8 +144,8 @@
     ftr_worlds: 'Three worlds', ftr_nav_label: 'Footer', ftr_nav: 'Site', ftr_contact: 'Contact',
     ftr_articles: 'Articles', articles_href: 'https://benamar.es/en/articles/',
     ftr_base: 'Based in Barcelona',
-    legal1: 'Legal notice', legal_href: 'https://benamar.es/en/aviso-legal.html',
-    legal2: 'Privacy', privacy_href: 'https://benamar.es/en/privacidad.html'
+    legal1: 'Legal notice', legal_href: 'aviso-legal.html',
+    legal2: 'Privacy', privacy_href: 'privacidad.html'
   };
 
   window.I18N_FR = {
@@ -248,7 +248,7 @@
 
     team_alt: 'Mario et Sami, de BENAMAR, assis sur des rochers au bord d’une rivière, avec des montagnes derrière',
     team_h: 'Qui mène votre projet',
-    team_p: 'Derrière BENAMAR, il y a une histoire, une idée et deux personnes.', team_p2: 'BENAMAR est née de l’enthousiasme et de l’initiative de Mario et Sami, deux personnes qui ont décidé d’unir leurs chemins pour donner vie à un projet bien à eux. Avec des expériences et des regards différents et une vision commune, nous avons commencé à construire une marque qui reflète notre façon de comprendre le monde de l’entreprise.', team_p3: 'Ce qui a commencé comme une idée est devenu peu à peu un projet avec sa propre identité, porté par l’envie de grandir, d’apprendre et de créer quelque chose qui nous ressemble.', team_p4: 'Aujourd’hui, BENAMAR est le fruit de ce chemin : une initiative construite de zéro, avec effort, ambition et une histoire qui continue de s’écrire chaque jour.', team_tag: 'Une seule équipe', lbl_origen: 'Origine', lbl_origen_v: 'Barcelone', lbl_mercados: 'Marchés', lbl_mercados_v: 'Espagne, Maroc et Roumanie', lbl_idiomas: 'Langues', lbl_socios: 'Associés', lbl_hecho: 'Fabriqué à Barcelone', team_link: 'Nous parler',
+    team_p: 'Derrière BENAMAR, il y a une histoire, une idée et deux personnes.', team_p2: 'BENAMAR est née de l’enthousiasme et de l’initiative de Mario et Sami, deux personnes qui ont décidé d’unir leurs chemins pour donner vie à un projet bien à eux. Avec des expériences et des regards différents et une vision commune, nous avons commencé à construire une marque qui reflète notre façon de comprendre le monde de l’entreprise.', team_p3: 'Ce qui a commencé comme une idée est devenu peu à peu un projet avec sa propre identité, porté par l’envie de grandir, d’apprendre et de créer quelque chose qui nous ressemble.', team_p4: 'Aujourd’hui, BENAMAR est le fruit de ce chemin : une initiative construite de zéro, avec effort, ambition et une histoire qui continue de s’écrire chaque jour.', team_tag: 'Une seule équipe', tl_aviso: 'Mentions légales · BENAMAR', dl_aviso: 'Mentions légales de BENAMAR, agence de marketing digital basée à Barcelone.', tl_priv: 'Politique de confidentialité · BENAMAR', dl_priv: 'Comment BENAMAR traite les données que vous nous transmettez via son site.', back_home: 'Retour à l’accueil', lbl_origen: 'Origine', lbl_origen_v: 'Barcelone', lbl_mercados: 'Marchés', lbl_mercados_v: 'Espagne, Maroc et Roumanie', lbl_idiomas: 'Langues', lbl_socios: 'Associés', lbl_hecho: 'Fabriqué à Barcelone', team_link: 'Nous parler',
     tf1_t: 'Base', tf1_d: 'Barcelone',
     tf2_t: 'Clients', tf2_d: '3 pays',
     tf3_t: 'Langues', tf3_d: 'ES CA EN FR AR RO',
@@ -278,7 +278,7 @@
     f_country: 'Pays du projet', f_country_ph: 'Choisissez un pays', opt_es: 'Espagne', opt_ma: 'Maroc', opt_ro: 'Roumanie', opt_other: 'Autre pays',
     f_service: 'Service', f_service_ph: 'Choisissez un service', o1: 'Création de site', o2: 'Landing page', o3: 'Réseaux sociaux', o4: 'Référencement Google', o5: 'Je ne sais pas encore',
     f_msg: 'Votre besoin',
-    f_consent: 'J’ai lu et j’accepte la <a href="https://benamar.es/fr/privacidad.html" target="_blank" rel="noopener">politique de confidentialité</a>.',
+    f_consent: 'J’ai lu et j’accepte la <a href="privacidad.html" target="_blank" rel="noopener">politique de confidentialité</a>.',
     f_submit: 'Envoyer la demande',
     fail_h: 'Nous n’avons pas pu l’envoyer d’ici.',
     fail_p: 'Votre message est prêt : envoyez-le en un clic par WhatsApp ou par e-mail.',
@@ -287,8 +287,8 @@
     ftr_worlds: 'Trois mondes', ftr_nav_label: 'Pied de page', ftr_nav: 'Site', ftr_contact: 'Contact',
     ftr_articles: 'Articles', articles_href: 'https://benamar.es/fr/articles/',
     ftr_base: 'Basée à Barcelone',
-    legal1: 'Mentions légales', legal_href: 'https://benamar.es/fr/aviso-legal.html',
-    legal2: 'Confidentialité', privacy_href: 'https://benamar.es/fr/privacidad.html'
+    legal1: 'Mentions légales', legal_href: 'aviso-legal.html',
+    legal2: 'Confidentialité', privacy_href: 'privacidad.html'
   };
 
   window.I18N_RO = {
@@ -391,7 +391,7 @@
 
     team_alt: 'Mario și Sami de la BENAMAR, așezați pe niște stânci lângă un râu, cu munți în spate',
     team_h: 'Cine se ocupă de proiect',
-    team_p: 'În spatele BENAMAR se află o poveste, o idee și doi oameni.', team_p2: 'BENAMAR s-a născut din entuziasmul și inițiativa lui Mario și Sami, doi oameni care au decis să-și unească drumurile pentru a da viață unui proiect propriu. Cu experiențe și perspective diferite și o viziune comună, am început să construim un brand care să reflecte felul nostru de a înțelege lumea afacerilor.', team_p3: 'Ce a început ca o idee a devenit treptat un proiect cu identitate proprie, alimentat de dorința de a crește, de a învăța și de a crea ceva care să ne reprezinte.', team_p4: 'Astăzi, BENAMAR este rezultatul acestui drum: o inițiativă construită de la zero, cu efort, ambiție și o poveste care continuă să se scrie în fiecare zi.', team_tag: 'O singură echipă', lbl_origen: 'Origine', lbl_origen_v: 'Barcelona', lbl_mercados: 'Piețe', lbl_mercados_v: 'Spania, Maroc și România', lbl_idiomas: 'Limbi', lbl_socios: 'Asociați', lbl_hecho: 'Fabricat în Barcelona', team_link: 'Vorbiți cu noi',
+    team_p: 'În spatele BENAMAR se află o poveste, o idee și doi oameni.', team_p2: 'BENAMAR s-a născut din entuziasmul și inițiativa lui Mario și Sami, doi oameni care au decis să-și unească drumurile pentru a da viață unui proiect propriu. Cu experiențe și perspective diferite și o viziune comună, am început să construim un brand care să reflecte felul nostru de a înțelege lumea afacerilor.', team_p3: 'Ce a început ca o idee a devenit treptat un proiect cu identitate proprie, alimentat de dorința de a crește, de a învăța și de a crea ceva care să ne reprezinte.', team_p4: 'Astăzi, BENAMAR este rezultatul acestui drum: o inițiativă construită de la zero, cu efort, ambiție și o poveste care continuă să se scrie în fiecare zi.', team_tag: 'O singură echipă', tl_aviso: 'Mențiuni legale · BENAMAR', dl_aviso: 'Mențiunile legale ale BENAMAR, agenție de marketing digital cu sediul în Barcelona.', tl_priv: 'Politica de confidențialitate · BENAMAR', dl_priv: 'Cum tratează BENAMAR datele pe care ni le transmiteți prin site.', back_home: 'Înapoi la pagina principală', lbl_origen: 'Origine', lbl_origen_v: 'Barcelona', lbl_mercados: 'Piețe', lbl_mercados_v: 'Spania, Maroc și România', lbl_idiomas: 'Limbi', lbl_socios: 'Asociați', lbl_hecho: 'Fabricat în Barcelona', team_link: 'Vorbiți cu noi',
     tf1_t: 'Baza', tf1_d: 'Barcelona',
     tf2_t: 'Clienți', tf2_d: '3 țări',
     tf3_t: 'Limbi', tf3_d: 'ES CA EN FR AR RO',
@@ -421,7 +421,7 @@
     f_country: 'Țara proiectului', f_country_ph: 'Alegeți o țară', opt_es: 'Spania', opt_ma: 'Maroc', opt_ro: 'România', opt_other: 'Altă țară',
     f_service: 'Serviciu', f_service_ph: 'Alegeți un serviciu', o1: 'Design web', o2: 'Landing page', o3: 'Rețele sociale', o4: 'Poziționare în Google', o5: 'Încă nu știu',
     f_msg: 'De ce aveți nevoie',
-    f_consent: 'Am citit și accept <a href="https://benamar.es/en/privacidad.html" target="_blank" rel="noopener">politica de confidențialitate</a>.',
+    f_consent: 'Am citit și accept <a href="privacidad.html" target="_blank" rel="noopener">politica de confidențialitate</a>.',
     f_submit: 'Trimiteți cererea',
     fail_h: 'Nu am putut-o trimite de aici.',
     fail_p: 'Mesajul este gata: trimiteți-l cu un clic pe WhatsApp sau prin e-mail.',
@@ -430,8 +430,8 @@
     ftr_worlds: 'Trei lumi', ftr_nav_label: 'Subsol', ftr_nav: 'Site', ftr_contact: 'Contact',
     ftr_articles: 'Articole', articles_href: 'https://benamar.es/en/articles/',
     ftr_base: 'Cu baza în Barcelona',
-    legal1: 'Aviz legal', legal_href: 'https://benamar.es/en/aviso-legal.html',
-    legal2: 'Confidențialitate', privacy_href: 'https://benamar.es/en/privacidad.html'
+    legal1: 'Aviz legal', legal_href: 'aviso-legal.html',
+    legal2: 'Confidențialitate', privacy_href: 'privacidad.html'
   };
 })();
 
@@ -580,7 +580,7 @@ window.I18N_CA = {
   pr4: 'Domini i codi a nom seu',
   team_alt: 'Mario i Sami, de BENAMAR, asseguts en unes roques al costat d’un riu, amb muntanyes al darrere',
   team_h: 'Qui porta el seu projecte',
-  team_p: 'Darrere de BENAMAR hi ha una història, una idea i dues persones.', team_p2: 'BENAMAR neix de la il·lusió i la iniciativa de Mario i Sami, dues persones que van decidir unir els seus camins per donar vida a un projecte propi. Amb experiències i perspectives diferents i una visió compartida, vam començar a construir una marca que reflectís la nostra manera d’entendre el món empresarial.', team_p3: 'El que va començar com una idea es va convertir a poc a poc en un projecte amb identitat pròpia, impulsat per les ganes de créixer, aprendre i crear alguna cosa que ens representés.', team_p4: 'Avui, BENAMAR és el resultat d’aquest camí: una iniciativa construïda des de zero, amb esforç, ambició i una història que es continua escrivint cada dia.', team_tag: 'Un mateix equip', lbl_origen: 'Origen', lbl_origen_v: 'Barcelona', lbl_mercados: 'Mercats', lbl_mercados_v: 'Espanya, el Marroc i Romania', lbl_idiomas: 'Idiomes', lbl_socios: 'Socis', lbl_hecho: 'Fet a Barcelona', team_link: 'Parlar amb nosaltres',
+  team_p: 'Darrere de BENAMAR hi ha una història, una idea i dues persones.', team_p2: 'BENAMAR neix de la il·lusió i la iniciativa de Mario i Sami, dues persones que van decidir unir els seus camins per donar vida a un projecte propi. Amb experiències i perspectives diferents i una visió compartida, vam començar a construir una marca que reflectís la nostra manera d’entendre el món empresarial.', team_p3: 'El que va començar com una idea es va convertir a poc a poc en un projecte amb identitat pròpia, impulsat per les ganes de créixer, aprendre i crear alguna cosa que ens representés.', team_p4: 'Avui, BENAMAR és el resultat d’aquest camí: una iniciativa construïda des de zero, amb esforç, ambició i una història que es continua escrivint cada dia.', team_tag: 'Un mateix equip', tl_aviso: 'Avís legal · BENAMAR', dl_aviso: 'Avís legal de BENAMAR, agència de màrqueting digital amb base a Barcelona.', tl_priv: 'Política de privacitat · BENAMAR', dl_priv: 'Com tracta BENAMAR les dades que ens facilita a través del seu web.', back_home: 'Tornar a l’inici', lbl_origen: 'Origen', lbl_origen_v: 'Barcelona', lbl_mercados: 'Mercats', lbl_mercados_v: 'Espanya, el Marroc i Romania', lbl_idiomas: 'Idiomes', lbl_socios: 'Socis', lbl_hecho: 'Fet a Barcelona', team_link: 'Parlar amb nosaltres',
   tf1_t: 'Base',
   tf1_d: 'Barcelona',
   tf2_t: 'Clients',
@@ -610,7 +610,7 @@ window.I18N_CA = {
   o4: 'Posicionament a Google',
   o5: 'Encara no ho sé',
   f_msg: 'Què necessita',
-  f_consent: 'He llegit i accepto la <a href="https://benamar.es/privacidad.html" target="_blank" rel="noopener">política de privacitat</a>.',
+  f_consent: 'He llegit i accepto la <a href="privacidad.html" target="_blank" rel="noopener">política de privacitat</a>.',
   f_submit: 'Enviar la sol·licitud',
   fail_h: 'No l’hem pogut enviar des d’aquí.',
   fail_p: 'El seu missatge ja està escrit: enviï’l amb un clic per WhatsApp o per correu.',
@@ -621,9 +621,9 @@ window.I18N_CA = {
   ftr_contact: 'Contacte',
   ftr_base: 'Base a Barcelona',
   legal1: 'Avís legal',
-  legal_href: 'https://benamar.es/aviso-legal.html',
+  legal_href: 'aviso-legal.html',
   legal2: 'Privacitat',
-  privacy_href: 'https://benamar.es/privacidad.html',
+  privacy_href: 'privacidad.html',
   tf3_d: 'ES CA EN FR AR RO',
   c_langs_v: 'Castellà, català, anglès, francès, àrab i romanès',
 };

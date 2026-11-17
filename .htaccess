@@ -24,6 +24,8 @@ ErrorDocument 404 /404.html
   RewriteRule ^en/(web-design|landing-pages|social-media-management|seo)-barcelona.html$ https://benamar.es/?lang=en#servicios [R=301,L,NE]
   RewriteRule ^fr/(index.html)?$ https://benamar.es/?lang=fr [R=301,L]
   RewriteRule ^fr/(creation-site-web|landing-pages|gestion-reseaux-sociaux|referencement-seo)-barcelone.html$ https://benamar.es/?lang=fr#servicios [R=301,L,NE]
+  RewriteRule ^(en|fr)/(aviso-legal|privacidad).html$ https://benamar.es/$2.html?lang=  RewriteRule ^fr/(creation-site-web|landing-pages|gestion-reseaux-sociaux|referencement-seo)-barcelone.html$ https://benamar.es/?lang=fr#servicios [R=301,L,NE]
+ [R=301,L]
 </IfModule>
 
 # HTML: never cache
