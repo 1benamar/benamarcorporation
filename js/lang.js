@@ -7,7 +7,7 @@
 
   window.I18N_EN = {
     _title: 'Digital marketing agency in Barcelona · BENAMAR', nav_articles: 'Articles', art_href: 'https://benamar.es/en/articles/',
-    _desc: 'Custom websites, landing pages, social media and Google rankings for businesses in Spain, Morocco and Romania. One point of contact, fixed price and no lock-in.',
+    _desc: 'Digital marketing agency in Barcelona: web design, landing pages, social media and SEO for businesses in Spain, Morocco and Romania. Fixed price.',
     skip: 'Skip to content',
     nav_label: 'Main',
     nav_worlds: 'Countries', nav_services: 'Services', nav_work: 'Work', nav_team: 'Team', nav_faq: 'Questions',
@@ -57,8 +57,8 @@
     f_g1: 'Your details', f_g2: 'Your project',
     back_countries: 'All countries', others_h: 'Other countries',
     t_es: 'BENAMAR in Spain · Digital marketing from Barcelona', d_es: 'BENAMAR in Spain: based in Barcelona, with in-person meetings. Web design, landing pages, social media and Google rankings.',
-    t_ma: 'BENAMAR in Morocco · Websites in French, Arabic, Spanish and English', d_ma: 'BENAMAR in Morocco: websites for businesses in French, Arabic, Spanish and English, landing pages, social media and Google rankings.',
-    t_ro: 'BENAMAR in Romania · Digital marketing for Romanian businesses', d_ro: 'BENAMAR in Romania: web design, landing pages, social media and Google rankings for businesses in Romania.',
+    t_ma: 'Digital marketing and websites in Morocco · BENAMAR', d_ma: 'BENAMAR in Morocco: websites for businesses in French, Arabic, Spanish and English, landing pages, social media and Google rankings.',
+    t_ro: 'Digital marketing in Romania · BENAMAR', d_ro: 'BENAMAR in Romania: web design, landing pages, social media and Google rankings for businesses in Romania.',
     go_es: 'See Spain', go_ma: 'See Morocco', go_ro: 'See Romania',
     cf_meet: 'Meetings', ces_meet: 'In person, in Barcelona and the surrounding area',
     cf_langs: 'Website languages', cma_langs: 'French, Arabic, Spanish and English',
@@ -150,7 +150,7 @@
 
   window.I18N_FR = {
     _title: 'Agence de marketing digital à Barcelone · BENAMAR', nav_articles: 'Articles', art_href: 'https://benamar.es/fr/articles/',
-    _desc: 'Sites sur mesure, landing pages, réseaux sociaux et référencement Google pour les entreprises d’Espagne, du Maroc et de Roumanie. Un seul interlocuteur, un prix fixe et sans engagement.',
+    _desc: 'Agence de marketing digital à Barcelone : sites web, landing pages, réseaux sociaux et SEO pour l’Espagne, le Maroc et la Roumanie. Prix fixe.',
     skip: 'Aller au contenu',
     nav_label: 'Principale',
     nav_worlds: 'Pays', nav_services: 'Services', nav_work: 'Réalisations', nav_team: 'Équipe', nav_faq: 'Questions',
@@ -200,8 +200,8 @@
     f_g1: 'Vos coordonnées', f_g2: 'Votre projet',
     back_countries: 'Tous les pays', others_h: 'Autres pays',
     t_es: 'BENAMAR en Espagne · Marketing digital depuis Barcelone', d_es: 'BENAMAR en Espagne : basés à Barcelone, avec des rendez-vous en personne. Création de sites, landing pages, réseaux sociaux et référencement Google.',
-    t_ma: 'BENAMAR au Maroc · Sites en français, arabe, espagnol et anglais', d_ma: 'BENAMAR au Maroc : des sites pour les entreprises en français, arabe, espagnol et anglais, landing pages, réseaux sociaux et référencement Google.',
-    t_ro: 'BENAMAR en Roumanie · Marketing digital pour les entreprises roumaines', d_ro: 'BENAMAR en Roumanie : création de sites, landing pages, réseaux sociaux et référencement Google pour les entreprises de Roumanie.',
+    t_ma: 'Marketing digital et sites web au Maroc · BENAMAR', d_ma: 'BENAMAR au Maroc : des sites pour les entreprises en français, arabe, espagnol et anglais, landing pages, réseaux sociaux et référencement Google.',
+    t_ro: 'Marketing digital en Roumanie · BENAMAR', d_ro: 'BENAMAR en Roumanie : création de sites, landing pages, réseaux sociaux et référencement Google pour les entreprises de Roumanie.',
     go_es: 'Voir l’Espagne', go_ma: 'Voir le Maroc', go_ro: 'Voir la Roumanie',
     cf_meet: 'Rendez-vous', ces_meet: 'En personne, à Barcelone et dans les environs',
     cf_langs: 'Langues du site', cma_langs: 'Français, arabe, espagnol et anglais',
@@ -293,7 +293,7 @@
 
   window.I18N_RO = {
     _title: 'Agenție de marketing digital în Barcelona · BENAMAR', nav_articles: 'Articole', art_href: 'https://benamar.es/en/articles/',
-    _desc: 'Site-uri la comandă, landing page-uri, rețele sociale și poziționare în Google pentru afaceri din Spania, Maroc și România. Un singur interlocutor, preț fix și fără obligații pe termen lung.',
+    _desc: 'Agenție de marketing digital în Barcelona: site-uri, landing page-uri, rețele sociale și SEO pentru Spania, Maroc și România. Preț fix.',
     skip: 'Sari la conținut',
     nav_label: 'Principal',
     nav_worlds: 'Țări', nav_services: 'Servicii', nav_work: 'Proiecte', nav_team: 'Echipa', nav_faq: 'Întrebări',
@@ -343,8 +343,8 @@
     f_g1: 'Datele dumneavoastră', f_g2: 'Proiectul dumneavoastră',
     back_countries: 'Toate țările', others_h: 'Alte țări',
     t_es: 'BENAMAR în Spania · Marketing digital din Barcelona', d_es: 'BENAMAR în Spania: baza în Barcelona și întâlniri în persoană. Design web, landing pages, rețele sociale și poziționare în Google.',
-    t_ma: 'BENAMAR în Maroc · Site-uri în franceză, arabă, spaniolă și engleză', d_ma: 'BENAMAR în Maroc: site-uri pentru afaceri în franceză, arabă, spaniolă și engleză, landing pages, rețele sociale și poziționare în Google.',
-    t_ro: 'BENAMAR în România · Marketing digital pentru afaceri din România', d_ro: 'BENAMAR în România: design web, landing pages, rețele sociale și poziționare în Google pentru afaceri din România.',
+    t_ma: 'Marketing digital și site-uri în Maroc · BENAMAR', d_ma: 'BENAMAR în Maroc: site-uri pentru afaceri în franceză, arabă, spaniolă și engleză, landing pages, rețele sociale și poziționare în Google.',
+    t_ro: 'Marketing digital în România · BENAMAR', d_ro: 'BENAMAR în România: design web, landing pages, rețele sociale și poziționare în Google pentru afaceri din România.',
     go_es: 'Vezi Spania', go_ma: 'Vezi Marocul', go_ro: 'Vezi România',
     cf_meet: 'Întâlniri', ces_meet: 'Personal, în Barcelona și împrejurimi',
     cf_langs: 'Limbile site-ului', cma_langs: 'Franceză, arabă, spaniolă și engleză',
@@ -438,7 +438,7 @@
 // Català (tractament de «vostè», com l’«usted» del castellà)
 window.I18N_CA = {
   _title: 'Agència de màrqueting digital a Barcelona · BENAMAR', nav_articles: 'Articles', art_href: 'articulos/',
-  _desc: 'Webs a mida, landing pages, xarxes socials i posicionament a Google per a negocis d’Espanya, el Marroc i Romania. Un sol interlocutor, preu tancat i sense permanència.',
+  _desc: 'Agència de màrqueting digital a Barcelona: webs, landing pages, xarxes socials i SEO per a negocis d’Espanya, el Marroc i Romania. Preu tancat.',
   skip: 'Salta al contingut',
   nav_label: 'Principal',
   nav_worlds: 'Països',
@@ -519,9 +519,9 @@ window.I18N_CA = {
   others_h: 'Altres països',
   t_es: 'BENAMAR a Espanya · Màrqueting digital des de Barcelona',
   d_es: 'BENAMAR a Espanya: base a Barcelona i reunions en persona. Disseny web, landing pages, xarxes socials i posicionament a Google.',
-  t_ma: 'BENAMAR al Marroc · Webs en francès, àrab, castellà i anglès',
+  t_ma: 'Màrqueting digital i webs al Marroc · BENAMAR',
   d_ma: 'BENAMAR al Marroc: webs per a negocis en francès, àrab, castellà i anglès, landing pages, xarxes socials i posicionament a Google.',
-  t_ro: 'BENAMAR a Romania · Màrqueting digital per a negocis romanesos',
+  t_ro: 'Màrqueting digital a Romania · BENAMAR',
   d_ro: 'BENAMAR a Romania: disseny web, landing pages, xarxes socials i posicionament a Google per a negocis de Romania.',
   go_es: 'Veure Espanya',
   go_ma: 'Veure el Marroc',
