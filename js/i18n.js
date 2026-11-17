@@ -36,7 +36,7 @@
     document.title = pick(lang, document.documentElement.dataset.titleKey || '_title', origTitle);
     const desc = document.querySelector('meta[name="description"]');
     if (desc) { if (!desc.dataset.orig) desc.dataset.orig = desc.content; desc.content = pick(lang, document.documentElement.dataset.descKey || '_desc', desc.dataset.orig); }
-    document.querySelectorAll('[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.querySelectorAll('button[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
     store(KEY, lang);
     document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
   }
@@ -47,7 +47,8 @@
   const start = new URLSearchParams(location.search).get('lang') || load(KEY) || fromNav;
   const cur = () => document.documentElement.lang;
   window.I18N = { set: apply, get: cur, base: BASE, t: (m) => (m && (m[cur()] ?? m[BASE])) || '' };
-  document.addEventListener('click', (e) => { const b = e.target.closest('[data-lang]'); if (b) { e.preventDefault(); apply(b.dataset.lang); } });
+  // En las páginas publicadas cada idioma tiene su URL: los enlaces de idioma navegan (y se recuerda la elección)
+  document.addEventListener('click', (e) => { const b = e.target.closest('[data-lang]'); if (!b) return; if (b.tagName === 'A') { store(KEY, b.dataset.lang); return; } e.preventDefault(); apply(b.dataset.lang); });
   const go = () => apply(start);
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
 })();

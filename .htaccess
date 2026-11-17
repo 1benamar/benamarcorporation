@@ -15,16 +15,12 @@ ErrorDocument 404 /404.html
   RewriteRule ^(.*)$ https://benamar.es/$1 [R=301,L]
 </IfModule>
 
-# Web nueva (17-11-2026): las páginas de servicio y las portadas en inglés y francés pasan a la portada nueva,
-# que tiene los servicios y los idiomas. Se mantienen artículos, aviso legal, privacidad y créditos.
+# Web nueva (17-11-2026): cada idioma tiene su carpeta (/ca/, /en/, /fr/, /ro/). Los enlaces antiguos
+# con ?lang=xx a la portada llevan a la portada de ese idioma.
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteRule ^(diseno-web|landing-pages|gestion-redes-sociales|posicionamiento-seo)-barcelona.html$ https://benamar.es/#servicios [R=301,L,NE]
-  RewriteRule ^en/(index.html)?$ https://benamar.es/?lang=en [R=301,L]
-  RewriteRule ^en/(web-design|landing-pages|social-media-management|seo)-barcelona.html$ https://benamar.es/?lang=en#servicios [R=301,L,NE]
-  RewriteRule ^fr/(index.html)?$ https://benamar.es/?lang=fr [R=301,L]
-  RewriteRule ^fr/(creation-site-web|landing-pages|gestion-reseaux-sociaux|referencement-seo)-barcelone.html$ https://benamar.es/?lang=fr#servicios [R=301,L,NE]
-  RewriteRule ^(en|fr)/(aviso-legal|privacidad).html$ https://benamar.es/$2.html?lang=$1 [R=301,L]
+  RewriteCond %{QUERY_STRING} (^|&)lang=(ca|en|fr|ro)(&|$)
+  RewriteRule ^$ https://benamar.es/%2/ [R=301,L,QSD]
 </IfModule>
 
 # HTML: never cache

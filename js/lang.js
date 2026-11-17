@@ -6,7 +6,7 @@
   const FR_SVC = 'https://benamar.es/fr/';
 
   window.I18N_EN = {
-    _title: 'BENAMAR · Digital marketing agency in Spain, Morocco and Romania',
+    _title: 'Digital marketing agency in Barcelona · BENAMAR', nav_articles: 'Articles', art_href: 'https://benamar.es/en/articles/',
     _desc: 'Custom websites, landing pages, social media and Google rankings for businesses in Spain, Morocco and Romania. One point of contact, fixed price and no lock-in.',
     skip: 'Skip to content',
     nav_label: 'Main',
@@ -18,7 +18,7 @@
     menu: 'Menu',
     h1a: 'From strategy',
     h1b: 'to results.',
-    hero_sub: 'Web design, branding, social media, SEO and advertising for businesses that want to grow. You always deal with the person running your project.',
+    hero_sub: 'Web design, landing pages, social media and Google rankings for businesses that want to grow. You always deal with the person running your project.',
     wa_href: 'https://wa.me/34633712475?text=Hello%2C%20I%27d%20like%20to%20request%20a%20proposal.',
     cta_wa: 'Message us on WhatsApp',
     fact_rating: '5.0 on Google · 7 reviews',
@@ -105,7 +105,7 @@
 
     team_alt: 'Mario and Sami from BENAMAR sitting on rocks by a river, with mountains behind',
     team_h: 'Who runs your project',
-    team_p: 'Behind BENAMAR there is a story, an idea and two people.', team_p2: 'BENAMAR was born from the enthusiasm and initiative of Mario and Sami, two people who decided to join paths to bring a project of their own to life. With different experiences and perspectives and a shared vision, we began building a brand that reflected our way of understanding the business world.', team_p3: 'What started as an idea gradually became a project with its own identity, driven by the desire to grow, learn and create something that represented us.', team_p4: 'Today, BENAMAR is the result of that journey: an initiative built from scratch, with effort, ambition and a story that is still being written every day.', team_tag: 'One team', tl_aviso: 'Legal notice · BENAMAR', dl_aviso: 'Legal notice of BENAMAR, a digital marketing agency based in Barcelona.', tl_priv: 'Privacy policy · BENAMAR', dl_priv: 'How BENAMAR handles the data you share through its website.', back_home: 'Back to home', lbl_origen: 'Origin', lbl_origen_v: 'Barcelona', lbl_mercados: 'Markets', lbl_mercados_v: 'Spain, Morocco and Romania', lbl_idiomas: 'Languages', lbl_socios: 'Partners', lbl_hecho: 'Made in Barcelona', team_link: 'Talk to us',
+    team_p: 'Behind BENAMAR there is a story, an idea and two people.', team_p2: 'BENAMAR was born from the enthusiasm and initiative of Mario and Sami, two people who decided to join paths to bring a project of their own to life. With different experiences and perspectives and a shared vision, we began building a brand that reflected our way of understanding the business world.', team_p3: 'What started as an idea gradually became a project with its own identity, driven by the desire to grow, learn and create something that represented us.', team_p4: 'Today, BENAMAR is the result of that journey: an initiative built from scratch, with effort, ambition and a story that is still being written every day.', team_tag: 'One team', svc_more: 'See the service', ts_web: 'Web Design in Barcelona · BENAMAR', ds_web: 'Custom corporate website design and development in Barcelona. Fast, clear websites built to turn visits into customers.', ts_landing: 'Landing Pages in Barcelona · BENAMAR', ds_landing: 'Landing page design in Barcelona for Google Ads and social media campaigns. One page, one goal and measured results.', ts_redes: 'Social Media Management in Barcelona · BENAMAR', ds_redes: 'Social media management for companies in Barcelona: strategy, content, editorial calendar and clear monthly reporting.', ts_seo: 'SEO Services in Barcelona · BENAMAR', ds_seo: 'SEO in Barcelona: technical audit, content, local search and monthly reporting with qualified traffic targets.', tl_aviso: 'Legal notice · BENAMAR', dl_aviso: 'Legal notice of BENAMAR, a digital marketing agency based in Barcelona.', tl_priv: 'Privacy policy · BENAMAR', dl_priv: 'How BENAMAR handles the data you share through its website.', back_home: 'Back to home', lbl_origen: 'Origin', lbl_origen_v: 'Barcelona', lbl_mercados: 'Markets', lbl_mercados_v: 'Spain, Morocco and Romania', lbl_idiomas: 'Languages', lbl_socios: 'Partners', lbl_hecho: 'Made in Barcelona', team_link: 'Talk to us',
     tf1_t: 'Base', tf1_d: 'Barcelona',
     tf2_t: 'Clients', tf2_d: '3 countries',
     tf3_t: 'Languages', tf3_d: 'ES CA EN FR AR RO',
@@ -149,7 +149,7 @@
   };
 
   window.I18N_FR = {
-    _title: 'BENAMAR · Agence de marketing digital en Espagne, au Maroc et en Roumanie',
+    _title: 'Agence de marketing digital à Barcelone · BENAMAR', nav_articles: 'Articles', art_href: 'https://benamar.es/fr/articles/',
     _desc: 'Sites sur mesure, landing pages, réseaux sociaux et référencement Google pour les entreprises d’Espagne, du Maroc et de Roumanie. Un seul interlocuteur, un prix fixe et sans engagement.',
     skip: 'Aller au contenu',
     nav_label: 'Principale',
@@ -161,7 +161,7 @@
     menu: 'Menu',
     h1a: 'De la stratégie',
     h1b: 'au résultat.',
-    hero_sub: 'Création de sites, branding, réseaux sociaux, SEO et publicité pour les entreprises qui veulent grandir. Vous traitez toujours avec la personne qui mène votre projet.',
+    hero_sub: 'Création de sites, landing pages, réseaux sociaux et référencement Google pour les entreprises qui veulent grandir. Vous traitez toujours avec la personne qui mène votre projet.',
     wa_href: 'https://wa.me/34633712475?text=Bonjour%2C%20je%20souhaite%20demander%20une%20proposition.',
     cta_wa: 'Écrire sur WhatsApp',
     fact_rating: '5,0 sur Google · 7 avis',
@@ -248,7 +248,7 @@
 
     team_alt: 'Mario et Sami, de BENAMAR, assis sur des rochers au bord d’une rivière, avec des montagnes derrière',
     team_h: 'Qui mène votre projet',
-    team_p: 'Derrière BENAMAR, il y a une histoire, une idée et deux personnes.', team_p2: 'BENAMAR est née de l’enthousiasme et de l’initiative de Mario et Sami, deux personnes qui ont décidé d’unir leurs chemins pour donner vie à un projet bien à eux. Avec des expériences et des regards différents et une vision commune, nous avons commencé à construire une marque qui reflète notre façon de comprendre le monde de l’entreprise.', team_p3: 'Ce qui a commencé comme une idée est devenu peu à peu un projet avec sa propre identité, porté par l’envie de grandir, d’apprendre et de créer quelque chose qui nous ressemble.', team_p4: 'Aujourd’hui, BENAMAR est le fruit de ce chemin : une initiative construite de zéro, avec effort, ambition et une histoire qui continue de s’écrire chaque jour.', team_tag: 'Une seule équipe', tl_aviso: 'Mentions légales · BENAMAR', dl_aviso: 'Mentions légales de BENAMAR, agence de marketing digital basée à Barcelone.', tl_priv: 'Politique de confidentialité · BENAMAR', dl_priv: 'Comment BENAMAR traite les données que vous nous transmettez via son site.', back_home: 'Retour à l’accueil', lbl_origen: 'Origine', lbl_origen_v: 'Barcelone', lbl_mercados: 'Marchés', lbl_mercados_v: 'Espagne, Maroc et Roumanie', lbl_idiomas: 'Langues', lbl_socios: 'Associés', lbl_hecho: 'Fabriqué à Barcelone', team_link: 'Nous parler',
+    team_p: 'Derrière BENAMAR, il y a une histoire, une idée et deux personnes.', team_p2: 'BENAMAR est née de l’enthousiasme et de l’initiative de Mario et Sami, deux personnes qui ont décidé d’unir leurs chemins pour donner vie à un projet bien à eux. Avec des expériences et des regards différents et une vision commune, nous avons commencé à construire une marque qui reflète notre façon de comprendre le monde de l’entreprise.', team_p3: 'Ce qui a commencé comme une idée est devenu peu à peu un projet avec sa propre identité, porté par l’envie de grandir, d’apprendre et de créer quelque chose qui nous ressemble.', team_p4: 'Aujourd’hui, BENAMAR est le fruit de ce chemin : une initiative construite de zéro, avec effort, ambition et une histoire qui continue de s’écrire chaque jour.', team_tag: 'Une seule équipe', svc_more: 'Voir le service', ts_web: 'Création de site web à Barcelone · BENAMAR', ds_web: 'Conception et développement de sites web corporatifs sur mesure à Barcelone. Des sites rapides, clairs et conçus pour convertir.', ts_landing: 'Landing pages à Barcelone · BENAMAR', ds_landing: 'Création de landing pages à Barcelone pour vos campagnes Google Ads et réseaux sociaux. Une page, un objectif, des résultats mesurés.', ts_redes: 'Gestion des réseaux sociaux à Barcelone · BENAMAR', ds_redes: 'Gestion des réseaux sociaux pour les entreprises à Barcelone : stratégie, contenu, calendrier éditorial et rapports mensuels clairs.', ts_seo: 'Référencement SEO à Barcelone · BENAMAR', ds_seo: 'Référencement naturel à Barcelone : audit technique, contenu, référencement local et rapports mensuels avec objectifs de trafic qualifié.', tl_aviso: 'Mentions légales · BENAMAR', dl_aviso: 'Mentions légales de BENAMAR, agence de marketing digital basée à Barcelone.', tl_priv: 'Politique de confidentialité · BENAMAR', dl_priv: 'Comment BENAMAR traite les données que vous nous transmettez via son site.', back_home: 'Retour à l’accueil', lbl_origen: 'Origine', lbl_origen_v: 'Barcelone', lbl_mercados: 'Marchés', lbl_mercados_v: 'Espagne, Maroc et Roumanie', lbl_idiomas: 'Langues', lbl_socios: 'Associés', lbl_hecho: 'Fabriqué à Barcelone', team_link: 'Nous parler',
     tf1_t: 'Base', tf1_d: 'Barcelone',
     tf2_t: 'Clients', tf2_d: '3 pays',
     tf3_t: 'Langues', tf3_d: 'ES CA EN FR AR RO',
@@ -292,7 +292,7 @@
   };
 
   window.I18N_RO = {
-    _title: 'BENAMAR · Agenție de marketing digital în Spania, Maroc și România',
+    _title: 'Agenție de marketing digital în Barcelona · BENAMAR', nav_articles: 'Articole', art_href: 'https://benamar.es/en/articles/',
     _desc: 'Site-uri la comandă, landing page-uri, rețele sociale și poziționare în Google pentru afaceri din Spania, Maroc și România. Un singur interlocutor, preț fix și fără obligații pe termen lung.',
     skip: 'Sari la conținut',
     nav_label: 'Principal',
@@ -304,7 +304,7 @@
     menu: 'Meniu',
     h1a: 'De la strategie',
     h1b: 'la rezultat.',
-    hero_sub: 'Design web, branding, rețele sociale, SEO și publicitate pentru afaceri care vor să crească. Discutați mereu cu persoana care se ocupă de proiectul dumneavoastră.',
+    hero_sub: 'Design web, landing page-uri, rețele sociale și poziționare în Google pentru afaceri care vor să crească. Discutați mereu cu persoana care se ocupă de proiectul dumneavoastră.',
     wa_href: 'https://wa.me/34633712475?text=Bun%C4%83%20ziua%2C%20a%C8%99%20dori%20o%20ofert%C4%83.',
     cta_wa: 'Scrieți-ne pe WhatsApp',
     fact_rating: '5,0 pe Google · 7 recenzii',
@@ -391,7 +391,7 @@
 
     team_alt: 'Mario și Sami de la BENAMAR, așezați pe niște stânci lângă un râu, cu munți în spate',
     team_h: 'Cine se ocupă de proiect',
-    team_p: 'În spatele BENAMAR se află o poveste, o idee și doi oameni.', team_p2: 'BENAMAR s-a născut din entuziasmul și inițiativa lui Mario și Sami, doi oameni care au decis să-și unească drumurile pentru a da viață unui proiect propriu. Cu experiențe și perspective diferite și o viziune comună, am început să construim un brand care să reflecte felul nostru de a înțelege lumea afacerilor.', team_p3: 'Ce a început ca o idee a devenit treptat un proiect cu identitate proprie, alimentat de dorința de a crește, de a învăța și de a crea ceva care să ne reprezinte.', team_p4: 'Astăzi, BENAMAR este rezultatul acestui drum: o inițiativă construită de la zero, cu efort, ambiție și o poveste care continuă să se scrie în fiecare zi.', team_tag: 'O singură echipă', tl_aviso: 'Mențiuni legale · BENAMAR', dl_aviso: 'Mențiunile legale ale BENAMAR, agenție de marketing digital cu sediul în Barcelona.', tl_priv: 'Politica de confidențialitate · BENAMAR', dl_priv: 'Cum tratează BENAMAR datele pe care ni le transmiteți prin site.', back_home: 'Înapoi la pagina principală', lbl_origen: 'Origine', lbl_origen_v: 'Barcelona', lbl_mercados: 'Piețe', lbl_mercados_v: 'Spania, Maroc și România', lbl_idiomas: 'Limbi', lbl_socios: 'Asociați', lbl_hecho: 'Fabricat în Barcelona', team_link: 'Vorbiți cu noi',
+    team_p: 'În spatele BENAMAR se află o poveste, o idee și doi oameni.', team_p2: 'BENAMAR s-a născut din entuziasmul și inițiativa lui Mario și Sami, doi oameni care au decis să-și unească drumurile pentru a da viață unui proiect propriu. Cu experiențe și perspective diferite și o viziune comună, am început să construim un brand care să reflecte felul nostru de a înțelege lumea afacerilor.', team_p3: 'Ce a început ca o idee a devenit treptat un proiect cu identitate proprie, alimentat de dorința de a crește, de a învăța și de a crea ceva care să ne reprezinte.', team_p4: 'Astăzi, BENAMAR este rezultatul acestui drum: o inițiativă construită de la zero, cu efort, ambiție și o poveste care continuă să se scrie în fiecare zi.', team_tag: 'O singură echipă', svc_more: 'Vedeți serviciul', ts_web: 'Design web în Barcelona · BENAMAR', ds_web: 'Design și dezvoltare de site-uri de prezentare la comandă în Barcelona. Site-uri rapide, clare și gândite să transforme vizitele în clienți.', ts_landing: 'Landing page-uri în Barcelona · BENAMAR', ds_landing: 'Landing page-uri în Barcelona pentru campanii Google Ads și rețele sociale. O pagină, un obiectiv și rezultate măsurate.', ts_redes: 'Gestionarea rețelelor sociale în Barcelona · BENAMAR', ds_redes: 'Gestionarea rețelelor sociale pentru firme în Barcelona: strategie, conținut, calendar editorial și rapoarte lunare clare.', ts_seo: 'Poziționare SEO în Barcelona · BENAMAR', ds_seo: 'Poziționare SEO în Barcelona: audit tehnic, conținut, SEO local și rapoarte lunare cu obiective de trafic calificat.', tl_aviso: 'Mențiuni legale · BENAMAR', dl_aviso: 'Mențiunile legale ale BENAMAR, agenție de marketing digital cu sediul în Barcelona.', tl_priv: 'Politica de confidențialitate · BENAMAR', dl_priv: 'Cum tratează BENAMAR datele pe care ni le transmiteți prin site.', back_home: 'Înapoi la pagina principală', lbl_origen: 'Origine', lbl_origen_v: 'Barcelona', lbl_mercados: 'Piețe', lbl_mercados_v: 'Spania, Maroc și România', lbl_idiomas: 'Limbi', lbl_socios: 'Asociați', lbl_hecho: 'Fabricat în Barcelona', team_link: 'Vorbiți cu noi',
     tf1_t: 'Baza', tf1_d: 'Barcelona',
     tf2_t: 'Clienți', tf2_d: '3 țări',
     tf3_t: 'Limbi', tf3_d: 'ES CA EN FR AR RO',
@@ -437,7 +437,7 @@
 
 // Català (tractament de «vostè», com l’«usted» del castellà)
 window.I18N_CA = {
-  _title: 'BENAMAR · Agència de màrqueting digital a Espanya, el Marroc i Romania',
+  _title: 'Agència de màrqueting digital a Barcelona · BENAMAR', nav_articles: 'Articles', art_href: 'articulos/',
   _desc: 'Webs a mida, landing pages, xarxes socials i posicionament a Google per a negocis d’Espanya, el Marroc i Romania. Un sol interlocutor, preu tancat i sense permanència.',
   skip: 'Salta al contingut',
   nav_label: 'Principal',
@@ -451,7 +451,7 @@ window.I18N_CA = {
   menu: 'Menú',
   h1a: 'De l’estratègia',
   h1b: 'al resultat.',
-  hero_sub: 'Disseny web, branding, xarxes socials, SEO i publicitat per a negocis que volen créixer. Vostè tracta sempre amb qui porta el seu projecte.',
+  hero_sub: 'Disseny web, landing pages, xarxes socials i posicionament a Google per a negocis que volen créixer. Vostè tracta sempre amb qui porta el seu projecte.',
   wa_href: 'https://wa.me/34633712475?text=Hola%2C%20vull%20demanar%20una%20proposta.',
   cta_wa: 'Escriure per WhatsApp',
   newtab: '(s’obre en una pestanya nova)',
@@ -580,7 +580,7 @@ window.I18N_CA = {
   pr4: 'Domini i codi a nom seu',
   team_alt: 'Mario i Sami, de BENAMAR, asseguts en unes roques al costat d’un riu, amb muntanyes al darrere',
   team_h: 'Qui porta el seu projecte',
-  team_p: 'Darrere de BENAMAR hi ha una història, una idea i dues persones.', team_p2: 'BENAMAR neix de la il·lusió i la iniciativa de Mario i Sami, dues persones que van decidir unir els seus camins per donar vida a un projecte propi. Amb experiències i perspectives diferents i una visió compartida, vam començar a construir una marca que reflectís la nostra manera d’entendre el món empresarial.', team_p3: 'El que va començar com una idea es va convertir a poc a poc en un projecte amb identitat pròpia, impulsat per les ganes de créixer, aprendre i crear alguna cosa que ens representés.', team_p4: 'Avui, BENAMAR és el resultat d’aquest camí: una iniciativa construïda des de zero, amb esforç, ambició i una història que es continua escrivint cada dia.', team_tag: 'Un mateix equip', tl_aviso: 'Avís legal · BENAMAR', dl_aviso: 'Avís legal de BENAMAR, agència de màrqueting digital amb base a Barcelona.', tl_priv: 'Política de privacitat · BENAMAR', dl_priv: 'Com tracta BENAMAR les dades que ens facilita a través del seu web.', back_home: 'Tornar a l’inici', lbl_origen: 'Origen', lbl_origen_v: 'Barcelona', lbl_mercados: 'Mercats', lbl_mercados_v: 'Espanya, el Marroc i Romania', lbl_idiomas: 'Idiomes', lbl_socios: 'Socis', lbl_hecho: 'Fet a Barcelona', team_link: 'Parlar amb nosaltres',
+  team_p: 'Darrere de BENAMAR hi ha una història, una idea i dues persones.', team_p2: 'BENAMAR neix de la il·lusió i la iniciativa de Mario i Sami, dues persones que van decidir unir els seus camins per donar vida a un projecte propi. Amb experiències i perspectives diferents i una visió compartida, vam començar a construir una marca que reflectís la nostra manera d’entendre el món empresarial.', team_p3: 'El que va començar com una idea es va convertir a poc a poc en un projecte amb identitat pròpia, impulsat per les ganes de créixer, aprendre i crear alguna cosa que ens representés.', team_p4: 'Avui, BENAMAR és el resultat d’aquest camí: una iniciativa construïda des de zero, amb esforç, ambició i una història que es continua escrivint cada dia.', team_tag: 'Un mateix equip', svc_more: 'Veure el servei', ts_web: 'Disseny web a Barcelona · BENAMAR', ds_web: 'Disseny i desenvolupament de webs corporatius a mida a Barcelona. Webs ràpids, clars i pensats per convertir visites en clients.', ts_landing: 'Landing pages a Barcelona · BENAMAR', ds_landing: 'Disseny de landing pages a Barcelona per a campanyes de Google Ads i xarxes socials. Una pàgina, un objectiu i resultats mesurats.', ts_redes: 'Gestió de xarxes socials a Barcelona · BENAMAR', ds_redes: 'Gestió de xarxes socials per a empreses a Barcelona: estratègia, contingut, calendari editorial i informes mensuals clars.', ts_seo: 'Posicionament SEO a Barcelona · BENAMAR', ds_seo: 'Posicionament SEO a Barcelona: auditoria tècnica, contingut, SEO local i informes mensuals amb objectius de trànsit qualificat.', tl_aviso: 'Avís legal · BENAMAR', dl_aviso: 'Avís legal de BENAMAR, agència de màrqueting digital amb base a Barcelona.', tl_priv: 'Política de privacitat · BENAMAR', dl_priv: 'Com tracta BENAMAR les dades que ens facilita a través del seu web.', back_home: 'Tornar a l’inici', lbl_origen: 'Origen', lbl_origen_v: 'Barcelona', lbl_mercados: 'Mercats', lbl_mercados_v: 'Espanya, el Marroc i Romania', lbl_idiomas: 'Idiomes', lbl_socios: 'Socis', lbl_hecho: 'Fet a Barcelona', team_link: 'Parlar amb nosaltres',
   tf1_t: 'Base',
   tf1_d: 'Barcelona',
   tf2_t: 'Clients',
